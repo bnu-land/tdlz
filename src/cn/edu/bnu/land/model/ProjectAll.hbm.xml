@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-11 20:49:41 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ProjectAll" table="project_all" catalog="tdlz">
+        <id name="projectName" type="string">
+            <column name="project_name" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="project_id" length="20" />
+        </property>
+        <property name="projectLocation" type="string">
+            <column name="project_location" length="50" />
+        </property>
+        <property name="areaCode" type="string">
+            <column name="area_code" length="50" />
+        </property>
+        <property name="involvedTown" type="string">
+            <column name="involved_town" length="20" />
+        </property>
+        <property name="bearUnit" type="string">
+            <column name="bear_unit" length="20" />
+        </property>
+        <property name="investSum" type="java.lang.Double">
+            <column name="invest_sum" precision="22" scale="0" />
+        </property>
+        <property name="area" type="java.lang.Double">
+            <column name="area" precision="22" scale="0" />
+        </property>
+        <property name="applyUnit" type="string">
+            <column name="apply_unit" length="20" />
+        </property>
+        <property name="showYesno" type="string">
+            <column name="show_yesno" length="10" />
+        </property>
+        <property name="constructUnit" type="string">
+            <column name="construct_unit" length="20" />
+        </property>
+        <property name="constructStarttime" type="date">
+            <column name="construct_starttime" length="10" />
+        </property>
+        <property name="constructEndtime" type="date">
+            <column name="construct_endtime" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

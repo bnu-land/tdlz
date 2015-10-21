@@ -1,0 +1,39 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['凤城街道','1'],\r",
+            "  ['晏家街道','2'],\r",
+            "  ['江南街道','3'],\r",
+            "  ['渡舟街道','4'],\r",
+            "  ['双龙镇','5'],\r",
+            "  ['龙河镇','6'],\r",
+            "  ['长寿湖镇','7'],\r",
+            "  ['云台镇','8'],\r",
+            "  ['葛兰镇','9'],\r",
+            "  ['但渡镇','10'],\r",
+            "  ['邻封镇','11'],\r",
+            "  ['云集镇','12'],\r",
+            "  ['海棠镇','13'],\r",
+            "  ['石堰镇','14'],\r",
+            "  ['新市镇','15'],\r",
+            "  ['八颗镇','16'],\r",
+            "  ['洪湖镇','17'],\r",
+            "  ['万顺镇','18']\r",
+            "]"
+        ],
+        "designer|userAlias": "TaishiAlarmCombox",
+        "designer|userClassName": "TaishiAlarmCombox",
+        "model": "TaishiPriceTextField",
+        "storeId": "TaishiAlarmCombox"
+    },
+    "designerId": "ed70cc00-fe99-4ad8-9852-4501e3f1e0c2"
+}

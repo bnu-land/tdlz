@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-1-20 18:03:38 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.DkProgress" table="dk_progress" catalog="tdlz">
+        <id name="recordId" type="int">
+            <column name="record_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectName" type="string">
+            <column name="project_name" length="50" />
+        </property>
+        <property name="dkId" type="string">
+            <column name="dk_id" length="50" />
+        </property>
+        <property name="gchClass" type="string">
+            <column name="gch_class" length="50" />
+        </property>
+        <property name="gchStarttime" type="date">
+            <column name="gch_starttime" length="10" />
+        </property>
+        <property name="gchEndtime" type="date">
+            <column name="gch_endtime" length="10" />
+        </property>
+        <property name="gchStatuspercent" type="java.lang.Float">
+            <column name="gch_statuspercent" precision="12" scale="0" />
+        </property>
+        <property name="gchStatustime" type="date">
+            <column name="gch_statustime" length="10" />
+        </property>
+        <property name="gchfinishArea" type="java.lang.Float">
+            <column name="gchfinish_area" precision="12" scale="0" />
+        </property>
+        <property name="gchshouldPercent" type="java.lang.Float">
+            <column name="gchshould_percent" precision="12" scale="0" />
+        </property>
+        <property name="differPercent" type="java.lang.Float">
+            <column name="differ_percent" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

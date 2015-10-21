@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-3 21:15:50 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ProjectDk" table="project_dk" catalog="tdlz">
+        <id name="dkId" type="string">
+            <column name="dk_id" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectName" type="string">
+            <column name="project_name" length="50">
+                <comment>&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="dkArea" type="java.lang.Double">
+            <column name="dk_area" precision="22" scale="0">
+                <comment>&#181;&#216;&#191;&#233;&#195;&#230;&#187;&#253;</comment>
+            </column>
+        </property>
+        <property name="isFinished" type="java.lang.Boolean">
+            <column name="is_finished">
+                <comment>&#202;&#199;&#183;&#241;&#205;&#234;&#179;&#201;</comment>
+            </column>
+        </property>
+        <property name="dkTbid" type="string">
+            <column name="dk_tbid" length="50">
+                <comment>&#205;&#188;&#176;&#223;&#186;&#197;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

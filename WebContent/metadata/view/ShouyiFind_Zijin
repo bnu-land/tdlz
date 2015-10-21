@@ -1,0 +1,434 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ShouyiFind_Zijin",
+        "designer|userClassName": "ShouyiFind_Zijin",
+        "height": 497,
+        "id": "ShouyiFind_Zijin",
+        "layout": "border",
+        "title": "资金流动信息查询",
+        "width": 936
+    },
+    "designerId": "83b7ef6e-e8ba-44fa-9d83-d06109d523ae",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 87,
+                "layout": "absolute",
+                "layout|region": "north",
+                "title": "选择查询条件"
+            },
+            "name": "MyPanel15",
+            "designerId": "985524df-4c0d-4e4c-be00-b25a27b75bb0",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请填写",
+                        "fieldLabel": "关键词",
+                        "id": "ShouyiFindZijinField",
+                        "labelWidth": 60,
+                        "layout|x": 460,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyTextField59",
+                    "designerId": "5c8e5faf-041e-4e5f-b311-3eb8e178adf0"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "ShouyiFindZijinDateStart",
+                        "labelWidth": 60,
+                        "layout|x": 20,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyDateField5",
+                    "designerId": "97853411-24df-46a3-8127-1f2ec51e3258"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "ShouyiFindZijinDateEnd",
+                        "labelWidth": 60,
+                        "layout|x": 240,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyDateField6",
+                    "designerId": "133f5416-1774-468d-9989-9dfcfc7fed3b"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 670,
+                        "layout|y": 20,
+                        "text": "查询",
+                        "width": 60
+                    },
+                    "name": "MyButton33",
+                    "designerId": "a7b8c3ae-7b9b-49ef-8b3d-3faafe0ffb33",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiFindZijinDateStart').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiFindZijinDateEnd').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('ShouyiFindZijinField').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiFind_Zijin'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword1:getKeyword1};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "34e3a062-5542-4310-99a2-1a817a7451d4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 760,
+                        "layout|y": 20,
+                        "text": "删除",
+                        "width": 60
+                    },
+                    "name": "MyButton34",
+                    "designerId": "71db40f8-0ce0-4fec-a65b-690dcccf6776",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var grid = Ext.getCmp('ShouyiZijinTable');\r",
+                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                    "if(record.length === 0){\r",
+                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                    "    return;\r",
+                                    "\r",
+                                    "}else{\r",
+                                    "\r",
+                                    "    var  tablexh =new Array(record.length);\r",
+                                    "    for(var i = 0;i<record.length;i++){\r",
+                                    "        tablexh[i] = record[i].get(\"xh\");\r",
+                                    "\r",
+                                    "    }\r",
+                                    "\r",
+                                    "    Ext.Ajax.request({\r",
+                                    "        url:'getBenefitList18',\r",
+                                    "        params:{tablexh:tablexh},\r",
+                                    "\r",
+                                    "        success:function(response){\r",
+                                    "            Ext.Msg.alert('提示','该条信息已成功删除！');\r",
+                                    "            var mystore = Ext.StoreMgr.get('ShouyiFind_Zijin');\r",
+                                    "            mystore.load();\r",
+                                    "        },\r",
+                                    "        failure:function(response){\r",
+                                    "            Ext.Msg.alert('提示','该条信息删除失败！');      \r",
+                                    "        }\r",
+                                    "\r",
+                                    "    });\r",
+                                    "\r",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "2383fa20-5cf1-4320-bce0-4e1c1e768820"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "ShouyiZijinTable",
+                "layout|region": "center",
+                "store": "ShouyiFind_Zijin",
+                "title": "资金流动列表"
+            },
+            "name": "MyGridPanel6",
+            "designerId": "83a44995-ba1b-4c7a-a8b5-c771751ebf5a",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "序号",
+                        "width": 39
+                    },
+                    "name": "MyRowNumberer5",
+                    "designerId": "e5e0f23a-b4c6-4b56-bc34-81e47cb18b0c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "htbh",
+                        "text": "合同编号"
+                    },
+                    "name": "MyColumn16",
+                    "designerId": "27c7db7b-2846-4b96-b23f-ad52cd5e6cda"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "pjh",
+                        "text": "票据号"
+                    },
+                    "name": "MyColumn17",
+                    "designerId": "a298f741-b0ea-4b7c-b145-a034c5a025e1"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "jysj",
+                        "text": "交易时间"
+                    },
+                    "name": "MyDateColumn2",
+                    "designerId": "36113b4e-b528-4820-aa30-ad90a5c09215"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "zjlcf",
+                        "text": "资金流出方"
+                    },
+                    "name": "MyColumn18",
+                    "designerId": "4de6ae32-dd96-4d3f-a78f-67b1e4f25ee1"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "zjlrf",
+                        "text": "资金流入方"
+                    },
+                    "name": "MyColumn19",
+                    "designerId": "cc73901f-ec98-4e2d-8570-d196b7a8b434"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "je",
+                        "text": "金额（万元）",
+                        "width": 61
+                    },
+                    "name": "MyNumberColumn10",
+                    "designerId": "b13049c4-1d39-4138-8cb4-2aa7da23a7c9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "yt",
+                        "text": "用途"
+                    },
+                    "name": "MyColumn20",
+                    "designerId": "5c92483c-16af-48f5-aa1f-a3a0ef4d525e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "jbr",
+                        "text": "经办人"
+                    },
+                    "name": "MyColumn21",
+                    "designerId": "e54f0d4b-eee4-478b-b03d-bf8c58943581"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "scsmj",
+                        "text": "扫描件"
+                    },
+                    "name": "MyColumn22",
+                    "designerId": "68968ce7-01f1-4359-9508-11a105e34a11"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "dzqr",
+                        "text": "到账确认"
+                    },
+                    "name": "MyColumn23",
+                    "designerId": "dd9f29ad-fe9b-42eb-aa9d-2095ddf85f1d"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView6",
+                    "designerId": "336e635a-e87a-41c7-8b55-9dea42d936f1"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "ShouyiFind_Zijin",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar1",
+                    "designerId": "1b93844d-ba90-4522-8c61-ae4887efc9d2"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel2",
+                    "designerId": "0eda1881-e563-4d89-9186-182c7ac091f8"
+                }
+            ]
+        }
+    ]
+}

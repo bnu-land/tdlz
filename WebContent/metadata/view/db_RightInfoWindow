@@ -1,0 +1,269 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_RightInfoWindow",
+        "designer|userClassName": "db_RightInfoWindow",
+        "height": 342,
+        "id": "db_RightInfoWindow",
+        "layout": "fit",
+        "title": "权限信息修改",
+        "width": 630
+    },
+    "designerId": "da929c19-f8e6-40f5-a8d9-6124a2d51a67",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "id": "db_RightInfoWindowForm",
+                "jsonSubmit": true,
+                "layout": "vbox",
+                "title": null
+            },
+            "name": "MyForm4",
+            "designerId": "db8bd7c6-bd52-4013-92d6-c4a63c85d126",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权限编号",
+                        "id": "w_rightId",
+                        "labelWidth": 70,
+                        "name": "rightId",
+                        "readOnly": true,
+                        "width": 400
+                    },
+                    "name": "MyTextField20",
+                    "designerId": "3c4e3372-ae06-4560-84f5-6a50a176f3bd"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权限名称",
+                        "id": "w_rightName",
+                        "inputType": null,
+                        "labelWidth": 70,
+                        "name": "rightName",
+                        "submitValue": false,
+                        "width": 400
+                    },
+                    "name": "MyTextField21",
+                    "designerId": "7ceb620b-27d4-422e-a3f3-d7fd40bfe996"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权限代码",
+                        "id": "w_rightUrl",
+                        "labelWidth": 70,
+                        "name": "url",
+                        "width": 400
+                    },
+                    "name": "MyTextField22",
+                    "designerId": "1a90d433-ff8f-45b4-9c36-13e7da43e3f1"
+                },
+                {
+                    "type": "Ext.form.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "boxLabel": null,
+                        "checked": true,
+                        "fieldLabel": "是否启用",
+                        "id": "w_right_enabled",
+                        "inputValue": "1",
+                        "labelWidth": 70,
+                        "name": "enabled",
+                        "uncheckedValue": "0"
+                    },
+                    "name": "MyCheckbox3",
+                    "designerId": "122a04b8-2a25-4df6-b2ea-bb69abaf3867"
+                },
+                {
+                    "type": "Ext.form.field.HtmlEditor",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权限说明",
+                        "height": 150,
+                        "id": "w_right_description",
+                        "labelWidth": 70,
+                        "name": "description"
+                    },
+                    "name": "MyHtmlEditor4",
+                    "designerId": "4c4fa829-0aca-45b2-a221-deb228abb7e0"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "layout|flex": 1
+                    },
+                    "name": "MyToolbar5",
+                    "designerId": "ecaae15f-fe3b-48d3-834a-579c549ae1ef",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Fill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MyFill5",
+                            "designerId": "306c74b3-b6dc-4d90-8fc6-d419f157b3a3"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "取消"
+                            },
+                            "name": "MyButton14",
+                            "designerId": "df6e03ce-8e5a-450f-90d7-f1b49871ae70",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_RightInfoWindow');\r",
+                                            "win.close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "00723c54-40e8-437b-a0e4-b08ac1f3afd1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "width": 30
+                            },
+                            "name": "MySpacer5",
+                            "designerId": "27f04b2e-5302-499e-93c1-b63a10d17e87"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "确认修改"
+                            },
+                            "name": "MyButton15",
+                            "designerId": "cb268246-9f75-4daa-b1d8-b49a9006a7d6",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_RightInfoWindow');\r",
+                                            "var myform = Ext.getCmp('db_RightInfoWindowForm');\r",
+                                            "\r",
+                                            "if (myform.isValid())\r",
+                                            "{ // make sure the form contains valid data before submitting\r",
+                                            "\r",
+                                            "    myform.submit({\r",
+                                            "        url : 'update_RightInfo',\r",
+                                            "        success : function (form, action)\r",
+                                            "        {\r",
+                                            "            Ext.Msg.alert('成功', '权限信息更新成功');\r",
+                                            "\r",
+                                            "            var mystore = Ext.StoreMgr.get('uRightInfoStore'); //获得store对象\r",
+                                            "            mystore.reload();\r",
+                                            "            win.close();\r",
+                                            "        },\r",
+                                            "        failure: function(form, action){            \r",
+                                            "            Ext.Msg.alert('失败', '权限信息更新失败');\r",
+                                            "            win.close();\r",
+                                            "        }        \r",
+                                            "    });\r",
+                                            "}\r",
+                                            "else{\r",
+                                            "    Ext.Msg.alert('注意', '填写的信息有误，请检查！');\r",
+                                            "}\r",
+                                            "\r",
+                                            "return;"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "9b340ffb-4a56-4cff-8381-6edc2971db94"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

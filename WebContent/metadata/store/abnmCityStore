@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmCityStore",
+        "model": "infoAreaModel",
+        "pageSize": null,
+        "storeId": "abnmCityStore"
+    },
+    "designerId": "e1640543-61fc-4a91-a0ea-892e6bd00d8e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{codeHead:''}"
+                ],
+                "url": "get_infoAreaCityList"
+            },
+            "name": "MyAjaxProxy74",
+            "designerId": "fded4d4b-f00a-4831-b436-35708f0c5836",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader74",
+                    "designerId": "8a1c3124-b31e-476d-9a8e-ed4d7e60e49f"
+                }
+            ]
+        }
+    ]
+}

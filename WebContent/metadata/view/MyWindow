@@ -1,0 +1,165 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "designer|userClassName": "MyWindow",
+        "height": 412,
+        "layout": "absolute",
+        "title": "高级查询",
+        "width": 334
+    },
+    "designerId": "9b7ac05a-0dd5-4936-8625-e4d78cdd31f1",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "项目名称",
+                "id": "projectSearchName",
+                "layout|x": 30,
+                "layout|y": 70
+            },
+            "name": "MyTextField118",
+            "designerId": "60064b87-56a8-4979-9f3b-5cd31758eafa"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "项目编号",
+                "id": "projectSearchID",
+                "layout|x": 30,
+                "layout|y": 110
+            },
+            "name": "MyTextField119",
+            "designerId": "4c3ee4b6-23fe-4651-b934-a2e44edc9b69"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "项目区域",
+                "id": "projectSearchSite",
+                "layout|x": 30,
+                "layout|y": 230
+            },
+            "name": "MyTextField120",
+            "designerId": "ca5e5444-0c32-4e04-8336-d39ca1177faf"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 30,
+                "shrinkWrap": 3,
+                "text": "请设置项目高级查询参数："
+            },
+            "name": "MyLabel1",
+            "designerId": "12e61e77-d857-4342-8e53-82dd67c91d49"
+        },
+        {
+            "type": "Ext.form.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "开始时间",
+                "id": "projectSearchStarttime",
+                "layout|x": 30,
+                "layout|y": 150
+            },
+            "name": "MyDateField26",
+            "designerId": "9eff9eb6-78fd-4c3d-a21e-977ab49b3c1e"
+        },
+        {
+            "type": "Ext.form.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "截止时间",
+                "id": "projectSearchFinishtime",
+                "layout|x": 30,
+                "layout|y": 190
+            },
+            "name": "MyDateField27",
+            "designerId": "6a4ac839-f436-4b66-8efb-5cd65b8738e9"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 120,
+                "layout|y": 300,
+                "text": "查询"
+            },
+            "name": "MyButton92",
+            "designerId": "7e4d41d2-f228-4b5a-af70-9bd91d93f274",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "//var getKeyword = Ext.getCmp('searchKeyword1').getValue();\r",
+                            "//Ext.Msg.alert(getKeyword);\r",
+                            "var mystore=Ext.StoreMgr.get('MyJsonStore');//获得store对象\r",
+                            "//Ext.Msg.alert('11',mystore);\r",
+                            "\r",
+                            "//在load事件中添加参数\r",
+                            "mystore.load(\r",
+                            "{params:{\r",
+                            "    start:\"0\",\r",
+                            "    limit:\"25\",\r",
+                            "    searchKeyword:Ext.getCmp('searchKeyword1').getValue()\r",
+                            "} \r",
+                            "}\r",
+                            ");"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "495dd728-6054-4d74-ac96-bf2546a0d825"
+                }
+            ]
+        }
+    ]
+}

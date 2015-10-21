@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-6 11:32:46 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoComment" table="info_comment" catalog="tdlz">
+        <id name="commentId" type="java.lang.Integer">
+            <column name="comment_id" />
+            <generator class="identity" />
+        </id>
+        <property name="articleId" type="java.lang.Integer">
+            <column name="article_id" />
+        </property>
+        <property name="commentTime" type="date">
+            <column name="comment_time" length="19" />
+        </property>
+        <property name="commentContent" type="string">
+            <column name="comment_content" length="65535" />
+        </property>
+        <property name="commentAuthor" type="string">
+            <column name="comment_author" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

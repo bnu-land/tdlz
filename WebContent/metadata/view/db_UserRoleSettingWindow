@@ -1,0 +1,224 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_UserRoleSettingWindow",
+        "designer|userClassName": "db_UserRoleSettingWindow",
+        "height": 283,
+        "id": "db_UserRoleSettingWindow",
+        "layout": "fit",
+        "title": "用户角色设置",
+        "width": 467
+    },
+    "designerId": "48f6f06e-19a8-4c37-9254-9d29fd36773d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "db_UserRoleSettingWindowForm",
+                "store": "uRoleInfoStore",
+                "title": null
+            },
+            "name": "MyGridPanel2",
+            "designerId": "a46f2bea-2f66-4fc1-9275-536fd5c210ca",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer2",
+                    "designerId": "54fa33ec-b60d-4d9d-996f-c6819dc250ff"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "roleNameCn",
+                        "designer|displayName": null,
+                        "id": "urSet_roleNameCn",
+                        "text": "角色名称",
+                        "width": 100
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "448c795b-b5f7-45fc-a4d9-adab22d04f76"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "roleName",
+                        "id": "urSet_roleName",
+                        "text": "角色代码",
+                        "width": 100
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "4ecdfdd6-20b8-4965-bbd6-5710da5244dc"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "description",
+                        "id": "urSet_description",
+                        "text": "角色说明",
+                        "width": 200
+                    },
+                    "name": "MyColumn7",
+                    "designerId": "e83d7cb0-4fb3-4068-9f2c-1d3d0071e802"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView2",
+                    "designerId": "ba7b805b-e162-4f63-99f4-4138b8763a6a"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom"
+                    },
+                    "name": "MyToolbar2",
+                    "designerId": "1b6e48ce-e8ac-419d-bf6a-76f0b5220782",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Fill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MyFill2",
+                            "designerId": "d7d06b86-5255-48bd-8c91-760f39ef4434"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "取消"
+                            },
+                            "name": "MyButton8",
+                            "designerId": "b12b8274-15ed-4f19-9939-3344dabf7b9c",
+                            "cn": [
+                                {
+                                    "type": "basicfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_UserRoleSettingWindow');\r",
+                                            "win.close();"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "18c1d498-939b-446b-ba8c-0ea47daacc52"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "width": 30
+                            },
+                            "name": "MySpacer2",
+                            "designerId": "cc7d022f-f9fd-44fc-8193-dcb2c87e69ac"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "确定"
+                            },
+                            "name": "MyButton9",
+                            "designerId": "77b5d64e-3da5-44ee-9e39-6d2efebef7e8",
+                            "cn": [
+                                {
+                                    "type": "basicfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "hanlder",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_UserRoleSettingWindow');\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "hanlder",
+                                    "designerId": "8a305f3f-45b1-400f-a94b-004be6bcd7e5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel1",
+                    "designerId": "ba3b459f-f449-4ee7-83ff-5fb748c5ed9b"
+                }
+            ]
+        }
+    ]
+}

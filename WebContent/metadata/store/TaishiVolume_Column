@@ -1,0 +1,22 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {name:'ee',visits:1,value:250},\r",
+            "    {name:'gg',visits:2,value:280},  \r",
+            "    {name:'ss',visits:3,value:300}\r",
+            "]"
+        ],
+        "designer|userAlias": "TaishiVolume_Column",
+        "designer|userClassName": "TaishiVolume_Column",
+        "model": "TaishiVolume_Column",
+        "storeId": "TaishiVolume_Column"
+    },
+    "designerId": "c27b3e5f-5382-4e98-9ec9-ef600be3caf1"
+}

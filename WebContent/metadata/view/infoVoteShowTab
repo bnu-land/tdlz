@@ -1,0 +1,285 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoVoteShowTab",
+        "designer|userClassName": "infoVoteShowTab",
+        "id": "infoVoteShowTab",
+        "layout": "fit",
+        "title": ""
+    },
+    "designerId": "8dcc7c5f-48a1-47d0-8adf-56ae039c0a7e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "title": ""
+            },
+            "name": "MyForm37",
+            "designerId": "e66eab1f-43d8-458e-948e-08c70e396d6e",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "投票主题",
+                        "hidden": true,
+                        "id": "voteId",
+                        "layout|x": 40,
+                        "layout|y": 10,
+                        "name": "voteId",
+                        "width": 690
+                    },
+                    "name": "MyDisplayField1",
+                    "designerId": "47f60b14-b2f7-43fe-858e-5b353ab47b52"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "投票主题",
+                        "id": "voteTitle",
+                        "layout|x": 40,
+                        "layout|y": 10,
+                        "name": "voteTitle",
+                        "width": 690
+                    },
+                    "name": "MyDisplayField2",
+                    "designerId": "186b1de5-f8bd-4c6f-9fe4-21385c3590b1"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "投票简介",
+                        "height": 100,
+                        "id": "voteIntroduction",
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "voteIntroduction",
+                        "width": 690
+                    },
+                    "name": "MyDisplayField3",
+                    "designerId": "0ebce4e3-2965-4917-9e4b-5e9b962d5460"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "发起人",
+                        "id": "voteVoter",
+                        "layout|x": 40,
+                        "layout|y": 150,
+                        "name": "voteVoter",
+                        "width": 690
+                    },
+                    "name": "MyDisplayField4",
+                    "designerId": "dc53741c-d7d1-4889-b63d-1e45848de9c7"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "开始时间",
+                        "id": "voteStarttime",
+                        "layout|x": 40,
+                        "layout|y": 180,
+                        "name": "voteStarttime",
+                        "width": 260
+                    },
+                    "name": "MyDisplayField5",
+                    "designerId": "d58cca6b-603f-4088-9aff-41d02fdbb2a9"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "结束时间",
+                        "id": "voteEndtime",
+                        "layout|x": 410,
+                        "layout|y": 180,
+                        "name": "voteEndtime",
+                        "width": 260
+                    },
+                    "name": "MyDisplayField6",
+                    "designerId": "72747903-97c1-41f1-8aca-20b5ba11cfc9"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "投票类型",
+                        "id": "voteClass",
+                        "layout|x": 40,
+                        "layout|y": 210,
+                        "name": "voteClass",
+                        "width": 260
+                    },
+                    "name": "MyDisplayField7",
+                    "designerId": "aa4d995d-ef46-430c-b8be-1f728f442d0c"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "投票状态",
+                        "id": "voteState",
+                        "layout|x": 410,
+                        "layout|y": 220,
+                        "name": "voteState",
+                        "width": 260
+                    },
+                    "name": "MyDisplayField8",
+                    "designerId": "5b4cc4c6-2366-41aa-8576-5750901b308a"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "投票结果",
+                        "layout|x": 40,
+                        "layout|y": 240,
+                        "name": null,
+                        "width": 105
+                    },
+                    "name": "MyDisplayField9",
+                    "designerId": "8ad93f34-5d2f-4ce9-9976-a5efd89234bb"
+                },
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": [
+                            "true"
+                        ],
+                        "height": 250,
+                        "insetPadding": 20,
+                        "layout|x": 110,
+                        "layout|y": 260,
+                        "store": "InfoVoteoptionStore",
+                        "width": 400
+                    },
+                    "name": "BarChart",
+                    "designerId": "11afcac7-8340-475e-8419-11b791d84a8e",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-bar-chart",
+                    "autoName": "BarChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "voptionContent"
+                                ],
+                                "position": "left",
+                                "title": "投票选项"
+                            },
+                            "name": "MyCategoryAxis3",
+                            "designerId": "9860aba8-65a8-4c17-9c40-a8447d9136ce"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "voptionNumber"
+                                ],
+                                "position": "bottom",
+                                "title": "投票数量"
+                            },
+                            "name": "MyNumericAxis4",
+                            "designerId": "2bc2ed17-1efe-4481-b0b0-256a711c2449"
+                        },
+                        {
+                            "type": "Ext.chart.series.Bar",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "axis": [
+                                    "bottom"
+                                ],
+                                "label": [
+                                    "{'display':'insideEnd','field':'voptionNumber','color':'#333','text-anchor':'middle'}"
+                                ],
+                                "xField": "voptionContent",
+                                "yField": [
+                                    "voptionNumber"
+                                ]
+                            },
+                            "name": "MyBarSeries",
+                            "designerId": "03a4784b-05a7-4057-8629-54e919c013dd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "useMapResourceStore",
+        "model": "uRightInfoModel",
+        "pageSize": null,
+        "storeId": "useMapResourceStore"
+    },
+    "designerId": "d4758df8-438c-49df-a761-963a7c994450",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: 'mapresources',\r",
+                    "    limit:'300'\r",
+                    "}"
+                ],
+                "url": "map_getMapResources"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "b50c82df-cbd6-4495-99d5-4e58c9289230",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "58076ec0-5d63-4339-a00f-9f0ec0a7f54a"
+                }
+            ]
+        }
+    ]
+}

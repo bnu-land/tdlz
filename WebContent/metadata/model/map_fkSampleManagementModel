@@ -1,0 +1,262 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "map_fkSampleManagementModel",
+        "designer|userClassName": "map_fkSampleManagementModel"
+    },
+    "designerId": "060418f1-b387-44f5-99e9-37a03757e014",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "rmoney",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "sampleId",
+                "sortType": null,
+                "type": null
+            },
+            "name": "MyField413",
+            "designerId": "db1f5fe2-34a9-43e5-8014-65dea1b40de0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sampleAddresss",
+                "type": null
+            },
+            "name": "MyField414",
+            "designerId": "d5eb906a-5c51-45e4-b06d-99dc6b86e179"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectId",
+                "type": null
+            },
+            "name": "MyField415",
+            "designerId": "c1264385-c7f0-4de8-b74e-fe41bd1e2aaf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectName",
+                "type": null
+            },
+            "name": "MyField416",
+            "designerId": "3844254a-878b-49b0-8ad1-7f62132948f2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "longitude",
+                "type": null
+            },
+            "name": "MyField417",
+            "designerId": "8ba26be7-f903-4bb9-9f36-4ee3ac024d1b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "latitude",
+                "type": null
+            },
+            "name": "MyField418",
+            "designerId": "48555518-cdb1-436c-b323-c8122a474bdd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "organicmatter",
+                "type": null
+            },
+            "name": "MyField419",
+            "designerId": "aa92b430-9ebc-4a09-9f63-0758d5acc7f7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soiltexture",
+                "type": null
+            },
+            "name": "MyField420",
+            "designerId": "c30c5089-9d18-40d3-89b3-880dba241690"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "phvalue",
+                "type": null
+            },
+            "name": "MyField421",
+            "designerId": "95430e38-1aa4-4e25-80a1-aa2667c13404"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soilThickness",
+                "type": null
+            },
+            "name": "MyField422",
+            "designerId": "cf1ffdb5-3e3f-4234-b680-67da53dd17e0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soilmoisture",
+                "type": null
+            },
+            "name": "MyField423",
+            "designerId": "15ab4aa9-5081-4be6-b12e-cdf3eadf9961"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "totalnitrogen",
+                "type": null
+            },
+            "name": "MyField424",
+            "designerId": "b773799c-f46d-4efc-9860-961d99c98102"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "totalphosphorus",
+                "type": null
+            },
+            "name": "MyField425",
+            "designerId": "fa583582-125e-438f-b521-847dae17feea"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "totalpotassium",
+                "type": null
+            },
+            "name": "MyField426",
+            "designerId": "6fb073df-a63a-47a8-bafa-8c2766619c4e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sampletime",
+                "type": null
+            },
+            "name": "MyField427",
+            "designerId": "3b427078-20e9-411f-a855-21982573a60c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "recorder",
+                "type": null
+            },
+            "name": "MyField428",
+            "designerId": "6e96e12d-4097-4bc9-976f-d7c8f7947cdd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "graphic",
+                "type": null
+            },
+            "name": "MyField429",
+            "designerId": "c04ec816-3bf5-4198-b567-7cf149daba6b"
+        }
+    ]
+}

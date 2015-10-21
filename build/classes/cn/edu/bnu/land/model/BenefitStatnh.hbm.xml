@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-14 10:49:38 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitStatnh" table="benefit_statnh" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="lzsj" type="date">
+            <column name="lzsj" length="10" />
+        </property>
+        <property name="nhxm" type="string">
+            <column name="nhxm" length="16" />
+        </property>
+        <property name="yydkbh" type="string">
+            <column name="yydkbh" length="16" />
+        </property>
+        <property name="lzl" type="java.lang.Integer">
+            <column name="lzl" />
+        </property>
+        <property name="lzlbl" type="java.lang.Integer">
+            <column name="lzlbl" />
+        </property>
+        <property name="sy" type="java.lang.Integer">
+            <column name="sy" />
+        </property>
+        <property name="sybl" type="java.lang.Integer">
+            <column name="sybl" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-10 17:14:08 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.User" table="user" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="20" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="15" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="30" />
+        </property>
+        <property name="smsRequest" type="java.lang.Boolean">
+            <column name="smsRequest">
+                <comment>&#182;&#169;&#212;&#196;&#182;&#204;&#208;&#197;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="mailRequest" type="java.lang.Boolean">
+            <column name="mailRequest">
+                <comment>&#182;&#169;&#212;&#196;&#211;&#202;&#188;&#254;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="cardId" type="string">
+            <column name="cardId" length="20" />
+        </property>
+        <property name="lawmanName" type="string">
+            <column name="lawman_name" length="20" />
+        </property>
+        <property name="lawmanCardId" type="string">
+            <column name="lawman_cardId" length="20" />
+        </property>
+        <property name="lawmanEmail" type="string">
+            <column name="lawman_email" length="30" />
+        </property>
+        <property name="lawmanPhone" type="string">
+            <column name="lawman_phone" length="15" />
+        </property>
+        <property name="lawmanPic" type="string">
+            <column name="lawman_pic" length="50" />
+        </property>
+        <property name="companyName" type="string">
+            <column name="company_name" length="50">
+                <comment>&#185;&#171;&#203;&#190;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="companyCode" type="string">
+            <column name="company_code" length="20">
+                <comment>&#185;&#171;&#203;&#190;&#187;&#250;&#185;&#185;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="companyLicense" type="string">
+            <column name="company_license" length="20">
+                <comment>&#211;&#170;&#210;&#181;&#214;&#180;&#213;&#213;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="companyAdress" type="string">
+            <column name="company_adress" length="30">
+                <comment>&#205;&#168;&#209;&#182;&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="companyPostCode" type="string">
+            <column name="company_postCode" length="15">
+                <comment>&#211;&#202;&#177;&#224;</comment>
+            </column>
+        </property>
+        <property name="companyType" type="string">
+            <column name="company_type" length="20">
+                <comment>&#181;&#165;&#206;&#187;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="companyPhone" type="string">
+            <column name="company_phone" length="15">
+                <comment>&#185;&#204;&#182;&#168;&#181;&#231;&#187;&#176;</comment>
+            </column>
+        </property>
+        <property name="companyCapital" type="java.lang.Float">
+            <column name="company_capital" precision="12" scale="0">
+                <comment>&#215;&#162;&#178;&#225;&#215;&#202;&#189;&#240; &#181;&#165;&#206;&#187;&#205;&#242;&#212;&#170;</comment>
+            </column>
+        </property>
+        <property name="companyBankNum" type="string">
+            <column name="company_bankNum" length="30">
+                <comment>&#210;&#248;&#208;&#208;&#213;&#203;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="companyBank" type="string">
+            <column name="company_bank" length="20">
+                <comment>&#210;&#248;&#208;&#208;</comment>
+            </column>
+        </property>
+        <property name="companyLicensePic" type="string">
+            <column name="company_license_pic" length="50">
+                <comment>&#211;&#170;&#210;&#181;&#214;&#180;&#213;&#213;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+        <property name="companyTaxPic" type="string">
+            <column name="company_tax_pic" length="50">
+                <comment>&#203;&#176;&#202;&#213;&#181;&#199;&#188;&#199;&#214;&#164;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+        <property name="companySociSecurityPic" type="string">
+            <column name="company_sociSecurity_pic" length="50">
+                <comment>&#185;&#171;&#203;&#190;&#201;&#231;&#177;&#163;&#214;&#164;&#195;&#247;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+        <property name="companyOrganizationalCodePic" type="string">
+            <column name="company_organizationalCode_pic" length="50">
+                <comment>&#185;&#171;&#203;&#190;&#215;&#233;&#214;&#175;&#187;&#250;&#185;&#185;&#180;&#250;&#194;&#235;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+        <property name="companyLawmanAuthorizePic" type="string">
+            <column name="company_lawmanAuthorize_pic" length="50">
+                <comment>
+                &#185;&#171;&#203;&#190;&#183;&#168;&#182;&#168;&#180;&#250;&#177;&#237;&#200;&#203;&#202;&#218;&#200;&#168;&#202;&#233;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

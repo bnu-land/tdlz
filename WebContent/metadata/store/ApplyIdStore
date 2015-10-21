@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "ApplyIdStore",
+        "designer|userClassName": "ApplyIdStore",
+        "model": "publicProjectModel",
+        "pageSize": 15,
+        "storeId": "ApplyIdStore"
+    },
+    "designerId": "6a4eec4a-d0ff-4283-aa06-8b5997a7ee88",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "ApplyListId"
+            },
+            "name": "MyAjaxProxy33",
+            "designerId": "e3faed7d-de15-4eda-b1bc-c93cf180f6bb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader33",
+                    "designerId": "1895a115-551e-4088-b950-371bcb99f39d"
+                }
+            ]
+        }
+    ]
+}

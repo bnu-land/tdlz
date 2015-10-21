@@ -1,0 +1,932 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "use_MonitoringSampling",
+        "designer|userClassName": "use_MonitoringSampling",
+        "height": 647,
+        "id": "use_MonitoringSampling",
+        "layout": "fit",
+        "title": "监测抽样",
+        "width": 900
+    },
+    "designerId": "20b9e4c7-d8b1-4131-a19e-a8d132b70d0b",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "title": null
+            },
+            "name": "MyPanel6",
+            "designerId": "abd6f6ab-09c1-4861-9083-56528cc71fb0",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "border",
+                        "layout|region": "east",
+                        "layout|split": true,
+                        "title": null,
+                        "width": 300
+                    },
+                    "name": "MyPanel7",
+                    "designerId": "ea233a0a-d187-49e9-908e-b052617a0b41",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 174,
+                                "layout": "border",
+                                "layout|region": "north",
+                                "layout|split": true,
+                                "title": "抽样地图数据输入"
+                            },
+                            "name": "MyPanel8",
+                            "designerId": "b953c288-1b90-48c3-84ae-14f476a0823e",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": false,
+                                        "container|align": "stretch",
+                                        "layout": "vbox",
+                                        "layout|region": "west",
+                                        "title": null,
+                                        "width": 25
+                                    },
+                                    "name": "MyPanel9",
+                                    "designerId": "64e0abea-9ee1-41cb-85cb-96dbbf9fe6a7",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": null,
+                                                "fieldLabel": null,
+                                                "id": "check_useSampling_ditu",
+                                                "inputValue": "true",
+                                                "labelWidth": 30,
+                                                "layout|margins": "",
+                                                "margin": "2,2,2,2"
+                                            },
+                                            "name": "MyCheckbox4",
+                                            "designerId": "19e63711-f988-4481-ac6f-f9e3dc1dfd77"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": null,
+                                                "fieldLabel": null,
+                                                "id": "check_useSampling_baogao",
+                                                "inputValue": "true",
+                                                "labelWidth": 30,
+                                                "layout|flex": 1,
+                                                "margin": "3,2,2,2"
+                                            },
+                                            "name": "MyCheckbox5",
+                                            "designerId": "d439c5be-f4fd-44f1-a90d-99adc3fde7c8"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": null,
+                                                "fieldLabel": null,
+                                                "id": "check_useSampling_yangben",
+                                                "inputValue": "true",
+                                                "labelWidth": 30,
+                                                "layout|flex": 1,
+                                                "margin": "3,2,2,2"
+                                            },
+                                            "name": "MyCheckbox6",
+                                            "designerId": "d434a0e3-6263-453e-a105-b4d7a11803e4"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": null,
+                                                "fieldLabel": null,
+                                                "id": "check_useSampling_fanwei",
+                                                "inputValue": "true",
+                                                "labelWidth": 30,
+                                                "margin": "3,2,2,2"
+                                            },
+                                            "name": "MyCheckbox7",
+                                            "designerId": "91634e08-f35c-49b3-a880-64d2c2e5e85e"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": null,
+                                                "fieldLabel": null,
+                                                "id": "check_useSampling_zhishi",
+                                                "inputValue": "true",
+                                                "labelWidth": 30,
+                                                "margin": "3,2,2,2"
+                                            },
+                                            "name": "MyCheckbox8",
+                                            "designerId": "998c4363-d41c-4523-980a-825787e21bbe"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": false,
+                                        "container|align": "stretch",
+                                        "layout": "vbox",
+                                        "layout|region": "center",
+                                        "title": null
+                                    },
+                                    "name": "MyPanel10",
+                                    "designerId": "072dce45-ce80-4617-8b8f-b58a90d37de4",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "抽样底图",
+                                                "id": "text_useSampling_ditu",
+                                                "labelWidth": 60,
+                                                "layout|margins": "2,0,0,0",
+                                                "readOnly": true
+                                            },
+                                            "name": "MyTextField23",
+                                            "designerId": "46e6c47f-307d-4e3c-b415-e62717cfa360"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "报告层",
+                                                "id": "text_useSampling_baogao",
+                                                "labelWidth": 60,
+                                                "layout|flex": 1,
+                                                "readOnly": true
+                                            },
+                                            "name": "MyTextField24",
+                                            "designerId": "ce26e142-bb0c-468d-9ab7-1f7c5abbaf59"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "样本层",
+                                                "id": "text_useSampling_yangben",
+                                                "labelWidth": 60,
+                                                "layout|flex": 1,
+                                                "readOnly": true
+                                            },
+                                            "name": "MyTextField25",
+                                            "designerId": "f7056334-58fe-47c5-8e32-7587cdfc3767"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "抽样范围",
+                                                "id": "text_useSampling_fanwei",
+                                                "labelWidth": 60,
+                                                "readOnly": true
+                                            },
+                                            "name": "MyTextField26",
+                                            "designerId": "f7351167-4919-41e3-b459-7f58ad78ef43"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "知识层",
+                                                "id": "text_useSampling_zhishi",
+                                                "labelWidth": 60,
+                                                "readOnly": true
+                                            },
+                                            "name": "MyTextField27",
+                                            "designerId": "abf6e4c8-3c5c-46aa-bb91-73296ab27a9f"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": false,
+                                        "layout|region": "east",
+                                        "title": null,
+                                        "width": 45
+                                    },
+                                    "name": "MyPanel11",
+                                    "designerId": "24e27997-931d-428a-9b12-c9f3c0bcc092",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_useSampling_ditu",
+                                                "margin": "2,2,2,2",
+                                                "text": "浏览"
+                                            },
+                                            "name": "MyButton16",
+                                            "designerId": "9868a240-5c81-4aeb-a9f4-ea2fb8f11945",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtn_useSampling_dituClick",
+                                                        "implHandler": [
+                                                            "var win = Ext.widget('use_SelectLayerWindow');\r",
+                                                            "win.show();\r",
+                                                            "Ext.getCmp('hide_useSampling_whichLayer').setValue('ditu');"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onBtn_useSampling_dituClick",
+                                                    "designerId": "f2a69e0b-89f7-4d7b-8fff-943fbfb55706"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_useSampling_baogao",
+                                                "margin": "3,2,2,2",
+                                                "text": "浏览"
+                                            },
+                                            "name": "MyButton17",
+                                            "designerId": "45b78edc-f05d-4084-9e9e-490829368b80",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtn_useSampling_baogaoClick",
+                                                        "implHandler": [
+                                                            "var win = Ext.widget('use_SelectLayerWindow');\r",
+                                                            "win.show();\r",
+                                                            "Ext.getCmp('hide_useSampling_whichLayer').setValue('baogao');"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onBtn_useSampling_baogaoClick",
+                                                    "designerId": "a06dc626-b848-4fc3-90ca-1c129b2d2860"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_useSampling_yangben",
+                                                "margin": "3,2,2,2",
+                                                "text": "浏览"
+                                            },
+                                            "name": "MyButton18",
+                                            "designerId": "3d5deb20-d733-46a5-bfdf-c5adaf2225c7",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtn_useSampling_yangbenClick",
+                                                        "implHandler": [
+                                                            "var win = Ext.widget('use_SelectLayerWindow');\r",
+                                                            "win.show();\r",
+                                                            "Ext.getCmp('hide_useSampling_whichLayer').setValue('yangben');"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onBtn_useSampling_yangbenClick",
+                                                    "designerId": "b35d9047-7713-4c3e-a2fa-0c8d294d065d"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_useSampling_fanwei",
+                                                "margin": "3,2,2,2",
+                                                "text": "浏览"
+                                            },
+                                            "name": "MyButton19",
+                                            "designerId": "4f669c1d-3c3e-4d21-96cc-c74259b86724",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtn_useSampling_fanweiClick",
+                                                        "implHandler": [
+                                                            "var win = Ext.widget('use_SelectLayerWindow');\r",
+                                                            "win.show();\r",
+                                                            "Ext.getCmp('hide_useSampling_whichLayer').setValue('fanwei');"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onBtn_useSampling_fanweiClick",
+                                                    "designerId": "fe33e16b-5a19-41d0-b220-c047f9aac909"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_useSampling_zhishi",
+                                                "margin": "3,2,2,2",
+                                                "text": "浏览"
+                                            },
+                                            "name": "MyButton20",
+                                            "designerId": "056ff328-3415-47ff-b28b-1e81adb045a7",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtn_useSampling_zhishiClick",
+                                                        "implHandler": [
+                                                            "var win = Ext.widget('use_SelectLayerWindow');\r",
+                                                            "win.show();\r",
+                                                            "Ext.getCmp('hide_useSampling_whichLayer').setValue('zhishi');"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onBtn_useSampling_zhishiClick",
+                                                    "designerId": "645e5307-620e-4cb6-a287-0113b5256b4d"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "layout|region": "center",
+                                "title": "抽样参数设置"
+                            },
+                            "name": "MyPanel12",
+                            "designerId": "bd618f8c-5819-498e-8b81-b8e9707b41d7",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 123,
+                                        "layout": "column",
+                                        "title": null
+                                    },
+                                    "name": "MyPanel13",
+                                    "designerId": "044a3b98-e2b1-42d7-9b59-28613f7e202d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": null,
+                                                "fieldLabel": "知识层数",
+                                                "id": "text_useSampling_zhishiCount",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField28",
+                                            "designerId": "5fefa92a-0b81-4699-96c3-8ffd1f0d5e29"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "总体个数",
+                                                "id": "text_useSampling_zhishiTotal",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField29",
+                                            "designerId": "a711c175-4578-416f-a7c6-f4cfd83d383f"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.ComboBox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "抽样比",
+                                                "id": "combo_useSampling_chouyangRate",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "store": [
+                                                    "[\r",
+                                                    "    [ '1', '90%'],\r",
+                                                    "    [ '2', '80%'],\r",
+                                                    "    [ '3', '70%'],\r",
+                                                    "    [ '4', '60%'],\r",
+                                                    "    [ '5', '50%'],\r",
+                                                    "    [ '6', '40%'],\r",
+                                                    "    [ '7', '30%'],\r",
+                                                    "    [ '8', '20%'],\r",
+                                                    "    [ '9', '10%']\r",
+                                                    "]"
+                                                ],
+                                                "width": 130
+                                            },
+                                            "name": "MyComboBox1",
+                                            "configAlternates": {
+                                                "store": "array"
+                                            },
+                                            "designerId": "58112af8-e30a-450c-b376-27309432683b"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "0.05",
+                                                "fieldLabel": "抽样期望精度",
+                                                "labelWidth": 80,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField30",
+                                            "designerId": "7b1d314e-624b-4fe9-80cd-e75cfba8ad06"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": "",
+                                                "fieldLabel": "费用未知",
+                                                "inputValue": "true",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "uncheckedValue": "false",
+                                                "width": 130
+                                            },
+                                            "name": "MyCheckbox9",
+                                            "designerId": "197112ce-96c7-4a0e-a434-9b4b335542eb",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onCheckboxfieldChange",
+                                                        "implHandler": [
+                                                            "if(newValue){\r",
+                                                            "    Ext.getCmp('text_use_basicFee').disable();\r",
+                                                            "    Ext.getCmp('text_use_PerFee').disable();\r",
+                                                            "    Ext.getCmp('text_use_totalFee').disable();\r",
+                                                            "}else{\r",
+                                                            "    Ext.getCmp('text_use_basicFee').enable();\r",
+                                                            "    Ext.getCmp('text_use_PerFee').enable();\r",
+                                                            "    Ext.getCmp('text_use_totalFee').enable();\r",
+                                                            "}"
+                                                        ],
+                                                        "name": "change",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onCheckboxfieldChange",
+                                                    "designerId": "f29609c4-209a-4b39-a877-c1ce5722bab0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "2000",
+                                                "fieldLabel": "基本费用",
+                                                "id": "text_use_basicFee",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField31",
+                                            "designerId": "73284029-04e0-4c43-bea5-ec899e5bc68e"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "40",
+                                                "fieldLabel": "单样本费用",
+                                                "id": "text_use_PerFee",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField32",
+                                            "designerId": "caa2af3f-ff76-416c-9757-49385479adbf"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "15000",
+                                                "fieldLabel": "总费用",
+                                                "id": "text_use_totalFee",
+                                                "labelWidth": 75,
+                                                "margin": "3,5,3,5",
+                                                "width": 130
+                                            },
+                                            "name": "MyTextField33",
+                                            "designerId": "ca17169d-b8c8-439c-9fb2-18684f57a172"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": null,
+                                        "height": 149,
+                                        "id": "grid_useSampling_feeSet",
+                                        "title": null,
+                                        "width": null
+                                    },
+                                    "name": "MyGridPanel3",
+                                    "designerId": "c6d88dca-7179-41e7-a775-395a86f6e7c4",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "layername",
+                                                "text": "层名"
+                                            },
+                                            "name": "MyColumn8",
+                                            "designerId": "c4bec4b2-f5ca-43d4-a4a2-69e31e49e2ed"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "sqrt",
+                                                "text": "平方根",
+                                                "width": 60
+                                            },
+                                            "name": "MyColumn9",
+                                            "designerId": "6733182f-03c2-4841-a370-b8819b4489cf",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Number",
+                                                    "reference": {
+                                                        "name": "editor",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyNumberField",
+                                                    "designerId": "f621398b-4041-46a1-88d6-f57e850963ce"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "fee",
+                                                "text": "费用",
+                                                "width": 60
+                                            },
+                                            "name": "MyColumn10",
+                                            "designerId": "ecca1a6f-af2d-41e3-ae5f-e7b23b753f42",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "editor",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyTextField34",
+                                                    "designerId": "e966d032-e052-45cd-849b-6a29567aaff5"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.View",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridView3",
+                                            "designerId": "f8cd6ea4-d50e-4a52-81b2-e6cbdc3f7c0a"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onGridpanelAfterRender",
+                                                "implHandler": [
+                                                    "var data = [\r",
+                                                    "    { 'layername': '极度敏感区', 'sqrt': '32', 'fee': '800' },\r",
+                                                    "    { 'layername': '高度敏感区', 'sqrt': '97', 'fee': '6400' },\r",
+                                                    "    { 'layername': '中度敏感区', 'sqrt': '64', 'fee': '3000' },\r",
+                                                    "    { 'layername': '低度敏感区', 'sqrt': '54', 'fee': '1800' },\r",
+                                                    "    { 'layername': '不敏感区', 'sqrt': '42', 'fee': '1000' }\r",
+                                                    "];\r",
+                                                    "var store = new Ext.data.JsonStore({\r",
+                                                    "    data: data,\r",
+                                                    "    fields: ['layername', 'sqrt','fee']\r",
+                                                    "});\r",
+                                                    "Ext.getCmp('grid_useSampling_feeSet').reconfigure(store);"
+                                                ],
+                                                "name": "afterrender",
+                                                "scope": "me"
+                                            },
+                                            "name": "onGridpanelAfterRender",
+                                            "designerId": "30698585-3360-418b-bd7d-e39346463863"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": "Ext.grid.plugin.CellEditing",
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "3dd2ca0e-b94a-41a2-aa1f-5561d1d69f65"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 51,
+                                        "margin": 5,
+                                        "minWidth": 240,
+                                        "text": "生成抽样点并计算样本量",
+                                        "width": null
+                                    },
+                                    "name": "MyButton21",
+                                    "designerId": "70b04361-5752-4000-9a4d-37e13003adb5",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "var tabs = Ext.getCmp('myTabPanel');\r",
+                                                    "tabs.removeAll(true);\r",
+                                                    "var newtab = tabs.add(Ext.widget('use_MonitorResult'));"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "053d59aa-8fba-42a8-855f-00bccc40ea34"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": [
+                            "<div id = \"mapdiv_MonitoringSampling\" style = \"width=100%;height:100%;\">\r",
+                            "</div>"
+                        ],
+                        "layout|region": "center",
+                        "layout|split": true,
+                        "title": "地图预览"
+                    },
+                    "name": "MyPanel14",
+                    "designerId": "de9bd678-7aaf-4b77-a252-fe3040d55b58",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPanelAfterRender",
+                                "implHandler": [
+                                    "//加入地图的js文件\r",
+                                    "var head = document.getElementsByTagName('head')[0];\r",
+                                    "var script= document.createElement(\"script\"); \r",
+                                    "script.type = \"text/javascript\"; \r",
+                                    "script.src=\"map/UseMonitoringSampling_map.js\"; \r",
+                                    "head.appendChild(script);"
+                                ],
+                                "name": "afterrender",
+                                "scope": "me"
+                            },
+                            "name": "onPanelAfterRender",
+                            "designerId": "5dce6f43-9ce1-4f05-a107-7089c0caf269"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

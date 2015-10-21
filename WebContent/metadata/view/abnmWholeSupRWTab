@@ -1,0 +1,389 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "abnmWholeSupRWTab",
+        "designer|userClassName": "abnmWholeSupRWTab",
+        "height": null,
+        "id": "abnmWholeSupRWTab",
+        "layout": "fit",
+        "title": "监管>>全过程异常监管任务表",
+        "width": null
+    },
+    "designerId": "48213580-09a3-4690-ba75-09fb867caa14",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "abnmWholeSupRWGrid",
+                "store": "abnmWSRWstore",
+                "title": ""
+            },
+            "name": "MyGridPanel65",
+            "designerId": "fc6d3e0a-1564-442b-821d-9ff65b28f1db",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer57",
+                    "designerId": "ae97c210-dadd-4109-9b7a-cba6e4ae7398"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwId",
+                        "text": "任务编号"
+                    },
+                    "name": "MyColumn277",
+                    "designerId": "ef6b5f08-8769-4db9-8a9c-36aab3aeb0ba"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号"
+                    },
+                    "name": "MyColumn278",
+                    "designerId": "8d93c2ea-63a8-4eeb-9526-1e61729849f4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectName",
+                        "text": "项目名称"
+                    },
+                    "name": "MyColumn279",
+                    "designerId": "2537ada3-d827-4c58-99c1-6ac021a35f55"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwContent",
+                        "text": "任务描述"
+                    },
+                    "name": "MyColumn280",
+                    "designerId": "46f4d308-a9fb-44f5-865e-2bc16d7d9a17"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwClass",
+                        "text": "任务类别"
+                    },
+                    "name": "MyColumn281",
+                    "designerId": "b0f588c7-3d46-49b1-bb25-f0613ca19f76"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwGeneratetime",
+                        "format": "Y-m-d",
+                        "text": "任务生成时间"
+                    },
+                    "name": "MyDateColumn55",
+                    "designerId": "6bdd5496-ae9c-40ea-be99-5d5e3f2dcecc"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwStarttime",
+                        "format": "Y-m-d",
+                        "text": "任务执行时间"
+                    },
+                    "name": "MyDateColumn56",
+                    "designerId": "75f2c7b7-a0ce-403f-810a-5e238c021488"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwEndtime",
+                        "format": "Y-m-d",
+                        "text": "任务截止时间"
+                    },
+                    "name": "MyDateColumn57",
+                    "designerId": "a0dec9df-4770-434e-acd4-2577931e7737"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwSubmittime",
+                        "format": "Y-m-d",
+                        "text": "任务提交时间"
+                    },
+                    "name": "MyDateColumn58",
+                    "designerId": "648b805c-a553-424f-a051-e5d83841dc28"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwIsfinished",
+                        "text": "任务是否完成"
+                    },
+                    "name": "MyColumn282",
+                    "designerId": "1169f928-58a4-4f86-be1e-41a45057dae3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwResponsiblePerson",
+                        "text": "下达任务人"
+                    },
+                    "name": "MyColumn283",
+                    "designerId": "0cbec5bc-2a60-41ef-9ea8-01956b8cafb4"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView65",
+                    "designerId": "7c03574f-5d8e-42ad-b316-959ebefc874f"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "abnmWSRWstore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar49",
+                    "designerId": "8ce4a0e8-138b-4a46-9fbe-378a84ca6a7f"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar79",
+                    "designerId": "6388fd60-b27a-4ed1-821c-1b3518f304a3",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": null,
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton296",
+                            "designerId": "24ac8889-4688-4a37-ba25-3bd26b9b19f9",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "tabs.add(Ext.widget('abnmWholeSupervisionTab'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "8ae78440-0c24-483e-968a-8095cdc3b46b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除"
+                            },
+                            "name": "MyButton297",
+                            "designerId": "2bf25cc4-8c6f-47fa-9efd-233eafb45ad1",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('abnmWholeSupRWGrid');\r",
+                                            "//var gird = this.down('grid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  ids =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        ids[i] = record[i].get(\"rwId\");\r",
+                                            "\r",
+                                            "    }\r",
+                                            "    //Ext.Msg.alert('提示',ids);\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'delete_abwsRWByIds',\r",
+                                            "        params:{ids:ids},        \r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('成功','删除成功');\r",
+                                            "            var mystore = Ext.StoreMgr.get('abnmWSRWstore');\r",
+                                            "            mystore.load();         \r",
+                                            "        },\r",
+                                            "        failure:function(response){\r",
+                                            "            Ext.Msg.alert('失败','删除失败');      \r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "522a1594-7996-4739-a377-bbed457f0820"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onTasktableGridCellClick",
+                        "implHandler": [
+                            "if(cellIndex >1 && cellIndex <12){\r",
+                            "    var win = Ext.widget('abnmWSRWUpdateTab');\r",
+                            "    win.show();\r",
+                            "    var getForm = Ext.getCmp('abnmWSRWUpdateForm').getForm();\t//获取form\r",
+                            "    getForm.loadRecord(record);\r",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onTasktableGridCellClick",
+                    "designerId": "3b380f61-c259-4bca-8924-70844f30f710"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel57",
+                    "designerId": "321ea36c-b780-4711-934b-7e4d299ba201"
+                }
+            ]
+        }
+    ]
+}

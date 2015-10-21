@@ -1,0 +1,728 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateReport",
+        "designer|userClassName": "EvaluateReport",
+        "layout": "fit",
+        "title": "项目验收评价结果"
+    },
+    "designerId": "bf1ed606-0167-4d40-83ed-94af2b7df0bd",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar19",
+            "designerId": "4059b38a-b756-4bfd-9573-2a87c7bf205a",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": "EvaluateID",
+                        "layout|flex": null
+                    },
+                    "name": "MyTextField115",
+                    "designerId": "2eba1d58-7b97-470a-95f0-5f0e85389a1c"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|flex": null,
+                        "text": "查询"
+                    },
+                    "name": "MyButton79",
+                    "designerId": "5dcc63ed-752f-4302-a123-1ffc4b51f60e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var mystore=Ext.StoreMgr.get('EvaluateReportStore');\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"25\",\r",
+                                    "    searchKeyword:Ext.getCmp('EvaluateID').getValue()\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "46293037-c5a2-4f67-9aa8-cd6c2d022bae"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/file_view0.png",
+                        "layout|flex": null,
+                        "text": "上传验收文档"
+                    },
+                    "name": "MyButton80",
+                    "designerId": "99436d17-03c1-401c-b337-1c3f27a609f1",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 250,\r",
+                                    "    width: 568,\r",
+                                    "    layout: {\r",
+                                    "        type: 'fit'\r",
+                                    "    },\r",
+                                    "    title: '文件上传',    \r",
+                                    "\r",
+                                    "    modal: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        height: 110,\r",
+                                    "        id: 'fileForm',\r",
+                                    "        autoScroll: true,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        title: '',\r",
+                                    "        jsonSubmit: true,\r",
+                                    "        method: 'post',\r",
+                                    "        url: 'submit_applyFile',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            handler: function(button, event) {\r",
+                                    "                var excelName=Ext.getCmp('projectReportFile').getRawValue();\r",
+                                    "                var excelName1=Ext.getCmp('expertFile').getRawValue();\r",
+                                    "                var formPanel=Ext.getCmp('fileForm');\r",
+                                    "                if (excelName==\"\"||excelName1==\"\"){  \r",
+                                    "                    Ext.Msg.show({title:'提示',msg:'请选择文件!',buttons:Ext.Msg.OK,icon:Ext.MessageBox.INFOR});  \r",
+                                    "                    return;  \r",
+                                    "                }else {  \r",
+                                    "                    var array = new Array();  \r",
+                                    "                    array = excelName.split(\"\\\\\");  \r",
+                                    "                    var length = array.length;  \r",
+                                    "                    var fileName = \"\";  \r",
+                                    "                    var index = 0;  \r",
+                                    "                    for (index = 0; index < length; index++) {  \r",
+                                    "                        if (fileName == \"\") {  \r",
+                                    "                            fileName = array[index];  \r",
+                                    "                        } else {  \r",
+                                    "                            fileName = fileName + \"/\" + array[index];  \r",
+                                    "                        }  \r",
+                                    "                    }  \r",
+                                    "                }\r",
+                                    "\r",
+                                    "                formPanel.getForm().submit(\r",
+                                    "                {\r",
+                                    "                    url:'projectFileupload',\r",
+                                    "                    method:'post',\r",
+                                    "                    waitMsg:'数据上传中, 请稍等...',  \r",
+                                    "                    success:function(form, action){                    \r",
+                                    "                        Ext.MessageBox.alert('信息',action.result.msg);\r",
+                                    "                    },\r",
+                                    "                    failure:function(){\r",
+                                    "                        Ext.MessageBox.alert(\"提示信息\",\"请求失败,文件上传失败\");\r",
+                                    "                    }\r",
+                                    "                } \r",
+                                    "                );                                \r",
+                                    "            },\r",
+                                    "            x: 230,\r",
+                                    "            y: 180,\r",
+                                    "            text: '上传文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 70,\r",
+                                    "            y: 50,\r",
+                                    "            id: 'projectReportFile',\r",
+                                    "            fieldLabel: '竣工报告',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'projectReportFile',\r",
+                                    "            buttonText: '浏览'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 70,\r",
+                                    "            y: 115,\r",
+                                    "            id: 'expertFile',\r",
+                                    "            fieldLabel: '项目验收专家扫描件',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'expertFile',\r",
+                                    "            buttonText: '浏览'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "\r",
+                                    "win.show();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "32cf90f3-fab3-4928-85b8-c6a173bf14f0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/file_view0.png",
+                        "layout|flex": null,
+                        "text": "竣工报告"
+                    },
+                    "name": "MyButton81",
+                    "designerId": "b21d9d6d-279f-4c1c-bc2e-a418bbb2550b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 400,\r",
+                                    "    width: 620,\r",
+                                    "    title: '竣工报告',\r",
+                                    "    closable: true,\r",
+                                    "    layout: 'fit',\r",
+                                    "    jsonSubmit: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        height: 400,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        title: '',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'image',\r",
+                                    "            x: 0,\r",
+                                    "            y: 0,\r",
+                                    "            height: 395,\r",
+                                    "            width: 615,\r",
+                                    "            src: 'images/jungong.jpg'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "win.show();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "d2b8e09c-43b8-44ba-a446-402785810ea1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/file_view0.png",
+                        "layout|flex": null,
+                        "text": "专家意见扫描件"
+                    },
+                    "name": "MyButton82",
+                    "designerId": "c4a80c0d-fd6c-4264-82bf-f353a890325e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 620,\r",
+                                    "    width: 425,\r",
+                                    "    title: '专家意见扫描件',\r",
+                                    "    closable: true,\r",
+                                    "    layout: 'fit',\r",
+                                    "    jsonSubmit: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        height: 610,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        title: '',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'image',\r",
+                                    "            x: 0,\r",
+                                    "            y: 0,\r",
+                                    "            height: 600,\r",
+                                    "            width: 410,\r",
+                                    "            src: 'images/expert.jpg'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "win.show();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "c6746d8e-9901-4515-93e8-249fbd1f30db"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/return.png",
+                        "layout|flex": null,
+                        "text": "返回到项目管理"
+                    },
+                    "name": "MyButton83",
+                    "designerId": "bb59d077-0ce8-4152-b24c-07d843645411",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "var newtab = tabs.add(Ext.widget('manageProject'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "fd7ecc14-80ce-42a4-9aa9-bf757bfc77aa"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "EvaluateReportGrid",
+                "store": "EvaluateReportStore",
+                "title": ""
+            },
+            "name": "MyGridPanel15",
+            "designerId": "edc52d67-8f8e-4790-b631-f24c16d58af7",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号"
+                    },
+                    "name": "MyColumn82",
+                    "designerId": "cf66b8e5-788f-43ae-bc4c-29d74b17c76d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "text": "项目名称"
+                    },
+                    "name": "MyColumn83",
+                    "designerId": "7d01b990-3d41-4f18-abb3-1a97011f102f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "soilAuditOpinion",
+                        "text": "土壤质量审核意见",
+                        "width": 130
+                    },
+                    "name": "MyColumn84",
+                    "designerId": "b47426db-3618-478b-b6a0-c3b9f7c3fa5e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gongResults",
+                        "text": "工程质量验收结果",
+                        "width": 130
+                    },
+                    "name": "MyColumn85",
+                    "designerId": "e20d0625-5b4b-4f59-9529-1ec800a686d5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "expertResults",
+                        "text": "专家综合评价结果",
+                        "width": 150
+                    },
+                    "name": "MyColumn86",
+                    "designerId": "882413db-5192-45fc-9077-70e3186d6a8f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "soilQualityGrade",
+                        "text": "土壤质量结果"
+                    },
+                    "name": "MyColumn87",
+                    "designerId": "0e97462d-33a4-4232-a674-4c12baff7b75"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "soilQualityComment",
+                        "text": "土壤质量备注说明",
+                        "width": 140
+                    },
+                    "name": "MyColumn88",
+                    "designerId": "55a4bf71-27f6-44f0-8590-0dd3d330c43b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gongCqgc",
+                        "text": "拆迁工程质量"
+                    },
+                    "name": "MyColumn89",
+                    "designerId": "47f8afd4-b985-4706-853f-d9bc402bfee0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gongNtsl",
+                        "text": "农田水利工程质量",
+                        "width": 130
+                    },
+                    "name": "MyColumn90",
+                    "designerId": "6d690b03-afe8-4aa3-9ef5-82f766d4f926"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gongTdpz",
+                        "text": "土地平整工程质量",
+                        "width": 130
+                    },
+                    "name": "MyColumn91",
+                    "designerId": "33b7ef5e-e765-42ac-81b3-d966f31b1939"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gongTjdl",
+                        "text": "田间道路工程质量",
+                        "width": 130
+                    },
+                    "name": "MyColumn92",
+                    "designerId": "ade2bdd4-6887-4e48-afb0-5f37b0d8c6b7"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "microreliefDescription",
+                        "text": "专家微地貌描述",
+                        "width": 120
+                    },
+                    "name": "MyColumn93",
+                    "designerId": "2bf9fdb4-8cae-4753-aef2-e74c56888295"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "trafficConditions",
+                        "text": "项目交通条件专家意见",
+                        "width": 150
+                    },
+                    "name": "MyColumn94",
+                    "designerId": "49c174a0-3f8a-454a-9310-00357ce0ea15"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "goukanQuality",
+                        "text": "沟粪函坎质量专家意见",
+                        "width": 150
+                    },
+                    "name": "MyColumn95",
+                    "designerId": "7b57d43f-2844-43b9-b5fd-157c247e228d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "landProportion",
+                        "text": "田土比重",
+                        "width": 100
+                    },
+                    "name": "MyColumn96",
+                    "designerId": "b6681e95-c90d-4dab-a71b-716225d938d7"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "waterStorageCapacity",
+                        "text": "蓄水能力",
+                        "width": 100
+                    },
+                    "name": "MyColumn97",
+                    "designerId": "e6d56175-eefb-435a-ba9e-99669d2a7ae6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fertilityEvaluation",
+                        "text": "土壤肥力专家意见",
+                        "width": 150
+                    },
+                    "name": "MyColumn98",
+                    "designerId": "bd492b5a-f66b-4685-ba22-14f2552fc81a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "formingClodsDegree",
+                        "text": "主体田块成型度",
+                        "width": 150
+                    },
+                    "name": "MyColumn99",
+                    "designerId": "d0a45665-10f7-430b-8ee3-4db0e98179a8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "expert",
+                        "text": "专家姓名与单位",
+                        "width": 150
+                    },
+                    "name": "MyColumn100",
+                    "designerId": "f5a8b61a-c8e7-43c6-972a-7e412533a0e8"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "EvaluateReportView"
+                    },
+                    "name": "MyGridView15",
+                    "designerId": "1b9ab24d-060f-4aee-a26b-e8b5e885f1e6"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "EvaluateReportStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar10",
+                    "designerId": "2e41105d-1689-4b44-a828-9ccabdf0a918"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel9",
+                    "designerId": "1863e1ee-f6f9-46bd-9367-ed4e0209db56"
+                }
+            ]
+        }
+    ]
+}

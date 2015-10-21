@@ -1,0 +1,59 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "syrSchemeShow3",
+        "model": "publicProjectModel",
+        "pageSize": 15,
+        "storeId": "syrSchemeShow3"
+    },
+    "designerId": "4df8a9c2-96b5-4575-8c41-2bcd71d557ff",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    projectId:'',\r",
+                    "    province:'',\r",
+                    "    city:'',\r",
+                    "    county:'',\r",
+                    "    town:'',\r",
+                    "    contructstarttime:'',\r",
+                    "    contructendtime:''\r",
+                    "}\r",
+                    ""
+                ],
+                "url": "FKSchemeShow3"
+            },
+            "name": "MyAjaxProxy15",
+            "designerId": "62f7cd56-418b-4b52-a97f-d427d7df4eca",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader15",
+                    "designerId": "2acee269-8c61-4e40-bab9-fd2d2391b125"
+                }
+            ]
+        }
+    ]
+}

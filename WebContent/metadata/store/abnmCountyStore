@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmCountyStore",
+        "model": "infoAreaModel",
+        "pageSize": null,
+        "storeId": "abnmCountyStore"
+    },
+    "designerId": "096e2945-6e0a-4f68-bdd5-bfb5935172dc",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{codeHead:''}"
+                ],
+                "url": "get_infoAreaCountyList"
+            },
+            "name": "MyAjaxProxy75",
+            "designerId": "39b93054-73fa-4e47-8b3c-98ec7eabfaf5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader75",
+                    "designerId": "bfb47de6-7584-41ec-ac75-850c035c4aed"
+                }
+            ]
+        }
+    ]
+}

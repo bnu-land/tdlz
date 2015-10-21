@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-29 11:13:47 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Warningresults" table="warningresults" catalog="tdlz">
+        <id name="warningresultsDkid" type="java.lang.Integer">
+            <column name="warningresults_dkid" />
+            <generator class="identity" />
+        </id>
+        <property name="warningresultsTime" type="date">
+            <column name="warningresults_time" length="10" />
+        </property>
+        <property name="warningresultsResult" type="java.lang.Boolean">
+            <column name="warningresults_result" />
+        </property>
+    </class>
+</hibernate-mapping>

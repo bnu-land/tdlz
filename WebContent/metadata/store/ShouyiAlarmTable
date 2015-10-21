@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ShouyiAlarmTable",
+        "model": "ShouyiAlarmTable",
+        "sortRoot": "",
+        "storeId": "ShouyiAlarmTable"
+    },
+    "designerId": "07bad1c0-5e07-4da7-b0bb-90dbf43e75c6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword:'',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList15"
+            },
+            "name": "MyAjaxProxy6",
+            "designerId": "dbed89ce-7b8d-4d35-99e2-265d1edf1e22",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader6",
+                    "designerId": "c4400d8f-c987-4818-b1d4-a3afcf1b58ad"
+                }
+            ]
+        }
+    ]
+}

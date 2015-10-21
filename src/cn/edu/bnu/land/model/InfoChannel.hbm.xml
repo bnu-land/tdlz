@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-11-29 14:21:14 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoChannel" table="info_channel" catalog="tdlz">
+        <id name="channelId" type="java.lang.Integer">
+            <column name="channel_id" />
+            <generator class="identity" />
+        </id>
+        <property name="channelName" type="string">
+            <column name="channel_name" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

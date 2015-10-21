@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-26 16:49:58 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitStatjs" table="benefit_statjs" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="dwmc" type="string">
+            <column name="dwmc" length="64" />
+        </property>
+        <property name="sjdkbh" type="string">
+            <column name="sjdkbh" length="16" />
+        </property>
+        <property name="cyrw" type="string">
+            <column name="cyrw" length="128" />
+        </property>
+        <property name="cysj" type="date">
+            <column name="cysj" length="10" />
+        </property>
+        <property name="sy" type="java.lang.Integer">
+            <column name="sy" />
+        </property>
+        <property name="sybl" type="java.lang.Integer">
+            <column name="sybl" />
+        </property>
+    </class>
+</hibernate-mapping>

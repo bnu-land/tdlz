@@ -1,0 +1,393 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "updateFkdikuai",
+        "designer|userClassName": "updateFkdikuai",
+        "frame": true,
+        "id": "addFkdikuai2",
+        "layout": "fit",
+        "title": "项目片块管理"
+    },
+    "designerId": "73d934cf-1512-4768-ae2a-5072ba9b542f",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "updateFkdikuaiForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "method": "POST",
+                "standardSubmit": false,
+                "title": "",
+                "url": "update_projectDikuai"
+            },
+            "name": "MyForm16",
+            "designerId": "aea9ac33-de72-4c5c-9175-7e7e31a933f8",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "记录号",
+                        "hidden": true,
+                        "layout|x": 700,
+                        "layout|y": 150,
+                        "name": "recordId"
+                    },
+                    "name": "MyTextField74",
+                    "designerId": "388193c2-bd07-4ee0-90aa-75f60a31c858"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "片块编号",
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "landId"
+                    },
+                    "name": "MyTextField75",
+                    "designerId": "fafc5fb2-9284-4bd0-84c2-d903ea2cb4f4"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "layout|x": 40,
+                        "layout|y": 90,
+                        "name": "projectId"
+                    },
+                    "name": "MyTextField76",
+                    "designerId": "dfa44834-f86e-4b2f-931b-680c8961a5f8"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目名称",
+                        "layout|x": 40,
+                        "layout|y": 140,
+                        "name": "projectname"
+                    },
+                    "name": "MyTextField77",
+                    "designerId": "a6533673-8411-44cb-97e2-0958d3cf9371"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权利人",
+                        "layout|x": 40,
+                        "layout|y": 190,
+                        "name": "personRights"
+                    },
+                    "name": "MyTextField78",
+                    "designerId": "668fefe0-361a-49b4-9253-468b0a2b3a8d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "土地产权属性",
+                        "layout|x": 40,
+                        "layout|y": 240,
+                        "name": "ownershipUnits"
+                    },
+                    "name": "MyTextField79",
+                    "designerId": "6d229065-ded5-4b66-b569-96cb6e18f0e2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "图斑号",
+                        "layout|x": 420,
+                        "layout|y": 190,
+                        "name": "polygonNumber"
+                    },
+                    "name": "MyTextField80",
+                    "designerId": "b6f15dff-a686-457f-91e4-4c43c0b4ac5f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "片块位置",
+                        "layout|x": 420,
+                        "layout|y": 40,
+                        "name": "landLocation"
+                    },
+                    "name": "MyTextField81",
+                    "designerId": "259a601c-5c2c-40ad-a4e0-111fabf4949f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "片块面积(公顷)",
+                        "layout|x": 420,
+                        "layout|y": 90,
+                        "name": "fukenArea"
+                    },
+                    "name": "MyTextField82",
+                    "designerId": "711ee2f6-d915-49ee-9ab3-267505e06000"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "宅基地产权证号",
+                        "layout|x": 40,
+                        "layout|y": 290,
+                        "name": "propertyNumber"
+                    },
+                    "name": "MyTextField83",
+                    "designerId": "712f110c-c708-4f46-851c-578460e3d5c9"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦后产权证号",
+                        "layout|x": 40,
+                        "layout|y": 340,
+                        "name": "fuKenhouPropertyNumber"
+                    },
+                    "name": "MyTextField84",
+                    "designerId": "60dd821d-3312-40ca-984d-8edcd9b44395"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "图幅号",
+                        "layout|x": 420,
+                        "layout|y": 140,
+                        "name": "mapSheetNumber"
+                    },
+                    "name": "MyTextField85",
+                    "designerId": "29fb0f4f-5307-427a-87cb-140da6d68e25"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "新建住房占地面积（公顷）",
+                        "layout|x": 420,
+                        "layout|y": 240,
+                        "name": "newHousingArea"
+                    },
+                    "name": "MyTextField86",
+                    "designerId": "e182c538-4d5b-4106-8404-55d515247643"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦前土地利用类型",
+                        "layout|x": 420,
+                        "layout|y": 280,
+                        "name": "fukenqianLandUse"
+                    },
+                    "name": "MyTextField87",
+                    "designerId": "6bae03ba-44d4-466b-b94e-4cbc3014fd60"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "去向",
+                        "layout|x": 420,
+                        "layout|y": 340,
+                        "name": "whereAbouts"
+                    },
+                    "name": "MyTextField88",
+                    "designerId": "b0d668c2-a593-4d94-b1c2-9dab3d553ecf"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "layout|x": 38,
+                        "layout|y": 9
+                    },
+                    "name": "MyToolbar14",
+                    "designerId": "3c2f7a68-d388-442c-83fc-539b019a50a2",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_save.png",
+                                "iconCls": "imgs/table/table_save.png",
+                                "layout|flex": null,
+                                "text": "更新片块信息"
+                            },
+                            "name": "MyButton60",
+                            "designerId": "1eb16b24-b331-4ea1-a853-847e41ce5e78",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var form = this.up('form').getForm(); // get the basic form\r",
+                                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                                            "    form.submit({\r",
+                                            "        success: function(form, action) {\r",
+                                            "            Ext.Msg.alert('Success', action.result.msg);\r",
+                                            "        },\r",
+                                            "        failure: function(form, action) {\r",
+                                            "            Ext.Msg.alert('Failed', action.result.msg);\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "} else { // display error alert if the data is invalid\r",
+                                            "    Ext.Msg.alert('Invalid Data', 'Please correct form errors.');\r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "a2a9cb09-173a-4496-a7ef-3212d7500742"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "iconCls": "imgs/form/return.png",
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton61",
+                            "designerId": "34113540-67d4-4888-b84e-6836a96e0069",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "var newtab = tabs.add(Ext.widget('manageProjectDikuai'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "2c9b8e60-662a-4924-abb4-188f5b3d73c0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

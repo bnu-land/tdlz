@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-29 16:38:56 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkQualityreport" table="fk_qualityreport" catalog="tdlz">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="recordId" />
+            <generator class="identity" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="projectId" length="45" not-null="true" />
+        </property>
+        <property name="projectname" type="string">
+            <column name="projectname" length="45" />
+        </property>
+        <property name="soilQualityGrade" type="string">
+            <column name="soilQualityGrade" length="45" />
+        </property>
+        <property name="soilQualityComment" type="string">
+            <column name="soilQualityComment" length="150" />
+        </property>
+        <property name="soilAuditOpinion" type="string">
+            <column name="soilAuditOpinion" length="150" />
+        </property>
+        <property name="gongResults" type="string">
+            <column name="gongResults" length="50" />
+        </property>
+        <property name="gongCqgc" type="string">
+            <column name="gongCqgc" length="150" />
+        </property>
+        <property name="gongTdpz" type="string">
+            <column name="gongTdpz" length="150" />
+        </property>
+        <property name="gongNtsl" type="string">
+            <column name="gongNtsl" length="150" />
+        </property>
+        <property name="gongTjdl" type="string">
+            <column name="gongTjdl" length="150" />
+        </property>
+        <property name="microreliefDescription" type="string">
+            <column name="microreliefDescription" length="150" />
+        </property>
+        <property name="trafficConditions" type="string">
+            <column name="trafficConditions" length="100" />
+        </property>
+        <property name="goukanQuality" type="string">
+            <column name="goukanQuality" length="100" />
+        </property>
+        <property name="landProportion" type="string">
+            <column name="landProportion" length="100" />
+        </property>
+        <property name="waterStorageCapacity" type="string">
+            <column name="waterStorageCapacity" length="80" />
+        </property>
+        <property name="fertilityEvaluation" type="string">
+            <column name="fertilityEvaluation" length="80" />
+        </property>
+        <property name="formingClodsDegree" type="string">
+            <column name="formingClodsDegree" length="80" />
+        </property>
+        <property name="expertResults" type="string">
+            <column name="expertResults" length="150" />
+        </property>
+        <property name="expert" type="string">
+            <column name="expert" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

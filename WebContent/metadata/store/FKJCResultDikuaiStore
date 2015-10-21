@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "FKJCResultDikuaiStore",
+        "designer|userClassName": "FKJCResultDikuaiStore",
+        "model": "FkProjectDikuaiModel",
+        "storeId": "FKJCResultDikuaiStore"
+    },
+    "designerId": "ec61529e-baa9-40c9-9187-6fad9a5b8786",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{projectname: ''}"
+                ],
+                "url": "result_selectDikuai"
+            },
+            "name": "MyAjaxProxy83",
+            "designerId": "1f72fd89-cf4f-4860-b059-86cc2d725ac7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader83",
+                    "designerId": "50b1111a-4854-475d-b224-9d56107c7469"
+                }
+            ]
+        }
+    ]
+}

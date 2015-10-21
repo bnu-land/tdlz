@@ -1,0 +1,52 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "syrProgress",
+        "model": "syrProgress",
+        "pageSize": 15,
+        "storeId": "syrProgress"
+    },
+    "designerId": "819f50a5-e47c-44f7-8ae5-82152593a287",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{projectname:'',\r",
+                    " monitorstart:'',\r",
+                    " monitornend:''}"
+                ],
+                "url": "syrProgress"
+            },
+            "name": "MyAjaxProxy98",
+            "designerId": "60685c0d-2e6e-47c4-ab3d-b167e25fbe42",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader98",
+                    "designerId": "5dbe33db-1f8d-43e2-863a-82fec49853f4"
+                }
+            ]
+        }
+    ]
+}

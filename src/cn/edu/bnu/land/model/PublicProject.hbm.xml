@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-24 21:36:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.PublicProject" table="`public_project`" catalog="tdlz">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="projectID" length="45" />
+        </property>
+        <property name="projectname" type="string">
+            <column name="Projectname" length="100" />
+        </property>
+        <property name="rlocation" type="string">
+            <column name="RLocation" length="100" />
+        </property>
+        <property name="rmapnumber" type="string">
+            <column name="RMapnumber" length="45" />
+        </property>
+        <property name="rarea" type="string">
+            <column name="RArea" length="45" />
+        </property>
+        <property name="rqualityFlag" type="string">
+            <column name="RQualityFlag" length="45" />
+        </property>
+        <property name="conUnit" type="string">
+            <column name="conUnit" length="45" />
+        </property>
+        <property name="starttime" type="date">
+            <column name="starttime" length="10" />
+        </property>
+        <property name="completiontime" type="date">
+            <column name="completiontime" length="10" />
+        </property>
+        <property name="rmoney" type="string">
+            <column name="rmoney" length="45" />
+        </property>
+        <property name="areaCode" type="string">
+            <column name="area_code" length="50" />
+        </property>
+        <property name="showYesno" type="string">
+            <column name="show_yesno" length="50">
+                <comment>&#202;&#199;&#183;&#241;&#210;&#209;&#185;&#171;&#202;&#190;</comment>
+            </column>
+        </property>
+        <property name="isfinished" type="java.lang.Boolean">
+            <column name="isfinished" />
+        </property>
+        <property name="latelyMonitortime" type="date">
+            <column name="lately_monitortime" length="10" />
+        </property>
+        <property name="ppercentPz" type="java.lang.Float">
+            <column name="ppercent_pz" precision="12" scale="0" />
+        </property>
+        <property name="ppercentSl" type="java.lang.Float">
+            <column name="ppercent_sl" precision="12" scale="0" />
+        </property>
+        <property name="ppercentDl" type="java.lang.Float">
+            <column name="ppercent_dl" precision="12" scale="0" />
+        </property>
+        <property name="isNormal" type="java.lang.Boolean">
+            <column name="is_normal" />
+        </property>
+    </class>
+</hibernate-mapping>

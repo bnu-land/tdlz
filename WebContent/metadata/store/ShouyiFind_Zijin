@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ShouyiFind_Zijin",
+        "model": "ShouyiFind_Zijin",
+        "storeId": "ShouyiFind_Zijin"
+    },
+    "designerId": "4a3ae3bc-0774-45f9-908a-df142ba6d984",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchKeyword2: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": "getBenefitList11"
+            },
+            "name": "MyAjaxProxy4",
+            "designerId": "011eac90-f6bc-4b15-91b9-1fd981e9c118",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader4",
+                    "designerId": "1f01ca12-e51b-4639-a1fc-cb1d59c5ae50"
+                }
+            ]
+        }
+    ]
+}

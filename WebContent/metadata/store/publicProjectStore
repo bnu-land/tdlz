@@ -1,0 +1,76 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "publicProjectStore",
+        "designer|userClassName": "publicProjectStore",
+        "model": "publicProjectModel",
+        "pageSize": 15,
+        "storeId": "publicProjectStore"
+    },
+    "designerId": "cca279d6-1a7c-4de5-b817-9399e93fd802",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeywordName:'',\r",
+                    "    searchKeywordID:'',\r",
+                    "    searchKeywordSite:'',\r",
+                    "    searchKeywordStarttime:''\r",
+                    "}"
+                ],
+                "url": "findUser"
+            },
+            "name": "MyAjaxProxy31",
+            "designerId": "a9049353-0538-45f4-b3da-a17590365f9b",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader31",
+                    "designerId": "047a1172-b57c-4992-9504-b8a11ccf3a7f"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "//var extra_params={searchKeyword:Ext.getCmp('searchKeyword1').getValue()\r",
+                    "//};\r",
+                    "//Ext.apply(store.proxy.extraParams,extra_params);"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "4c08d0ed-5b86-41b8-8a39-936b868ba409"
+        }
+    ]
+}

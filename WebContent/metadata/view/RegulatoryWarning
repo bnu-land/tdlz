@@ -1,0 +1,266 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "RegulatoryWarning",
+        "designer|userClassName": "RegulatoryWarning",
+        "layout": "fit",
+        "title": "复垦验收监管预警"
+    },
+    "designerId": "80234d37-cc71-4802-a7fd-c4cde80618be",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "id": "RegulatoryWarning",
+                "layout": "border",
+                "title": ""
+            },
+            "name": "MyForm28",
+            "designerId": "b18bc0a8-40c1-4845-a7f0-c6c31808d128",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "RegulatoryGrid",
+                        "layout|region": "center",
+                        "store": "FkRegulatoryStore",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel30",
+                    "designerId": "33d258f3-ddf4-4f08-9fc1-1b82d66abc48",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsTitle",
+                                "text": "预警标题",
+                                "width": 300
+                            },
+                            "name": "MyColumn173",
+                            "designerId": "e9cd7178-d092-4991-aa88-4a27e4700d0e"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsContent",
+                                "text": "预警内容",
+                                "width": 200
+                            },
+                            "name": "MyColumn174",
+                            "designerId": "00a9e487-eac8-41e5-ab68-95b0f944591b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsClass",
+                                "text": "预警所属类别"
+                            },
+                            "name": "MyColumn175",
+                            "designerId": "0f542871-ccdd-4092-8a47-61ed17ce7be1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsOpinion",
+                                "text": "处理意见",
+                                "width": 250
+                            },
+                            "name": "MyColumn176",
+                            "designerId": "99735a84-e5cd-4b5f-932a-1fb93c697ac9"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsDate",
+                                "format": "Y-m-d",
+                                "text": "日期"
+                            },
+                            "name": "MyDateColumn26",
+                            "designerId": "e45b6a91-a3ee-483a-9f4f-05d9b0286812"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "abwsIsSolved",
+                                "text": "预警问题是否处理"
+                            },
+                            "name": "MyColumn177",
+                            "designerId": "22507f88-09e8-4199-b8fc-9063a33d85de"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "YjGridView"
+                            },
+                            "name": "MyGridView30",
+                            "designerId": "f95fbb0c-65ec-4f40-8098-10a6715da20d"
+                        },
+                        {
+                            "type": "Ext.grid.plugin.RowEditing",
+                            "reference": {
+                                "name": "plugins",
+                                "type": "array"
+                            },
+                            "codeClass": "Ext.grid.plugin.RowEditing",
+                            "name": "MyRowEditingPlugin",
+                            "designerId": "c2b6639e-40f4-4578-8ba4-92799873544e"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar41",
+                            "designerId": "b9a74d6f-4db9-4f03-bdbe-cda03774804a",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "预警标题",
+                                        "id": "YuJingtitle",
+                                        "layout|flex": null
+                                    },
+                                    "name": "MyTextField169",
+                                    "designerId": "3b1a73b9-5c72-4d62-a9c2-585821b77b9e"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查询"
+                                    },
+                                    "name": "MyButton169",
+                                    "designerId": "f699b0a9-172e-4951-86af-969cd7dbfffc",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var mystore=Ext.StoreMgr.get('FkRegulatoryStore');//获得store对象\r",
+                                                    "\r",
+                                                    "//在load事件中添加参数\r",
+                                                    "mystore.load(\r",
+                                                    "{params:{\r",
+                                                    "    start:\"0\",\r",
+                                                    "    limit:\"25\",\r",
+                                                    "    searchKeyword:Ext.getCmp('YuJingtitle').getValue()\r",
+                                                    "} \r",
+                                                    "}\r",
+                                                    ");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "ad8d21f2-9304-4fed-ba58-a0ad4804de4f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "FkRegulatoryStore",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar18",
+                            "designerId": "f5b1f898-b39e-429c-a969-d1b98b44f45d"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel22",
+                            "designerId": "b5cfcf67-fff7-4642-bdf8-a27b819fe71f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

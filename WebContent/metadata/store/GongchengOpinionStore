@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[['1', '工程质量合格'], ['2', '工程质量不合格']]"
+        ],
+        "designer|userAlias": "GongchengOpinionStore",
+        "designer|userClassName": "GongchengOpinionStore",
+        "storeId": "GongchengOpinionStore"
+    },
+    "designerId": "d6785930-3a8f-4b7c-8ee9-f06ab8426959",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy85",
+            "designerId": "c5553997-f360-47c6-a612-0b76a28d9bf2",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader85",
+                    "designerId": "3dda5e3f-0f02-41cc-b973-37c1d8576e53"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField388",
+            "designerId": "caafb74a-2c66-4415-8e19-36979d891bf4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField389",
+            "designerId": "ba4f16dd-83e4-4642-9947-1c2faf453d40"
+        }
+    ]
+}

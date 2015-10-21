@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-29 11:13:47 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.AbnormalwarnTranction" table="abnormalwarn_tranction" catalog="tdlz">
+        <id name="warnDkid" type="int">
+            <column name="warn_dkid" />
+            <generator class="assigned" />
+        </id>
+        <property name="abnormalwarnNetsignedid" type="java.lang.Integer">
+            <column name="abnormalwarn_netsignedid" />
+        </property>
+        <property name="abnormalwarnDkname" type="string">
+            <column name="abnormalwarn_dkname" length="30" />
+        </property>
+        <property name="abnormalwarnDkuse" type="string">
+            <column name="abnormalwarn_dkuse" length="30" />
+        </property>
+        <property name="warnTranmehtod" type="string">
+            <column name="warn_tranmehtod" length="30" />
+        </property>
+        <property name="abnormalwarnAreabtran" type="string">
+            <column name="abnormalwarn_areabtran" length="30" />
+        </property>
+        <property name="abnormalwarnAreaatran" type="string">
+            <column name="abnormalwarn_areaatran" length="30" />
+        </property>
+        <property name="abnormalwarnNorthboundary" type="string">
+            <column name="abnormalwarn_northboundary" length="30" />
+        </property>
+        <property name="abnormalwarnSouthboundary" type="string">
+            <column name="abnormalwarn_southboundary" length="30" />
+        </property>
+        <property name="abnormalwarnEastboundary" type="string">
+            <column name="abnormalwarn_eastboundary" length="30" />
+        </property>
+        <property name="abnormalwarnWestboundary" type="string">
+            <column name="abnormalwarn_westboundary" length="30" />
+        </property>
+        <property name="abnormalwarnTranprice" type="string">
+            <column name="abnormalwarn_tranprice" length="30" />
+        </property>
+        <property name="abnormalwarnBuyer" type="string">
+            <column name="abnormalwarn_buyer" length="30" />
+        </property>
+        <property name="abnormalwarnSeller" type="string">
+            <column name="abnormalwarn_seller" length="30" />
+        </property>
+        <property name="abnormalwarnAverslope" type="string">
+            <column name="abnormalwarn_averslope" length="30" />
+        </property>
+        <property name="abnormalwarnSlopevariance" type="string">
+            <column name="abnormalwarn_slopevariance" length="30" />
+        </property>
+        <property name="abnormalwarnDisfroad" type="string">
+            <column name="abnormalwarn_disfroad" length="30" />
+        </property>
+        <property name="abnormalwarnSidfreiver" type="string">
+            <column name="abnormalwarn_sidfreiver" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

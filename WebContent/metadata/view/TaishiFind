@@ -1,0 +1,491 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiFind",
+        "designer|userClassName": "TaishiFind",
+        "height": 485,
+        "id": "TaishiFind",
+        "layout": "border",
+        "title": "交易态势信息查询",
+        "width": 855
+    },
+    "designerId": "aee0a729-013f-4b22-91e8-277649f0fe3a",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 85,
+                "layout": "absolute",
+                "layout|region": "north",
+                "title": "查询条件"
+            },
+            "name": "MyForm14",
+            "designerId": "06f08d49-3cab-4e93-8355-cf2c72cd77ef",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiFindDateField1",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiFindDateField1",
+                        "labelWidth": 60,
+                        "layout|x": 10,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyDateField17",
+                    "designerId": "5d303aa2-e17a-4c74-9dfc-2f58e68b6f27"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiFindDateField2",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiFindDateField2",
+                        "labelWidth": 60,
+                        "layout|x": 210,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyDateField18",
+                    "designerId": "fa354bd7-e4ea-4033-bb81-3cf2cd809567"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiFindTextField1",
+                        "emptyText": "请填写",
+                        "fieldLabel": "关键词",
+                        "id": "TaishiFindTextField1",
+                        "labelWidth": 60,
+                        "layout|x": 410,
+                        "layout|y": 20,
+                        "width": 180
+                    },
+                    "name": "MyTextField70",
+                    "designerId": "b1b1a97f-3905-402c-9d95-d6657eab3d33"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 610,
+                        "layout|y": 20,
+                        "text": "查询",
+                        "width": 60
+                    },
+                    "name": "MyButton47",
+                    "designerId": "28267537-7e6b-4959-80c9-dca1bff4818e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiFindDateField1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiFindDateField2').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('TaishiFindTextField1').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiFind'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"20\",\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword1:getKeyword1\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword1:getKeyword1};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "e100e533-7195-4fb4-87f7-f8d8a73a715d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 690,
+                        "layout|y": 20,
+                        "text": "删除",
+                        "width": 60
+                    },
+                    "name": "MyButton48",
+                    "designerId": "7a708974-5b96-4c63-b0d8-16e2b07cbdfe",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var grid = Ext.getCmp('TaishiFindTable');\r",
+                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                    "if(record.length === 0){\r",
+                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                    "    return;\r",
+                                    "\r",
+                                    "}else{\r",
+                                    "\r",
+                                    "    var  tablexh =new Array(record.length);\r",
+                                    "    for(var i = 0;i<record.length;i++){\r",
+                                    "        tablexh[i] = record[i].get(\"xh\");\r",
+                                    "\r",
+                                    "    }\r",
+                                    "\r",
+                                    "    Ext.Ajax.request({\r",
+                                    "        url:'getBenefitList26',\r",
+                                    "        params:{tablexh:tablexh},\r",
+                                    "\r",
+                                    "        success:function(response){\r",
+                                    "            Ext.Msg.alert('提示','该条信息已成功删除！');\r",
+                                    "            var mystore = Ext.StoreMgr.get('TaishiFind');\r",
+                                    "            mystore.load();\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        failure:function(response){\r",
+                                    "            Ext.Msg.alert('提示','该条信息删除失败！');      \r",
+                                    "        }\r",
+                                    "\r",
+                                    "    });\r",
+                                    "\r",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "0ac20772-f80e-4904-8c10-0fabd900a571"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 770,
+                        "layout|y": 20,
+                        "text": "修改",
+                        "width": 60
+                    },
+                    "name": "MyButton49",
+                    "designerId": "3c366fa8-f222-4173-827f-a21f68038840",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var grid = Ext.getCmp('TaishiFindTable');\r",
+                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                    "\r",
+                                    "if (record.length === 0) {\r",
+                                    "    Ext.Msg.alert('提示', '请先选择您要操作的行！');\r",
+                                    "    return;\r",
+                                    "\r",
+                                    "} else if (record.length > 1) {\r",
+                                    "    Ext.Msg.alert('提示', '只能选择一行数据');\r",
+                                    "    return;\r",
+                                    "} else {\r",
+                                    "    var tablexh = record[0].get(\"xh\");\r",
+                                    "    Ext.Msg.alert('提示', '数据加载成功！');\r",
+                                    "    var tabs = this.up('tabpanel');\r",
+                                    "    tabs.removeAll(true);\r",
+                                    "    //用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "    var taishi=Ext.widget('TaishiFormPanelEdit');\r",
+                                    "    var newtab = tabs.add(taishi);\r",
+                                    "    taishi.getForm().loadRecord(record[0]);\r",
+                                    "    /*taishi.load({\r",
+                                    "    params: {\r",
+                                    "    tablexh: tablexh\r",
+                                    "    },\r",
+                                    "    url:'getBenefitList27',\r",
+                                    "    method:'GET',\r",
+                                    "    success:function(form,action){\r",
+                                    "    Ext.Msg.alert('提示','数据加载成功！'); \r",
+                                    "    },\r",
+                                    "    failure:function(form,action){\r",
+                                    "    Ext.Msg.alert('提示','数据加载失败！');   \r",
+                                    "    }\r",
+                                    "    });   */  \r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "5bc60094-1fdc-4179-8d89-850304cee70e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "TaishiFindTable",
+                "layout|region": "center",
+                "store": "TaishiFind",
+                "title": "交易态势查询结果显示"
+            },
+            "name": "MyGridPanel10",
+            "designerId": "cda3ec80-6f99-4e02-8a8e-894a59c65038",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "序号",
+                        "width": 38
+                    },
+                    "name": "MyRowNumberer8",
+                    "designerId": "9a648c57-0271-4915-acc1-445ba2d9a9fb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "htbh",
+                        "id": null,
+                        "text": "合同编号",
+                        "width": 71
+                    },
+                    "name": "MyColumn41",
+                    "designerId": "c1e7fa08-f888-4dd8-98bb-1fa249fc0cf7"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "jysj",
+                        "text": "交易时间",
+                        "width": 72
+                    },
+                    "name": "MyDateColumn9",
+                    "designerId": "d0f3706f-d17d-40ec-a0cf-9ae4d1c3e832"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "jyl",
+                        "text": "交易量（公顷）"
+                    },
+                    "name": "MyNumberColumn16",
+                    "designerId": "4362134a-937c-4592-a4f2-4e453497d8d9"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "je",
+                        "text": "交易价格（万元）"
+                    },
+                    "name": "MyNumberColumn17",
+                    "designerId": "60b93690-d6a0-40c8-b160-d525e9cef8e9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "jyqy",
+                        "text": "交易区域"
+                    },
+                    "name": "MyColumn42",
+                    "designerId": "e2f8a2e5-8e14-4824-8408-67d588d2e4fd"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "gmqymc",
+                        "text": "购买单位名称"
+                    },
+                    "name": "MyColumn43",
+                    "designerId": "b69002bb-2334-4b77-ba8d-1dec1ed21ade"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "qyxz",
+                        "text": "单位性质",
+                        "width": 81
+                    },
+                    "name": "MyColumn44",
+                    "designerId": "a6c57d5e-a7a1-49d0-8e91-13c3eeddb29c"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "qyzczj",
+                        "text": "单位注册资金（万元）",
+                        "width": 123
+                    },
+                    "name": "MyNumberColumn18",
+                    "designerId": "2e4e65e4-9c3d-4b0c-9fc1-eb1e837a630c"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView10",
+                    "designerId": "91d5fe8e-c225-4a1f-9fe7-abdf9699060f"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "TaishiFind",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar5",
+                    "designerId": "59a39047-faea-4ad2-a1f7-ec7421ec8573"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel5",
+                    "designerId": "e237d0f1-2fd7-4b55-99cc-05ea804d5e19"
+                }
+            ]
+        }
+    ]
+}

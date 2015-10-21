@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-6 16:10:04 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitAlarmtai" table="benefit_alarmtai" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="yclx" type="string">
+            <column name="yclx" length="128" />
+        </property>
+        <property name="ycxq" type="string">
+            <column name="ycxq" />
+        </property>
+        <property name="jyqy" type="string">
+            <column name="jyqy" length="64" />
+        </property>
+        <property name="htbh" type="string">
+            <column name="htbh" length="32" />
+        </property>
+        <property name="htmc" type="string">
+            <column name="htmc" length="128" />
+        </property>
+        <property name="xmbh" type="string">
+            <column name="xmbh" length="32" />
+        </property>
+        <property name="xmmc" type="string">
+            <column name="xmmc" length="128" />
+        </property>
+        <property name="cxsj" type="date">
+            <column name="cxsj" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

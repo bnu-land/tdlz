@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmProvinceStore",
+        "model": "infoAreaModel",
+        "pageSize": null,
+        "storeId": "abnmProvinceStore"
+    },
+    "designerId": "d4f8e62f-3674-40ed-890e-b67ed0826cc5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": null,
+                "url": "get_infoAreaProvinceList"
+            },
+            "name": "MyAjaxProxy73",
+            "designerId": "a4e164f8-0ce2-470c-8fd4-9f9306d4d07b",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader73",
+                    "designerId": "0955d54a-747c-4791-9dcc-9358c52c6a4f"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-6-26 22:16:01 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.URightInfo" table="u_right_info" catalog="tdlz">
+        <id name="rightId" type="string">
+            <column name="right_id" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="rightName" type="string">
+            <column name="right_name" length="100" not-null="true">
+                <comment>&#200;&#168;&#207;&#222;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="rightIndex" type="string">
+            <column name="right_index" length="50">
+                <comment>&#200;&#168;&#207;&#222;&#203;&#247;&#210;&#253;&#163;&#172;&#211;&#195;&#211;&#218;&#191;&#236;&#203;&#217;&#178;&#233;&#213;&#210;</comment>
+            </column>
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="300">
+                <comment>&#200;&#168;&#207;&#222;&#193;&#180;&#189;&#211;</comment>
+            </column>
+        </property>
+        <property name="enabled" type="java.lang.Boolean">
+            <column name="enabled">
+                <comment>&#202;&#199;&#183;&#241;&#198;&#244;&#211;&#195;</comment>
+            </column>
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535">
+                <comment>&#200;&#168;&#207;&#222;&#203;&#181;&#195;&#247;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmProjectDikuaiStore",
+        "model": "FkProjectDikuaiModel",
+        "pageSize": null,
+        "storeId": "abnmProjectDikuaiStore"
+    },
+    "designerId": "f67e4230-0f78-4d92-8a9a-2acc0faef93b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": null,
+                "url": "abnmGetDikuai"
+            },
+            "name": "MyAjaxProxy76",
+            "designerId": "a25b093f-b7d0-432c-85f9-0064fcca986c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader76",
+                    "designerId": "13145c18-1e85-482b-9d2d-ec81cb35e164"
+                }
+            ]
+        }
+    ]
+}

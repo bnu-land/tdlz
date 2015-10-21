@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-4 15:27:03 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.AbnmDktranssupervision" table="abnm_dktranssupervision" catalog="tdlz">
+        <id name="abdkId" type="java.lang.Integer">
+            <column name="abdk_id" />
+            <generator class="identity" />
+        </id>
+        <property name="dkTbid" type="string">
+            <column name="dk_tbid" length="20">
+                <comment>&#205;&#188;&#176;&#223;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="dkArea" type="string">
+            <column name="dk_area" length="20">
+                <comment>&#205;&#188;&#176;&#223;&#195;&#230;&#187;&#253;</comment>
+            </column>
+        </property>
+        <property name="projectId" type="string">
+            <column name="project_id" length="20">
+                <comment>&#207;&#238;&#196;&#191;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="projectName" type="string">
+            <column name="project_name" length="50">
+                <comment>&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="zldwmc" type="string">
+            <column name="ZLDWMC" length="50">
+                <comment>
+                &#215;&#249;&#194;&#228;&#181;&#165;&#206;&#187;&#195;&#251;&#179;&#198;,&#182;&#212;&#211;&#166;&#208;&#208;&#213;&#254;&#181;&#165;&#206;&#187;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="dlmc" type="string">
+            <column name="DLMC" length="20">
+                <comment>&#181;&#216;&#192;&#224;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="areaCode" type="string">
+            <column name="area_code" length="10">
+                <comment>&#208;&#208;&#213;&#254;&#199;&#248;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="abdkSeller" type="string">
+            <column name="abdk_seller" length="20">
+                <comment>&#215;&#170;&#200;&#195;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="abdkBuyer" type="string">
+            <column name="abdk_buyer" length="20">
+                <comment>&#194;&#242;&#200;&#235;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="abdkSlope" type="string">
+            <column name="abdk_slope" length="20">
+                <comment>&#198;&#194;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="abdkSlopevariance" type="string">
+            <column name="abdk_slopevariance" length="20">
+                <comment>&#198;&#194;&#182;&#200;&#183;&#189;&#178;&#238;</comment>
+            </column>
+        </property>
+        <property name="abdkBx" type="string">
+            <column name="abdk_bx" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#199;&#176;&#214;&#208;&#208;&#196;&#181;&#227;x&#215;&#248;&#177;&#234;</comment>
+            </column>
+        </property>
+        <property name="abdkBy" type="string">
+            <column name="abdk_by" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#199;&#176;&#214;&#208;&#208;&#196;&#181;&#227;y&#215;&#248;&#177;&#234;</comment>
+            </column>
+        </property>
+        <property name="abdkAx" type="string">
+            <column name="abdk_ax" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#186;&#243;&#214;&#208;&#208;&#196;&#181;&#227;x&#215;&#248;&#177;&#234;</comment>
+            </column>
+        </property>
+        <property name="abdkAy" type="string">
+            <column name="abdk_ay" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#186;&#243;&#214;&#208;&#208;&#196;&#181;&#227;y&#215;&#248;&#177;&#234;</comment>
+            </column>
+        </property>
+        <property name="abdkBprice" type="string">
+            <column name="abdk_bprice" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#199;&#176;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="abdkAarea" type="string">
+            <column name="abdk_aarea" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#186;&#243;&#195;&#230;&#187;&#253;</comment>
+            </column>
+        </property>
+        <property name="abdkAprice" type="string">
+            <column name="abdk_aprice" length="20">
+                <comment>&#189;&#187;&#210;&#215;&#186;&#243;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="dgjj" type="string">
+            <column name="DGJJ" length="20">
+                <comment>&#181;&#190;&#185;&#200;&#190;&#249;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="dgcl" type="string">
+            <column name="DGCL" length="20">
+                <comment>&#181;&#190;&#185;&#200;&#178;&#250;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="abdkWarningtime" type="date">
+            <column name="abdk_warningtime" length="10">
+                <comment>&#212;&#164;&#190;&#175;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="abdkIswarning" type="string">
+            <column name="abdk_iswarning" length="20">
+                <comment>&#202;&#199;&#183;&#241;&#212;&#164;&#190;&#175;</comment>
+            </column>
+        </property>
+        <property name="abdkIsnormal" type="string">
+            <column name="abdk_isnormal" length="10">
+                <comment>&#202;&#199;&#183;&#241;&#210;&#236;&#179;&#163;</comment>
+            </column>
+        </property>
+        <property name="abdkRisklevel" type="string">
+            <column name="abdk_risklevel" length="10">
+                <comment>&#212;&#164;&#190;&#175;&#210;&#236;&#179;&#163;&#186;&#243;&#183;&#231;&#207;&#213;&#181;&#200;&#188;&#182;</comment>
+            </column>
+        </property>
+        <property name="abdkOpinion" type="string">
+            <column name="abdk_opinion" length="65535">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="abdkDocpath" type="string">
+            <column name="abdk_docpath" length="200">
+                <comment>&#212;&#164;&#190;&#175;&#178;&#162;&#201;&#250;&#179;&#201;doc&#180;&#230;&#180;&#162;&#194;&#183;&#190;&#182;</comment>
+            </column>
+        </property>
+        <property name="abdkHtmlpath" type="string">
+            <column name="abdk_htmlpath" length="200">
+                <comment>&#212;&#164;&#190;&#175;&#178;&#162;&#201;&#250;&#179;&#201;html&#180;&#230;&#180;&#162;&#194;&#183;&#190;&#182;</comment>
+            </column>
+        </property>
+        <property name="abdkIstowhole" type="string">
+            <column name="abdk_istowhole" length="10">
+                <comment>&#202;&#199;&#183;&#241;&#204;&#225;&#189;&#187;&#214;&#193;&#200;&#171;&#185;&#253;&#179;&#204;&#210;&#236;&#179;&#163;&#208;&#197;&#207;&#162;</comment>
+            </column>
+        </property>
+        <property name="abdkTowholetime" type="date">
+            <column name="abdk_towholetime" length="10">
+                <comment>
+                &#204;&#225;&#189;&#187;&#214;&#193;&#200;&#171;&#185;&#253;&#179;&#204;&#210;&#236;&#179;&#163;&#208;&#197;&#207;&#162;&#188;&#224;&#185;&#220;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

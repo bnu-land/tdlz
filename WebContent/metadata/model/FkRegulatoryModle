@@ -1,0 +1,99 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "FkRegulatoryModle",
+        "designer|userClassName": "FkRegulatoryModle"
+    },
+    "designerId": "f043c8d0-ca67-490d-8757-3ef6f230aac0",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsTitle",
+                "type": "string"
+            },
+            "name": "MyField238",
+            "designerId": "f9031e24-c63f-48f5-8c31-17dc4ee039b3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsContent",
+                "type": "string"
+            },
+            "name": "MyField239",
+            "designerId": "2b73da1e-7c27-42f2-920e-134c28ec9bf4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsClass",
+                "type": "string"
+            },
+            "name": "MyField240",
+            "designerId": "4c559959-2aad-4bc3-8479-7ea2c0b1e4ad"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsOpinion",
+                "type": "string"
+            },
+            "name": "MyField241",
+            "designerId": "1942c1a5-8830-425d-ba6f-58b6d0c5b01f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsDate",
+                "type": "date"
+            },
+            "name": "MyField242",
+            "designerId": "5fbbb223-645d-44d5-9aa0-9e5f059e5a4e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abwsIsSolved",
+                "type": "string"
+            },
+            "name": "MyField243",
+            "designerId": "73897b7a-91e0-4cb2-8e83-4dfe1e32c934"
+        }
+    ]
+}

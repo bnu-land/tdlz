@@ -1,0 +1,51 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "ShouyiAlarm_Pie",
+        "designer|userClassName": "ShouyiAlarm_Pie",
+        "model": "ShouyiAlarm_Pie",
+        "storeId": "ShouyiAlarm_Pie"
+    },
+    "designerId": "20c13e9f-fa52-4bd0-b506-ea033a070111",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword:'',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList13"
+            },
+            "name": "MyAjaxProxy87",
+            "designerId": "21b6ef80-c086-42d2-88c3-42dec3c168c1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader87",
+                    "designerId": "11afaad5-97d1-4997-bedd-2b54e86ffb8b"
+                }
+            ]
+        }
+    ]
+}

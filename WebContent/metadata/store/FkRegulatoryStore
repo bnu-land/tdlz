@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "FkRegulatoryStore",
+        "model": "FkRegulatoryModle",
+        "storeId": "FkRegulatoryStore"
+    },
+    "designerId": "acaf9213-801f-4adb-9638-2041264472ab",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeyword: ''\r",
+                    "}"
+                ],
+                "url": "findYJinformation"
+            },
+            "name": "MyAjaxProxy34",
+            "designerId": "da0dc0d7-fdc6-4777-8ac7-31819f2baffa",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader34",
+                    "designerId": "bb5e5504-e609-482b-9043-df383ea5264c"
+                }
+            ]
+        }
+    ]
+}

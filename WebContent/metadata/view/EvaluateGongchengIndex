@@ -1,0 +1,355 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateGongchengIndex",
+        "designer|userClassName": "EvaluateGongchengIndex",
+        "layout": "fit",
+        "title": "工程质量评价"
+    },
+    "designerId": "f08b47c3-4533-4706-aead-abe3601ae4bc",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "EvaluateGongchengIndexForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "standardSubmit": false,
+                "title": "",
+                "url": "add_gongchengxinxi"
+            },
+            "name": "MyForm55",
+            "designerId": "ff361015-2bab-4037-be15-4b92a3ec3ae9",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择",
+                        "fieldLabel": "工程质量评价意见",
+                        "id": "GongchengOpinion",
+                        "labelWidth": 120,
+                        "layout|x": 40,
+                        "layout|y": 320,
+                        "queryMode": "local",
+                        "store": "GongchengOpinionStore",
+                        "width": 400
+                    },
+                    "name": "MyComboBox29",
+                    "designerId": "bfba11a9-cd83-4f3f-99b7-e87cb95cce5d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/return.png",
+                        "layout|x": 580,
+                        "layout|y": 390,
+                        "scale": "medium",
+                        "text": "返回"
+                    },
+                    "name": "MyButton355",
+                    "designerId": "1f7ea954-348b-46f2-9ec7-af90f0655867",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "07eaa03f-cda1-490a-b334-63dcae2e08f3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目实际规模",
+                        "layout|x": 40,
+                        "layout|y": 90,
+                        "name": "area",
+                        "width": 400
+                    },
+                    "name": "MyTextField290",
+                    "designerId": "7549b726-5a93-4369-8b98-47412e64f194"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "评价人",
+                        "layout|x": 530,
+                        "layout|y": 90,
+                        "name": "recorder",
+                        "width": 380
+                    },
+                    "name": "MyTextField291",
+                    "designerId": "442556f0-f869-45e1-b21d-b9c4d9de33b5"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": "PROJECTID",
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "projectId",
+                        "size": 26,
+                        "width": 400
+                    },
+                    "name": "MyTextField292",
+                    "designerId": "d9cb2b97-2b71-4b62-9c52-5b8868885ebd"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "现场图片",
+                        "hidden": true,
+                        "id": null,
+                        "layout|x": 40,
+                        "layout|y": 350,
+                        "name": "fkPicture",
+                        "value": [
+                            "Upload/before/zjd.jpg"
+                        ],
+                        "width": 310
+                    },
+                    "name": "MyTextField293",
+                    "designerId": "462f63d6-c331-4a22-9938-4aab7336b727"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目名称",
+                        "id": "projectnameG",
+                        "layout|x": 530,
+                        "layout|y": 40,
+                        "name": "projectName",
+                        "width": 380
+                    },
+                    "name": "MyTextField294",
+                    "designerId": "e91346df-3c79-4478-98e3-56ed07e77b20"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "拆迁工程完成质量",
+                        "height": 62,
+                        "id": "chgcid",
+                        "layout|x": 40,
+                        "layout|y": 140,
+                        "name": "chgc",
+                        "width": 400
+                    },
+                    "name": "MyTextArea25",
+                    "designerId": "eb301acd-4ad2-4022-ae84-e3add6c22d31"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "土地平整工程完成质量",
+                        "height": 62,
+                        "id": "tdpzid",
+                        "layout|x": 40,
+                        "layout|y": 230,
+                        "name": "tdpz",
+                        "width": 400
+                    },
+                    "name": "MyTextArea26",
+                    "designerId": "3df894f1-b5de-4626-882b-7119f5348d28"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "田间道路工程完成质量",
+                        "height": 62,
+                        "id": "tjdlid",
+                        "layout|x": 530,
+                        "layout|y": 230,
+                        "name": "tjdl",
+                        "width": 380
+                    },
+                    "name": "MyTextArea27",
+                    "designerId": "28e0fffb-56a4-499b-b28f-b63781749c42"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "农田水利工程完成质量",
+                        "height": 62,
+                        "id": "ntslid",
+                        "layout|x": 530,
+                        "layout|y": 140,
+                        "name": "ntsl",
+                        "width": 380
+                    },
+                    "name": "MyTextArea28",
+                    "designerId": "007da259-9592-430a-82a9-447e15d5ca80"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "评价日期",
+                        "format": "Y-m-d",
+                        "layout|x": 530,
+                        "layout|y": 320,
+                        "width": 380
+                    },
+                    "name": "MyDateField89",
+                    "designerId": "fd867133-ca6b-40b6-a867-5d0fb2acff00"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 280,
+                        "layout|y": 390,
+                        "scale": "medium",
+                        "text": "保存",
+                        "width": 50
+                    },
+                    "name": "MyButton356",
+                    "designerId": "0dc967f0-61e2-4740-9f95-ec70d65e98da",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var PROJECTID=Ext.getCmp('PROJECTID').getValue();\r",
+                                    "var projectnameG=Ext.getCmp('projectnameG').getValue();\r",
+                                    "var GongchengOpinion=Ext.getCmp('GongchengOpinion').getValue();\r",
+                                    "var chgcid=Ext.getCmp('chgcid').getValue();\r",
+                                    "var tdpzid=Ext.getCmp('tdpzid').getValue();\r",
+                                    "var ntslid=Ext.getCmp('ntslid').getValue();\r",
+                                    "var tjdlid=Ext.getCmp('tjdlid').getValue();\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'GongchengOpinionResult',\r",
+                                    "    method: 'POST',\r",
+                                    "    params:{PROJECTID:PROJECTID,\r",
+                                    "        projectnameG:projectnameG,\r",
+                                    "        GongchengOpinion:GongchengOpinion,\r",
+                                    "        chgcid:chgcid,\r",
+                                    "        tdpzid:tdpzid,    \r",
+                                    "        ntslid:ntslid,\r",
+                                    "        tjdlid:tjdlid\r",
+                                    "    },\r",
+                                    "\r",
+                                    "    success:function(options, eOpts){\r",
+                                    "    Ext.Msg.alert('提示', '保存成功！'); },     \r",
+                                    "    failure:function(options, eOpts){\r",
+                                    "    Ext.Msg.alert('提示', '保存失败！'); } \r",
+                                    "\r",
+                                    "});"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "283ff65a-438d-4811-8a67-4db9075e95db"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

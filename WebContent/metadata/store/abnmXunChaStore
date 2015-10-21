@@ -1,0 +1,46 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmXunChaStore",
+        "model": "FkRwModel",
+        "storeId": "abnmXunChaStore"
+    },
+    "designerId": "86534ad3-0885-4545-b5c6-f639403336cd",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_xunchaRWList"
+            },
+            "name": "MyAjaxProxy71",
+            "designerId": "d75bef4f-4ed9-4d9b-be68-fd8763dd4cbc",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader71",
+                    "designerId": "5c26f4f8-288e-44f0-ba85-810d055e8cce"
+                }
+            ]
+        }
+    ]
+}

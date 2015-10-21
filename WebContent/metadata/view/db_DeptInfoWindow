@@ -1,0 +1,282 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_DeptInfoWindow",
+        "designer|userClassName": "db_DeptInfoWindow",
+        "height": 338,
+        "id": "db_DeptInfoWindow",
+        "layout": "fit",
+        "title": "部门信息",
+        "width": 625
+    },
+    "designerId": "aaf03713-d890-43ee-863f-71be7345a2ce",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "id": "db_DeptInfoWindowForm",
+                "jsonSubmit": true,
+                "layout": "auto",
+                "title": null
+            },
+            "name": "MyForm6",
+            "designerId": "8a0e02aa-511d-4f0e-8a3f-89aedd48cb18",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 258,
+                        "title": "部门信息"
+                    },
+                    "name": "MyFieldSet5",
+                    "designerId": "217a046a-0714-4b65-9ea1-77dbe2678795",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "部门编号",
+                                "id": "deptWindow_deptId",
+                                "name": "deptId",
+                                "readOnly": true,
+                                "width": 400
+                            },
+                            "name": "MyTextField38",
+                            "designerId": "9df27854-5e74-408c-944c-20d083b02a0f"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "部门名称",
+                                "id": "deptWindow_deptName",
+                                "name": "deptName",
+                                "width": 400
+                            },
+                            "name": "MyTextField39",
+                            "designerId": "b7f37df8-5dad-4ef9-a9f9-3a5a661b915e"
+                        },
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": null,
+                                "fieldLabel": "是否启用",
+                                "id": "deptWindow_enabled",
+                                "inputValue": "1",
+                                "layout|anchor": "100%",
+                                "name": "enabled",
+                                "uncheckedValue": "0"
+                            },
+                            "name": "MyCheckbox11",
+                            "designerId": "33f2e32e-8795-4602-a5c8-4e8e3f21d4f6"
+                        },
+                        {
+                            "type": "Ext.form.field.HtmlEditor",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "部门介绍",
+                                "height": 150,
+                                "id": "deptWindow_description",
+                                "layout|anchor": "100%",
+                                "name": "description"
+                            },
+                            "name": "MyHtmlEditor6",
+                            "designerId": "cfe44b52-dc14-4856-9f33-09b5ea744655"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDb_UserWindowFormAfterRender",
+                        "implHandler": [
+                            ""
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onDb_UserWindowFormAfterRender",
+                    "designerId": "586c46c6-d552-4b86-b0e5-5248eaf517f4"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom"
+                    },
+                    "name": "MyToolbar7",
+                    "designerId": "b060e045-d24c-4540-aa53-03b107aa13db",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Fill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MyFill7",
+                            "designerId": "eb6454ce-22f6-4042-9ecd-2fdb074a172b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "取消"
+                            },
+                            "name": "MyButton24",
+                            "designerId": "9c1322f3-08a9-4039-8aa4-410e6a6c7638",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_DeptInfoWindow');\r",
+                                            "win.close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "da2fe497-a4df-446a-91e8-0b282fdd6f44"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "width": 30
+                            },
+                            "name": "MySpacer7",
+                            "designerId": "924c08cc-384d-4abc-a7e3-50345b2a5dd1"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "确定"
+                            },
+                            "name": "MyButton25",
+                            "designerId": "7fed616a-147a-43d9-bc07-f237a7551618",
+                            "cn": [
+                                {
+                                    "type": "basicfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_DeptInfoWindow');\r",
+                                            "var myform = Ext.getCmp('db_DeptInfoWindowForm').getForm();\r",
+                                            "\r",
+                                            "if (myform.isValid())\r",
+                                            "{ // make sure the form contains valid data before submitting\r",
+                                            "    myform.submit({\r",
+                                            "\r",
+                                            "        url : 'update_DeptInfo',\r",
+                                            "        success : function (form, action)\r",
+                                            "        {\r",
+                                            "            Ext.Msg.alert('success', '部门信息更新成功');\r",
+                                            "\r",
+                                            "            var mystore = Ext.StoreMgr.get('uDeptInfoStore'); //获得store对象\r",
+                                            "            mystore.reload();\r",
+                                            "            win.close();                \r",
+                                            "        },\r",
+                                            "        failure: function(form, action){            \r",
+                                            "            Ext.Msg.alert('failure', '部门信息更新失败');\r",
+                                            "            win.close();\r",
+                                            "        }        \r",
+                                            "    });\r",
+                                            "}\r",
+                                            "else\r",
+                                            "{\r",
+                                            "    Ext.Msg.alert('注意', '填写的信息有误，请检查！');\r",
+                                            "}\r",
+                                            "\r",
+                                            "return;"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "10636dfe-1dde-441f-9248-e15a4ab7486a"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

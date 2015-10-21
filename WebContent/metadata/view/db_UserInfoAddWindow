@@ -1,0 +1,462 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_UserInfoAddWindow",
+        "designer|userClassName": "db_UserInfoAddWindow",
+        "height": 474,
+        "id": "db_UserInfoAddWindow",
+        "layout": "fit",
+        "title": "用户信息",
+        "width": 700
+    },
+    "designerId": "ac9a080c-1e30-43d5-98eb-d560a7100674",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "id": "db_UserAddWindowForm",
+                "jsonSubmit": true,
+                "layout": "auto",
+                "title": null
+            },
+            "name": "MyForm1",
+            "designerId": "42cbae15-2397-42ce-b49b-a67ec5e344fa",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "帐户信息"
+                    },
+                    "name": "MyFieldSet",
+                    "designerId": "1a251b5b-c982-4be5-a5ba-d6b07ae095b2",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "allowOnlyWhitespace": false,
+                                "fieldLabel": "用户名称",
+                                "id": "userAdd_userName",
+                                "name": "userName",
+                                "width": 400
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "c455a970-2493-4c4e-9e43-6fb11ad88f0b"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "注册日期",
+                                "id": "userAdd_registerdate",
+                                "inputType": null,
+                                "name": "registerdate",
+                                "readOnly": true,
+                                "width": 400
+                            },
+                            "name": "MyTextField8",
+                            "designerId": "084ef3f3-14b4-46fb-9498-04ce4acf9039"
+                        },
+                        {
+                            "type": "Ext.form.field.Hidden",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "id": "userAdd_userId",
+                                "layout|anchor": "100%",
+                                "name": "userId"
+                            },
+                            "name": "MyHiddenField1",
+                            "designerId": "7a384479-ce53-4d3d-9e05-8d3465e6ade0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "安全设置",
+                        "width": 660
+                    },
+                    "name": "MyFieldSet1",
+                    "designerId": "f127b061-678c-4a08-b56c-d44ce8fc6dcc",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "allowOnlyWhitespace": false,
+                                "blankText": "必填项",
+                                "fieldLabel": "新密码",
+                                "id": "userAdd_userPwd",
+                                "inputType": "password",
+                                "maxLength": 30,
+                                "maxLengthText": "密码不多于{0}位数。",
+                                "minLength": 4,
+                                "minLengthText": "密码不少于{0}位数。",
+                                "name": "userPwd",
+                                "width": 400
+                            },
+                            "name": "MyTextField9",
+                            "designerId": "ae62f119-ccdc-44f6-b24f-d76d5c2b00be"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "allowOnlyWhitespace": false,
+                                "fieldLabel": "确认密码",
+                                "id": "userAdd_rePwd",
+                                "inputType": "password",
+                                "maxLength": 30,
+                                "maxLengthText": "密码不多于{0}位数。",
+                                "minLength": 4,
+                                "minLengthText": "密码不少于{0}位数。",
+                                "submitValue": false,
+                                "width": 400
+                            },
+                            "name": "MyTextField10",
+                            "designerId": "6ff38db9-7151-4b24-859d-0ff8b9f85f78"
+                        },
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": null,
+                                "checked": true,
+                                "fieldLabel": "是否启用",
+                                "inputValue": "1",
+                                "layout|anchor": "100%",
+                                "name": "enabled",
+                                "uncheckedValue": "0"
+                            },
+                            "name": "MyCheckbox",
+                            "designerId": "06022ca7-3f30-401e-937c-54beb47351a6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "用户信息"
+                    },
+                    "name": "MyFieldSet2",
+                    "designerId": "9b0139da-389a-45f8-9144-5b2cbafa1715",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "真实姓名",
+                                "id": "userAdd_trueName",
+                                "name": "trueName",
+                                "width": 400
+                            },
+                            "name": "MyTextField11",
+                            "designerId": "17d45c69-c70f-4f05-a512-dc934b24b073"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "手机号码",
+                                "id": "userAdd_mobileNum",
+                                "inputType": "tel",
+                                "name": "mobileNum",
+                                "width": 400
+                            },
+                            "name": "MyTextField12",
+                            "designerId": "6e9c6362-1f21-46af-9fd8-e52557216ca9"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "固定电话",
+                                "id": "userAdd_phoneNum",
+                                "inputType": "tel",
+                                "name": "phoneNum",
+                                "width": 400
+                            },
+                            "name": "MyTextField13",
+                            "designerId": "998ec3b1-6803-41a5-9923-95544d61aa82"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "邮箱",
+                                "id": "userAdd_email",
+                                "inputType": "email",
+                                "name": "email",
+                                "width": 400
+                            },
+                            "name": "MyTextField14",
+                            "designerId": "3b335872-2048-414b-afcd-18c9aa36313c"
+                        },
+                        {
+                            "type": "Ext.form.field.HtmlEditor",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "用户介绍",
+                                "height": 100,
+                                "id": "userAdd_description",
+                                "layout|anchor": "100%",
+                                "name": "description"
+                            },
+                            "name": "MyHtmlEditor1",
+                            "designerId": "70413548-665d-4255-aa44-d846817ec4ea"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDb_UserWindowFormAfterRender",
+                        "implHandler": [
+                            "//获取当前注册时间\r",
+                            "var registerdateField = Ext.getCmp('userAdd_registerdate');\r",
+                            "var dateStr = \"\";\r",
+                            "var myDate = new Date();\r",
+                            "dateStr += myDate.getFullYear();    //获取完整的年份(4位,1970-????)\r",
+                            "dateStr += \"-\" + (myDate.getMonth()+1);       //获取当前月份(0-11,0代表1月)\r",
+                            "dateStr += \"-\" +myDate.getDate();        //获取当前日(1-31)\r",
+                            "registerdateField.setValue(dateStr);"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onDb_UserWindowFormAfterRender",
+                    "designerId": "6e0a195b-a972-4001-b9b7-599ec9b70259"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "45fb8db6-f45b-438e-a5d7-bb287852f84f",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Fill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null
+                            },
+                            "name": "MyFill1",
+                            "designerId": "15b77f03-679b-4966-b289-4e32d941e130"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "取消"
+                            },
+                            "name": "MyButton6",
+                            "designerId": "f0da9ffa-4543-44be-a96c-847a54ff2a79",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "var win = Ext.getCmp('db_UserInfoAddWindow');\r",
+                                            "win.close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "6309bb69-0cc1-4188-8349-12e6c9ee0166"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "width": 30
+                            },
+                            "name": "MySpacer1",
+                            "designerId": "993dc640-ce3b-41aa-9976-aa5329e5a17e"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "确认"
+                            },
+                            "name": "MyButton7",
+                            "designerId": "d329fc17-50c5-4a8c-8fbc-e9ad206211ef",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "var win  = Ext.getCmp('db_UserInfoAddWindow');\r",
+                                            "\r",
+                                            "//验证表单\r",
+                                            "//验证密码\r",
+                                            "var pwd = Ext.getCmp('userAdd_userPwd').getValue();\r",
+                                            "var repwd = Ext.getCmp('userAdd_rePwd').getValue();\r",
+                                            "if(pwd != repwd){\r",
+                                            "    Ext.Msg.alert('提示', '两次输入的密码不同，请检查。');\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "\r",
+                                            "var myform = Ext.getCmp('db_UserAddWindowForm').getForm();\r",
+                                            "if (myform.isValid())\r",
+                                            "{ // make sure the form contains valid data before submitting\r",
+                                            "    //使得重复密码框失效\r",
+                                            "    var repwd = Ext.getCmp('userAdd_rePwd');\r",
+                                            "    repwd.disable();\r",
+                                            "\r",
+                                            "    myform.submit({\r",
+                                            "\r",
+                                            "        url : 'add_UserInfo',\r",
+                                            "        success : function (form, action)\r",
+                                            "        {\r",
+                                            "            Ext.Msg.alert('成功', '添加用户成功。');\r",
+                                            "\r",
+                                            "            var mystore = Ext.StoreMgr.get('uUserInfoStore'); //获得store对象\r",
+                                            "            mystore.reload();\r",
+                                            "            win.close();                \r",
+                                            "        },\r",
+                                            "        failure: function(form, action){            \r",
+                                            "            Ext.Msg.alert('失败', '添加用户失败，请重试。');\r",
+                                            "            win.close();\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "}\r",
+                                            "else\r",
+                                            "{\r",
+                                            "    Ext.Msg.alert('注意', '填写的信息有误，请检查！');\r",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "4447f533-1f19-4d77-9811-47b7ecdcfe7d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

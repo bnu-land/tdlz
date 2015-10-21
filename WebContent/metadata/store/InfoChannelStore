@@ -1,0 +1,46 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoChannelStore",
+        "model": "InfoChannelModel",
+        "storeId": "InfoChannelStore"
+    },
+    "designerId": "c32ac757-1d2b-4d4a-96d5-694bfea865ba",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_infoChannelList"
+            },
+            "name": "MyAjaxProxy46",
+            "designerId": "69dbfa9f-40aa-432a-b6b1-73e950371a1c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader46",
+                    "designerId": "b0d23b5c-78fb-4905-bfd1-2a3fa9449453"
+                }
+            ]
+        }
+    ]
+}

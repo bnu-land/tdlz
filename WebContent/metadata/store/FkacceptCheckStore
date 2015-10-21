@@ -1,0 +1,70 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "FkacceptCheckStore",
+        "designer|userClassName": "FkacceptCheckStore",
+        "model": "FkacceptApplyModel",
+        "pageSize": 20,
+        "storeId": "FkacceptCheckStore"
+    },
+    "designerId": "bf7f5089-8988-4e83-bf92-7e81a7a29976",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: ''}"
+                ],
+                "url": "searchCheckApply"
+            },
+            "name": "MyAjaxProxy19",
+            "designerId": "7238cc3f-4610-4e3b-95cd-e2881bf67e95",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader19",
+                    "designerId": "5177ec9d-b3e1-428f-aec1-30d34d11dcab"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "6f4d3fd5-e062-4f6f-9557-0cb365b12d8b"
+        }
+    ]
+}

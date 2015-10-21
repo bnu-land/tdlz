@@ -1,0 +1,61 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "uRightResourcesModel",
+        "designer|userClassName": "uRightResourcesModel"
+    },
+    "designerId": "83e83b7f-14b0-4fbd-a4d8-7a603619599c",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "rmoney",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField468",
+            "designerId": "a0e95d54-f86a-43b8-bccc-00f70ebe2e5f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "rightId"
+            },
+            "name": "MyField469",
+            "designerId": "321708c5-93df-43ef-babd-c0beb226ad8b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "resourceId"
+            },
+            "name": "MyField470",
+            "designerId": "075ac059-a27e-4369-8346-1b9027217a40"
+        }
+    ]
+}

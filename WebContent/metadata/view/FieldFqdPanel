@@ -1,0 +1,20 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fieldFqdPanel",
+        "designer|userClassName": "FieldFqdPanel",
+        "height": 420,
+        "html": [
+            "<iframe width=100% height=100% src=\"mapfqd.html\"/>"
+        ],
+        "layout": "fit",
+        "title": "废弃地查询",
+        "width": 609
+    },
+    "designerId": "a11d72c5-2e6d-4d44-9dd5-b79b3677726f"
+}

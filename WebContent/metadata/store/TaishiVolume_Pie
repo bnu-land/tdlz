@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "TaishiVolume_Pie",
+        "designer|userClassName": "TaishiVolume_Pie",
+        "model": "TaishiVolume_Pie",
+        "storeId": "TaishiVolume_Pie"
+    },
+    "designerId": "12b8df79-9dd4-498f-9653-c22c403ae35f",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword: '',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList22"
+            },
+            "name": "MyAjaxProxy11",
+            "designerId": "f1cd5c52-086d-47f9-a503-e22d4f1d3dfb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader11",
+                    "designerId": "aab884c1-2824-4dba-aee9-d79a5b5b5de2"
+                }
+            ]
+        }
+    ]
+}

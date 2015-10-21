@@ -1,0 +1,165 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_users",
+        "designer|userClassName": "db_users"
+    },
+    "designerId": "2cab1081-11a2-48f6-bf5f-82dc83121212",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "rmoney",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": null,
+                "name": "userid",
+                "sortType": null,
+                "type": null
+            },
+            "name": "MyField443",
+            "designerId": "f27534bb-f936-4d57-b156-0b427aa3409e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "username",
+                "type": "string"
+            },
+            "name": "MyField444",
+            "designerId": "a2ad8c01-219b-4498-89a5-b5b682472520"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "password",
+                "type": "string"
+            },
+            "name": "MyField445",
+            "designerId": "f1d0c5b2-8bbd-4ff4-80bb-39afc6da4637"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "enabled",
+                "type": "boolean"
+            },
+            "name": "MyField446",
+            "designerId": "24256a45-2a63-4a72-aaaa-50931c3c80ba"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": null,
+                "name": "registerdate",
+                "type": "date"
+            },
+            "name": "MyField447",
+            "designerId": "968cf65e-038d-476a-b2a9-ed317090220e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "truename",
+                "type": null
+            },
+            "name": "MyField448",
+            "designerId": "4f33d6d4-2516-48ff-9378-2ba3682e7659"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "email",
+                "type": "string"
+            },
+            "name": "MyField449",
+            "designerId": "21805801-a726-4d51-829f-854a1b5a4747"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "mobilenum",
+                "type": "string"
+            },
+            "name": "MyField450",
+            "designerId": "302ae91c-ee7f-47b2-b470-69bec998defd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "phonenum",
+                "type": "string"
+            },
+            "name": "MyField451",
+            "designerId": "66686c61-ec8c-4a4a-82f2-5d0861a03752"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description",
+                "type": "auto"
+            },
+            "name": "MyField452",
+            "designerId": "7662b5cd-877a-4c2f-a8b8-263ee70948ec"
+        }
+    ]
+}

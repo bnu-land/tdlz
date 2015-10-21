@@ -1,0 +1,52 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "uUserRoleStore",
+        "model": "uUserRoleModel",
+        "pageSize": null,
+        "storeId": "uUserRoleStore"
+    },
+    "designerId": "81d549f7-f97d-4407-89c8-d8c23de8085b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    username:''\r",
+                    "}"
+                ],
+                "url": "get_UserRoleList"
+            },
+            "name": "MyAjaxProxy91",
+            "designerId": "ec316901-6273-4ee7-a74f-ec75af3e9c7e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader91",
+                    "designerId": "1b5c4b07-6ebf-47ef-96da-285659689c4e"
+                }
+            ]
+        }
+    ]
+}

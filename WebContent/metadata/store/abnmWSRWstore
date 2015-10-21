@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "abnmWSRWstore",
+        "designer|userClassName": "abnmWSRWstore",
+        "model": "FkRwModel",
+        "storeId": "abnmWSRWstore"
+    },
+    "designerId": "f880e78f-9753-435a-a8d1-80ae873807c9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_abwsRwList"
+            },
+            "name": "MyAjaxProxy70",
+            "designerId": "8b60ac64-37db-42e7-bb26-5d3e861ac2e1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader70",
+                    "designerId": "2c4abd35-bff0-45e1-b8e9-92d4fed825ea"
+                }
+            ]
+        }
+    ]
+}

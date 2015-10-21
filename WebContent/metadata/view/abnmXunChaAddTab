@@ -1,0 +1,384 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "abnmXunChaAddTab",
+        "designer|userClassName": "abnmXunChaAddTab",
+        "id": "abnmXunChaAddTab",
+        "layout": "fit",
+        "title": "新增现场巡查任务",
+        "width": 830
+    },
+    "designerId": "b4a204d7-242a-4bc2-abc4-0ad0fc5e4b2e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 500,
+                "id": "abnmXunChaAddForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "title": null
+            },
+            "name": "MyForm47",
+            "designerId": "a9b4b11a-ab9c-4a71-b6e4-e23117766868",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务编号",
+                        "id": "xcxcRwId",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "name": "rwId",
+                        "width": 670
+                    },
+                    "name": "MyTextField237",
+                    "designerId": "4a4282cd-4f3f-4faf-84af-4278e4520a8e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目名称",
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 40,
+                        "name": "projectName",
+                        "width": 780
+                    },
+                    "name": "MyTextField238",
+                    "designerId": "8a6a35df-b30f-463d-ac5c-4aaa90f71a97"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "name": "projectId",
+                        "width": 780
+                    },
+                    "name": "MyTextField239",
+                    "designerId": "f0d39bd9-1acb-4887-a2c7-21f1a94eba7c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务类型",
+                        "height": null,
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 100,
+                        "name": "rwClass",
+                        "width": 780
+                    },
+                    "name": "MyTextField240",
+                    "designerId": "d45d6d2e-bacc-44a0-969d-bb4cfa64ed0b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务下达人",
+                        "height": null,
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 130,
+                        "name": "rwResponsiblePerson",
+                        "width": 780
+                    },
+                    "name": "MyTextField241",
+                    "designerId": "38f1ac28-9daa-4731-a991-5647d8a4cf72"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务执行时间",
+                        "format": "Y-m-d",
+                        "height": null,
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 170,
+                        "name": "rwStarttime",
+                        "width": 780
+                    },
+                    "name": "MyDateField74",
+                    "designerId": "9222545e-10fa-435f-8627-b33150880de8"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务截止时间",
+                        "format": "Y-m-d",
+                        "height": null,
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 200,
+                        "name": "rwEndtime",
+                        "width": 780
+                    },
+                    "name": "MyDateField75",
+                    "designerId": "13d66655-f726-42da-b2ce-8f9724b29d29"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务描述",
+                        "height": 180,
+                        "id": null,
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 240,
+                        "name": "rwContent",
+                        "width": 780
+                    },
+                    "name": "MyTextArea19",
+                    "designerId": "3afebc8f-daba-4c28-8543-ddacaaca093d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 230,
+                        "layout|y": 440,
+                        "text": "确定",
+                        "width": 100
+                    },
+                    "name": "MyButton300",
+                    "designerId": "9e96df7a-cb45-4604-a6ac-da6be2afe22a",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var form = this.up('form').getForm(); // get the basic form\r",
+                                    "\r",
+                                    "\r",
+                                    "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    form.submit({\r",
+                                    "        url:'add_xunchaRW', \r",
+                                    "        //extraParams:{abwsId:Ext.getCmp('abwsIdGet').getValue()},\r",
+                                    "        success: function(form, action) {\r",
+                                    "\r",
+                                    "            Ext.Msg.alert('成功', '成功提交');\r",
+                                    "            var mystore = Ext.StoreMgr.get('abnmXunChaStore'); //获得store对象                                                   \r",
+                                    "            mystore.load();  \r",
+                                    "\r",
+                                    "            var win = Ext.getCmp('abnmXunChaAddTab');\r",
+                                    "            win.close();\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.Msg.alert('失败', '提交失败');\r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else { // display error alert if the data is invalid\r",
+                                    "Ext.Msg.alert('Invalid Data', 'Please correct form errors.');}"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "6e8dd173-2241-4475-a94b-ad83d19223ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 20,
+                        "layout|x": 520,
+                        "layout|y": 440,
+                        "text": "取消",
+                        "width": 90
+                    },
+                    "name": "MyButton301",
+                    "designerId": "4bdb0497-edc2-4ab2-b0f8-696f3324dd1c",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var win = Ext.getCmp('abnmXunChaAddTab');\r",
+                                    "win.close();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "60cf6540-26ee-4c1e-b3c5-5d983016f30c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 700,
+                        "layout|y": 10,
+                        "text": "生成任务编号"
+                    },
+                    "name": "MyButton302",
+                    "designerId": "cba909a0-e9cc-4797-8a0e-79ff732adea5",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "\r",
+                                    "Date.prototype.format = function(format){ \r",
+                                    "    var o = { \r",
+                                    "        \"M+\" : this.getMonth()+1, //month \r",
+                                    "        \"d+\" : this.getDate(), //day \r",
+                                    "        \"h+\" : this.getHours(), //hour \r",
+                                    "        \"m+\" : this.getMinutes(), //minute \r",
+                                    "        \"s+\" : this.getSeconds(), //second \r",
+                                    "        \"q+\" : Math.floor((this.getMonth()+3)/3), //quarter \r",
+                                    "        \"S\" : this.getMilliseconds() //millisecond \r",
+                                    "    }; \r",
+                                    "    if(/(y+)/.test(format)) { \r",
+                                    "        format = format.replace(RegExp.$1, (this.getFullYear()+\"\").substr(4 - RegExp.$1.length)); \r",
+                                    "    } \r",
+                                    "    for(var k in o) { \r",
+                                    "        if(new RegExp(\"(\"+ k +\")\").test(format)) { \r",
+                                    "            format = format.replace(RegExp.$1, RegExp.$1.length==1 ? o[k] : (\"00\"+ o[k]).substr((\"\"+ o[k]).length)); \r",
+                                    "        } \r",
+                                    "    } \r",
+                                    "    return format; \r",
+                                    "}; \r",
+                                    "\r",
+                                    "\r",
+                                    "var newDate = new Date();//日历实例化\r",
+                                    "\r",
+                                    "var newRwId = \"XCXC\"+newDate.format(\"yyyyMMddhhmmss\");//当前日期格式化\t\r",
+                                    "Ext.getCmp('xcxcRwId').setValue(newRwId);"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "8e9c4936-49a3-40ab-964b-c16c0b003ae6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "异常信息id",
+                "id": "abwsIdGet1",
+                "labelWidth": 80,
+                "name": "abwsId",
+                "width": 780
+            },
+            "name": "MyDisplayField49",
+            "designerId": "4c2b31a1-579b-41a5-bc56-31153ea43647"
+        }
+    ]
+}

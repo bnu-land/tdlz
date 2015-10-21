@@ -1,0 +1,51 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "TaishiPrice",
+        "designer|userClassName": "TaishiPrice",
+        "model": "TaishiPrice",
+        "storeId": "TaishiPrice"
+    },
+    "designerId": "262dade5-7040-4a32-a5be-6af9c46be27e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword: '',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList21"
+            },
+            "name": "MyAjaxProxy9",
+            "designerId": "a3450c17-8122-4ffc-b4d8-48b5c3fc3d61",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader9",
+                    "designerId": "d6787545-6307-44d7-b426-0820a68e56e4"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "TaishiAlarm_Pie",
+        "designer|userClassName": "TaishiAlarm_Pie",
+        "model": "TaishiAlarm_Pie",
+        "storeId": "TaishiAlarm_Pie"
+    },
+    "designerId": "6d39ba67-fbc6-45c4-9a68-8585bca4e2b8",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword:'',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList23"
+            },
+            "name": "MyAjaxProxy86",
+            "designerId": "60885c52-bfaa-4870-b600-4aa0e4ba57c6",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader86",
+                    "designerId": "0f56bea1-1ecc-40a6-bbfa-0a3d0d50a8b1"
+                }
+            ]
+        }
+    ]
+}

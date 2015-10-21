@@ -1,0 +1,687 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateSelectProject",
+        "designer|userClassName": "EvaluateSelectProject",
+        "layout": "fit",
+        "title": "项目质量评价"
+    },
+    "designerId": "fe1ef1d4-738e-4047-ac2c-94b9310b991e",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "columnLines": true,
+                "frame": true,
+                "height": 150,
+                "id": "EvaluateSelectProjectGrid",
+                "store": "FkacceptCheckStore",
+                "subGridXType": "",
+                "title": ""
+            },
+            "name": "MyGridPanel16",
+            "designerId": "a52de746-066e-4495-a84f-89d94d7240ab",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer12",
+                    "designerId": "299f6adb-ba16-4e27-9155-751c205b11c0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyId",
+                        "text": "申请编号",
+                        "width": 130
+                    },
+                    "name": "MyColumn101",
+                    "designerId": "1cb2b26b-7430-4e53-bed2-528a6758a760"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "复垦项目编号",
+                        "width": 130
+                    },
+                    "name": "MyColumn102",
+                    "designerId": "3a1bb060-6343-4b93-8bce-450a3a65e628"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "defaultWidth": 150,
+                        "text": "复垦项目名称",
+                        "width": 260
+                    },
+                    "name": "MyColumn103",
+                    "designerId": "ee58ea08-5547-4e77-8a71-8a836ff9b2a1"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "conUnit",
+                        "text": "项目施工单位",
+                        "width": 230
+                    },
+                    "name": "MyColumn104",
+                    "designerId": "62828b94-b442-438b-b259-87de2eae96da"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyDate",
+                        "text": "提交申请日期"
+                    },
+                    "name": "MyDateColumn13",
+                    "designerId": "5047e115-5f28-4549-af3a-ff420ad31913"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "note",
+                        "text": "备注信息",
+                        "width": 160
+                    },
+                    "name": "MyColumn105",
+                    "designerId": "3da3af8e-02e6-4174-aec7-972c30c0a08b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "checkResult",
+                        "text": "审核结果"
+                    },
+                    "name": "MyColumn106",
+                    "designerId": "ecf740e9-45da-4d89-adbd-cf12df9c8f9e"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView16",
+                    "designerId": "59ee555e-c5b6-42bf-b3cd-db931e0c030a"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoScroll": true,
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar20",
+                    "designerId": "1ae950f5-cda1-4bea-89c0-b19f3ec00760",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入查询关键字",
+                                "fieldLabel": "申请编号",
+                                "id": "searchKeyword3",
+                                "inputId": "",
+                                "layout|flex": null,
+                                "name": "searchKeyword2"
+                            },
+                            "name": "MyTextField116",
+                            "designerId": "6b40f64b-2ad3-486b-bc9a-900173c8f958"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "查询",
+                                "id": "searchProject2",
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton84",
+                            "designerId": "c2166320-c02f-4d7f-83e6-a40e30280df1",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var mystore=Ext.StoreMgr.get('FkacceptCheckStore');//获得store对象\r",
+                                            "\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"25\",\r",
+                                            "    searchKeyword:Ext.getCmp('searchKeyword3').getValue()\r",
+                                            "} \r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "44ffa4de-f0fd-469b-9be1-ea73dd5df566"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_go.png",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "数据采集任务下达"
+                            },
+                            "name": "MyButton85",
+                            "designerId": "38bda7b0-2e5a-4c90-a0f1-6d43346474a0",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "var projectSelectedname = record[0].get(\"projectname\");\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('Addtask'));\r",
+                                            "    Ext.getCmp('projecttaskId').setValue(projectSelectedId);\r",
+                                            "    Ext.getCmp('projecttaskName').setValue(projectSelectedname);\r",
+                                            "\r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "fa7019fe-9f3a-41e9-ac4a-788fceb4fd89"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "项目土壤质量数据"
+                            },
+                            "name": "MyButton86",
+                            "designerId": "ede8ebc8-8b43-4225-835f-297bb45a1916",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('sampleDataManage'));\r",
+                                            "    var mystore=Ext.StoreMgr.get('SampleStore');\r",
+                                            "\r",
+                                            "    mystore.load(\r",
+                                            "    {params:{\r",
+                                            "        start:\"0\",\r",
+                                            "        limit:\"25\",\r",
+                                            "        searchKeyword:projectSelectedId\r",
+                                            "    }\r",
+                                            "});\r",
+                                            "\r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "a05faf7f-4802-4cd6-895b-7fe30db37dbd"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "项目工程质量数据"
+                            },
+                            "name": "MyButton87",
+                            "designerId": "07d36f1a-947b-445d-bd5b-801a33fc2b34",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('GongchengDataManage'));\r",
+                                            "    var mystore=Ext.StoreMgr.get('FkYanshouGongchengStore');\r",
+                                            "\r",
+                                            "    mystore.load(\r",
+                                            "    {params:{\r",
+                                            "        start:\"0\",\r",
+                                            "        limit:\"25\",\r",
+                                            "        searchKeyword:projectSelectedId\r",
+                                            "    }\r",
+                                            "});\r",
+                                            "\r",
+                                            "\r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "9a058192-f734-4ff5-bf1b-9fe854e0dcb5"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "土壤质量评价"
+                            },
+                            "name": "MyButton88",
+                            "designerId": "68a6a9a3-659e-412c-abf7-8a24b6fc1e44",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('EvaluateIndexPut'));\r",
+                                            "\r",
+                                            "    var EvaluateIndexPutForm = newtab.getComponent('EvaluateIndexPutForm'); \r",
+                                            "\r",
+                                            "    EvaluateIndexPutForm.load({\r",
+                                            "        params: {\r",
+                                            "            projectSelectedId: projectSelectedId\r",
+                                            "        },\r",
+                                            "        url:'get_sampleDetail_E',\r",
+                                            "        method:'GET',\r",
+                                            "        success:function(form,action){\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        failure:function(form,action){\r",
+                                            "            Ext.Msg.alert('提示',action.result.errorMessage);   \r",
+                                            "        }\r",
+                                            "    });     \r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "f87a53c1-2c50-45a9-87dc-91532e1f8f0c"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "工程质量评价"
+                            },
+                            "name": "MyButton89",
+                            "designerId": "edcaee29-e851-4418-9a66-52e9473ce2c6",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    //Ext.Msg.alert('提示', projectSelectedId);\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('EvaluateGongchengIndex'));\r",
+                                            "\r",
+                                            "    var EvaluateGongchengIndexForm = newtab.getComponent('EvaluateGongchengIndexForm'); \r",
+                                            "\r",
+                                            "    EvaluateGongchengIndexForm.load({\r",
+                                            "        params: {\r",
+                                            "            projectSelectedId: projectSelectedId\r",
+                                            "        },\r",
+                                            "        url:'get_gongchengDetail_E',\r",
+                                            "        method:'GET',\r",
+                                            "        success:function(form,action){\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        failure:function(form,action){\r",
+                                            "            Ext.Msg.alert('提示',action.result.errorMessage);   \r",
+                                            "        }\r",
+                                            "    });     \r",
+                                            "}\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7248b736-0e8c-493a-a6af-94ddcb3c8818"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "专家评价意见"
+                            },
+                            "name": "MyButton90",
+                            "designerId": "d65bd548-a522-4f2d-8422-535eef10b05d",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('EvaluateSelectProjectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "var projectSelectedname = record[0].get(\"projectname\");\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一个项目\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "else if (record.length==0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要评价的项目!');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('EvaluateExpertOpnion'));\r",
+                                            "    Ext.getCmp('projectidE').setValue(projectSelectedId);\r",
+                                            "    Ext.getCmp('projectnameE').setValue(projectSelectedname);\r",
+                                            "}    "
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "3bb81ecd-2303-4413-b1c3-a471f7b8d6ce"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "id": "MyapplyPage1",
+                        "store": "FkacceptCheckStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar11",
+                    "designerId": "42bf4e3d-d262-4dd4-ada9-2e1f00a0f1f7"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "userConfig": {
+                        "designer|displayName": "applyCheskbox"
+                    },
+                    "name": "MyCheckboxSelectionModel10",
+                    "designerId": "77b6aee8-c599-461e-9034-69da9e7db464"
+                }
+            ]
+        }
+    ]
+}

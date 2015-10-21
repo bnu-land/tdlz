@@ -1,0 +1,27 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['长寿区','1'],\r",
+            "  ['江津区','2'],\r",
+            "  ['潼南县','3'],\r",
+            "  ['丰都县','4'],\r",
+            "  ['石柱县','5'],\r",
+            "  ['北碚区','6']\r",
+            "]"
+        ],
+        "designer|userAlias": "TaishiAreaCombox",
+        "designer|userClassName": "TaishiAreaCombox",
+        "model": "TaishiPriceTextField",
+        "storeId": "TaishiAreaCombox"
+    },
+    "designerId": "d3f028cd-98f6-4644-965c-df1000b2145e"
+}

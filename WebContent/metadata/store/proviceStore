@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "proviceStore",
+        "model": "infoAreaModel",
+        "pageSize": null,
+        "storeId": "proviceStore"
+    },
+    "designerId": "879cf7fd-1c0f-434c-98df-1dfa22e86161",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": null,
+                "url": "get_infoAreaProvinceList"
+            },
+            "name": "MyAjaxProxy20",
+            "designerId": "d7398a40-f375-4817-a3da-d61d63a87ecf",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "name": "MyJsonReader20",
+                    "designerId": "5abcefb9-4139-4615-b359-b5e17487add0"
+                }
+            ]
+        }
+    ]
+}

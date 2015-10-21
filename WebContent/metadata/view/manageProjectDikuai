@@ -1,0 +1,767 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "manageProjectDikuai",
+        "designer|userClassName": "manageProjectDikuai",
+        "layout": "fit",
+        "title": "项目片块管理"
+    },
+    "designerId": "ab1f1178-2cf7-4af2-9247-76814c492f10",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnLines": true,
+                "frame": true,
+                "height": 150,
+                "id": "projectDikuaiGrid",
+                "store": "FkProjectDikuaiStore",
+                "subGridXType": "",
+                "title": ""
+            },
+            "name": "MyGridPanel13",
+            "designerId": "cef02c48-7d52-4ac2-8327-a7401594e11b",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "recordId",
+                        "hidden": true,
+                        "text": "记录号"
+                    },
+                    "name": "MyColumn57",
+                    "designerId": "4a080d70-d8c6-4b02-a85a-46d858e4699a"
+                },
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer10",
+                    "designerId": "7dbfe7a2-55b7-4b6c-a9e1-620c1b8e214a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "landId",
+                        "text": "片块号"
+                    },
+                    "name": "MyColumn58",
+                    "designerId": "9afc5f4c-b95e-4900-9a5b-d99864507339"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号"
+                    },
+                    "name": "MyColumn59",
+                    "designerId": "dd67b4ae-73ef-456d-a050-86dbe8b36641"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "text": "项目名称"
+                    },
+                    "name": "MyColumn60",
+                    "designerId": "4679220c-d887-4d24-904c-90852e29e25e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "personRights",
+                        "text": "权利人"
+                    },
+                    "name": "MyColumn61",
+                    "designerId": "9cf04c73-3606-4f8e-bfb5-cc85cac0fc09"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "ownershipUnits",
+                        "text": "土地产权属性"
+                    },
+                    "name": "MyColumn62",
+                    "designerId": "c7362e68-d625-4e7c-8dd2-07781dfad1e0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "propertyNumber",
+                        "text": "宅基地产权证号"
+                    },
+                    "name": "MyColumn63",
+                    "designerId": "a2dce556-5939-4087-9bdd-bc697c923ac3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fuKenhouPropertyNumber",
+                        "text": "复垦后产权证号"
+                    },
+                    "name": "MyColumn64",
+                    "designerId": "f1bbdfe1-c380-4191-bf6f-3a39be40da09"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "landLocation",
+                        "text": "片块位置"
+                    },
+                    "name": "MyColumn65",
+                    "designerId": "e2d12630-b8e3-4aa9-92f7-2ebfb8e6611b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fukenArea",
+                        "text": "片块面积"
+                    },
+                    "name": "MyColumn66",
+                    "designerId": "bf9c76fa-2167-44dd-8c89-98dc47b7e5a9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "mapSheetNumber",
+                        "text": "图幅号"
+                    },
+                    "name": "MyColumn67",
+                    "designerId": "0ecff10b-cf62-4182-bb8b-815279db8241"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "polygonNumber",
+                        "text": "图斑号"
+                    },
+                    "name": "MyColumn68",
+                    "designerId": "78c7412d-01de-4e35-a296-0e8272a07c0f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fukenqianLandUse",
+                        "text": "复垦前土地利用类型"
+                    },
+                    "name": "MyColumn69",
+                    "designerId": "14df6c68-0006-40f0-a509-9ff45d1b8879"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "newHousingArea",
+                        "text": "新建住房占地"
+                    },
+                    "name": "MyColumn70",
+                    "designerId": "27265886-c224-49e4-b507-d40f29d964bd"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "newHousingArea",
+                        "text": "增加耕地面积"
+                    },
+                    "name": "MyColumn71",
+                    "designerId": "3bfaca94-3a97-46cb-bd03-5f1775d86bb9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "whereAbouts",
+                        "text": "去向"
+                    },
+                    "name": "MyColumn72",
+                    "designerId": "0897e982-4835-4e48-a09c-057256708c05"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "土地使用证"
+                    },
+                    "name": "MyColumn73",
+                    "designerId": "2521b831-54be-4639-8bd7-d4789a09226f",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "return \"<img src='Upload/before/zjd.jpg' />\";"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "b930d83b-8ccb-4530-bd0a-38512c5f86e6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView13",
+                    "designerId": "e24c3785-e29b-45b6-a747-5c103bb9c0e2"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar15",
+                    "designerId": "d14a4596-76bf-46b2-b3a6-6c60b393a1f7",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_add.png",
+                                "layout|flex": null,
+                                "text": "添加片块信息"
+                            },
+                            "name": "MyButton62",
+                            "designerId": "288e4ec2-fb18-4bac-b801-41d2d332ef59",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('addFkdikuai'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "4da61247-d8e6-4a34-a6fc-22deb835f2d4"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_edit.png",
+                                "iconCls": "imgs/table/table_edit.png",
+                                "layout|flex": null,
+                                "text": "编辑地块信息"
+                            },
+                            "name": "MyButton63",
+                            "designerId": "584e6155-0939-4bc3-bc97-885fa18ad247",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectDikuaiGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"recordId\");\r",
+                                            "if (record.length == 0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要操作的行!'+0);\r",
+                                            "    return;\r",
+                                            "\r",
+                                            "} else if (record.length > 1) {\r",
+                                            "    Ext.Msg.alert('提示', '只能选择一行数据');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    Ext.Msg.alert('提示', projectSelectedId);\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab = tabs.add(Ext.widget('updateFkdikuai'));\r",
+                                            "\r",
+                                            "    var updateFkdikuaiForm = newtab.getComponent('updateFkdikuaiForm'); \r",
+                                            "    Ext.Msg.alert('提示', updateFkdikuaiForm.id);\r",
+                                            "    updateFkdikuaiForm.load({\r",
+                                            "        params: {\r",
+                                            "            dikuaiSelectedId: projectSelectedId\r",
+                                            "        },\r",
+                                            "        url:'get_dikuaiDetail',\r",
+                                            "        method:'GET',\r",
+                                            "        success:function(form,action){ \r",
+                                            "            Ext.Msg.alert('提示','数据加载成功'); \r",
+                                            "        },\r",
+                                            "        failure:function(form,action){\r",
+                                            "            Ext.Msg.alert('提示','数据加载失败');   \r",
+                                            "        }\r",
+                                            "    });     \r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7d54bbb6-c935-4875-b295-5d40d88518b5"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "iconCls": "imgs/table/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除片块信息"
+                            },
+                            "name": "MyButton64",
+                            "designerId": "4cbf9d6c-2841-48a7-97c5-94b1f4e7daa0",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectDikuaiGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  projectIds =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        projectIds[i] = record[i].get(\"recordId\");\r",
+                                            "\r",
+                                            "    }\r",
+                                            "    //Ext.Msg.alert('提示',projectIds);\r",
+                                            "\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'del_dikuaiByIds',\r",
+                                            "        params:{projectIds:projectIds},\r",
+                                            "\r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('success','地块已删除');\r",
+                                            "            var mystore = Ext.StoreMgr.get('FkProjectDikuaiStore');\r",
+                                            "            mystore.load();\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "bbd6af4c-baff-41fd-864d-297739f4e89a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "iconCls": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "返回到项目管理"
+                            },
+                            "name": "MyButton65",
+                            "designerId": "c7e44420-6db1-47d8-b77b-b60dc57d7815",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs=this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "var newtab= tabs.add(Ext.widget('manageProject'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "c2425217-3b18-4606-b83d-f24ee8b62c98"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入查询关键字",
+                                "fieldLabel": "项目编号",
+                                "id": "searchKeywordDikuai",
+                                "inputId": "",
+                                "layout|flex": null,
+                                "name": "searchKeyword1"
+                            },
+                            "name": "MyTextField89",
+                            "designerId": "89557a04-cdab-4c36-a928-71e19c8c99aa"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "查询",
+                                "id": "searchProject5",
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton66",
+                            "designerId": "0bc77f4a-a1f2-4ba0-9fbc-b5c605443fe5",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "//var getKeyword = Ext.getCmp('searchKeyword1').getValue();\r",
+                                            "//Ext.Msg.alert(getKeyword);\r",
+                                            "var mystore=Ext.StoreMgr.get('FkProjectDikuaiStore');//获得store对象\r",
+                                            "//Ext.Msg.alert('11',mystore);\r",
+                                            "\r",
+                                            "//在load事件中添加参数\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"25\",\r",
+                                            "    searchKeywordName:Ext.getCmp('searchKeywordDikuai').getValue()\r",
+                                            "} \r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7c7516aa-c97b-4858-a515-42f508b06ce0"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "高级查询",
+                                "id": "searchProject6",
+                                "layout|flex": null,
+                                "text": "高级查询"
+                            },
+                            "name": "MyButton67",
+                            "designerId": "6dc42f5c-f8e3-4aa5-99b7-c1417e70944b",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var win=new Ext.Window({\r",
+                                            "    height: 412,\r",
+                                            "    width: 334,    \r",
+                                            "    layout: {\r",
+                                            "        type: 'absolute'\r",
+                                            "    },\r",
+                                            "    title: '高级查询',    \r",
+                                            "\r",
+                                            "    modal: true,\r",
+                                            "    items: [\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 70,\r",
+                                            "        id: 'projectSearchName',\r",
+                                            "        fieldLabel: '地块编号'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 110,\r",
+                                            "        id: 'projectSearchID',\r",
+                                            "        fieldLabel: '权利人'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 230,\r",
+                                            "        id: 'projectSearchSite',\r",
+                                            "        fieldLabel: '地块区域'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'label',\r",
+                                            "        x: 30,\r",
+                                            "        y: 30,\r",
+                                            "        shrinkWrap: 3,\r",
+                                            "        text: '请设置项目高级查询参数：'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 150,\r",
+                                            "        id: 'projectSearchStarttime',\r",
+                                            "        fieldLabel: '项目编号'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 190,\r",
+                                            "        id: 'projectSearchFinishtime',\r",
+                                            "        fieldLabel: '项目名称'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'button',\r",
+                                            "        handler: function(button, event) {            \r",
+                                            "\r",
+                                            "            var mystore=Ext.StoreMgr.get('FkProjectDikuaiStore');//获得store对象\r",
+                                            "\r",
+                                            "            mystore.load(\r",
+                                            "            {params:{\r",
+                                            "                start:\"0\",\r",
+                                            "                limit:\"25\",\r",
+                                            "                searchKeywordName:Ext.getCmp('projectSearchName').getValue(),\r",
+                                            "                searchKeywordID:Ext.getCmp('projectSearchID').getValue(),\r",
+                                            "                searchKeywordSite:Ext.getCmp('projectSearchSite').getValue(),\r",
+                                            "                searchKeywordStarttime:Ext.getCmp('projectSearchStarttime').getValue(),\r",
+                                            "                searchKeywordFinishtime:Ext.getCmp('projectSearchFinishtime').getValue()\r",
+                                            "            } \r",
+                                            "        }\r",
+                                            "        );\r",
+                                            "    },\r",
+                                            "    x: 120,\r",
+                                            "    y: 300,\r",
+                                            "    text: '查询'\r",
+                                            "}\r",
+                                            "]\r",
+                                            "});\r",
+                                            "\r",
+                                            "win.show();\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "8d311620-4850-462e-8514-c403cb2a107b"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "FkProjectDikuaiStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar8",
+                    "designerId": "dfc52420-da3f-4d3c-ad30-1ac1252ad219"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel7",
+                    "designerId": "08d7b9ee-f323-4c71-b3bf-6b78818e00e1"
+                }
+            ]
+        }
+    ]
+}

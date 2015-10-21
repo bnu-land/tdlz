@@ -1,0 +1,53 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoCommentStore",
+        "model": "InfoCommentModel",
+        "pageSize": null,
+        "storeId": "InfoCommentStore"
+    },
+    "designerId": "7f4c9ae4-d428-486b-8f4c-ed652c710e07",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    articleId:''\r",
+                    "\r",
+                    "}"
+                ],
+                "url": "get_infoCommentList"
+            },
+            "name": "MyAjaxProxy47",
+            "designerId": "196ff545-26f2-459f-8c0e-d27d74fed775",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader47",
+                    "designerId": "031a4ea2-a4d8-48c7-9bd6-63f28a2afe23"
+                }
+            ]
+        }
+    ]
+}

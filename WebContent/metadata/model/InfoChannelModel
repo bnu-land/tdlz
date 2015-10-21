@@ -1,0 +1,40 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "InfoChannelModel"
+    },
+    "designerId": "d18e575b-da4d-4bea-b797-9b0e2c42b26a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "channelId"
+            },
+            "name": "MyField304",
+            "designerId": "baa519ea-7eff-4a89-b124-682cbe86a3d5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "channelName"
+            },
+            "name": "MyField305",
+            "designerId": "9f9dd637-8fef-41ee-9d04-54eb7a969b82"
+        }
+    ]
+}

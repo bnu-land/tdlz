@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "projectNameIDStore",
+        "model": "publicProjectModel",
+        "pageSize": 15,
+        "storeId": "projectNameIDStore"
+    },
+    "designerId": "5fd4aa6d-5778-4312-84af-c7a34e2f153b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{projectName:''}"
+                ],
+                "url": "get_projectIDList"
+            },
+            "name": "MyAjaxProxy93",
+            "designerId": "2cc04773-6cfb-45d8-875b-22fb99c226d0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader93",
+                    "designerId": "a3ccfb53-192f-4a7d-ba37-966fc6a16a1d"
+                }
+            ]
+        }
+    ]
+}

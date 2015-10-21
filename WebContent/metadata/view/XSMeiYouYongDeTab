@@ -1,0 +1,712 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": null,
+        "designer|userClassName": "XSMeiYouYongDeTab",
+        "id": null,
+        "title": "复垦数据管理"
+    },
+    "designerId": "424e7865-bf9e-495f-be31-88ed557ec6bd",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 428,
+                "layout": "fit",
+                "title": "",
+                "url": "FKSchemeShow"
+            },
+            "name": "MyForm23",
+            "designerId": "bc638af7-8956-403d-8d1d-275d3d0fb9d1",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "forceFit": true,
+                        "height": 560,
+                        "store": "syrSchemeShow",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel27",
+                    "designerId": "7b9c8ded-2e14-4f8d-92e3-f48cc56a1a67",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer21",
+                            "designerId": "051b7329-82bc-4fba-8876-123eed2c4a9b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "dbTime",
+                                "text": "入库时间"
+                            },
+                            "name": "MyDateColumn21",
+                            "designerId": "fc4efe7a-c4a8-498e-9cba-6d7fee4a9325"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "autoRender": true,
+                                "autoShow": true
+                            },
+                            "name": "MyGridView27",
+                            "designerId": "b5ce077d-3a79-48f6-bf0d-8b1c8a7a2d61"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "projectName",
+                                "text": "项目名称"
+                            },
+                            "name": "MyColumn145",
+                            "designerId": "58cb7211-c490-4b55-a507-bc461e5371a4"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "finishTime",
+                                "text": "复垦完成时间"
+                            },
+                            "name": "MyDateColumn22",
+                            "designerId": "345d84fd-6d7b-4a5f-83b9-af6eeb5bab83"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "projectLocation",
+                                "text": "项目位置"
+                            },
+                            "name": "MyColumn146",
+                            "designerId": "a27071ff-9982-4c94-9207-debcde1b5002"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "fixed": true
+                            },
+                            "name": "MyToolbar35",
+                            "designerId": "76bd328d-f518-426c-8a30-e69556bda7cb",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "项目名称",
+                                        "id": "ProjectNameProjectRecord",
+                                        "labelAlign": "right",
+                                        "labelWidth": 60,
+                                        "layout|flex": null,
+                                        "width": 195
+                                    },
+                                    "name": "MyTextField130",
+                                    "designerId": "9f9f0f3b-fc68-4cc8-a9f5-72629d38b153"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "省",
+                                        "id": "ProvinceProjectRecord",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "width": 69
+                                    },
+                                    "name": "MyTextField131",
+                                    "designerId": "2b553524-5f7c-4fe5-9576-1ee906dea4eb"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "市",
+                                        "id": "CityeProjectRecord",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "width": 75
+                                    },
+                                    "name": "MyTextField132",
+                                    "designerId": "b8d8d670-3eb1-4a6e-8514-27c52b3e93a9"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "县",
+                                        "id": "CountyProjectRecord",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "width": 80
+                                    },
+                                    "name": "MyTextField133",
+                                    "designerId": "293ee2f5-1d8e-4ca3-b175-85f9b5002e53"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "复垦完成时间",
+                                        "id": "FinishTimeStartProjectRecord",
+                                        "labelAlign": "right",
+                                        "labelWidth": 80,
+                                        "layout|flex": null,
+                                        "width": 151
+                                    },
+                                    "name": "MyDateField30",
+                                    "designerId": "d0c3b2e6-4c3f-4aa9-8568-ddf5d1b57097"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "——",
+                                        "id": "FinishTimeEndProjectRecord",
+                                        "labelSeparator": "—",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "width": 111
+                                    },
+                                    "name": "MyDateField31",
+                                    "designerId": "c01ada3d-e59e-43f1-8988-84c9cb4e1e65"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "text": "查询",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton138",
+                                    "designerId": "392f2492-4cf7-4a75-b5a7-0db0a9639df6",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var mystore=Ext.StoreMgr.get('MonitorAll');//获取store对象\r",
+                                                    "mystore.load(\r",
+                                                    "{ params:{\r",
+                                                    "    start:\"0\",\r",
+                                                    "    limit:\"10\",\r",
+                                                    "searchField:Ext.getCmp('ProjectNameProjectRecord').getValue()}//参数名称- 值\r",
+                                                    "}\r",
+                                                    ");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "290717bc-a76f-4554-8e4c-321d281614ad"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "text": "添加",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton139",
+                                    "designerId": "b8b990ca-086d-4248-b71f-4e3f1a48b202",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid=this.up('grid');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "var ids='';\r",
+                                                    "for(var i=0;i<record.length;i++)\r",
+                                                    "{\r",
+                                                    "    ids+=record[i].get(\"id\");\r",
+                                                    "    if(i<record.length-1)ids=ids+\",\";\r",
+                                                    "}\r",
+                                                    "var win=new Ext.Window({\r",
+                                                    "    height: 455,\r",
+                                                    "    width: 600,\r",
+                                                    "    layout: {\r",
+                                                    "        type: 'absolute'\r",
+                                                    "    },\r",
+                                                    "    title: '添加数据',\r",
+                                                    "    modal: true,\r",
+                                                    "            items: [\r",
+                                                    "            {\r",
+                                                    "                xtype: 'form',\r",
+                                                    "                x: -4,\r",
+                                                    "                y: 10,\r",
+                                                    "                height: 420,\r",
+                                                    "                id: 'SchemePreviewForm1',\r",
+                                                    "                layout: {\r",
+                                                    "                    type: 'absolute'\r",
+                                                    "                },\r",
+                                                    "                bodyPadding: 10,\r",
+                                                    "                title: '',\r",
+                                                    "                jsonSubmit: true,\r",
+                                                    "                items: [\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 0,\r",
+                                                    "                    y: 30,\r",
+                                                    "                    id: 'ProjectName2',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 550,\r",
+                                                    "                    fieldLabel: '项目名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 230,\r",
+                                                    "                    itemId: 'ProjectArea',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 338,\r",
+                                                    "                    fieldLabel: '项目规模(公顷)',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 130,\r",
+                                                    "                    itemId: 'ProjectArea1',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 340,\r",
+                                                    "                    fieldLabel: '包含乡镇名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 180,\r",
+                                                    "                    itemId: 'ProjectArea2',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 340,\r",
+                                                    "                    fieldLabel: '包含村名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 280,\r",
+                                                    "                    id: 'ContructUnit1',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 339,\r",
+                                                    "                    fieldLabel: '设计单位',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'button',\r",
+                                                    "                    x: 330,\r",
+                                                    "                    y: 380,\r",
+                                                    "                    height: 40,\r",
+                                                    "                    width: 80,\r",
+                                                    "                    text: '取消并返回'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'button',\r",
+                                                    "                    x: 200,\r",
+                                                    "                    y: 380,\r",
+                                                    "                    height: 40,\r",
+                                                    "                    width: 60,\r",
+                                                    "                    text: '确定公示'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: -1,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    fieldLabel: '所属行政区     省',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '：'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: 250,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    width: 110,\r",
+                                                    "                    fieldLabel: '市：',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '',\r",
+                                                    "                    labelWidth: 20\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: 370,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    width: 130,\r",
+                                                    "                    fieldLabel: '县：',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '',\r",
+                                                    "                    labelWidth: 20\r",
+                                                    "                }]\r",
+                                                    "            }\r",
+                                                    "              ]\r",
+                                                    "});\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "win.show();  \r",
+                                                    "return ;                "
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "e0486109-fe6d-4011-9218-dcd92c6eb1f8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "text": "修改",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton140",
+                                    "designerId": "81db372f-6921-48ca-bf9a-248de37e25bd",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var grid=this.up('grid');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "var ids='';\r",
+                                                    "for(var i=0;i<record.length;i++)\r",
+                                                    "{\r",
+                                                    "    ids+=record[i].get(\"id\");\r",
+                                                    "    if(i<record.length-1)ids=ids+\",\";\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "var win=new Ext.Window({\r",
+                                                    "\r",
+                                                    "    height: 455,\r",
+                                                    "    width: 600,\r",
+                                                    "    layout: {\r",
+                                                    "        type: 'absolute'\r",
+                                                    "    },\r",
+                                                    "    title: '编辑数据',\r",
+                                                    "    modal: true,\r",
+                                                    "            items: [\r",
+                                                    "            {\r",
+                                                    "                xtype: 'form',\r",
+                                                    "                x: -4,\r",
+                                                    "                y: 10,\r",
+                                                    "                height: 420,\r",
+                                                    "                id: 'SchemePreviewForm1',\r",
+                                                    "                layout: {\r",
+                                                    "                    type: 'absolute'\r",
+                                                    "                },\r",
+                                                    "                bodyPadding: 10,\r",
+                                                    "                title: '',\r",
+                                                    "                jsonSubmit: true,\r",
+                                                    "                items: [\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 0,\r",
+                                                    "                    y: 30,\r",
+                                                    "                    id: 'ProjectName2',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 550,\r",
+                                                    "                    fieldLabel: '项目名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 230,\r",
+                                                    "                    itemId: 'ProjectArea',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 338,\r",
+                                                    "                    fieldLabel: '项目规模(公顷)',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 130,\r",
+                                                    "                    itemId: 'ProjectArea1',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 340,\r",
+                                                    "                    fieldLabel: '包含乡镇名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 180,\r",
+                                                    "                    itemId: 'ProjectArea2',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 340,\r",
+                                                    "                    fieldLabel: '包含村名称',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'textfield',\r",
+                                                    "                    x: 10,\r",
+                                                    "                    y: 280,\r",
+                                                    "                    id: 'ContructUnit1',\r",
+                                                    "                    margin: 10,\r",
+                                                    "                    width: 339,\r",
+                                                    "                    fieldLabel: '设计单位',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelWidth: 90\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'button',\r",
+                                                    "                    x: 330,\r",
+                                                    "                    y: 380,\r",
+                                                    "                    height: 40,\r",
+                                                    "                    width: 80,\r",
+                                                    "                    text: '取消并返回'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'button',\r",
+                                                    "                    x: 200,\r",
+                                                    "                    y: 380,\r",
+                                                    "                    height: 40,\r",
+                                                    "                    width: 60,\r",
+                                                    "                    text: '确定公示'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: -1,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    fieldLabel: '所属行政区     省',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '：'\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: 250,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    width: 110,\r",
+                                                    "                    fieldLabel: '市：',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '',\r",
+                                                    "                    labelWidth: 20\r",
+                                                    "                },\r",
+                                                    "                {\r",
+                                                    "                    xtype: 'combobox',\r",
+                                                    "                    x: 370,\r",
+                                                    "                    y: 90,\r",
+                                                    "                    width: 130,\r",
+                                                    "                    fieldLabel: '县：',\r",
+                                                    "                    labelAlign: 'right',\r",
+                                                    "                    labelSeparator: '',\r",
+                                                    "                    labelWidth: 20\r",
+                                                    "                }]\r",
+                                                    "            }\r",
+                                                    "              ]\r",
+                                                    "});\r",
+                                                    "\r",
+                                                    "win.show();    \r",
+                                                    "return ;"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "82113a8b-30a1-466f-a869-69c07bf0bb65"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "text": "删除",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton141",
+                                    "designerId": "04b9a72d-14aa-4281-8d71-ada76a4e6127",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    ""
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "7b260db9-6935-4b9c-98ce-6312747ef076"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "displayMsg": "显示{0} - {1} 条，共计 {2}",
+                                "dock": "bottom",
+                                "emptyMsg": "没有数据",
+                                "store": "syrSchemeShow",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar15",
+                            "designerId": "23b612cb-d2dd-4ec5-8afd-4e4c43ee64c8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

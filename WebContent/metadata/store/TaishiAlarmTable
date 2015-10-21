@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "TaishiAlarmTable",
+        "model": "TaishiAlarmTable",
+        "sortRoot": "",
+        "storeId": "TaishiAlarmTable"
+    },
+    "designerId": "513d2a0b-4fc2-4b5d-ad5b-1cf7d6d3fb39",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword:'',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList25"
+            },
+            "name": "MyAjaxProxy13",
+            "designerId": "57de2ec4-6da7-44e5-b1c9-db1593be72b1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader13",
+                    "designerId": "30977c24-137e-480d-bf92-d7bcfce08c3d"
+                }
+            ]
+        }
+    ]
+}

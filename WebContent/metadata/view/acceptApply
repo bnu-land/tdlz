@@ -1,0 +1,542 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "acceptApply",
+        "designer|userClassName": "acceptApply",
+        "layout": "fit",
+        "title": "验收申请"
+    },
+    "designerId": "c7ecf8b2-6776-4049-a338-4aa4409177ed",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "applyForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "method": "",
+                "standardSubmit": false,
+                "title": "",
+                "url": "submit_apply"
+            },
+            "name": "MyForm27",
+            "designerId": "fce3bc3e-f4e6-4193-bdf7-24f48b6dfa24",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "重庆大正土地规划整治有限公司",
+                        "fieldLabel": "项目施工单位",
+                        "id": "applyConUnit",
+                        "labelWidth": 85,
+                        "layout|x": 40,
+                        "layout|y": 100,
+                        "name": "conUnit",
+                        "width": 320
+                    },
+                    "name": "MyTextField166",
+                    "designerId": "6f815d04-da77-4a1a-8b80-387fd651052f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "申请是否审核",
+                        "formBind": false,
+                        "frame": false,
+                        "hidden": true,
+                        "id": null,
+                        "layout|x": 550,
+                        "layout|y": 280,
+                        "name": "checkResult",
+                        "readOnly": true,
+                        "value": [
+                            "未审核"
+                        ],
+                        "width": 240
+                    },
+                    "name": "MyTextField167",
+                    "designerId": "f7a26ff3-70ef-4f10-8440-45f616b7cd8f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "文件已上传",
+                        "formBind": false,
+                        "frame": false,
+                        "id": "fileCheck",
+                        "labelWidth": 85,
+                        "layout|x": 410,
+                        "layout|y": 100,
+                        "name": "fileCheck",
+                        "readOnly": true,
+                        "submitValue": false,
+                        "width": 320
+                    },
+                    "name": "MyTextField168",
+                    "designerId": "0760a0fc-b3b3-409d-8392-0535e04349f3"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "项目资料，已经通过自捡，现在提交项目验收评价申请",
+                        "fieldLabel": "备注说明",
+                        "height": 92,
+                        "id": "applyNote",
+                        "labelWidth": 85,
+                        "layout|x": 40,
+                        "layout|y": 160,
+                        "name": "note",
+                        "width": 690
+                    },
+                    "name": "MyTextArea9",
+                    "designerId": "a145db95-f5dc-49ca-b8af-0fd9b8c940b2"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 220,
+                        "layout|y": 300,
+                        "text": "提交申请"
+                    },
+                    "name": "MyButton165",
+                    "designerId": "af15bb74-4491-4aa4-a001-9e9f584ccc2e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var fileCheck=Ext.getCmp('fileCheck').getValue();\r",
+                                    "var projectApplyId=Ext.getCmp('projectApplyId').getValue();\r",
+                                    "var projectApplyname=Ext.getCmp('projectApplyname').getValue();\r",
+                                    "var applyConUnit=Ext.getCmp('applyConUnit').getValue();\r",
+                                    "var applyNote=Ext.getCmp('applyNote').getValue();\r",
+                                    "\r",
+                                    "if (fileCheck=='是') { \r",
+                                    "    Ext.Ajax.request({\r",
+                                    "        url:'submit_apply',\r",
+                                    "        method: 'POST',\r",
+                                    "        params:{PROJECTID:Ext.getCmp('projectApplyId').getValue(),\r",
+                                    "            projectnameG:Ext.getCmp('projectApplyname').getValue(),\r",
+                                    "            conUnit:Ext.getCmp('applyConUnit').getValue(),\r",
+                                    "            fileCheck:fileCheck,\r",
+                                    "            applyNote:Ext.getCmp('applyNote').getValue()\r",
+                                    "        },\r",
+                                    "\r",
+                                    "        success:function(options, eOpts){\r",
+                                    "        Ext.Msg.alert('提示', '申请提交成功！'); },     \r",
+                                    "        failure:function(options, eOpts){\r",
+                                    "        Ext.Msg.alert('提示', '申请提交失败！'); } \r",
+                                    "\r",
+                                    "    });\r",
+                                    "} else { \r",
+                                    "    Ext.Msg.alert('提示', '请上传项目申请文件');\r",
+                                    "}\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "51d43737-7c7b-4673-a22d-aa05024abc13"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 480,
+                        "layout|y": 300,
+                        "text": "重置"
+                    },
+                    "name": "MyButton166",
+                    "designerId": "3629b4f9-516e-44cb-ad92-f6ac849ad1fb",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "Ext.getCmp('applyForm').getForm().reset();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "d56b97e5-26ba-4056-8a72-6af7d3ff7a83"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 350,
+                        "layout|y": 300,
+                        "text": "查看申请"
+                    },
+                    "name": "MyButton167",
+                    "designerId": "1830455c-8d69-4597-974f-97278f675204",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "var newtab = tabs.add(Ext.widget('ManagAcceptApply'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "61200f2e-307d-4c9b-8430-576ce49245e6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 740,
+                        "layout|y": 100,
+                        "text": "上传项目申请文件"
+                    },
+                    "name": "MyButton168",
+                    "designerId": "e36c1006-fafa-4ec4-bb6b-f0969e15ad18",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 400,\r",
+                                    "    width: 1000,    \r",
+                                    "    layout: {\r",
+                                    "        type: 'absolute'\r",
+                                    "    },\r",
+                                    "    title: '文件上传',    \r",
+                                    "\r",
+                                    "    modal: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        height: 400,\r",
+                                    "        width: 1000, \r",
+                                    "        id: 'applyForm1',\r",
+                                    "        autoScroll: true,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        title: '',\r",
+                                    "        jsonSubmit: true,\r",
+                                    "        method: 'post',\r",
+                                    "        url: 'submit_applyFile',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            handler: function(button, event) {\r",
+                                    "                var f=Ext.getCmp('applyForm1');\r",
+                                    "                var fkapplyfilename=Ext.getCmp('fkapplyfilename').getValue();\r",
+                                    "                var fkapplyReport=Ext.getCmp('fkapplyReport').getValue();\r",
+                                    "                var fkapplyFinancialDocuments=Ext.getCmp('fkapplyFinancialDocuments').getValue();\r",
+                                    "                var fkapplyBidding=Ext.getCmp('fkapplyBidding').getValue();\r",
+                                    "                var statusMap=Ext.getCmp('statusMap').getValue();\r",
+                                    "                var planMap=Ext.getCmp('planMap').getValue();\r",
+                                    "                var builtDrawingsMap=Ext.getCmp('builtDrawingsMap').getValue();\r",
+                                    "                var tabs = this.up('tabpanel');\r",
+                                    "\r",
+                                    "                if(fkapplyfilename==''||fkapplyReport==''||fkapplyFinancialDocuments==''||fkapplyBidding==''||statusMap==''||planMap==''||builtDrawingsMap=='')\r",
+                                    "                {\r",
+                                    "                    Ext.MessageBox.alert('提示','请上传所有申请文件');\r",
+                                    "                }\r",
+                                    "                else\r",
+                                    "                {\r",
+                                    "                    Ext.MessageBox.confirm('提示','您确定要全部提交文件吗？',function(btn)\r",
+                                    "                    {\r",
+                                    "                        if(btn=='yes')\r",
+                                    "                        {\r",
+                                    "                            f.getForm().submit(\r",
+                                    "                            {\r",
+                                    "                                url:'submit_applyFile',\r",
+                                    "                                method:'post',\r",
+                                    "                                success:function(form, action){\r",
+                                    "                                    win.close();\r",
+                                    "                                    Ext.getCmp('fileCheck').setValue('是');\r",
+                                    "                                    Ext.MessageBox.alert('信息',action.result.msg);\r",
+                                    "                                },\r",
+                                    "                                failure:function(){\r",
+                                    "\r",
+                                    "                                    Ext.MessageBox.alert('错误','操作失败！');\r",
+                                    "                                }\r",
+                                    "                            }\r",
+                                    "                            );\r",
+                                    "\r",
+                                    "                        }\r",
+                                    "                    }\r",
+                                    "                    );\r",
+                                    "                }\r",
+                                    "            },\r",
+                                    "            x: 470,\r",
+                                    "            y: 320,\r",
+                                    "            text: '提交文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 50,\r",
+                                    "            y: 40,\r",
+                                    "            id: 'fkapplyfilename',\r",
+                                    "            fieldLabel: '复垦申请表(Word)',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'fkapplyfilename',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 50,\r",
+                                    "            y: 100,\r",
+                                    "            id: 'fkapplyReport',\r",
+                                    "            fieldLabel: '验收自检报告(Word)',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'fkapplyReport',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 50,\r",
+                                    "            y: 160,\r",
+                                    "            id: 'fkapplyFinancialDocuments',\r",
+                                    "            fieldLabel: '项目财务文件(Word)',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'fkapplyFinancialDocuments',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 50,\r",
+                                    "            y: 220,\r",
+                                    "            id: 'fkapplyBidding',\r",
+                                    "            fieldLabel: '招投标文件(Word)',\r",
+                                    "            labelWidth: 145,\r",
+                                    "            name: 'fkapplyBidding',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 560,\r",
+                                    "            y: 40,\r",
+                                    "            id: 'statusMap',\r",
+                                    "            fieldLabel: '现状图(JPG)',\r",
+                                    "            labelWidth: 120,\r",
+                                    "            name: 'statusMap',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 560,\r",
+                                    "            y: 100,\r",
+                                    "            id: 'planMap',\r",
+                                    "            fieldLabel: '规划图(JPG)',\r",
+                                    "            labelWidth: 120,\r",
+                                    "            name: 'planMap',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'filefield',\r",
+                                    "            x: 560,\r",
+                                    "            y: 160,\r",
+                                    "            id: 'builtDrawingsMap',\r",
+                                    "            fieldLabel: '竣工图(JPG)',\r",
+                                    "            labelWidth: 120,\r",
+                                    "            name: 'builtDrawingsMap',\r",
+                                    "            buttonText: '选择文件'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "\r",
+                                    "win.show();\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "15e46f01-861a-4fcd-b08a-d136939e62e8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoSelect": false,
+                        "displayField": "projectId",
+                        "fieldLabel": "复垦项目编号",
+                        "id": "projectApplyId",
+                        "labelWidth": 85,
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "projectId",
+                        "pageSize": 10,
+                        "store": "ApplyprojectStore",
+                        "valueField": "projectId",
+                        "width": 320
+                    },
+                    "name": "MyComboBox16",
+                    "designerId": "078e6fe8-e276-4944-a1d5-fee057abbcb0",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onProjectApplyIdSelect",
+                                "implHandler": [
+                                    "var projectId=records[0].get('projectId');\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'ApplyListId',\r",
+                                    "    params:{projectId:projectId},\r",
+                                    "    success:function(response){\r",
+                                    "        var mystore = Ext.StoreMgr.get('ApplyIdStore');\r",
+                                    "        mystore.load(\r",
+                                    "        {\r",
+                                    "            params:{\r",
+                                    "                projectId:projectId\r",
+                                    "            }\r",
+                                    "        }\r",
+                                    "        );\r",
+                                    "    }\r",
+                                    "});   \r",
+                                    "var ApplyIdStore=Ext.StoreMgr.get('ApplyIdStore');//获取store对象\r",
+                                    "var countyField=Ext.getCmp(\"projectApplyname\");\r",
+                                    "countyField.setValue('');\r",
+                                    "if(countyField.view)   \r",
+                                    "countyField.view.setStore(ApplyIdStore);"
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onProjectApplyIdSelect",
+                            "designerId": "2c57fed9-6bee-4a31-ba8e-a783a843ba75"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "projectname",
+                        "fieldLabel": "复垦项目名称",
+                        "id": "projectApplyname",
+                        "labelWidth": 85,
+                        "layout|x": 410,
+                        "layout|y": 40,
+                        "name": "projectname",
+                        "pageSize": null,
+                        "store": "ApplyIdStore",
+                        "valueField": "projectname",
+                        "width": 320
+                    },
+                    "name": "MyComboBox17",
+                    "designerId": "5de0bfe8-221c-4fde-be2c-d4406b43df03"
+                }
+            ]
+        }
+    ]
+}

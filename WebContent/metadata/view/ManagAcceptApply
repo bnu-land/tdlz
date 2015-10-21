@@ -1,0 +1,851 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ManagAcceptApply",
+        "designer|userClassName": "ManagAcceptApply",
+        "layout": "border",
+        "title": "复垦验收申请"
+    },
+    "designerId": "f8cb7606-7c53-4805-b5ff-f14fba364184",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnLines": true,
+                "frame": true,
+                "height": 241,
+                "id": "applyGrid",
+                "layout|region": "north",
+                "store": "FkacceptApplyStore",
+                "subGridXType": "",
+                "title": "未审核申请列表"
+            },
+            "name": "MyGridPanel19",
+            "designerId": "af0b93a6-a148-4b53-98c7-c6e479664147",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyId",
+                        "text": "申请编号"
+                    },
+                    "name": "MyColumn112",
+                    "designerId": "d92dc432-f677-4f07-94a1-db9487acdfb4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "复垦项目编号"
+                    },
+                    "name": "MyColumn113",
+                    "designerId": "c578a5d7-56e5-4724-ac0f-8fa47716a3f9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "text": "复垦项目名称",
+                        "width": 260
+                    },
+                    "name": "MyColumn114",
+                    "designerId": "90b01a91-2c9c-481e-a980-97cb250960fb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "conUnit",
+                        "text": "项目施工单位",
+                        "width": 200
+                    },
+                    "name": "MyColumn115",
+                    "designerId": "b5052dcf-334c-4eeb-a2e6-ae4d42cdb8b3"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyDate",
+                        "format": "Y-m-d",
+                        "text": "提交申请日期"
+                    },
+                    "name": "MyDateColumn16",
+                    "designerId": "422138ec-03d4-44b5-80b8-16ca15d504ea"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "note",
+                        "text": "备注信息"
+                    },
+                    "name": "MyColumn116",
+                    "designerId": "8cf4d4f3-e266-441f-85ee-5666b84e6160"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fileCheck",
+                        "text": "申请文件已上传",
+                        "width": 120
+                    },
+                    "name": "MyColumn117",
+                    "designerId": "9d1bdabd-516b-483f-ba08-5025da7c294f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "checkResult",
+                        "text": "审核结果"
+                    },
+                    "name": "MyColumn118",
+                    "designerId": "c6b4997b-908e-4ac0-804e-bd4ef7586cda"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView19",
+                    "designerId": "06fe9689-0ef8-4867-9074-39ca268bbb04"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar25",
+                    "designerId": "581e5fd3-13c1-4f6b-9b24-496ec578d4e2",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_add.png",
+                                "layout|flex": null,
+                                "text": "验收申请"
+                            },
+                            "name": "MyButton98",
+                            "designerId": "dced8822-3ef7-4178-9bc0-95ff063c72bf",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('acceptApply'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7d207dff-2210-4cb9-b1c7-12e6a8d77ae8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "iconCls": "imgs/table/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除申请"
+                            },
+                            "name": "MyButton99",
+                            "designerId": "48dde0f0-d588-43a6-8074-8f5c056e9ecf",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('applyGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  applyIds =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        applyIds[i] = record[i].get(\"applyId\");\r",
+                                            "    }\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'del_applyByIds',\r",
+                                            "        params:{applyIds:applyIds},\r",
+                                            "\r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('success','申请已删除');\r",
+                                            "            var mystore = Ext.StoreMgr.get('FkacceptApplyStore');\r",
+                                            "            mystore.load();\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "41108be3-91f4-4301-ac0a-dcbc98027d3f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "审核申请"
+                            },
+                            "name": "MyButton100",
+                            "designerId": "52390eb8-57c9-4e5a-8804-f25521bcc540",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('applyGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var applySelectedId = record[0].get(\"applyId\");\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "var applySelectedName = record[0].get(\"projectname\");\r",
+                                            "\r",
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('checkApply'));\r",
+                                            "\r",
+                                            "Ext.getCmp('checkApplyId').setValue(applySelectedId);\r",
+                                            "Ext.getCmp('applyprojectId').setValue(projectSelectedId);\r",
+                                            "Ext.getCmp('applyProjectname').setValue(applySelectedName);\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "4973af99-ed41-4eec-bd13-f19cb5935e33"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入查询关键字",
+                                "fieldLabel": "申请编号",
+                                "id": "searchKeyword2",
+                                "inputId": "",
+                                "layout|flex": null,
+                                "name": "searchKeyword2"
+                            },
+                            "name": "MyTextField122",
+                            "designerId": "f70e1c6d-0c59-4ecb-8050-fb84f9c93299"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "查询",
+                                "id": "searchProject1",
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton101",
+                            "designerId": "44159b55-bd27-4c71-aeef-299d7fb2657b",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "//var getKeyword = Ext.getCmp('searchKeyword1').getValue();\r",
+                                            "//Ext.Msg.alert(getKeyword);\r",
+                                            "var mystore=Ext.StoreMgr.get('FkacceptApplyStore');//获得store对象\r",
+                                            "//Ext.Msg.alert('11',mystore);\r",
+                                            "\r",
+                                            "//在load事件中添加参数\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"25\",\r",
+                                            "    searchKeyword:Ext.getCmp('searchKeyword2').getValue()\r",
+                                            "} \r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "3e855a4d-e7db-4110-9031-fa246cefae52"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "id": "MyapplyPage",
+                        "store": "FkacceptApplyStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar13",
+                    "designerId": "4e78c32c-bfe8-4a31-82e6-c0ddacf2120a"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "userConfig": {
+                        "designer|displayName": "applyCheskbox"
+                    },
+                    "name": "MyCheckboxSelectionModel12",
+                    "designerId": "e5a64f4f-b0cb-415a-9299-8fbdb583ccae"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnLines": true,
+                "frame": true,
+                "height": 241,
+                "id": "applyGrid1",
+                "layout|region": "north",
+                "store": "FkacceptCheckStore",
+                "subGridXType": "",
+                "title": "已审核申请列表"
+            },
+            "name": "MyGridPanel20",
+            "designerId": "25ab1ef8-8c95-4404-b799-a998a18cd9ad",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyId",
+                        "text": "申请编号"
+                    },
+                    "name": "MyColumn119",
+                    "designerId": "701b3855-a1bf-4417-a6f5-6ddce8389ed8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "复垦项目编号"
+                    },
+                    "name": "MyColumn120",
+                    "designerId": "89ea7e0f-5c78-412f-ac54-68b815900f8f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "text": "复垦项目名称",
+                        "width": 260
+                    },
+                    "name": "MyColumn121",
+                    "designerId": "3fc8076f-af68-40f9-8775-bf94f6e94985"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "conUnit",
+                        "text": "项目施工单位",
+                        "width": 200
+                    },
+                    "name": "MyColumn122",
+                    "designerId": "cfa62e51-2187-449b-a2c8-890e7d85d73b"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "applyDate",
+                        "format": "Y-m-d",
+                        "text": "提交申请日期"
+                    },
+                    "name": "MyDateColumn17",
+                    "designerId": "79cddf8f-500f-4e9d-8c14-02f4cff0e96e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "note",
+                        "text": "备注信息"
+                    },
+                    "name": "MyColumn123",
+                    "designerId": "1cf6f2a2-91b0-45bb-938d-2bd93449aa90"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fileCheck",
+                        "text": "申请文件已上传",
+                        "width": 120
+                    },
+                    "name": "MyColumn124",
+                    "designerId": "63c8e083-2788-42ee-9527-f931e4de3474"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "checkResult",
+                        "text": "审核结果"
+                    },
+                    "name": "MyColumn125",
+                    "designerId": "2eead8d3-fa95-4aab-b049-9bc107af4f35"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView20",
+                    "designerId": "7e2b419a-8c53-4dbd-bcbc-5dd1cf9f114c"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar26",
+                    "designerId": "5fbcd4a1-24d2-4982-880c-c6afa6c587d4",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_add.png",
+                                "layout|flex": null,
+                                "text": "验收申请"
+                            },
+                            "name": "MyButton102",
+                            "designerId": "5e7e337f-b029-4ba9-ab08-14b2310ba0f1",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('acceptApply'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "e2fa5b2f-7ad7-426e-b11d-9430e3bcf056"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "iconCls": "imgs/table/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除申请"
+                            },
+                            "name": "MyButton103",
+                            "designerId": "9f336490-52e4-435b-ad3e-9e923f66b50d",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('applyGrid1');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  applyIds =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        applyIds[i] = record[i].get(\"applyId\");\r",
+                                            "    }\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'del_applyByIds',\r",
+                                            "        params:{applyIds:applyIds},\r",
+                                            "\r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('success','申请已删除');\r",
+                                            "            var mystore = Ext.StoreMgr.get('FkacceptCheckStore');\r",
+                                            "            mystore.load();\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "145d93d1-9940-4d4b-8025-507498591be1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "",
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "审核申请"
+                            },
+                            "name": "MyButton104",
+                            "designerId": "9887c9ec-db38-4535-a758-5975b167eb85",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('applyGrid1');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var applySelectedId = record[0].get(\"applyId\");\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "var applySelectedName = record[0].get(\"projectname\");\r",
+                                            "\r",
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('checkApply'));\r",
+                                            "\r",
+                                            "Ext.getCmp('checkApplyId').setValue(applySelectedId);\r",
+                                            "Ext.getCmp('applyprojectId').setValue(projectSelectedId);\r",
+                                            "Ext.getCmp('applyProjectname').setValue(applySelectedName);\r",
+                                            "\r",
+                                            "SetLayerNameById('checkApplyDiv');"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "ec8fc4b2-8bcf-4d1d-8b0d-f44a06175c28"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入查询关键字",
+                                "fieldLabel": "申请编号",
+                                "id": "searchKeyword4",
+                                "inputId": "",
+                                "layout|flex": null,
+                                "name": "searchKeyword2"
+                            },
+                            "name": "MyTextField123",
+                            "designerId": "7011800a-6891-40ab-833a-fb9d0cc98dbc"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "查询",
+                                "id": "searchProject3",
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton105",
+                            "designerId": "1544e8c3-1e42-4a4c-9198-d8df46c5bcd7",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "\r",
+                                            "var mystore=Ext.StoreMgr.get('FkacceptCheckStore');//获得store对象\r",
+                                            "\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"25\",\r",
+                                            "    searchKeyword:Ext.getCmp('searchKeyword4').getValue()\r",
+                                            "} \r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "f7689c4b-8023-4a08-babc-9cc6975ce9f5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "id": "MyapplyPage2",
+                        "store": "FkacceptCheckStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar14",
+                    "designerId": "ac8df29f-de96-444b-bf16-f4389de7ae43"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "userConfig": {
+                        "designer|displayName": "applyCheskbox"
+                    },
+                    "name": "MyCheckboxSelectionModel13",
+                    "designerId": "7a64af8a-e0f0-49bd-a081-ad9b3a376be8"
+                }
+            ]
+        }
+    ]
+}

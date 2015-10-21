@@ -1,0 +1,51 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "FkYanshouGongchengStore",
+        "designer|userClassName": "FkYanshouGongchengStore",
+        "model": "FkYanshouGongchengModle",
+        "storeId": "FkYanshouGongchengStore"
+    },
+    "designerId": "4ca7844d-6d90-4e54-b708-541a453f2854",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeyword:''\r",
+                    "}"
+                ],
+                "url": "seclet_gongcheng"
+            },
+            "name": "MyAjaxProxy17",
+            "designerId": "f635a148-570e-453a-98dc-4884f0db75e4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader17",
+                    "designerId": "9464da48-b01b-4f52-8c6f-9faab6fecd18"
+                }
+            ]
+        }
+    ]
+}

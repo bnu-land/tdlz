@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[['1', '同意验收'], ['2', '不同意验收']]"
+        ],
+        "designer|userAlias": "comboStore",
+        "designer|userClassName": "comboStore",
+        "storeId": "comboStore"
+    },
+    "designerId": "3ea1cae3-a7ab-4e2c-a37f-38f2ae5f7f8b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy30",
+            "designerId": "783b39b6-081e-4269-895b-43e474152e2c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader30",
+                    "designerId": "e7dedcfe-04d0-47d2-9aa4-458c5b0ad0c1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField236",
+            "designerId": "a16a25cc-1c33-4f18-92c3-3185904e2d84"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField237",
+            "designerId": "a8289234-0c4f-4a00-92b7-7d6d1662ad0c"
+        }
+    ]
+}

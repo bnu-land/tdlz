@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http pattern="/*.xml" security="none" />
+	<http pattern="/rss_reader.apk" security="none" />
+	<http pattern="/confirm_device_user" security="none" />
+	<http auto-config='true'>
+		<!-- 不要过滤图片等静态资源，其中**代表可以跨越目录，*不可以跨越目录。 -->
+		<intercept-url pattern="/**/*.jpg" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**/*.png" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**/*.gif" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**/*.css" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**/*.js" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<!-- 不设权限的 -->
+		<intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/403*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<!-- 查询 -->
+		<intercept-url pattern="/use*" access="ROLE_OPER,ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/get*" access="ROLE_OPER,ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/count*" access="ROLE_OPER,ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/find*" access="ROLE_OPER,ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/list*" access="ROLE_OPER,ROLE_USER,ROLE_ADMIN" />
+		<!-- 增加 -->
+		<intercept-url pattern="/insert*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/add*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/create*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/put*" access="ROLE_USER,ROLE_ADMIN" />
+		<!-- 修改 -->
+		<intercept-url pattern="/update*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/save*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/merge*" access="ROLE_USER,ROLE_ADMIN" />
+		<!-- 删除 -->
+		<intercept-url pattern="/del*" access="ROLE_ADMIN" />
+		<intercept-url pattern="/remove*" access="ROLE_ADMIN" />
+		<!-- 数据管理 -->
+		<intercept-url pattern="/database*" access="ROLE_ADMIN" />
+		<!-- 地图功能 -->
+		<intercept-url pattern="/map*" access="ROLE_MAP" />
+		<!-- 其他只要拥有ROLE_OPER权限即可 -->
+		<intercept-url pattern="/**" access="ROLE_OPER" />
+
+
+		<form-login login-page="/login.jsp" default-target-url="/index.html"
+			authentication-failure-url="/login.jsp?login=failed" />
+
+		<access-denied-handler error-page="/accessDenied.jsp" />
+
+		<!-- 使 用记住用户名、密码功能，指定数据源和加密的key <remember-me data-source-ref="dataSource" 
+			/> -->
+		<!-- logout 页面，logout后清除session -->
+		<logout invalidate-session="true" logout-success-url="/login.jsp" />
+		<!-- session 失 效后跳转的页面，最大登陆次数 -->
+		<session-management invalid-session-url="/login.jsp?login=timeout">
+			<concurrency-control max-sessions="1"
+				expired-url="/login.jsp?login=again" />
+		</session-management>
+
+	</http>
+
+	<!-- 配置一个认证管理器 -->
+	<authentication-manager>
+		<authentication-provider>
+			<!-- <jdbc-user-service data-source-ref="dataSource" /> -->
+			<password-encoder hash="md5" />
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="SELECT u.user_name,u.user_pwd,u.enabled FROM u_user_info AS u WHERE u.user_name = ?"
+				authorities-by-username-query="SELECT u.username,r.role_name FROM u_user_role u,u_role_info AS r WHERE u.roleid = r.role_id AND u.username=?" />
+
+		</authentication-provider>
+	</authentication-manager>
+
+</beans:beans>

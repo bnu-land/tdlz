@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-9-12 9:03:27 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.URoleRight" table="u_role_right" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="roleId" type="string">
+            <column name="role_id" length="10" not-null="true">
+                <comment>&#189;&#199;&#201;&#171;id</comment>
+            </column>
+        </property>
+        <property name="rightId" type="string">
+            <column name="right_id" length="10" not-null="true">
+                <comment>&#200;&#168;&#207;&#222;id</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

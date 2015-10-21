@@ -1,0 +1,245 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_ThematicMapConfigTab",
+        "designer|userClassName": "db_ThematicMapConfigTab",
+        "id": "db_ThematicMapConfigTab",
+        "layout": "border",
+        "title": "专题图配置"
+    },
+    "designerId": "33e70a0a-fce3-4832-9ff8-bf23d1c251f0",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "空间数据库",
+                "width": 150
+            },
+            "name": "MyPanel32",
+            "designerId": "096e0bbe-ef16-4182-9f80-5a7e160c36da",
+            "cn": [
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '图层1',\r",
+                            "        icon:'images/fenghuang.png',\r",
+                            "        leaf: true,\r",
+                            "        checked: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '图层2',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true,\r",
+                            "        checked: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '图层3',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true,\r",
+                            "        checked: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '图层4',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true,\r",
+                            "        checked: true\r",
+                            "    }\r",
+                            "]}"
+                        ],
+                        "title": "My Tree Panel"
+                    },
+                    "name": "MyTreePanel",
+                    "designerId": "2d84baaa-93e6-4cb0-b4bf-c8d1a399f59c",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTreeView",
+                            "designerId": "2b9e527d-fd8b-444b-8497-f3ebc1848342"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "container|pack": "end",
+                "layout": "vbox",
+                "layout|region": "east",
+                "layout|split": true,
+                "title": "图层列表",
+                "width": 150
+            },
+            "name": "MyPanel33",
+            "designerId": "b54a5bb9-d167-40a1-8dcf-f1b549dc7c03",
+            "cn": [
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "height": 204,
+                        "layout|flex": 1,
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '选中的图层1',\r",
+                            "        icon:'images/fenghuang.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '选中的图层2',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '选中的图层3',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '选中的图层4',\r",
+                            "        icon:'images/xinlang.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "]}"
+                        ],
+                        "title": null
+                    },
+                    "name": "MyTreePanel1",
+                    "designerId": "c3bd2b1e-6e01-48ef-a40e-b0356d14e2c0",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTreeView1",
+                            "designerId": "1f5be371-19dc-4670-b4e0-851095c3f46f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "title": "预览"
+            },
+            "name": "MyPanel34",
+            "designerId": "973bc4d3-3361-4932-8bbf-8bfc027ddf66",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar33",
+                    "designerId": "a4b209e7-98c5-4dc0-a5e9-425691a43781",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "刷新"
+                            },
+                            "name": "MyButton124",
+                            "designerId": "38c8cb76-1c80-400e-85b5-bda75f4dcd57"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "保存"
+                            },
+                            "name": "MyButton125",
+                            "designerId": "d1558e9c-d71c-48ec-9b7e-e9b03d99f763"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "发布成地图"
+                            },
+                            "name": "MyButton126",
+                            "designerId": "bcf06fb5-39f8-4578-a877-21312a760255"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

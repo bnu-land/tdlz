@@ -1,0 +1,57 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "syrSchemeShow4",
+        "model": "syrSchemeShow",
+        "pageSize": 15,
+        "storeId": "syrSchemeShow4"
+    },
+    "designerId": "85af263a-e625-4b85-a478-5a057ecc7977",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    projectName: '',\r",
+                    "    province: '',\r",
+                    "    city: '',\r",
+                    "    county: '',\r",
+                    "    monitorstarttime: '',\r",
+                    "    monitorendtime: ''\r",
+                    " }"
+                ],
+                "url": "FKSchemeShow4"
+            },
+            "name": "MyAjaxProxy82",
+            "designerId": "e4c77397-d39e-428d-90d8-401a8802278a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader82",
+                    "designerId": "53b8597d-2fb3-4aa8-9e9d-4c2a472e7c24"
+                }
+            ]
+        }
+    ]
+}

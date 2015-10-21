@@ -1,0 +1,724 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "sampleDataManage",
+        "designer|userClassName": "sampleDataManage",
+        "layout": "fit",
+        "title": "采样点数据管理"
+    },
+    "designerId": "c2b8fbda-79b3-4eb3-bd2d-3affe1988ba2",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 140,
+                "id": "sampleDataManageForm",
+                "layout": "fit",
+                "title": ""
+            },
+            "name": "MyForm24",
+            "designerId": "d544c938-4639-4577-a907-4b2e9c76bd72",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "sampleDataManageGrid",
+                        "store": "SampleStore",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel28",
+                    "designerId": "c62b3f53-c47f-48b3-beeb-4e97eeea20da",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer22",
+                            "designerId": "a169be4b-470e-4bdd-af53-4715b39386f8"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "recordId",
+                                "hidden": true,
+                                "text": "记录号"
+                            },
+                            "name": "MyColumn147",
+                            "designerId": "56926c4d-028f-4e32-8538-e57ffe3649c3"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "sampleId",
+                                "text": "样品编号"
+                            },
+                            "name": "MyColumn148",
+                            "designerId": "c172bb8c-bbfd-45d8-8c4a-0fff5929efac"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "sampleAddresss",
+                                "text": "采集地点"
+                            },
+                            "name": "MyColumn149",
+                            "designerId": "31fab0d3-60e6-4be0-8986-92c5d10b6098"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "projectId",
+                                "text": "项目编号"
+                            },
+                            "name": "MyColumn150",
+                            "designerId": "5d6146dd-0dd8-408e-bd38-35c455045a4c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "projectName",
+                                "text": "项目名称"
+                            },
+                            "name": "MyColumn151",
+                            "designerId": "19d22a78-eeea-447e-8c4b-8d924e126554"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "soilThickness",
+                                "text": "土层厚度"
+                            },
+                            "name": "MyColumn152",
+                            "designerId": "ea5cc4f1-83e2-42a8-8ace-6747e60808fa"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "soilmoisture",
+                                "text": "土壤含水量"
+                            },
+                            "name": "MyColumn153",
+                            "designerId": "0ac02fb7-40b9-47a4-8422-40ad01ff9a2c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "soiltexture",
+                                "text": "土壤质地"
+                            },
+                            "name": "MyColumn154",
+                            "designerId": "8fdce37b-f213-4d7c-8454-ad1bb9d6a530"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "longitude",
+                                "text": "经度"
+                            },
+                            "name": "MyColumn155",
+                            "designerId": "22f8e9a5-442b-4b49-b70d-2954fde780f3"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "latitude",
+                                "text": "纬度"
+                            },
+                            "name": "MyColumn156",
+                            "designerId": "8e5f0cd3-07b6-45f2-8236-8699485e0230"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "organicmatter",
+                                "text": "有机质"
+                            },
+                            "name": "MyColumn157",
+                            "designerId": "be07c7e4-8aeb-406d-b2a5-703099c1ed3e"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "phvalue",
+                                "text": "pH值"
+                            },
+                            "name": "MyColumn158",
+                            "designerId": "ef1b2ad6-3d40-4935-a327-d662a425fe74"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "totalnitrogen",
+                                "text": "全氮"
+                            },
+                            "name": "MyColumn159",
+                            "designerId": "698adc0a-3bb2-4fd1-809f-7c6b9a2d904c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "totalphosphorus",
+                                "text": "全磷"
+                            },
+                            "name": "MyColumn160",
+                            "designerId": "f61dead8-c74a-42c5-9dc9-6115f93c46ac"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "totalpotassium",
+                                "text": "全钾"
+                            },
+                            "name": "MyColumn161",
+                            "designerId": "d32839e4-cdaa-4924-a4fd-308eab2dadc5"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "recorder",
+                                "text": "记录人"
+                            },
+                            "name": "MyColumn162",
+                            "designerId": "1e099d44-719c-45be-a7a5-3a64cdecd2d1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "sampletime",
+                                "format": "Y-m-d",
+                                "text": "采样时间"
+                            },
+                            "name": "MyDateColumn23",
+                            "designerId": "9f7db366-72fa-4967-a0c6-6c074925025f"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView28",
+                            "designerId": "5db315bf-b1d5-4b14-bc35-3c73b5e3e995"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar36",
+                            "designerId": "fbac2d7f-90ba-42f8-9261-cf346070a9a8",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "项目编号",
+                                        "id": "sampleSearch",
+                                        "layout|flex": null,
+                                        "name": "sampleSearch"
+                                    },
+                                    "name": "MyTextField134",
+                                    "designerId": "5cae7813-0084-4b3d-8ce7-0ca6023cc651"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查询"
+                                    },
+                                    "name": "MyButton142",
+                                    "designerId": "78bcdfbf-073f-40a8-b856-66cf9ba09863",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "//var getKeyword = Ext.getCmp('searchKeyword1').getValue();\r",
+                                                    "//Ext.Msg.alert(getKeyword);\r",
+                                                    "var mystore=Ext.StoreMgr.get('SampleStore');//获得store对象\r",
+                                                    "//Ext.Msg.alert('11',mystore);\r",
+                                                    "\r",
+                                                    "//在load事件中添加参数\r",
+                                                    "mystore.load(\r",
+                                                    "{params:{\r",
+                                                    "    start:\"0\",\r",
+                                                    "    limit:\"25\",\r",
+                                                    "    searchKeyword:Ext.getCmp('sampleSearch').getValue()\r",
+                                                    "} \r",
+                                                    "}\r",
+                                                    ");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "6d27ad41-dc0a-4d65-ae6f-184b454bbe75"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "添加"
+                                    },
+                                    "name": "MyButton143",
+                                    "designerId": "ce08a0d7-23ef-46b9-87ba-5b8064b7ac82",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var tabs = this.up('tabpanel');\r",
+                                                    "tabs.removeAll(true);\r",
+                                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                                    "var newtab = tabs.add(Ext.widget('sampleDataAdd'));"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "c98be2d8-8668-4325-ba22-716f5cfa20e5"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "0187b392-2874-4361-8245-4b308f1c2dd0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_edit.png",
+                                        "layout|flex": null,
+                                        "text": "编辑"
+                                    },
+                                    "name": "MyButton144",
+                                    "designerId": "25f4febd-8dd8-416c-b06d-e5fd4c9090e8",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('sampleDataManageGrid');\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "var projectSelectedId = record[0].get(\"recordId\");\r",
+                                                    "if (record.length === 0) {\r",
+                                                    "    Ext.Msg.alert('提示', '请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "\r",
+                                                    "} else if (record.length > 1) {\r",
+                                                    "    Ext.Msg.alert('提示', '只能选择一行数据');\r",
+                                                    "    return;\r",
+                                                    "} else {\r",
+                                                    "    Ext.Msg.alert('提示', projectSelectedId);\r",
+                                                    "    var tabs = this.up('tabpanel');\r",
+                                                    "    tabs.removeAll(true);\r",
+                                                    "    var newtab = tabs.add(Ext.widget('sampleDataUpdate'));\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "    var sampleDataUpdateform = newtab.getComponent('sampleDataUpdateform'); \r",
+                                                    "    Ext.Msg.alert('提示', sampleDataUpdateform.id);\r",
+                                                    "    sampleDataUpdateform.load({\r",
+                                                    "        params: {\r",
+                                                    "            projectSelectedId: projectSelectedId\r",
+                                                    "        },\r",
+                                                    "        url:'get_sampleDetail',\r",
+                                                    "        method:'GET',\r",
+                                                    "        success:function(form,action){\r",
+                                                    "            Ext.Msg.alert('提示','数据加载成功'); \r",
+                                                    "        },\r",
+                                                    "        failure:function(form,action){\r",
+                                                    "            Ext.Msg.alert('提示','数据加载失败');   \r",
+                                                    "        }\r",
+                                                    "    });     \r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "95c5501d-bb46-4f21-b669-a0ff6ccd04de"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_delete.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton145",
+                                    "designerId": "71dce38c-0ef7-44c3-8b3f-c077f4ebedf8",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('sampleDataManageGrid');\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                    "    return;\r",
+                                                    "\r",
+                                                    "}else{\r",
+                                                    "\r",
+                                                    "    var  sampleIds =new Array(record.length);\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        sampleIds[i] = record[i].get(\"recordId\");\r",
+                                                    "\r",
+                                                    "    }\r",
+                                                    "    //Ext.Msg.alert('提示',projectIds);\r",
+                                                    "\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        url:'del_sampleByIds',\r",
+                                                    "        params:{sampleIds:sampleIds},\r",
+                                                    "\r",
+                                                    "        success:function(response){\r",
+                                                    "            Ext.Msg.alert('success','样点已删除');\r",
+                                                    "            var mystore = Ext.StoreMgr.get('SampleStore');\r",
+                                                    "            mystore.load();\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "\r",
+                                                    "    });\r",
+                                                    "\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "bff5d98c-8f5b-4993-ac61-f5bdc680e360"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/file_view0.png",
+                                        "layout|flex": null,
+                                        "text": "查看采样点空间分布图"
+                                    },
+                                    "name": "MyButton146",
+                                    "designerId": "b134a34a-cec8-471f-9093-d95df5cde575",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "//显示地图窗口\r",
+                                                    "var win=new Ext.Window({\r",
+                                                    "    height: 620,\r",
+                                                    "    width: 810,\r",
+                                                    "    title: '采样点空间分布图',\r",
+                                                    "    closable: true,\r",
+                                                    "    layout: 'fit',\r",
+                                                    "    jsonSubmit: true,\r",
+                                                    "    items: [\r",
+                                                    "    {\r",
+                                                    "        xtype: 'form',\r",
+                                                    "        html: '<div id=\"mapdiv_SampleData\" class=\"MapClass\"> </div>',\r",
+                                                    "        height: 610,\r",
+                                                    "        layout: {\r",
+                                                    "            type: 'absolute'\r",
+                                                    "        },\r",
+                                                    "        bodyPadding: 10,\r",
+                                                    "        title: '',            \r",
+                                                    "        listeners: {\r",
+                                                    "            afterrender: function(){\r",
+                                                    "                //console.log(\"渲染会\");\r",
+                                                    "\r",
+                                                    "                //加入地图的js文件\r",
+                                                    "                var head = document.getElementsByTagName('head')[0];\r",
+                                                    "                var script= document.createElement(\"script\"); \r",
+                                                    "                script.type = \"text/javascript\"; \r",
+                                                    "                script.src=\"map/sampleData_map.js\"; \r",
+                                                    "                head.appendChild(script); \r",
+                                                    "            }\r",
+                                                    "        }\r",
+                                                    "    }\r",
+                                                    "    ]\r",
+                                                    "});\r",
+                                                    "win.show();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "0b4eaa31-36dc-437f-9150-3c3a1c528030"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/return.png",
+                                        "layout|flex": null,
+                                        "text": "返回"
+                                    },
+                                    "name": "MyButton147",
+                                    "designerId": "cc9d3acb-e944-40b7-bad0-77f2ac2b64c5",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var tabs = this.up('tabpanel');\r",
+                                                    "tabs.removeAll(true);\r",
+                                                    "var newtab = tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "baf61185-e451-4b36-97c3-5047f84ad22a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "SampleStore",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar16",
+                            "designerId": "12edc398-3a95-4ad5-9d7a-2a8dccacca6f"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel20",
+                            "designerId": "60a1037a-ed37-4aa1-99db-a82b87353647"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

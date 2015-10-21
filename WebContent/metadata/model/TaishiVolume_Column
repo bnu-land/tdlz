@@ -1,0 +1,13 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiVolume_Column",
+        "designer|userClassName": "TaishiVolume_Column"
+    },
+    "designerId": "521a7f41-1666-4014-be6d-db8c1e94f4f1"
+}

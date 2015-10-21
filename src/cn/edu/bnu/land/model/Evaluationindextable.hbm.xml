@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-8 16:59:34 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Evaluationindextable" table="evaluationindextable" catalog="tdlz">
+        <id name="projectId" type="java.lang.Integer">
+            <column name="projectId" />
+            <generator class="identity" />
+        </id>
+        <property name="projectName" type="string">
+            <column name="projectName" length="45" />
+        </property>
+        <property name="organicmatter" type="string">
+            <column name="organicmatter" length="45" />
+        </property>
+        <property name="soilThickness" type="string">
+            <column name="soilThickness" length="45" />
+        </property>
+        <property name="phvalue" type="string">
+            <column name="pHvalue" length="45" />
+        </property>
+        <property name="totalnitrogen" type="string">
+            <column name="totalnitrogen" length="45" />
+        </property>
+        <property name="totalphosphorus" type="string">
+            <column name="totalphosphorus" length="45" />
+        </property>
+        <property name="totalpotassium" type="string">
+            <column name="totalpotassium" length="45" />
+        </property>
+        <property name="economyBenefit" type="string">
+            <column name="economyBenefit" length="45" />
+        </property>
+        <property name="drainagedensity" type="string">
+            <column name="drainagedensity" length="45" />
+        </property>
+        <property name="roaddensity" type="string">
+            <column name="roaddensity" length="45" />
+        </property>
+        <property name="ecologyBenefit" type="string">
+            <column name="ecologyBenefit" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

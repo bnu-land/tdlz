@@ -1,0 +1,69 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "FkProjectDikuaiStore",
+        "designer|userClassName": "FkProjectDikuaiStore",
+        "model": "FkProjectDikuaiModel",
+        "storeId": "FkProjectDikuaiStore"
+    },
+    "designerId": "fdff631f-e868-4eaf-8feb-086e1c914081",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeywordName: ''\r",
+                    "}"
+                ],
+                "url": "selectDikuai"
+            },
+            "name": "MyAjaxProxy16",
+            "designerId": "e5570221-82b0-4088-a464-4ca9bdd640b3",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader16",
+                    "designerId": "c6aae277-3fd8-42e2-8b49-c10398d38385"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "6fe01846-478e-4eb7-aeb4-8d657114789d"
+        }
+    ]
+}

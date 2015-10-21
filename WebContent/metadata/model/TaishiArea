@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiArea",
+        "designer|userClassName": "TaishiArea"
+    },
+    "designerId": "042a451d-339c-4665-ac6e-706ab36c9e36",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField433",
+            "designerId": "ff3a8e36-9b1d-429e-ab94-fba1563d4361"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "visits"
+            },
+            "name": "MyField434",
+            "designerId": "acf60937-b2f2-4ab3-a937-15fc13f923d8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value"
+            },
+            "name": "MyField435",
+            "designerId": "3f08d7e6-40e4-4570-831a-95a45e3af596"
+        }
+    ]
+}

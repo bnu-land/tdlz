@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-9 9:49:33 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitAssign" table="benefit_assign" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="htbh" type="string">
+            <column name="htbh" length="32">
+                <comment>&#186;&#207;&#205;&#172;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="jysj" type="date">
+            <column name="jysj" length="10">
+                <comment>&#189;&#187;&#210;&#215;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="jyl" type="java.lang.Double">
+            <column name="jyl" precision="22" scale="0">
+                <comment>&#189;&#187;&#210;&#215;&#193;&#191;</comment>
+            </column>
+        </property>
+        <property name="jyqy" type="string">
+            <column name="jyqy" length="64">
+                <comment>&#189;&#187;&#210;&#215;&#199;&#248;&#211;&#242;</comment>
+            </column>
+        </property>
+        <property name="gmqymc" type="string">
+            <column name="gmqymc" length="64">
+                <comment>&#185;&#186;&#194;&#242;&#198;&#243;&#210;&#181;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="qyxz" type="string">
+            <column name="qyxz" length="32">
+                <comment>&#198;&#243;&#210;&#181;&#208;&#212;&#214;&#202;</comment>
+            </column>
+        </property>
+        <property name="qyzczj" type="java.lang.Double">
+            <column name="qyzczj" precision="22" scale="0">
+                <comment>&#198;&#243;&#210;&#181;&#215;&#162;&#178;&#225;&#215;&#202;&#189;&#240;</comment>
+            </column>
+        </property>
+        <property name="dj" type="java.lang.Double">
+            <column name="dj" precision="22" scale="0">
+                <comment>&#195;&#191;&#196;&#182;&#181;&#165;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="je" type="java.lang.Double">
+            <column name="je" precision="22" scale="0">
+                <comment>&#184;&#195;&#186;&#207;&#205;&#172;&#215;&#220;&#188;&#219;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

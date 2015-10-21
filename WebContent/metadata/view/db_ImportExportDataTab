@@ -1,0 +1,294 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_ImportExportDataTab",
+        "designer|userClassName": "db_ImportExportDataTab",
+        "id": "db_ImportExportDataTab",
+        "layout": "fit",
+        "title": "导出数据"
+    },
+    "designerId": "0a71e5f4-a2b0-4731-ad15-49bfafd21fe3",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "title": ""
+            },
+            "name": "MyPanel36",
+            "designerId": "e72e8042-e1d7-4fb5-9d3f-ecc84f507f5b",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": false,
+                        "frame": true,
+                        "layout|region": "center",
+                        "layout|split": false,
+                        "title": "模板预览"
+                    },
+                    "name": "MyPanel37",
+                    "designerId": "3e6a2b5a-4a25-41f9-b40a-a5ff861541db",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": null,
+                                "height": 201,
+                                "id": "db_img_ExportData",
+                                "width": 201
+                            },
+                            "name": "MyImg1",
+                            "designerId": "948a908f-574f-473c-8dff-11cc2ffdc109"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": false,
+                        "collapsible": false,
+                        "frame": true,
+                        "layout": "border",
+                        "layout|region": "west",
+                        "layout|split": false,
+                        "title": null,
+                        "width": 150
+                    },
+                    "name": "MyPanel38",
+                    "designerId": "c785094c-07a9-4de9-a38e-d587064f5779",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "layout|region": "center",
+                                "title": "选择导出模板"
+                            },
+                            "name": "MyPanel39",
+                            "designerId": "958c06f0-4f54-4b0f-9d91-d7b665520018",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "text": "复垦地块属性",
+                                        "textAlign": "left",
+                                        "width": 142
+                                    },
+                                    "name": "MyButton134",
+                                    "designerId": "ed8c8253-8e18-4e06-ab3a-bc1d74ce7db7",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var imgExport = Ext.getCmp('db_img_ExportData');\r",
+                                                    "imgExport.setWidth(666);\r",
+                                                    "imgExport.setHeight(405);\r",
+                                                    "imgExport.setSrc(\"images/db_fukendikuaishuxing.jpg\");\r",
+                                                    "//Ext.Msg.alert(\"img\",imgExport.src);"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "16115ab4-ed89-4d5e-a9ad-c5eead6848cd"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "text": "完整备案资料信息",
+                                        "textAlign": "left",
+                                        "width": 150
+                                    },
+                                    "name": "MyButton135",
+                                    "designerId": "49b7f261-f347-43b7-9b91-3f1a8471e008",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var imgExport = Ext.getCmp('db_img_ExportData');\r",
+                                                    "imgExport.setWidth(785);\r",
+                                                    "imgExport.setHeight(369);\r",
+                                                    "imgExport.setSrc(\"images/db_wanzhengbeianziliao.jpg\");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "705e7e70-2ee3-4f11-b9c4-c89839dd659f"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "text": "意见收集表",
+                                        "textAlign": "left",
+                                        "width": 150
+                                    },
+                                    "name": "MyButton136",
+                                    "designerId": "93c95a8b-fe54-452c-bf40-d0c06c734c95",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var imgExport = Ext.getCmp('db_img_ExportData');\r",
+                                                    "imgExport.setWidth(512);\r",
+                                                    "imgExport.setHeight(363);\r",
+                                                    "imgExport.setSrc(\"images/db_yijianshouji.jpg\");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "851ce9bc-a35d-414b-828a-5796ca004b43"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "dock": "bottom",
+                                "height": 150,
+                                "layout": "vbox",
+                                "layout|region": "south",
+                                "title": "操作"
+                            },
+                            "name": "MyPanel40",
+                            "designerId": "901f0f60-62d8-409b-a10e-08e57c4b6b34",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 40,
+                                        "text": "导出到本地",
+                                        "width": 148
+                                    },
+                                    "name": "MyButton137",
+                                    "designerId": "5d490d12-d403-48cf-b007-cecacc678133",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var winname = window.open('', '_blank', 'top=10000'); \r",
+                                                    "winname.document.open('text/html', 'replace'); \r",
+                                                    "winname.document.write(obj.value); \r",
+                                                    "winname.document.execCommand('saveas','','code.htm'); \r",
+                                                    "winname.close();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "b7107685-db6e-4d47-858f-29025ea1da4a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

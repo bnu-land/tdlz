@@ -1,0 +1,74 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "uDeptInfoModel",
+        "designer|userClassName": "uDeptInfoModel"
+    },
+    "designerId": "484daf0d-676c-495d-a235-291117391acd",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "rmoney",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deptId"
+            },
+            "name": "MyField215",
+            "designerId": "a3342571-e534-4347-bfad-5ce439be9c05"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deptName"
+            },
+            "name": "MyField216",
+            "designerId": "9e947740-a968-4139-8f0a-f8982cd6d6a9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "enabled"
+            },
+            "name": "MyField217",
+            "designerId": "c0e61710-94fe-498d-b43e-4f5c27ca5a46"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description"
+            },
+            "name": "MyField218",
+            "designerId": "cf9bad5c-6dda-4565-ad68-faed75dc3617"
+        }
+    ]
+}

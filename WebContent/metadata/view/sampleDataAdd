@@ -1,0 +1,447 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "sampleDataAdd",
+        "designer|userClassName": "sampleDataAdd",
+        "layout": "fit",
+        "title": "增加样点数据"
+    },
+    "designerId": "2fb7de9c-1a4d-4bea-ad10-7daf500cdf0c",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "sampledataAddForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "standardSubmit": false,
+                "title": "",
+                "url": "add_sample"
+            },
+            "name": "MyForm25",
+            "designerId": "93084455-dd85-483e-8132-77329ac414e0",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": null,
+                        "fieldLabel": "recordId",
+                        "hidden": true,
+                        "layout|x": 700,
+                        "layout|y": 110,
+                        "name": "recordId"
+                    },
+                    "name": "MyTextField135",
+                    "designerId": "f63a04d3-3c80-4871-a44d-0a5d08ac36cf"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "FK20145112032010",
+                        "fieldLabel": "样品编号",
+                        "layout|x": 40,
+                        "layout|y": 90,
+                        "name": "sampleId"
+                    },
+                    "name": "MyTextField136",
+                    "designerId": "d08c10d6-528c-45d3-9ea9-652e26d0557e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "新合村",
+                        "fieldLabel": "采集地点",
+                        "layout|x": 420,
+                        "layout|y": 90,
+                        "name": "sampleAddresss",
+                        "width": 300
+                    },
+                    "name": "MyTextField137",
+                    "designerId": "13f3b053-3575-4fd9-ba22-b91d2f5edb87"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "FK20145112032",
+                        "fieldLabel": "项目编号",
+                        "id": null,
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "projectId"
+                    },
+                    "name": "MyTextField138",
+                    "designerId": "b029c9df-432a-4da9-b192-f1b768a01f45"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "长寿区新市镇新合村等(2)个村农村集体建设用地复垦项目",
+                        "fieldLabel": "项目名称",
+                        "id": null,
+                        "layout|x": 420,
+                        "layout|y": 40,
+                        "name": "projectName",
+                        "width": 300
+                    },
+                    "name": "MyTextField139",
+                    "designerId": "bc449161-d889-40f0-9054-2dd3eb06cd1b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "112.1234",
+                        "fieldLabel": "坐标X值",
+                        "layout|x": 40,
+                        "layout|y": 140,
+                        "name": "longitude"
+                    },
+                    "name": "MyTextField140",
+                    "designerId": "89c7f427-83d6-4bff-8660-904d7a703485"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "28.3456",
+                        "fieldLabel": "坐标Y值",
+                        "layout|x": 420,
+                        "layout|y": 140,
+                        "name": "latitude",
+                        "width": 300
+                    },
+                    "name": "MyTextField141",
+                    "designerId": "1468437c-632d-439e-a4ef-090cf7d854f8"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "15.61",
+                        "fieldLabel": "有机质(g.kg-1)",
+                        "layout|x": 40,
+                        "layout|y": 290,
+                        "name": "organicmatter"
+                    },
+                    "name": "MyTextField142",
+                    "designerId": "121395e3-52ff-4325-8ce7-43fc7c92ab33"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "0.05",
+                        "fieldLabel": "土壤质地",
+                        "layout|x": 40,
+                        "layout|y": 340,
+                        "name": "soiltexture"
+                    },
+                    "name": "MyTextField143",
+                    "designerId": "7d37b731-01aa-48ce-b7bf-b2d520b6df4d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "马全胜",
+                        "fieldLabel": "记录人",
+                        "layout|x": 40,
+                        "layout|y": 390,
+                        "name": "recorder"
+                    },
+                    "name": "MyTextField144",
+                    "designerId": "b2655b0d-69d7-4f50-9756-435ca30d54b7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "5.36",
+                        "fieldLabel": "pH值",
+                        "layout|x": 420,
+                        "layout|y": 340,
+                        "name": "phvalue",
+                        "width": 300
+                    },
+                    "name": "MyTextField145",
+                    "designerId": "4fe77acc-cdae-470e-97f2-eeb3f6619c7a"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "45",
+                        "fieldLabel": "土层厚度(CM)",
+                        "layout|x": 40,
+                        "layout|y": 190,
+                        "name": "soilThickness"
+                    },
+                    "name": "MyTextField146",
+                    "designerId": "4234b599-1dfb-460b-a772-ff9be5011b78"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "0.67",
+                        "fieldLabel": "土壤含水量(mm)",
+                        "layout|x": 40,
+                        "layout|y": 240,
+                        "name": "soilmoisture"
+                    },
+                    "name": "MyTextField147",
+                    "designerId": "14724601-ed11-480f-b972-96fdc1e0726f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "0.765",
+                        "fieldLabel": "全氮(mg.kg-1)",
+                        "layout|x": 420,
+                        "layout|y": 190,
+                        "name": "totalnitrogen",
+                        "width": 300
+                    },
+                    "name": "MyTextField148",
+                    "designerId": "c49e7518-c824-4792-b765-d97f1c3aef6b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "0.376",
+                        "fieldLabel": "全磷(mg.kg-1)",
+                        "layout|x": 420,
+                        "layout|y": 240,
+                        "name": "totalphosphorus",
+                        "width": 300
+                    },
+                    "name": "MyTextField149",
+                    "designerId": "ba1acf91-c084-43dc-a7a1-8dade00f9b1d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "13.88",
+                        "fieldLabel": "全钾(mg.kg-1)",
+                        "layout|x": 420,
+                        "layout|y": 290,
+                        "name": "totalpotassium",
+                        "width": 300
+                    },
+                    "name": "MyTextField150",
+                    "designerId": "fa643738-dace-4c8e-b834-fc6a2603424f"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "采样时间",
+                        "format": "Y-m-d",
+                        "layout|x": 420,
+                        "layout|y": 390,
+                        "name": "sampletime",
+                        "width": 300
+                    },
+                    "name": "MyDateField32",
+                    "designerId": "53e87b31-4434-48de-a369-5e1d560b275c"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "layout|x": 73,
+                        "layout|y": 9
+                    },
+                    "name": "MyToolbar37",
+                    "designerId": "078c9af1-e531-424f-9ea8-7fab6f1d627f",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_save.png ",
+                                "layout|flex": null,
+                                "text": "保存"
+                            },
+                            "name": "MyButton148",
+                            "designerId": "a6e7d093-59b8-4dd4-a7b1-d239974217b0",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var form = this.up('form').getForm(); // get the basic form\r",
+                                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                                            "    form.submit({\r",
+                                            "        success: function(form, action) {\r",
+                                            "            Ext.Msg.alert('Success', action.result.msg);\r",
+                                            "        },\r",
+                                            "        failure: function(form, action) {\r",
+                                            "            Ext.Msg.alert('Failed', action.result.msg);\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "} else { // display error alert if the data is invalid\r",
+                                            "    Ext.Msg.alert('Invalid Data', 'Please correct form errors.');\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "9b9ab7cb-6e4b-4704-a5ad-dd2edc077114"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton149",
+                            "designerId": "4efd456e-ddfe-4e3b-83b6-f50dd981e938",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('sampleDataManage'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "183ca0d8-807e-4dfa-9625-c7536b19d652"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

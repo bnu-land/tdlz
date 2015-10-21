@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "uRightListStore",
+        "model": "uRightListModel",
+        "pageSize": null,
+        "storeId": "uRightListStore"
+    },
+    "designerId": "130b3ce0-3787-4968-8ae6-6d504503257a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": null
+            },
+            "name": "MyAjaxProxy90",
+            "designerId": "cd4a1143-6c35-4a2a-b523-fd8b334eb3c1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader90",
+                    "designerId": "15dc0985-8296-4012-bbe8-a93c1bf40c97"
+                }
+            ]
+        }
+    ]
+}

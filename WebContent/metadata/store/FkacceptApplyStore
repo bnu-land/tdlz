@@ -1,0 +1,70 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "FkacceptApplyStore",
+        "designer|userClassName": "FkacceptApplyStore",
+        "model": "FkacceptApplyModel",
+        "pageSize": 20,
+        "storeId": "FkacceptApplyModel"
+    },
+    "designerId": "381027fe-771c-42a5-b61f-73b2e6fb87f7",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: ''}"
+                ],
+                "url": "searchApply"
+            },
+            "name": "MyAjaxProxy24",
+            "designerId": "eb6ff907-811a-4f08-b975-f9df4995cda5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader24",
+                    "designerId": "37358513-fd1e-4275-b17f-8858c6efdf2d"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "04d8f8b5-fb16-46b7-810d-86a4e9025d46"
+        }
+    ]
+}

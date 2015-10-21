@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "TaishiAlarm_Canshu",
+        "model": "TaishiAlarm_Canshu",
+        "storeId": "MyJsonStore"
+    },
+    "designerId": "0c5d19ac-1150-4965-80a1-b362a1b0422b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchKeyword2: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": null
+            },
+            "name": "MyAjaxProxy89",
+            "designerId": "18ec1c8c-10c1-4070-8766-0c56c20d5f0c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader89",
+                    "designerId": "f28311b7-65f5-4f78-8612-9aaeea5ed728"
+                }
+            ]
+        }
+    ]
+}

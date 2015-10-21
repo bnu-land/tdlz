@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.URoleInfo" table="u_role_info" catalog="tdlz">
+        <id name="roleId" type="java.lang.Integer">
+            <column name="role_id" />
+            <generator class="identity" />
+        </id>
+        <property name="roleNameCn" type="string">
+            <column name="role_name_cn" length="30" not-null="true">
+                <comment>&#189;&#199;&#201;&#171;&#214;&#208;&#206;&#196;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="roleName" type="string">
+            <column name="role_name" length="30">
+                <comment>&#189;&#199;&#201;&#171;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="enabled" type="java.lang.Boolean">
+            <column name="enabled">
+                <comment>&#202;&#199;&#183;&#241;&#198;&#244;&#211;&#195;</comment>
+            </column>
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535">
+                <comment>&#189;&#199;&#201;&#171;&#195;&#232;&#202;&#246;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

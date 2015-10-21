@@ -1,0 +1,295 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateReportModel",
+        "designer|userClassName": "EvaluateReportModel"
+    },
+    "designerId": "93cfc550-53d5-4398-bc30-c8f1e1dc2511",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "recordId",
+                "type": "int"
+            },
+            "name": "MyField170",
+            "designerId": "63f4e96e-db30-4672-9825-6855339c4214"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectId",
+                "type": "string"
+            },
+            "name": "MyField171",
+            "designerId": "35e6c33d-bf64-4a60-af21-6141d2aa9033"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectname",
+                "type": "string"
+            },
+            "name": "MyField172",
+            "designerId": "6a3866ac-e3f7-4dcb-b651-78eb0b980930"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soilQualityGrade",
+                "type": "string"
+            },
+            "name": "MyField173",
+            "designerId": "1d41a54a-2a58-4a96-938c-54895655122e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soilQualityComment",
+                "type": "string"
+            },
+            "name": "MyField174",
+            "designerId": "4ea69452-6b21-4bdc-a8d5-26cc3d9bce7c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "soilAuditOpinion",
+                "type": "string"
+            },
+            "name": "MyField175",
+            "designerId": "1360acc9-02d5-4bf8-9277-e4b86b390b69"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gongResults",
+                "type": "string"
+            },
+            "name": "MyField176",
+            "designerId": "f6eed6fb-77c6-4609-a522-36fd54ede08f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gongCqgc",
+                "type": "string"
+            },
+            "name": "MyField177",
+            "designerId": "9d57d346-5e25-4219-bfff-f5077d86680c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gongTdpz",
+                "type": "string"
+            },
+            "name": "MyField178",
+            "designerId": "b8c2c44d-3ee8-417e-aaba-348237da9a6f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gongNtsl",
+                "type": "string"
+            },
+            "name": "MyField179",
+            "designerId": "a7d902fc-7dc6-409f-be24-1b04c8b33573"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gongTjdl",
+                "type": "string"
+            },
+            "name": "MyField180",
+            "designerId": "0cf6ed52-11a7-4b08-b20f-8fd40ccf0d44"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "microreliefDescription",
+                "type": "string"
+            },
+            "name": "MyField181",
+            "designerId": "43f2e6a9-7b57-405a-b338-fc7fed67ed5d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "trafficConditions",
+                "type": "string"
+            },
+            "name": "MyField182",
+            "designerId": "d3b4f8a7-6dfa-4a3c-88fb-6d1fcae48607"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "goukanQuality",
+                "type": "string"
+            },
+            "name": "MyField183",
+            "designerId": "8c204148-d559-4cf3-be9e-5c2fe26edadf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "landProportion",
+                "type": "string"
+            },
+            "name": "MyField184",
+            "designerId": "5ce33eaa-95f9-4c57-8fcc-51fca6357035"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "waterStorageCapacity",
+                "type": "string"
+            },
+            "name": "MyField185",
+            "designerId": "fad5fc9a-8bed-47e9-b1d2-dcbad52dac49"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fertilityEvaluation",
+                "type": "string"
+            },
+            "name": "MyField186",
+            "designerId": "22d4d629-9e5b-40ca-92eb-6c53f28981c2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "formingClodsDegree",
+                "type": "string"
+            },
+            "name": "MyField187",
+            "designerId": "5f8be635-3302-4697-b081-481df8dac51a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "expertResults",
+                "type": "string"
+            },
+            "name": "MyField188",
+            "designerId": "53649311-1a12-4a4f-b2b8-acaca854ae91"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "expert",
+                "type": "string"
+            },
+            "name": "MyField189",
+            "designerId": "02634978-39a9-479b-8d86-968111aa12dd"
+        }
+    ]
+}

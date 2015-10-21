@@ -1,0 +1,356 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateIndexPut",
+        "designer|userClassName": "EvaluateIndexPut",
+        "layout": "fit",
+        "title": "指标导入"
+    },
+    "designerId": "ab6ef88c-7e2e-4fe7-9aac-fc3aa54e30a5",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "EvaluateIndexPutForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "standardSubmit": false,
+                "title": "",
+                "url": ""
+            },
+            "name": "MyForm30",
+            "designerId": "483b09e5-c59f-47d6-b780-c56313ca1343",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": "projectId",
+                        "layout|x": 40,
+                        "layout|y": 20,
+                        "name": "projectId",
+                        "readOnly": true
+                    },
+                    "name": "MyTextField174",
+                    "designerId": "860fd92b-9dc5-4012-abb2-98edfca30f2c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目名称",
+                        "id": "proJectName",
+                        "layout|x": 420,
+                        "layout|y": 20,
+                        "name": "projectName",
+                        "readOnly": true,
+                        "width": 240
+                    },
+                    "name": "MyTextField175",
+                    "designerId": "a2ec851d-8c62-4cc4-9101-8ad3bd1463e2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "有机质(g.kg-1)",
+                        "id": "organicmatter",
+                        "layout|x": 40,
+                        "layout|y": 170,
+                        "name": "organicmatter"
+                    },
+                    "name": "MyTextField176",
+                    "designerId": "5899c2fd-27e3-45f0-942e-2905cf05ffcd"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "土壤质地",
+                        "id": "soiltexture",
+                        "layout|x": 40,
+                        "layout|y": 220,
+                        "name": "soiltexture"
+                    },
+                    "name": "MyTextField177",
+                    "designerId": "d548bb43-c39d-426f-9665-d0b51a214662"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "pH值",
+                        "id": "phvalue",
+                        "layout|x": 420,
+                        "layout|y": 220,
+                        "name": "phvalue",
+                        "width": 240
+                    },
+                    "name": "MyTextField178",
+                    "designerId": "71563a53-6ca7-4b93-a197-9b40977d280b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "土层厚度(cm)",
+                        "id": "soilThickness",
+                        "layout|x": 40,
+                        "layout|y": 70,
+                        "name": "soilThickness"
+                    },
+                    "name": "MyTextField179",
+                    "designerId": "d10b67bb-6c8e-4fc0-956e-0f0c477319cb"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "土壤含水量(mm)",
+                        "id": "soilmoisture",
+                        "layout|x": 40,
+                        "layout|y": 120,
+                        "name": "soilmoisture"
+                    },
+                    "name": "MyTextField180",
+                    "designerId": "86dafead-64cf-4e8d-9fb9-85ecfe0dfc32"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "全氮(mg.kg-1)",
+                        "id": "totalnitrogen",
+                        "layout|x": 420,
+                        "layout|y": 70,
+                        "name": "totalnitrogen",
+                        "width": 240
+                    },
+                    "name": "MyTextField181",
+                    "designerId": "9b24c196-bf66-4ba6-80a8-31e97cf07c82"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "全磷(mg.kg-1)",
+                        "id": "totalphosphorus",
+                        "layout|x": 420,
+                        "layout|y": 120,
+                        "name": "totalphosphorus",
+                        "width": 240
+                    },
+                    "name": "MyTextField182",
+                    "designerId": "c40c2075-6493-431a-bd4e-610b27809edc"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "全钾(mg.kg-1)",
+                        "id": "totalpotassium",
+                        "layout|x": 420,
+                        "layout|y": 170,
+                        "name": "totalpotassium",
+                        "width": 240
+                    },
+                    "name": "MyTextField183",
+                    "designerId": "3af5702b-3ab4-4e78-adb5-6c553ca3bcda"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 420,
+                        "layout|y": 270,
+                        "text": "下一步"
+                    },
+                    "name": "MyButton172",
+                    "designerId": "c2c5e959-82bf-4686-8555-e6c29a713b34",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var organicmatter=Ext.getCmp('organicmatter').getValue();\r",
+                                    "var soiltexture=Ext.getCmp('soiltexture').getValue();\r",
+                                    "var phvalue=Ext.getCmp('phvalue').getValue();\r",
+                                    "var soilThickness=Ext.getCmp('soilThickness').getValue();\r",
+                                    "var soilmoisture=Ext.getCmp('soilmoisture').getValue();\r",
+                                    "var totalnitrogen=Ext.getCmp('totalnitrogen').getValue();\r",
+                                    "var totalphosphorus=Ext.getCmp('totalphosphorus').getValue();\r",
+                                    "var totalpotassium=Ext.getCmp('totalpotassium').getValue();\r",
+                                    "var id=Ext.getCmp('projectId').getValue();\r",
+                                    "var name=Ext.getCmp('proJectName').getValue();\r",
+                                    "\r",
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "var newtab = tabs.add(Ext.widget('EvaluateResult'));\r",
+                                    "\r",
+                                    "Ext.getCmp('proJecTid').setValue(id);\r",
+                                    "Ext.getCmp('proJecTname').setValue(name);\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'evaluate',\r",
+                                    "    method: 'GET',\r",
+                                    "    waitMsg:'正在进行评价中, 请稍等...',  \r",
+                                    "    params:{organicmatter:organicmatter,\r",
+                                    "        soiltexture:soiltexture,\r",
+                                    "        phvalue:phvalue,\r",
+                                    "        soilThickness:soilThickness,\r",
+                                    "        soilmoisture:soilmoisture,\r",
+                                    "        totalnitrogen:totalnitrogen,\r",
+                                    "        totalphosphorus:totalphosphorus,\r",
+                                    "        totalpotassium:totalpotassium\r",
+                                    "    },\r",
+                                    "\r",
+                                    "    success:function(response, options){\r",
+                                    "        //var respText = response.responseText;        \r",
+                                    "        //respText=decodeURI(userName);\r",
+                                    "        var u =Ext.JSON.decode(response.responseText);           \r",
+                                    "        Ext.Msg.alert('success',\"评价已完成\");\r",
+                                    "        Ext.getCmp('evaluateResult').setValue(u.evaluateResult);\r",
+                                    "\r",
+                                    "    }\r",
+                                    "\r",
+                                    "});\r",
+                                    "\r",
+                                    "//这里是一个文本框\r",
+                                    "//items: [{\r",
+                                    "//    xtype: 'textfield',\r",
+                                    "//    id: 'txt',\r",
+                                    "//    name: 'yx'\r",
+                                    "//}] \r",
+                                    "//这里是一个ajax请求\r",
+                                    "//Ext.Ajax.request({\r",
+                                    "//    url: 'xxx',\r",
+                                    "//    method: 'GET',\r",
+                                    "//    success: function(response) {\r",
+                                    "//        var respText = Ext.decode(response.responseText);\r",
+                                    "//        //调用文本域的方法，设置它的值~\r",
+                                    "//        Ext.getCmp('txt').setValue(respText);\r",
+                                    "//    }\r",
+                                    "//});"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "523883e2-7b64-4110-90af-040b451aa71c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 210,
+                        "layout|y": 270,
+                        "text": "上一步"
+                    },
+                    "name": "MyButton173",
+                    "designerId": "3d98c700-ff88-4635-bb94-757f4c9c5a73",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "\r",
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "a4966181-1b81-46ef-a72e-df1527841771"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

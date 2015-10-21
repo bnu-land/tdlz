@@ -1,0 +1,76 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "db_usersStore",
+        "designer|userClassName": "db_usersStore",
+        "model": "db_users",
+        "pageSize": null,
+        "storeId": "db_usersStore"
+    },
+    "designerId": "936ced0a-4448-42df-914c-5b2b4fe92003",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_Users"
+            },
+            "name": "MyAjaxProxy99",
+            "designerId": "59665851-5402-4e6d-8fed-7cd0aafeaca0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader99",
+                    "designerId": "ffd4597b-44b7-4620-80e6-70a378ef43c4"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var keyword = \"\";\r",
+                    "if(Ext.getCmp('searchKeyword_Users') == null || Ext.getCmp('searchKeyword_Users') == 'undefined'){\r",
+                    "    keyword = \"\";\r",
+                    "}else{\r",
+                    "    keyword = Ext.getCmp('searchKeyword_Users').getValue();\r",
+                    "}\r",
+                    "var extra_params={\r",
+                    "    searchKeyword:keyword\r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onJsonstoreBeforeLoad",
+            "designerId": "8744bb58-07ab-40c3-a7c3-23376169227d"
+        }
+    ]
+}

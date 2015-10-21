@@ -1,0 +1,25 @@
+
+html, body{ margin:0; padding:0; width:100%; height:100%; background:#d4e1f2; font-size:12px;}
+.box:after{content:".";display:block; height:0px; clear:both; visibility:hidden;}
+
+.black_overlay{  display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.8;  opacity:.80;  filter: alpha(opacity=80);  }
+.white_content {  display: none;  position: absolute;  top: 25%;  left: 25%;  width:400px;  height: 220px;  padding:7px 8px 8px 7px;  border:1px solid #a1bad9;  background-color:#dde7f1;  z-index:1002;  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.content-main{ width:100%; height:100%; background:#fff; border:1px solid #a1bad9;}
+.content-table{ margin:0 auto; width:90%; border-collapse:collapse; border:0;}
+.content-table tbody th{ padding-left:5px; padding-top:10px; height:24px; line-height:24px; border:1px solid #fff; font-weight:normal; text-align:left;}
+.content-table tbody td{ padding-left:5px; padding-top:10px; line-height:24px; border-bottom: dashed 0px #e9f1f8; text-align:left;}
+.content-close{ position: absolute; top:12px; right:15px;}
+
+
+
+.mapright-title{ width:100%; height:25px; background:url(../images/rightbg01.gif) repeat-x left top;}
+.mapright-title span{ display:inline-block; margin-left:5px; width:124px; height:25px; line-height:23px; background:url(../images/rightbg02.gif) no-repeat center bottom; text-align:center; font-weight:bold; color:#4e6d99;}
+.mapright-searchbg{ margin:5px; height:30px; line-height:25px; background:#fff; border:solid 1px #a1bad9;}
+.mapright-searchbgleft{ float:left; padding-left:25px; background:url(../images/icon-021.png) no-repeat 5px center;}
+.mapright-searchbgright{ float:left; padding-left:35px; background:url(../images/icon-022.png) no-repeat 15px center;}
+.mapright-mapbg{ position:relative; margin:5px; padding-right:132px; border:solid 1px #a1bad9;}
+.mapright-mapleft{width:100%; min-height:560px;}
+.mapright-mapright{ position:absolute; right:0; top:0px; bottom:0; width:130px; border-left:solid 1px #a1bad9; background:url(../images/rightbg01.gif) repeat-x left top #fff;}
+.tclb{ display:inline-block; margin-left:5px; height:25px; line-height:23px; background:url(../images/rightbg02.gif) no-repeat center bottom; text-align:center; font-weight:bold; color:#4e6d99;}
+
+

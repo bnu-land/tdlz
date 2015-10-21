@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "uDeptInfoStore",
+        "designer|userClassName": "uDeptInfoStore",
+        "model": "uDeptInfoModel",
+        "pageSize": null,
+        "storeId": "uDeptInfoStore"
+    },
+    "designerId": "cc023171-3227-4da2-97b9-88bbd91f18be",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword:''\r",
+                    "}"
+                ],
+                "url": "get_DeptInfo"
+            },
+            "name": "MyAjaxProxy28",
+            "designerId": "6b186bcc-38a1-40af-8daa-43d1d3fd5ff0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader28",
+                    "designerId": "7c234641-66c7-4c3a-a10d-5a112b3e6943"
+                }
+            ]
+        }
+    ]
+}

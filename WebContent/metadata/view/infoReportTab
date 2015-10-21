@@ -1,0 +1,630 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoReportTab",
+        "designer|userClassName": "infoReportTab",
+        "id": "infoReportTab",
+        "layout": "fit",
+        "title": "监管>>违规流转投诉举报"
+    },
+    "designerId": "a72f4cd4-38f9-4c7d-a2f4-26584637a89f",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "dock": null,
+                "height": 421,
+                "jsonSubmit": true,
+                "layout": "border",
+                "pollForChanges": null,
+                "title": null
+            },
+            "name": "MyForm39",
+            "designerId": "ae1edd3f-5d41-44c7-97f4-8cf29847a2a4",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "collapsible": false,
+                        "forceFit": true,
+                        "id": null,
+                        "layout|region": "center",
+                        "store": "InfoReportStore",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel39",
+                    "designerId": "f4b6d005-2638-4dbc-a075-c8e0af3c5cb8",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": null,
+                                "width": 39
+                            },
+                            "name": "MyRowNumberer32",
+                            "designerId": "b72c162d-5818-4e94-bc44-7324d10e90b9"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reportTitle",
+                                "text": "来信主题"
+                            },
+                            "name": "MyColumn203",
+                            "designerId": "d107ab24-c2b4-4c10-9bd5-42c2fa51dffe"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reporterName",
+                                "text": "来信人"
+                            },
+                            "name": "MyColumn204",
+                            "designerId": "9c584e6b-512e-424a-9bd6-12cdf67c3252"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reportClass",
+                                "text": "类别"
+                            },
+                            "name": "MyColumn205",
+                            "designerId": "91ba973c-c5a0-428f-a124-7fce97836b32"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reportTime",
+                                "format": "Y-m-d",
+                                "text": "来信时间"
+                            },
+                            "name": "MyDateColumn35",
+                            "designerId": "ad5d8a3a-2f4c-4bc7-aaee-90a3aa46b649"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reportIsreply",
+                                "text": "是否回复"
+                            },
+                            "name": "MyColumn206",
+                            "designerId": "b3a44731-6e3c-48e6-a2bd-4414d12fb64c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "reportReplytime",
+                                "format": "Y-m-d",
+                                "text": "回复时间"
+                            },
+                            "name": "MyDateColumn36",
+                            "designerId": "214eb2cd-b9fd-48e5-adaa-498e15a59493"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView39",
+                            "designerId": "aece0d83-8692-4c9d-b9fa-bbc8280a2f8f"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel31",
+                            "designerId": "e469d358-5e5a-4061-929a-6744eff3370b"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "enableOverflow": true,
+                                "frame": false,
+                                "height": null
+                            },
+                            "name": "MyToolbar53",
+                            "designerId": "79dc51e9-4917-4468-b1b1-313e0e456a27",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "起始时间",
+                                        "format": "Y-m-d",
+                                        "id": "searchDateReport",
+                                        "labelWidth": 70,
+                                        "layout|flex": null,
+                                        "width": 204
+                                    },
+                                    "name": "MyDateField46",
+                                    "designerId": "82b554d3-1aee-4a7b-bcf7-0963f81e04e9"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "emptyText": "请输入搜索关键字",
+                                        "fieldLabel": "",
+                                        "id": "searchKeywordReport",
+                                        "labelWidth": 80,
+                                        "layout|flex": null,
+                                        "width": 211
+                                    },
+                                    "name": "MyTextField210",
+                                    "designerId": "8aa5e41c-7216-4f56-86d2-653aac72199c"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/file_view0.png",
+                                        "layout|flex": null,
+                                        "text": "搜索"
+                                    },
+                                    "name": "MyButton214",
+                                    "designerId": "1c08d00e-25f8-428d-ad10-776f177bcbcf",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var getDate = Ext.util.Format.date(Ext.getCmp('searchDateReport').getValue(),'Y-m-d');\r",
+                                                    "var getKeyword = Ext.getCmp('searchKeywordReport').getValue();\r",
+                                                    "var mystore=Ext.StoreMgr.get('InfoReportStore'); //获得store对象\r",
+                                                    "//在load事件中添加参数\r",
+                                                    "//mystore.load(\r",
+                                                    "//{params:{\r",
+                                                    "//    start:\"0\",\r",
+                                                    "//    limit:\"25\",\r",
+                                                    "//    searchKeyword:getKeyword,\r",
+                                                    "//    searchDate:getDate   \r",
+                                                    "//} \r",
+                                                    "//}\r",
+                                                    "//);\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "mystore.on('beforeload',function(store,options){\r",
+                                                    "\r",
+                                                    "    var new_params = { \r",
+                                                    "        searchKeyword:getKeyword,\r",
+                                                    "        searchDate:getDate\r",
+                                                    "    };\r",
+                                                    "\r",
+                                                    "    Ext.apply(store.proxy.extraParams,new_params);\r",
+                                                    "});\r",
+                                                    "\r",
+                                                    "mystore.load(\r",
+                                                    "{\r",
+                                                    "    params:{\r",
+                                                    "        start:\"0\",\r",
+                                                    "        limit:\"25\"\r",
+                                                    "    }\r",
+                                                    "}\r",
+                                                    ");"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "20a110f6-3055-4b4c-867c-85244414d0c4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "height": 36,
+                                "store": "InfoReportStore",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar25",
+                            "designerId": "c1d2b4f5-932f-480f-aa4a-22f827641363"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGridpanelCellClick",
+                                "implHandler": [
+                                    "if(cellIndex === undefined || cellIndex < 2) return;\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "var win = new Ext.Window({\r",
+                                    "\r",
+                                    "    title:'来信详细信息',\r",
+                                    "    closable:true,\r",
+                                    "    layout:'fit',\r",
+                                    "    items:[\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        height: 600,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        jsonSubmit: true,\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 10,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '姓名',\r",
+                                    "            id: 'reporterName',\r",
+                                    "            name: 'reporterName'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 10,\r",
+                                    "            hidden: true,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '是否回复',\r",
+                                    "            id: 'reportIsreply',\r",
+                                    "            name: 'reportIsreply'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 10,\r",
+                                    "            hidden: true,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '来信ID',\r",
+                                    "            id: 'reportId',\r",
+                                    "            name: 'reportId'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 10,\r",
+                                    "            hidden: true,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '附件',\r",
+                                    "            id: 'reportedAttachment',\r",
+                                    "            name: 'reportedAttachment'\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 540,\r",
+                                    "            y: 40,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '联系电话',\r",
+                                    "            id: 'reporterTel',\r",
+                                    "            name: 'reporterTel'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 40,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '联系地址',\r",
+                                    "            id: 'reporterAddress',\r",
+                                    "            name: 'reporterAddress'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 70,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '问题发生地',\r",
+                                    "            id: 'reportedPlace',\r",
+                                    "            name: 'reportedPlace'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 100,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '被反映单位（人）',\r",
+                                    "            id: 'reportedName',\r",
+                                    "            name: 'reportedName'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 130,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '投诉举报类别',\r",
+                                    "            id: 'reportClass',\r",
+                                    "            name: 'reportClass'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 270,\r",
+                                    "            y: 130,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '来信时间',\r",
+                                    "            id: 'reportTime',\r",
+                                    "            name: 'reportTime'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 540,\r",
+                                    "            y: 130,\r",
+                                    "            hidden: true,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '回复时间',\r",
+                                    "            id: 'reportReplytime',\r",
+                                    "            name: 'reportReplytime'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 360,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '回复人',\r",
+                                    "            id: 'reportReplyer',\r",
+                                    "            name: 'reportReplyer'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 270,\r",
+                                    "            y: 100,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '被反映人单位',\r",
+                                    "            id: 'reportedDepartname',\r",
+                                    "            name: 'reportedDepartname'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 160,\r",
+                                    "            width: 770,\r",
+                                    "            fieldLabel: '信件主题',\r",
+                                    "            id: 'reportTitle',\r",
+                                    "            name: 'reportTitle'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 270,\r",
+                                    "            y: 70,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '问题发生时间',\r",
+                                    "            id: 'reportedTime',\r",
+                                    "            name: 'reportedTime'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 540,\r",
+                                    "            y: 70,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '被反映单位级别',\r",
+                                    "            id: 'reportedDepartlevel',\r",
+                                    "            name: 'reportedDepartlevel'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 540,\r",
+                                    "            y: 10,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '身份证号',\r",
+                                    "            id: 'reporterIdnum',\r",
+                                    "            name: 'reporterIdnum'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 270,\r",
+                                    "            y: 40,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '邮政编码',\r",
+                                    "            id: 'reporterZipcode',\r",
+                                    "            name: 'reporterZipcode'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 270,\r",
+                                    "            y: 10,\r",
+                                    "            width: 230,\r",
+                                    "            fieldLabel: '电子邮件',\r",
+                                    "            id: 'reporterEmail',\r",
+                                    "            name: 'reporterEmail'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'displayfield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 200,\r",
+                                    "            height: 150,\r",
+                                    "            width: 770,\r",
+                                    "            fieldLabel: '来信内容（至少40个字）',\r",
+                                    "            id: 'reportContent',\r",
+                                    "            name: 'reportContent'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textareafield',\r",
+                                    "            x: 10,\r",
+                                    "            y: 390,\r",
+                                    "            height: 150,\r",
+                                    "            width: 770,\r",
+                                    "            fieldLabel: '回复内容',\r",
+                                    "            id: 'reportReplycontent',\r",
+                                    "            name: 'reportReplycontent'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            handler: function(button, event) {\r",
+                                    "                var form = this.up('form').getForm(); // get the basic form\r",
+                                    "\r",
+                                    "\r",
+                                    "                if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "                    form.submit({\r",
+                                    "                        url:'update_infoReport',\r",
+                                    "\r",
+                                    "                        success: function(form, action) {\r",
+                                    "\r",
+                                    "                            Ext.Msg.alert('成功', '成功回复');\r",
+                                    "                            var mystore = Ext.StoreMgr.get('InfoReportStore'); //获得store对象                                                   \r",
+                                    "                            mystore.load();                         \r",
+                                    "\r",
+                                    "                            win.close();\r",
+                                    "                        },\r",
+                                    "                        failure: function(form, action) {\r",
+                                    "                            Ext.Msg.alert('失败', '回复失败');\r",
+                                    "                        }\r",
+                                    "                    });\r",
+                                    "                } else { // display error alert if the data is invalid\r",
+                                    "                Ext.Msg.alert('Invalid Data', 'Please correct form errors.');}\r",
+                                    "            },\r",
+                                    "            x: 90,\r",
+                                    "            y: 550,\r",
+                                    "            text: '确定并发送邮件'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            handler: function(button, event) {\r",
+                                    "                win.close();\r",
+                                    "            },\r",
+                                    "            x: 260,\r",
+                                    "            y: 550,\r",
+                                    "            width: 90,\r",
+                                    "            text: '取消'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "\r",
+                                    "    ]\r",
+                                    "\r",
+                                    "});\r",
+                                    "\r",
+                                    "\r",
+                                    "Ext.getCmp('reportTime').setValue(record.data.reportTime);\r",
+                                    "Ext.getCmp('reportId').setValue(record.data.reportId);\r",
+                                    "Ext.getCmp('reportClass').setValue(record.data.reportClass);\r",
+                                    "Ext.getCmp('reportTitle').setValue(record.data.reportTitle);\r",
+                                    "Ext.getCmp('reportContent').setValue(record.data.reportContent);\r",
+                                    "Ext.getCmp('reporterName').setValue(record.data.reporterName);\r",
+                                    "Ext.getCmp('reporterEmail').setValue(record.data.reporterEmail);\r",
+                                    "Ext.getCmp('reporterAddress').setValue(record.data.reporterAddress);\r",
+                                    "Ext.getCmp('reporterZipcode').setValue(record.data.reporterZipcode);\r",
+                                    "Ext.getCmp('reporterTel').setValue(record.data.reporterTel);\r",
+                                    "Ext.getCmp('reporterIdnum').setValue(record.data.reporterIdnum);\r",
+                                    "Ext.getCmp('reportedPlace').setValue(record.data.reportedPlace);\r",
+                                    "Ext.getCmp('reportedTime').setValue(record.data.reportedTime);\r",
+                                    "Ext.getCmp('reportedDepartlevel').setValue(record.data.reportedDepartlevel);\r",
+                                    "Ext.getCmp('reportedDepartname').setValue(record.data.reportedDepartname);\r",
+                                    "Ext.getCmp('reportedName').setValue(record.data.reportedName);\r",
+                                    "Ext.getCmp('reportReplytime').setValue(record.data.reportReplytime);\r",
+                                    "Ext.getCmp('reportedAttachment').setValue(record.data.reportedAttachment);\r",
+                                    "Ext.getCmp('reportReplyer').setValue(record.data.reportReplyer);\r",
+                                    "Ext.getCmp('reportIsreply').setValue(record.data.reportIsreply);\r",
+                                    "Ext.getCmp('reportReplycontent').setValue(record.data.reportReplycontent);\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "win.show();"
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "name": "onGridpanelCellClick",
+                            "designerId": "5a6aeca1-2d27-406e-9a1a-56567e7e8ac4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

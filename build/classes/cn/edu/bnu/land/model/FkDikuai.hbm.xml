@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-22 17:47:31 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkDikuai" table="fk_dikuai" catalog="tdlz">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="recordId" />
+            <generator class="identity" />
+        </id>
+        <property name="landId" type="string">
+            <column name="landId" length="30" not-null="true" />
+        </property>
+        <property name="projectId" type="string">
+            <column name="projectID" length="30" not-null="true" />
+        </property>
+        <property name="projectname" type="string">
+            <column name="Projectname" length="45" />
+        </property>
+        <property name="ownershipUnits" type="string">
+            <column name="ownershipUnits" length="50" />
+        </property>
+        <property name="personRights" type="string">
+            <column name="personRights" length="45" />
+        </property>
+        <property name="landLocation" type="string">
+            <column name="landLocation" length="45" />
+        </property>
+        <property name="propertyNumber" type="string">
+            <column name="propertyNumber" length="45" />
+        </property>
+        <property name="fuKenhouPropertyNumber" type="string">
+            <column name="fuKenhouPropertyNumber" length="45" />
+        </property>
+        <property name="polygonNumber" type="string">
+            <column name="polygonNumber" length="45" />
+        </property>
+        <property name="mapSheetNumber" type="string">
+            <column name="mapSheetNumber" length="50" />
+        </property>
+        <property name="fukenqianLandUse" type="string">
+            <column name="fukenqianLandUse" length="60" />
+        </property>
+        <property name="fukenArea" type="string">
+            <column name="fukenArea" length="45" />
+        </property>
+        <property name="newHousingArea" type="string">
+            <column name="newHousingArea" length="50" />
+        </property>
+        <property name="whereAbouts" type="string">
+            <column name="whereAbouts" length="50" />
+        </property>
+        <property name="chanQuanzhengTupian" type="string">
+            <column name="chanQuanzhengTupian" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

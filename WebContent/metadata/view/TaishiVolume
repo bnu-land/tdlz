@@ -1,0 +1,295 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiVolume",
+        "designer|userClassName": "TaishiVolume",
+        "height": 499,
+        "layout": "border",
+        "title": "按交易量分析",
+        "width": 693
+    },
+    "designerId": "dd5ad745-4f92-483f-8c45-b5614929e579",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "layout|region": "center",
+                "title": "各方交易量分析图"
+            },
+            "name": "MyPanel18",
+            "designerId": "d1ef175c-ba30-4034-bdc2-d5c85cb54644",
+            "cn": [
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": [
+                            "{\r",
+                            "    easing: 'ease-in-out',\r",
+                            "    duration: 750\r",
+                            "}"
+                        ],
+                        "dock": "left",
+                        "height": 250,
+                        "insetPadding": 20,
+                        "layout|x": -44,
+                        "layout|y": -11,
+                        "store": "TaishiVolume_Pie",
+                        "width": 690
+                    },
+                    "name": "ColumnChart1",
+                    "designerId": "518a038e-f0c8-420e-8035-621aa6c03880",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-column-chart",
+                    "autoName": "ColumnChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dashSize": null,
+                                "fields": [
+                                    "jysj"
+                                ],
+                                "label": [
+                                    "{\r",
+                                    "    rotation: {\r",
+                                    "        degrees: 45\r",
+                                    "    }\r",
+                                    "}"
+                                ],
+                                "title": "交易时间"
+                            },
+                            "name": "MyCategoryAxis2",
+                            "designerId": "6b1e8674-bbec-4741-9a2e-8c4cd5092ad1"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "jylsum"
+                                ],
+                                "title": "交易量（公顷）"
+                            },
+                            "name": "MyNumericAxis3",
+                            "designerId": "2f835e25-6adf-4879-8f5b-9b0b7c199e67"
+                        },
+                        {
+                            "type": "Ext.chart.series.Column",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "highlight": [
+                                    "true"
+                                ],
+                                "label": [
+                                    "{\r",
+                                    "display : 'outside',  \r",
+                                    "field :['jylsum'],  \r",
+                                    "renderer : Ext.util.Format.numberRenderer('0')\r",
+                                    "}"
+                                ],
+                                "tips": [
+                                    "{\r",
+                                    "    trackMouse: true,\r",
+                                    "    width: 350,\r",
+                                    "    height: 20,\r",
+                                    "    renderer: function(storeItem, item) {\r",
+                                    "        this.setTitle(storeItem.get('jysj') +storeItem.get('jyqy')+ '的交易总量为: ' + storeItem.get('jylsum') + ' 公顷');\r",
+                                    "    }\r",
+                                    "}"
+                                ],
+                                "xField": "jysj",
+                                "yField": [
+                                    "jylsum"
+                                ]
+                            },
+                            "name": "MyColumnSeries1",
+                            "designerId": "a8ce8a7f-a254-4514-9357-c2665c75ba19"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 87,
+                "layout": "absolute",
+                "layout|region": "north",
+                "title": "查询条件"
+            },
+            "name": "MyForm13",
+            "designerId": "0a676a3b-7db6-4d74-b440-e3d48621c0b5",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiVolumeDateField1",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiVolumeDateField1",
+                        "labelWidth": 60,
+                        "layout|x": 10,
+                        "layout|y": 20,
+                        "name": "",
+                        "width": 180
+                    },
+                    "name": "MyDateField15",
+                    "designerId": "07b336b1-0956-46a2-bc7b-a00436af3625"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiVolumeDateField2",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiVolumeDateField2",
+                        "labelWidth": 60,
+                        "layout|x": 210,
+                        "layout|y": 20,
+                        "name": "",
+                        "width": 180
+                    },
+                    "name": "MyDateField16",
+                    "designerId": "5f8aa739-a1b8-4507-ad04-dd007e4280cf"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiVolumeTextField",
+                        "displayField": "name",
+                        "emptyText": "请选择区域",
+                        "fieldLabel": "交易区域",
+                        "id": "TaishiVolumeTextField",
+                        "labelWidth": 60,
+                        "layout|x": 410,
+                        "layout|y": 20,
+                        "name": "TaishiVolumeTextField",
+                        "queryMode": "local",
+                        "store": "TaishiVolumeCombox",
+                        "valueField": "value",
+                        "width": 180
+                    },
+                    "name": "MyComboBox7",
+                    "designerId": "ca7608c0-a361-4aa2-94f9-70a2c5a16288"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 610,
+                        "layout|y": 20,
+                        "text": "查询",
+                        "width": 60
+                    },
+                    "name": "MyButton46",
+                    "designerId": "d320c86d-365e-4e01-8001-347e1d7d50e5",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiVolumeDateField1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiVolumeDateField2').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiVolumeTextField').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiVolume_Pie'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword:getKeyword};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "9dbc4780-60e1-42da-86a3-23dbc97e70a8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

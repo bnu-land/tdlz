@@ -1,0 +1,80 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiVolume_Pie",
+        "designer|userClassName": "TaishiVolume_Pie"
+    },
+    "designerId": "8f706990-a31f-4306-a66a-f66fd50a5748",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "htbh"
+            },
+            "name": "MyField87",
+            "designerId": "358e28fa-14b0-478f-bc7b-1200c27f4a85"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jyl"
+            },
+            "name": "MyField88",
+            "designerId": "35f4716d-fc9c-42e1-a3a6-73bb4b99ed80"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jysj"
+            },
+            "name": "MyField89",
+            "designerId": "0f567167-2572-41d4-80c7-e48ecc5148a2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jylsum"
+            },
+            "name": "MyField90",
+            "designerId": "68f385b9-48a6-40df-b539-11f31d7bcb5f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jyqy"
+            },
+            "name": "MyField91",
+            "designerId": "a068c45b-2b9e-45fa-8fd7-39012e702f40"
+        }
+    ]
+}

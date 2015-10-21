@@ -1,0 +1,315 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateResult",
+        "designer|userClassName": "EvaluateResult",
+        "layout": "fit",
+        "title": "土壤质量评价结果"
+    },
+    "designerId": "5c048b93-4f46-4732-bd85-4879145b8c08",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "id": "EvaluateResultForm",
+                "layout": "absolute",
+                "title": "",
+                "url": "addEvaluateResult"
+            },
+            "name": "MyForm29",
+            "designerId": "cd670ddb-9169-42fa-b0e0-acba37adee6d",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 20,
+                        "layout|x": 310,
+                        "layout|y": 10,
+                        "text": "复垦土壤质量评价结果"
+                    },
+                    "name": "MyLabel10",
+                    "designerId": "dc354db3-19d0-4335-8a4a-0476e49fcd53"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": "proJecTid",
+                        "labelWidth": 60,
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "projectId",
+                        "readOnly": true,
+                        "width": 270
+                    },
+                    "name": "MyTextField170",
+                    "designerId": "07c9045d-9ecc-4af6-8b60-ad19e6e3e2a6"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "评价结果",
+                        "id": "evaluateResult",
+                        "labelWidth": 60,
+                        "layout|x": 40,
+                        "layout|y": 90,
+                        "name": "evaluationRank",
+                        "readOnly": true,
+                        "width": 270
+                    },
+                    "name": "MyTextField171",
+                    "designerId": "bc8a29ec-db9b-4e31-bcf7-73cc69f87d2e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦项目名称",
+                        "id": "proJecTname",
+                        "labelWidth": 80,
+                        "layout|x": 430,
+                        "layout|y": 40,
+                        "name": "projectname",
+                        "readOnly": true,
+                        "width": 340
+                    },
+                    "name": "MyTextField172",
+                    "designerId": "67e3aa54-2187-441c-bd67-14c3c2b6d3bf"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "评价人",
+                        "id": "Appraiser",
+                        "labelWidth": 60,
+                        "layout|x": 430,
+                        "layout|y": 90,
+                        "name": "evaluators",
+                        "width": 340
+                    },
+                    "name": "MyTextField173",
+                    "designerId": "684e9927-6d63-4d12-b51c-dc154ecda8e0"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "备注",
+                        "height": 82,
+                        "id": "overallConclusion",
+                        "labelWidth": 60,
+                        "layout|x": 40,
+                        "layout|y": 190,
+                        "width": 730
+                    },
+                    "name": "MyTextArea10",
+                    "designerId": "e76b649e-3b67-4257-b114-22a4d4f0537b"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "评价日期",
+                        "format": "Y-m-d",
+                        "id": "reviewDate",
+                        "labelWidth": 60,
+                        "layout|x": 430,
+                        "layout|y": 140,
+                        "name": "auditDate",
+                        "width": 340
+                    },
+                    "name": "MyDateField35",
+                    "designerId": "52ee1735-ebaa-419d-9ae7-e47ba47ac8ac"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 230,
+                        "layout|y": 330,
+                        "scale": "medium",
+                        "text": "保存",
+                        "width": 60
+                    },
+                    "name": "MyButton170",
+                    "designerId": "a4181d5e-7748-4461-97f3-466b5d9ae372",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var proJecTid=Ext.getCmp('proJecTid').getValue();\r",
+                                    "var proJecTname=Ext.getCmp('proJecTname').getValue();\r",
+                                    "var evaluateResult=Ext.getCmp('evaluateResult').getValue();\r",
+                                    "var auditResults=Ext.getCmp('auditResults').getValue();\r",
+                                    "var overallConclusion=Ext.getCmp('overallConclusion').getValue();\r",
+                                    "\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'addEvaluateResult',\r",
+                                    "    method: 'POST',\r",
+                                    "    params:{proJecTid:proJecTid,\r",
+                                    "        proJecTname:proJecTname,\r",
+                                    "        evaluateResult:evaluateResult,\r",
+                                    "        overallConclusion:overallConclusion,\r",
+                                    "        auditResults:auditResults\r",
+                                    "    },\r",
+                                    "\r",
+                                    "    success:function(response){\r",
+                                    "\r",
+                                    "        Ext.Msg.alert('success','保存成功');      \r",
+                                    "    },\r",
+                                    "    failure:function(){\r",
+                                    "        Ext.MessageBox.alert('错误','操作失败！');\r",
+                                    "    }\r",
+                                    "\r",
+                                    "});"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "a9f801cd-02d0-4822-8c77-5a71212313b7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 430,
+                        "layout|y": 330,
+                        "scale": "medium",
+                        "text": "返回",
+                        "width": 60
+                    },
+                    "name": "MyButton171",
+                    "designerId": "b0b3d648-c456-4f75-aa2f-023e7ae60ad3",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs= this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "var newtab= tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "7a6f80ec-6b98-4dd6-9df0-2d56c3b69b08"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "3e52895f-afae-4921-9f40-c34dae58b35e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择",
+                        "fieldLabel": "审核结果",
+                        "id": "auditResults",
+                        "labelWidth": 60,
+                        "layout|x": 40,
+                        "layout|y": 140,
+                        "name": "auditResults",
+                        "queryMode": "local",
+                        "store": "auditResultsStore",
+                        "width": 270
+                    },
+                    "name": "MyComboBox18",
+                    "designerId": "b8bfe454-4b62-46dd-84fa-e8e07448a568"
+                }
+            ]
+        }
+    ]
+}

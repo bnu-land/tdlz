@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[['1', '拆迁'],['2', '复垦监测'],['3', '复垦验收'], ['4', '异常监管']]"
+        ],
+        "designer|userAlias": "rwClassStore",
+        "designer|userClassName": "rwClassStore",
+        "storeId": "rwClassStore"
+    },
+    "designerId": "97e8d9b8-5ca1-418a-84e7-aeb47cb2bd39",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy36",
+            "designerId": "69754ae5-4707-4f13-846f-dfef3370e3d5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader36",
+                    "designerId": "f9d20ea2-ce9b-4abf-8e7e-60e4f310bf42"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField246",
+            "designerId": "07efc3bb-c851-4d28-9298-bda7b2a5c0a0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField247",
+            "designerId": "c0b0e810-aaf9-46af-a2a3-f45e8007ae1b"
+        }
+    ]
+}

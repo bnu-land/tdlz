@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-8 16:59:34 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkSamplemanagement" table="fk_samplemanagement" catalog="tdlz">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="recordId" />
+            <generator class="identity" />
+        </id>
+         <property name="sampleId" type="string">
+            <column name="sampleId" length="60" not-null="true" />
+        </property>        
+        <property name="sampleAddresss" type="string">
+            <column name="SampleAddresss" length="80" />
+        </property>
+        <property name="projectId" type="string">
+            <column name="projectId" length="45" />
+        </property>
+        <property name="projectName" type="string">
+            <column name="projectName" length="45" />
+        </property>
+        <property name="longitude" type="string">
+            <column name="Longitude" length="45" />
+        </property>
+        <property name="latitude" type="string">
+            <column name="Latitude" length="45" />
+        </property>
+        <property name="organicmatter" type="string">
+            <column name="organicmatter" length="45" />
+        </property>
+        <property name="soiltexture" type="string">
+            <column name="soiltexture" length="45" />
+        </property>
+        <property name="phvalue" type="string">
+            <column name="pHvalue" length="45" />
+        </property>
+        <property name="soilThickness" type="string">
+            <column name="soilThickness" length="45" />
+        </property>
+        <property name="soilmoisture" type="string">
+            <column name="soilmoisture" length="45" />
+        </property>
+        <property name="totalnitrogen" type="string">
+            <column name="totalnitrogen" length="45" />
+        </property>
+        <property name="totalphosphorus" type="string">
+            <column name="totalphosphorus" length="45" />
+        </property>
+        <property name="totalpotassium" type="string">
+            <column name="totalpotassium" length="45" />
+        </property>
+        <property name="sampletime" type="date">
+            <column name="sampletime" length="10" />
+        </property>
+        <property name="recorder" type="string">
+            <column name="Recorder" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

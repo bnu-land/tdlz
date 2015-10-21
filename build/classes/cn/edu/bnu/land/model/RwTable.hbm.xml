@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-24 21:36:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.RwTable" table="rw_table" catalog="tdlz">
+        <id name="rwId" type="string">
+            <column name="rw_id" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="projectId" length="20" not-null="true">
+                <comment>&#207;&#238;&#196;&#191;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="projectName" type="string">
+            <column name="projectName" length="60">
+                <comment>&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="rwContent" type="string">
+            <column name="rw_content" length="200" not-null="true">
+                <comment>&#200;&#206;&#206;&#241;&#195;&#232;&#202;&#246;</comment>
+            </column>
+        </property>
+        <property name="rwClass" type="string">
+            <column name="rw_class" length="20">
+                <comment>&#200;&#206;&#206;&#241;&#196;&#218;&#200;&#221;</comment>
+            </column>
+        </property>
+        <property name="rwGeneratetime" type="date">
+            <column name="rw_generatetime" length="10">
+                <comment>&#200;&#206;&#206;&#241;&#201;&#250;&#179;&#201;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="rwStarttime" type="date">
+            <column name="rw_starttime" length="10">
+                <comment>&#200;&#206;&#206;&#241;&#191;&#170;&#202;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="rwEndtime" type="date">
+            <column name="rw_endtime" length="10">
+                <comment>&#200;&#206;&#206;&#241;&#189;&#216;&#214;&#185;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="rwSubmittime" type="date">
+            <column name="rw_submittime" length="10">
+                <comment>&#200;&#206;&#206;&#241;&#189;&#225;&#202;&#248;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="rwIsfinished" type="java.lang.Boolean">
+            <column name="rw_isfinished">
+                <comment>&#200;&#206;&#206;&#241;&#202;&#199;&#183;&#241;&#205;&#234;&#179;&#201;</comment>
+            </column>
+        </property>
+        <property name="rwResponsiblePerson" type="string">
+            <column name="rw_responsiblePerson" length="50">
+                <comment>&#200;&#206;&#206;&#241;&#207;&#194;&#180;&#239;&#200;&#203;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

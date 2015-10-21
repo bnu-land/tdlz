@@ -1,0 +1,1502 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "syrMonitorResult",
+        "designer|userClassName": "syrMonitorResult",
+        "height": null,
+        "id": "syrMonitorResult",
+        "layout": "fit",
+        "title": "监测结果",
+        "width": null
+    },
+    "designerId": "510ae3db-3c46-4072-83e8-0e1d248ba91a",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0
+            },
+            "name": "MyTabPanel12",
+            "designerId": "8cd0b531-01d4-4cd2-8fd9-342d92704fca",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 406,
+                        "layout": "border",
+                        "title": "结果图"
+                    },
+                    "name": "MyPanel79",
+                    "designerId": "8bf73a0e-ca6e-4df7-8f82-fac2b6c7f8bb",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": [
+                                    "<div id = \"mapdiv_syrMonitorResult\" style = \"width=100%;height:100%;\">\r",
+                                    "\t<div id=\"bottomPanel_monitor\">\r",
+                                    "        <div id=\"timeInfo_monitor\">\r",
+                                    "          <div>复垦项目监测时间节点，当前正在查看<b><span id=\"taishi_daterange\">2012-02</span></b>的数据</div>\r",
+                                    "          <div id=\"timeSliderDiv_monitor\"></div>\r",
+                                    "        </div>\r",
+                                    "    </div>\r",
+                                    "\t<div id=\"info_monitor\">\r",
+                                    "\t\t<div id = \"monitor_prjId\" style = \"border-bottom: 1px solid #444;\">\t\t\r",
+                                    "\t\t\t<h3>项目名称</h3>\r",
+                                    "\t\t\t<span id=\"projectNameDiv\" >长寿区复垦项目</span>\r",
+                                    "\t\t</div>\r",
+                                    "\t\t<div id = \"monitorInfo\" style=\"padding:5px;font-family: arial;font-size: 15px;\" >\r",
+                                    "\t\t\t<div style = \"border-bottom: 1px solid #444;\"><b>是否进度异常：</b><span id=\"isJinduAbnormalDiv\">否</span></div>\r",
+                                    "\t\t\t<div>\r",
+                                    "\t\t\t\t<b><span>复垦工程进度</span></b>\r",
+                                    "\t\t\t\t<span id=\"fukenjinduInfoDiv\"></span>\r",
+                                    "\t\t\t</div>\r",
+                                    "\t\t</div>\r",
+                                    "\t</div>\r",
+                                    "</div>\r",
+                                    ""
+                                ],
+                                "layout|region": "center",
+                                "layout|split": true,
+                                "title": "地图"
+                            },
+                            "name": "MyPanel80",
+                            "designerId": "65fc8fc3-d02c-4323-9533-9ef2092e2dbf",
+                            "cn": [
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top"
+                                    },
+                                    "name": "MyToolbar93",
+                                    "designerId": "bf39b3d8-ca14-4d37-bee9-ba77d2a54dc4",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 22,
+                                                "icon": "images/return.png",
+                                                "layout|flex": null,
+                                                "text": "返回项目列表",
+                                                "width": 100
+                                            },
+                                            "name": "MyButton346",
+                                            "designerId": "7b0247f4-d018-47b9-9255-5476720b940e",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "click",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var tabs = Ext.getCmp('myTabPanel');\r",
+                                                            "tabs.removeAll(true);             \r",
+                                                            "var newtab = tabs.add(Ext.widget('syrDataManagement'));    "
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "a547d185-eb24-4ddc-a3bd-572e0b0cbe10"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Separator",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null
+                                            },
+                                            "name": "MySeparator2",
+                                            "designerId": "ead06b6c-85b4-4ad3-aa9a-5c77b8d737fa"
+                                        },
+                                        {
+                                            "type": "Ext.form.RadioGroup",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "查看地图",
+                                                "id": "radioGroup_monitor",
+                                                "labelWidth": 60,
+                                                "layout|flex": null,
+                                                "width": 270
+                                            },
+                                            "name": "MyRadioGroup7",
+                                            "designerId": "a5fb783f-d644-41b3-98b6-f1bf47d23ac9",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Radio",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "boxLabel": "规划图",
+                                                        "designer|displayName": "规划图",
+                                                        "fieldLabel": null,
+                                                        "inputValue": "规划图",
+                                                        "name": "monitor"
+                                                    },
+                                                    "name": "MyRadio18",
+                                                    "designerId": "9026db33-5ea1-4d51-b162-fa510fe2fa23"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Radio",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "boxLabel": "现状图",
+                                                        "designer|displayName": "现状图",
+                                                        "fieldLabel": null,
+                                                        "inputValue": "现状图",
+                                                        "name": "monitor"
+                                                    },
+                                                    "name": "MyRadio19",
+                                                    "designerId": "523ba632-b733-4e12-9d31-8ec84166b544"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Radio",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "boxLabel": "竣工图",
+                                                        "designer|displayName": "竣工图",
+                                                        "fieldLabel": null,
+                                                        "inputValue": "竣工图",
+                                                        "name": "monitor"
+                                                    },
+                                                    "name": "MyRadio20",
+                                                    "designerId": "1fbac27f-b3f1-4d2f-9c8f-b2384d17492b"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Separator",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null
+                                            },
+                                            "name": "MySeparator3",
+                                            "designerId": "d99955a3-0e0a-4248-baa3-2e63fa38af20"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": "对比遥感底图",
+                                                "designer|displayName": "对比遥感底图",
+                                                "fieldLabel": null,
+                                                "id": "checkBox_monitor_RSImage",
+                                                "inputValue": "true",
+                                                "layout|flex": null,
+                                                "uncheckedValue": "false"
+                                            },
+                                            "name": "MyCheckbox19",
+                                            "designerId": "73ff116b-a182-4d43-8af2-72405e3afdb9"
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Separator",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null
+                                            },
+                                            "name": "MySeparator4",
+                                            "designerId": "39ea8b36-3ec0-4592-bc92-205cea73f109"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Checkbox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "boxLabel": "查看工程进度",
+                                                "checked": true,
+                                                "fieldLabel": null,
+                                                "id": "checkBox_monitor_jindu",
+                                                "inputValue": "true",
+                                                "layout|flex": null,
+                                                "uncheckedValue": "false"
+                                            },
+                                            "name": "MyCheckbox20",
+                                            "designerId": "1427d4c6-6eb6-4992-ab7f-4da3699d74dd"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "btn_monitor_scopeAbnormal",
+                                                "layout|flex": null,
+                                                "text": "地块范围异常"
+                                            },
+                                            "name": "MyButton347",
+                                            "designerId": "a05f34ed-9a9a-47d3-8eac-1069d10a6c40"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "id": "prjid_result",
+                                                "layout|flex": null,
+                                                "text": "项目编号",
+                                                "width": 100
+                                            },
+                                            "name": "MyLabel17",
+                                            "designerId": "92b4558d-6946-4a55-abd7-f48b17d73a3d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onPanelAfterRender",
+                                        "implHandler": [
+                                            "//加入地图的js文件\r",
+                                            "var head = document.getElementsByTagName('head')[0];\r",
+                                            "var script= document.createElement(\"script\"); \r",
+                                            "script.type = \"text/javascript\"; \r",
+                                            "script.src=\"map/syrMonitorResult_map.js\"; \r",
+                                            "head.appendChild(script);"
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "name": "onPanelAfterRender",
+                                    "designerId": "570c1aa8-8f2b-4fc1-9f75-e326240e070d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig35",
+                            "designerId": "da8fcf68-9134-4b61-9f10-1ff491b60fd2"
+                        },
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0,
+                                "layout|region": "east",
+                                "layout|split": true,
+                                "width": 200
+                            },
+                            "name": "MyTabPanel13",
+                            "designerId": "b80d08c5-a42a-46e3-9ae4-adf160ff32a0",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "fit",
+                                        "title": "地块列表"
+                                    },
+                                    "name": "MyPanel81",
+                                    "designerId": "5646527b-562a-4c92-bc4c-e302ad2f525c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig36",
+                                            "designerId": "7f1bca19-2043-4e59-acd3-5a35f1b0719c"
+                                        },
+                                        {
+                                            "type": "Ext.grid.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "autoScroll": true,
+                                                "designer|createAlias": null,
+                                                "designer|displayName": null,
+                                                "id": "monitorResult_graphicsGrid",
+                                                "title": null
+                                            },
+                                            "name": "MyGridPanel76",
+                                            "designerId": "497869e1-fa9c-40a2-9859-3eeb95d726bc",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.grid.RowNumberer",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyRowNumberer68",
+                                                    "designerId": "afe25120-1951-4842-9bd8-05d984c83467"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "landparcelid",
+                                                        "text": "地块编号",
+                                                        "width": 120
+                                                    },
+                                                    "name": "MyColumn322",
+                                                    "designerId": "fc7a7984-0d5c-4829-ba43-792dd3ee160f"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Number",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "area",
+                                                        "text": "地块面积(平方米)"
+                                                    },
+                                                    "name": "MyNumberColumn34",
+                                                    "designerId": "4ef7b5c5-e147-4c25-a3fa-ed55be487425"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.View",
+                                                    "reference": {
+                                                        "name": "viewConfig",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyGridView76",
+                                                    "designerId": "c3cf01cd-d447-4333-a53f-061c7941a82e"
+                                                },
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onMonitorResult_graphicsGridCellClick",
+                                                        "implHandler": [
+                                                            "var graphic = record.get('graphic');\r",
+                                                            "locateByGraphic(graphic);"
+                                                        ],
+                                                        "name": "cellclick",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onMonitorResult_graphicsGridCellClick",
+                                                    "designerId": "96c93102-cfb0-45ce-b408-b529b4499075"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": null,
+                                        "layout": "border",
+                                        "title": "异常地块列表",
+                                        "width": 100
+                                    },
+                                    "name": "MyPanel82",
+                                    "designerId": "63874896-dc9b-4008-a520-b6b2658bb39c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig37",
+                                            "designerId": "6d72268d-216b-4b81-b81a-642e7ca69ca2"
+                                        },
+                                        {
+                                            "type": "Ext.grid.Panel",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "autoScroll": true,
+                                                "columnLines": true,
+                                                "dock": null,
+                                                "forceFit": true,
+                                                "frame": true,
+                                                "headerPosition": "right",
+                                                "id": "projectDikuaiGrid2",
+                                                "layout|region": "center",
+                                                "store": null,
+                                                "subGridXType": "",
+                                                "title": ""
+                                            },
+                                            "name": "MyGridPanel77",
+                                            "designerId": "9891266b-7593-44de-abf6-3aa6fab040cd",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.grid.RowNumberer",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "text": "序号",
+                                                        "width": 36
+                                                    },
+                                                    "name": "MyRowNumberer69",
+                                                    "designerId": "a379ab7f-4d81-4d01-bddb-7e62defaacdb"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "recordId",
+                                                        "hidden": true,
+                                                        "text": "记录号",
+                                                        "width": 52
+                                                    },
+                                                    "name": "MyColumn323",
+                                                    "designerId": "e20116e3-2694-4516-b655-c62b4eef6819"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "landId",
+                                                        "text": "地块编号"
+                                                    },
+                                                    "name": "MyColumn324",
+                                                    "designerId": "659f4d4c-0081-404e-951b-3e527945a8e6"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "projectId",
+                                                        "hidden": true,
+                                                        "text": "项目编号"
+                                                    },
+                                                    "name": "MyColumn325",
+                                                    "designerId": "bcc76716-6187-4f27-9073-9e0637617a3d"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "projectname",
+                                                        "hidden": true,
+                                                        "text": "项目名称"
+                                                    },
+                                                    "name": "MyColumn326",
+                                                    "designerId": "9d743525-f7f7-4384-b554-2058c2385be8"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "fukenArea",
+                                                        "hidden": true,
+                                                        "text": "片块面积"
+                                                    },
+                                                    "name": "MyColumn327",
+                                                    "designerId": "b4ac5d7d-add7-4f16-b8d7-2975eb113a58"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.column.Column",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "fukenqianLandUse",
+                                                        "hidden": true,
+                                                        "text": "复垦前土地利用类型"
+                                                    },
+                                                    "name": "MyColumn328",
+                                                    "designerId": "1ac3a68a-9d39-4aa1-8bfa-367822b3db30"
+                                                },
+                                                {
+                                                    "type": "Ext.grid.View",
+                                                    "reference": {
+                                                        "name": "viewConfig",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "name": "MyGridView77",
+                                                    "designerId": "e5f0a8e5-4b3d-4027-877d-1ec8a870d8eb"
+                                                },
+                                                {
+                                                    "type": "Ext.toolbar.Paging",
+                                                    "reference": {
+                                                        "name": "dockedItems",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "autoScroll": true,
+                                                        "displayInfo": true,
+                                                        "displayMsg": "显示 {0} - {1} 条，共 计{2}",
+                                                        "dock": "bottom",
+                                                        "emptyMsg": "没有数据",
+                                                        "store": "FKJCResultDikuaiStore",
+                                                        "width": 360
+                                                    },
+                                                    "name": "MyPagingToolbar59",
+                                                    "designerId": "8be1c0fb-2bab-4264-beec-779958389be3"
+                                                },
+                                                {
+                                                    "type": "Ext.selection.CheckboxModel",
+                                                    "reference": {
+                                                        "name": "selModel",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": "Ext.selection.CheckboxModel",
+                                                    "name": "MyCheckboxSelectionModel68",
+                                                    "designerId": "31c4c96c-c9ff-42e6-aff8-02794826f88b"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoRender": true,
+                        "autoShow": true,
+                        "id": "progresstable",
+                        "layout": "border",
+                        "title": "工程进度表"
+                    },
+                    "name": "MyPanel83",
+                    "designerId": "a1062447-09a3-4eb4-a191-af91f2603a17",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig38",
+                            "designerId": "e2b4fd3c-423d-4725-befc-186f4ee28528"
+                        },
+                        {
+                            "type": "Ext.chart.Chart",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": null,
+                                "layout|region": "center",
+                                "padding": null,
+                                "store": "yqprjmonitorInfoStore",
+                                "theme": null
+                            },
+                            "name": "ColumnChart2",
+                            "designerId": "5e62cebe-586b-425b-a6e5-d2fbf399ec2d",
+                            "isBuiltIn": true,
+                            "iconCls": "icon-column-chart",
+                            "autoName": "ColumnChart",
+                            "cn": [
+                                {
+                                    "type": "Ext.chart.axis.Category",
+                                    "reference": {
+                                        "name": "axes",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fields": [
+                                            "monitorTime"
+                                        ],
+                                        "title": "监测时间"
+                                    },
+                                    "name": "MyCategoryAxis4",
+                                    "designerId": "f058c446-409d-4546-ada6-254359c0dfb5"
+                                },
+                                {
+                                    "type": "Ext.chart.axis.Numeric",
+                                    "reference": {
+                                        "name": "axes",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dashSize": 2,
+                                        "decimals": 1,
+                                        "designer|displayName": "进度百分比",
+                                        "label": [
+                                            "{renderer: Ext.util.Format.numberRenderer('0%')}"
+                                        ],
+                                        "maximum": 100,
+                                        "minimum": 0,
+                                        "title": "工程进度"
+                                    },
+                                    "name": "MyNumericAxis5",
+                                    "designerId": "bbbbea3d-4d34-4bbf-b63e-bece1850fa38"
+                                },
+                                {
+                                    "type": "Ext.chart.series.Column",
+                                    "reference": {
+                                        "name": "series",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "axis": [
+                                            "left"
+                                        ],
+                                        "label": null,
+                                        "stacked": false,
+                                        "tips": null,
+                                        "title": [
+                                            "土地平整预期进度",
+                                            "土地平整实际进度",
+                                            "田间道路预期进度",
+                                            "田间道路实际进度",
+                                            "农田水利预期进度",
+                                            "农田水利实际进度"
+                                        ],
+                                        "xField": null,
+                                        "xPadding": 0,
+                                        "yField": [
+                                            "ypercentPz",
+                                            "ppercentPz",
+                                            "ypercentDl",
+                                            "ppercentDl",
+                                            "ypercentSl",
+                                            "ppercentSl"
+                                        ]
+                                    },
+                                    "name": "MyColumnSeries2",
+                                    "designerId": "5d333661-97c3-4fb2-abea-03d03a6b3bd4",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "sprite",
+                                                    "record",
+                                                    "attributes",
+                                                    "index",
+                                                    "store"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "var colors = ['rgb(250, 128, 114)', 'rgb(255, 0, 0)', 'rgb(0, 255, 127)',  'rgb(34, 139, 34)',  'rgb(218, 112,224)', 'rgb(160, 32, 240)'];\r",
+                                                    "\r",
+                                                    "attributes.fill = colors[index % colors.length];  \r",
+                                                    "\r",
+                                                    "return attributes; "
+                                                ]
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "87e10b16-67dc-4d1c-9bc8-179c7f5aebeb"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "autoScroll": true,
+                                "designer|displayName": "项目名称：",
+                                "dock": null,
+                                "fixed": true,
+                                "forceFit": true,
+                                "height": 200,
+                                "id": "taskgrid1",
+                                "layout|region": "south",
+                                "store": "yqprjmonitorInfoStore",
+                                "title": ""
+                            },
+                            "name": "MyGridPanel78",
+                            "designerId": "54ea25b2-4f7e-4b29-8db5-dd1833ce3a96",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 100
+                                    },
+                                    "name": "MyGridView78",
+                                    "designerId": "3fa0b2da-2c7a-41b4-8271-4c7572979555"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "monitorTime",
+                                        "hidden": true,
+                                        "text": "项目名称",
+                                        "width": 400
+                                    },
+                                    "name": "MyColumn329",
+                                    "designerId": "8b3deee5-929a-48a1-8896-680cb76806ce"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "monitorTime",
+                                        "text": "监测时间",
+                                        "width": 150
+                                    },
+                                    "name": "MyColumn330",
+                                    "designerId": "490bcf05-7a6a-4723-9ac1-ec4a84dcb2b0"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "recordId",
+                                        "hidden": true,
+                                        "text": "record_id"
+                                    },
+                                    "name": "MyNumberColumn35",
+                                    "designerId": "1d8a984b-7ac0-466a-9e82-37f492ea2b78"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "name": "MyCheckboxSelectionModel69",
+                                    "designerId": "1ca0f420-7b40-48c5-b441-ac55aba7f634"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "土地平整工程",
+                                        "width": null
+                                    },
+                                    "name": "MyColumn331",
+                                    "designerId": "fada7466-d1ed-4d79-9896-ab492f89967f",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ypercentPz",
+                                                "format": "00",
+                                                "text": "预期进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn36",
+                                            "designerId": "3d110a17-695c-43ae-9fde-49d324d02410"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ppercentPz",
+                                                "format": "00",
+                                                "text": "实际进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn37",
+                                            "designerId": "57d00ed5-5ba1-48f2-a964-434beacc6fab"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "田间道路工程",
+                                        "width": null
+                                    },
+                                    "name": "MyColumn332",
+                                    "designerId": "554e003d-9552-4699-84f7-9178690d894b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ypercentDl",
+                                                "format": "00",
+                                                "text": "预期进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn38",
+                                            "designerId": "d1c90c60-7b47-44ef-b57c-81b0293043f3"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ppercentDl",
+                                                "format": "00",
+                                                "text": "实际进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn39",
+                                            "designerId": "b65277a5-722d-4c58-9b5e-299f5b8bb78b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "农田水利工程",
+                                        "width": null
+                                    },
+                                    "name": "MyColumn333",
+                                    "designerId": "ab76a656-4e8f-44b8-ab5d-d48e525d26de",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ypercentSl",
+                                                "format": "00",
+                                                "text": "预期进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn40",
+                                            "designerId": "5bfb62c2-950a-48fd-80dd-0577e91b03c3"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "ppercentSl",
+                                                "format": "00",
+                                                "text": "实际进度(%)",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn41",
+                                            "designerId": "884ea2bd-a5af-4ea3-9e40-b4cc46e9d9ae"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Boolean",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "isSended",
+                                        "hidden": true,
+                                        "text": "是否已下达",
+                                        "width": 81
+                                    },
+                                    "name": "MyBooleanColumn11",
+                                    "designerId": "679bfa26-3aba-4af8-953b-29d2c2d125fe"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Boolean",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "isFinished",
+                                        "hidden": true,
+                                        "text": "是否已完成",
+                                        "width": 68
+                                    },
+                                    "name": "MyBooleanColumn12",
+                                    "designerId": "06665f70-ec33-44d1-aad7-4333c5ba410c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Date",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "finishTime",
+                                        "hidden": true,
+                                        "text": "完成时间"
+                                    },
+                                    "name": "MyDateColumn70",
+                                    "designerId": "27378393-a52e-4d62-9acd-8ddda8188d4d"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "displayInfo": true,
+                                        "displayMsg": "显示 {0} - {1} 条，共 计{2}",
+                                        "dock": "bottom",
+                                        "emptyMsg": "没有数据",
+                                        "store": "yqprjmonitorInfoStore",
+                                        "width": 360
+                                    },
+                                    "name": "MyPagingToolbar60",
+                                    "designerId": "84216e75-bde2-45ae-a2de-f0b8af4b11d7"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top",
+                                        "hidden": true,
+                                        "width": 950
+                                    },
+                                    "name": "MyToolbar94",
+                                    "designerId": "766fa7ba-9b57-47b0-a136-290685820bb1",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "项目名称",
+                                                "id": "projectnamess1",
+                                                "labelWidth": 50,
+                                                "layout|flex": null,
+                                                "width": 281
+                                            },
+                                            "name": "MyTextField287",
+                                            "designerId": "bd37168c-802e-4d17-86d7-f396c8775ad5"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "预期监测时间",
+                                                "id": "monitorstart9",
+                                                "labelAlign": "right",
+                                                "labelWidth": 80,
+                                                "layout|flex": null,
+                                                "width": 186
+                                            },
+                                            "name": "MyDateField85",
+                                            "designerId": "91b13b38-0299-4c9e-931b-75039e7f4256"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "——",
+                                                "id": "monitorend9",
+                                                "labelAlign": "right",
+                                                "labelSeparator": "—",
+                                                "labelWidth": 20,
+                                                "layout|flex": null,
+                                                "width": 103
+                                            },
+                                            "name": "MyDateField86",
+                                            "designerId": "3925baaf-4e8f-405c-8e2e-bbcd4598a22d"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "Label",
+                                                "hidden": true,
+                                                "id": "projectname10",
+                                                "layout|flex": null
+                                            },
+                                            "name": "MyTextField288",
+                                            "designerId": "c6e27d05-3d81-4c86-bb9f-c4d186abc9e0"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": null,
+                                                "icon": "images/file_view0.png",
+                                                "layout|flex": null,
+                                                "text": "搜索",
+                                                "width": 55
+                                            },
+                                            "name": "MyButton348",
+                                            "designerId": "b3113639-9961-44ab-b13f-89051b5121fb",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "click",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var  mystore=Ext.StoreMgr.get('yqprjmonitorInfoStore');//获取store对象\r",
+                                                            "\r",
+                                                            "//在load时间中添加参数\r",
+                                                            "mystore.load(\r",
+                                                            "    { params:{\r",
+                                                            "        start:\"0\",\r",
+                                                            "        limit:\"15\",\r",
+                                                            "        projectName:Ext.getCmp('projectnamess').getValue(),   \r",
+                                                            "        monitorstarttime:Ext.util.Format.date(Ext.getCmp('monitorstart8').getValue(),'Y-m-d'),\r",
+                                                            "        monitorendtime:Ext.util.Format.date(Ext.getCmp('monitorend8').getValue(),'Y-m-d'),\r",
+                                                            "        accuracy:\"0\"}\r",
+                                                            "    }\r",
+                                                            ");\r",
+                                                            ""
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "540a5264-9eb6-43b4-820b-beeb43903dea"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "显示全部"
+                                            },
+                                            "name": "MyButton349",
+                                            "designerId": "9b18c7de-0894-4de9-ab3a-cb8429677f2c",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "Ext.getCmp('projectnamess').setValue('');\r",
+                                                            "\r",
+                                                            "var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                                            "mystore.load(\r",
+                                                            "    {\r",
+                                                            "        params: {\r",
+                                                            "            start: \"0\",\r",
+                                                            "            limit: \"15\",\r",
+                                                            "            projectName: '',\r",
+                                                            "            monitorstarttime:'',\r",
+                                                            "            monitorendtime:'',\r",
+                                                            "            accuracy:'0'\r",
+                                                            "        }\r",
+                                                            "    });"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "f6a0f09a-6868-4242-a5e9-d624753c079d"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "text": "删除"
+                                            },
+                                            "name": "MyButton350",
+                                            "designerId": "eb7618af-d731-4888-8d48-96c8ed96cd31",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('taskgrid');\r",
+                                                            "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                                            "if(record.length===0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！'); \r",
+                                                            "    return;\r",
+                                                            "}   \r",
+                                                            "else { \r",
+                                                            "    var  recordIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        recordIds[i] = record[i].get(\"recordId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'del_yqmonitorInfodataByIds',\r",
+                                                            "        params:{recordIds:recordIds},\r",
+                                                            "        success:function(response){\r",
+                                                            "            var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                                            "            mystore.load(\r",
+                                                            "            {\r",
+                                                            "                params: {\r",
+                                                            "                    start: \"0\",\r",
+                                                            "                    limit: \"15\",\r",
+                                                            "                    projectName: ''\r",
+                                                            "                }\r",
+                                                            "            });\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "            Ext.Msg.alert('success','删除数据成功!');\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
+                                                            "}   "
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "e813ebc5-e90e-4171-88ba-9bcd76d296a8"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|region": "east",
+                                "title": "",
+                                "width": 126
+                            },
+                            "name": "MyPanel84",
+                            "designerId": "8794bfce-90e2-47ad-aa94-24c470f23348",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": null,
+                                        "height": null,
+                                        "src": "images/legend.png",
+                                        "width": null
+                                    },
+                                    "name": "MyImg4",
+                                    "designerId": "dc99271b-9998-45c3-b795-c39be5ed25f4"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar95",
+                            "designerId": "bdffb133-e029-4e87-991d-8d748e6638b4",
+                            "cn": [
+                                {
+                                    "type": "Ext.toolbar.Fill",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1
+                                    },
+                                    "name": "MyFill10",
+                                    "designerId": "494c8a78-fdc1-45a3-ba73-b776474029e4"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "prjnameresult",
+                                        "layout|flex": 3,
+                                        "text": "My Label"
+                                    },
+                                    "name": "MyLabel18",
+                                    "designerId": "b60d9599-c472-4316-bbcf-5cd28b96ea5e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

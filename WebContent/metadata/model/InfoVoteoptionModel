@@ -1,0 +1,66 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "InfoVoteoptionModel"
+    },
+    "designerId": "38d9cde1-5fbf-4f5e-b9ca-1f8582597c4f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voptionId"
+            },
+            "name": "MyField266",
+            "designerId": "9188b359-afd2-45d3-920c-d3c0b0de51b3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voteId"
+            },
+            "name": "MyField267",
+            "designerId": "89a25972-35ec-4e32-a6d2-3ce1d8b689e7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voptionContent"
+            },
+            "name": "MyField268",
+            "designerId": "89d4f930-d6f9-4a36-ad64-2d8b4ad71c90"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "voptionNumber"
+            },
+            "name": "MyField269",
+            "designerId": "98de5714-4331-49dc-af11-0c2e6da1f816"
+        }
+    ]
+}

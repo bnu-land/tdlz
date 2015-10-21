@@ -1,0 +1,936 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "syrDataManagement",
+        "designer|userClassName": "syrDataManagement",
+        "height": null,
+        "id": "syrDataManagement",
+        "layout": "fit",
+        "title": "动态监测",
+        "width": null
+    },
+    "designerId": "533e60df-9536-4ae3-bb3b-242576924b94",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoShow": true,
+                "bodyPadding": 10,
+                "fixed": true,
+                "height": null,
+                "id": "syrDataManagementForm",
+                "layout": "fit",
+                "title": "",
+                "width": null
+            },
+            "name": "MyForm22",
+            "designerId": "b46e8f7f-b557-48d3-8f09-716e2b80d5a5",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoShow": true,
+                        "columnLines": true,
+                        "forceFit": true,
+                        "frame": true,
+                        "height": 150,
+                        "id": "datamanage",
+                        "store": "syrSchemeShow3",
+                        "subGridXType": "",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel18",
+                    "designerId": "401580bd-78b1-48ad-809e-7b0f88fdddd3",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "toolbar",
+                                "dock": "top",
+                                "fixed": true
+                            },
+                            "name": "MyToolbar23",
+                            "designerId": "4d918b7b-6ca3-48e8-85aa-7686178ca739",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "项目编号",
+                                        "id": "projectid5",
+                                        "labelWidth": 50,
+                                        "layout|flex": null,
+                                        "width": 171
+                                    },
+                                    "name": "MyTextField121",
+                                    "designerId": "76669c6c-3b91-40f0-be5f-590ad32c0f0a"
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoShow": true,
+                                        "displayField": "areaName",
+                                        "editable": false,
+                                        "emptyText": "请选择省",
+                                        "fieldLabel": "",
+                                        "forceSelection": true,
+                                        "id": "province5",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "name": "province5",
+                                        "store": "proviceStore",
+                                        "valueField": "areaCode",
+                                        "width": 75
+                                    },
+                                    "name": "MyComboBox11",
+                                    "designerId": "8176e53c-21d0-42e2-9f15-217e712d39cd",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onProvince5Select",
+                                                "implHandler": [
+                                                    "//清空查询条件\r",
+                                                    "var cityField=Ext.getCmp(\"city5\");\r",
+                                                    "cityField.setValue('');\r",
+                                                    "var countyField=Ext.getCmp(\"county5\");\r",
+                                                    "countyField.setValue('');\r",
+                                                    "var townField=Ext.getCmp(\"town6\");\r",
+                                                    "townField.setValue('');\r",
+                                                    "var codeHead=records[0].get('areaCode');\r",
+                                                    "Ext.Ajax.request({\r",
+                                                    "    url:'get_infoAreaCityList',\r",
+                                                    "    params:{codeHead:codeHead},\r",
+                                                    "    success:function(response){\r",
+                                                    "        var mystore = Ext.StoreMgr.get('cityStore');\r",
+                                                    "        mystore.load(\r",
+                                                    "        {\r",
+                                                    "            params:{\r",
+                                                    "                codeHead: codeHead\r",
+                                                    "            }\r",
+                                                    "        }\r",
+                                                    "        );\r",
+                                                    "    }\r",
+                                                    "});   \r",
+                                                    "\r",
+                                                    "//var  cityStore=Ext.StoreMgr.get('cityStore');//获取store对象\r",
+                                                    "\r",
+                                                    "//cityStore.filter('areaCode',codeHead);\r",
+                                                    "//Ext.Msg.alert('提示',cityStore.areaCode); \r",
+                                                    "\r",
+                                                    "//新建一个SimpleStore，然后将过滤出来的记过添加到这个SimpleStore中\r",
+                                                    "//var newStore=new Ext.data.SimpleStore({fields:['areaCode','areaName']});\r",
+                                                    "//newStore.add(cityStore.getRange());\r",
+                                                    "//Ext.Msg.alert('提示',newStore.areaCode); \r",
+                                                    "//设置所在市下拉列表的新的Store\r",
+                                                    "//cityField.store=newStore;\r",
+                                                    "\r",
+                                                    "//设置所在市下拉菜单的列表项的新的Store\r",
+                                                    "//if(cityField.view)   \r",
+                                                    "//cityField.view.setStore(cityStore);   \r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onProvince5Select",
+                                            "designerId": "14aa5750-8ce0-46ab-8364-15b88f28ca78"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoShow": true,
+                                        "displayField": "areaName",
+                                        "emptyText": "请选择市",
+                                        "fieldLabel": "",
+                                        "id": "city5",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "name": "city5",
+                                        "store": "cityStore",
+                                        "valueField": "areaCode",
+                                        "width": 75
+                                    },
+                                    "name": "MyComboBox12",
+                                    "designerId": "7aeceb66-2797-4d9e-93ee-cd9431641ff5",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCity5Select",
+                                                "implHandler": [
+                                                    "var countyField=Ext.getCmp(\"county5\");\r",
+                                                    "countyField.setValue('');\r",
+                                                    "var codeHead=records[0].get('areaCode');\r",
+                                                    "Ext.Ajax.request({\r",
+                                                    "    url:'get_infoAreaCountyList',\r",
+                                                    "    params:{codeHead:codeHead},\r",
+                                                    "    success:function(response){\r",
+                                                    "        var mystore = Ext.StoreMgr.get('countyStore');\r",
+                                                    "        mystore.load(\r",
+                                                    "        {\r",
+                                                    "            params:{\r",
+                                                    "                codeHead: codeHead\r",
+                                                    "            }\r",
+                                                    "        }\r",
+                                                    "        );\r",
+                                                    "    }\r",
+                                                    "});   \r",
+                                                    "var  countyStore=Ext.StoreMgr.get('countyStore');//获取store对象\r",
+                                                    "//设置所在县下拉菜单的列表项的新的Store\r",
+                                                    "if(countyField.view)   \r",
+                                                    "countyField.view.setStore(countyStore);   \r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCity5Select",
+                                            "designerId": "3986170e-bd3f-4d17-b85d-c6212604dfb1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoShow": true,
+                                        "displayField": "areaName",
+                                        "emptyText": "请选择县",
+                                        "fieldLabel": "",
+                                        "id": "county5",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "name": "county5",
+                                        "store": "countyStore",
+                                        "valueField": "areaCode",
+                                        "width": 76
+                                    },
+                                    "name": "MyComboBox13",
+                                    "designerId": "a416d2b1-80e9-4434-843e-7f8a3c15505b",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCounty5Select",
+                                                "implHandler": [
+                                                    "var townField=Ext.getCmp(\"town6\");\r",
+                                                    "townField.setValue('');\r",
+                                                    "var codeHead=records[0].get('areaCode');\r",
+                                                    "Ext.Ajax.request({\r",
+                                                    "    url:'get_infoAreaTownList',\r",
+                                                    "    params:{codeHead:codeHead},\r",
+                                                    "    success:function(response){\r",
+                                                    "        var mystore = Ext.StoreMgr.get('townStore');\r",
+                                                    "        mystore.load(\r",
+                                                    "        {\r",
+                                                    "            params:{\r",
+                                                    "                codeHead: codeHead\r",
+                                                    "            }\r",
+                                                    "        }\r",
+                                                    "        );\r",
+                                                    "    }\r",
+                                                    "});   \r",
+                                                    "var  townStore=Ext.StoreMgr.get('townStore');//获取store对象\r",
+                                                    "//设置所在县下拉菜单的列表项的新的Store\r",
+                                                    "if(townField.view)   \r",
+                                                    "townField.view.setStore(townStore);   \r",
+                                                    ""
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCounty5Select",
+                                            "designerId": "3cbe1ffb-2bcf-4c05-85b0-58d0bf3fce6a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "displayField": "areaName",
+                                        "emptyText": "请选择乡镇街道",
+                                        "fieldLabel": "",
+                                        "id": "town6",
+                                        "labelAlign": "right",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "name": "town6",
+                                        "store": "townStore",
+                                        "valueField": "areaCode",
+                                        "width": 112
+                                    },
+                                    "name": "MyComboBox14",
+                                    "designerId": "47f8a88b-bbd3-4db8-b044-6b800067c37e"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "开始施工时间",
+                                        "id": "contructstart5",
+                                        "labelAlign": "right",
+                                        "labelWidth": 80,
+                                        "layout|flex": null,
+                                        "width": 191
+                                    },
+                                    "name": "MyDateField28",
+                                    "designerId": "3ed0862f-ceb4-4170-ad54-23c8e73cce25"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "——",
+                                        "id": "contructend5",
+                                        "labelAlign": "right",
+                                        "labelSeparator": "—",
+                                        "labelWidth": 20,
+                                        "layout|flex": null,
+                                        "width": 140
+                                    },
+                                    "name": "MyDateField29",
+                                    "designerId": "5b8e4610-dce3-4efa-9fd2-0786e8448d05"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "icon": "images/file_view0.png",
+                                        "layout|flex": null,
+                                        "text": "搜索",
+                                        "width": 50
+                                    },
+                                    "name": "MyButton94",
+                                    "designerId": "429051a9-3067-46b8-9fc6-24220266cfe5",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "click",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var  mystore=Ext.StoreMgr.get('syrSchemeShow3');//获取store对象\r",
+                                                    "\r",
+                                                    "/*在load时间中添加参数\r",
+                                                    "mystore.load(\r",
+                                                    "    { params:{\r",
+                                                    "        start:\"0\",\r",
+                                                    "        limit:\"15\",\r",
+                                                    "        projectId:Ext.getCmp('projectid5').getValue(),//参数名称- 值\r",
+                                                    "        province:Ext.getCmp('province5').getValue(),\r",
+                                                    "        city:Ext.getCmp('city5').getValue(),\r",
+                                                    "        county:Ext.getCmp('county5').getValue(),\r",
+                                                    "        town:Ext.getCmp('town6').getValue(),\r",
+                                                    "        contructstarttime:Ext.util.Format.date(Ext.getCmp('contructstart5').getValue(),'Y-m-d'),\r",
+                                                    "        contructendtime:Ext.util.Format.date(Ext.getCmp('contructend5').getValue(),'Y-m-d')}\r",
+                                                    "    }\r",
+                                                    ");\r",
+                                                    "*/\r",
+                                                    "\r",
+                                                    "mystore.on('beforeload', function (store, options) {\r",
+                                                    "    var new_params = {projectId:Ext.getCmp('projectid5').getValue(),//参数名称- 值\r",
+                                                    "                      province:Ext.getCmp('province5').getValue(),\r",
+                                                    "                      city:Ext.getCmp('city5').getValue(),\r",
+                                                    "                      county:Ext.getCmp('county5').getValue(),\r",
+                                                    "                      town:Ext.getCmp('town6').getValue(),\r",
+                                                    "                      contructstarttime:Ext.util.Format.date(Ext.getCmp('contructstart5').getValue(),'Y-m-d'),\r",
+                                                    "                      contructendtime:Ext.util.Format.date(Ext.getCmp('contructend5').getValue(),'Y-m-d')};\r",
+                                                    "    Ext.apply(store.proxy.extraParams, new_params);\r",
+                                                    "});\r",
+                                                    "mystore.load({ params: { start: 0, limit: 15} });"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "2ccec971-49a5-47ba-814b-e0a4bbd408f6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar24",
+                            "designerId": "7bff4000-c47f-4eee-a62c-198356dd9216",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "监测任务计划表",
+                                        "width": 123
+                                    },
+                                    "name": "MyButton95",
+                                    "designerId": "22a02987-d369-476e-ae0f-b6ce3ee4c058",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('datamanage');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                                    "if(record.length > 1){\r",
+                                                    "    Ext.MessageBox.show({\r",
+                                                    "        title:\"提示\",\r",
+                                                    "        msg:\"只能选择一行数据\",\r",
+                                                    "        icon: Ext.MessageBox.INFO,\r",
+                                                    "        buttons: Ext.Msg.OK\r",
+                                                    "    });\r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "else if (record.length===0) {\r",
+                                                    "    //Ext.Msg.alert('提示', '请先选择您要编辑的数据!');\r",
+                                                    "    //return;\r",
+                                                    "    var tabs1 = Ext.getCmp('myTabPanel');\r",
+                                                    "    tabs1.removeAll(true);\r",
+                                                    "    var newtab1 = tabs1.add(Ext.widget('yqprojectmonitorInfo'));\r",
+                                                    "    var mystore1 = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                                    "    mystore1.load(\r",
+                                                    "    {\r",
+                                                    "        params: {\r",
+                                                    "            start: \"0\",\r",
+                                                    "            limit: \"15\",\r",
+                                                    "            projectName:'',\r",
+                                                    "            monitorstarttime:'',\r",
+                                                    "            monitorendtime:'',\r",
+                                                    "            accuracy:'0'\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "}\r",
+                                                    "else { \r",
+                                                    "    var projectSelectedName =record[0].get(\"projectname\");\r",
+                                                    "    var projectSelectedID =record[0].get(\"projectId\");\r",
+                                                    "    var tabs = Ext.getCmp('myTabPanel');\r",
+                                                    "    tabs.removeAll(true);\r",
+                                                    "    var newtab = tabs.add(Ext.widget('yqprojectmonitorInfo'));\r",
+                                                    "    Ext.getCmp('projectids').setValue(projectSelectedID);\r",
+                                                    "    Ext.getCmp('projectnames').setValue(projectSelectedName);\r",
+                                                    "    Ext.getCmp('prjid').setValue(projectSelectedID);\r",
+                                                    "\r",
+                                                    "    var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                                    "    mystore.load(\r",
+                                                    "    {\r",
+                                                    "        params: {\r",
+                                                    "            start: \"0\",\r",
+                                                    "            limit: \"15\",\r",
+                                                    "            projectId:projectSelectedID,\r",
+                                                    "            monitorstarttime:'',\r",
+                                                    "            monitorendtime:'',\r",
+                                                    "            accuracy:'1'\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "d8fb6399-2aaa-4504-8758-8dba989f7e52"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "现场调查数据",
+                                        "width": 124
+                                    },
+                                    "name": "MyButton96",
+                                    "designerId": "06715b4f-e167-4f40-a678-df47429d9aa6",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('datamanage');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                                    "if(record.length > 1){\r",
+                                                    "    Ext.MessageBox.show({\r",
+                                                    "        title:\"提示\",\r",
+                                                    "        msg:\"只能选择一行数据\",\r",
+                                                    "        icon: Ext.MessageBox.INFO,\r",
+                                                    "        buttons: Ext.Msg.OK\r",
+                                                    "    });\r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "else if (record.length===0) {\r",
+                                                    "    //Ext.Msg.alert('提示', '请先选择您要编辑的数据!');\r",
+                                                    "    //return;\r",
+                                                    "    var tabs1 = Ext.getCmp('myTabPanel');\r",
+                                                    "    tabs1.removeAll(true);\r",
+                                                    "    var newtab1 = tabs1.add(Ext.widget('syrOneProjectAllData'));\r",
+                                                    "    var mystore1 = Ext.StoreMgr.get('syrMonitorData'); //获得store对象 \r",
+                                                    "    mystore1.load(\r",
+                                                    "    {\r",
+                                                    "        params: {\r",
+                                                    "            start: \"0\",\r",
+                                                    "            limit: \"15\",\r",
+                                                    "            projectName:'',\r",
+                                                    "            monitorstarttime:'',\r",
+                                                    "            monitorendtime:'',\r",
+                                                    "            accuracy:'0'\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "} else { \r",
+                                                    "    var projectSelectedName = record[0].get(\"projectname\");  \r",
+                                                    "    var tabs = Ext.getCmp('myTabPanel');   \r",
+                                                    "    tabs.removeAll(true);                  \r",
+                                                    "    var newtab = tabs.add(Ext.widget('syrOneProjectAllData'));//打开tab                                         \r",
+                                                    "    //把参数传递过去\r",
+                                                    "    Ext.getCmp('projectname6').setValue(projectSelectedName);\r",
+                                                    "    var  mystore=Ext.StoreMgr.get('syrMonitorData');//获取store对象\r",
+                                                    "    //在load时间中添加参数\r",
+                                                    "    mystore.load(\r",
+                                                    "    { params:{\r",
+                                                    "        start:\"0\",\r",
+                                                    "        limit:\"15\",\r",
+                                                    "        projectName:projectSelectedName,\r",
+                                                    "        monitorstarttime: \"\",\r",
+                                                    "        monitorendtime: \"\",\r",
+                                                    "        accuracy:\"1\"//参数名称- 值\r",
+                                                    "    }\r",
+                                                    "});\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "c173e0a0-d3af-47c3-a797-1fabf781f9e8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "动态监测分析",
+                                        "width": 121
+                                    },
+                                    "name": "MyButton97",
+                                    "designerId": "3dc540c3-5d35-470c-a4f2-9878d89ebabb",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('datamanage');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                                    "if(record.length > 1){\r",
+                                                    "    Ext.MessageBox.show({\r",
+                                                    "        title:\"提示\",\r",
+                                                    "        msg:\"只能选择一行数据\",\r",
+                                                    "        icon: Ext.MessageBox.INFO,\r",
+                                                    "        buttons: Ext.Msg.OK\r",
+                                                    "    });\r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "else if (record.length===0) {\r",
+                                                    "    Ext.Msg.alert('提示', '请先选择您要分析的项目!');\r",
+                                                    "    return;\r",
+                                                    "} else { \r",
+                                                    "    var projectSelectedName =record[0].get(\"projectname\");//项目名称\r",
+                                                    "    var projectSelectedID =record[0].get(\"projectId\");//项目ID\r",
+                                                    "    var tabs = Ext.getCmp('myTabPanel');\r",
+                                                    "    tabs.removeAll(true);\r",
+                                                    "    var newtab = tabs.add(Ext.widget('syrMonitorResult'));\r",
+                                                    "\r",
+                                                    "    Ext.getCmp('prjid_result').setText(projectSelectedID);\r",
+                                                    "\r",
+                                                    "    Ext.getCmp('prjnameresult').setText(projectSelectedName+'进度统计柱状图');\r",
+                                                    "    var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                                    "    mystore.load(\r",
+                                                    "    {\r",
+                                                    "        params: {\r",
+                                                    "            start: \"0\",\r",
+                                                    "            limit: \"15\",\r",
+                                                    "            projectId:projectSelectedID,\r",
+                                                    "            monitorstarttime:'',\r",
+                                                    "            monitorendtime:'',\r",
+                                                    "            accuracy:'2'\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "5b2fe08e-3e10-44cc-995f-d321162fd1ca"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "recordId",
+                                "hidden": true,
+                                "text": "记录号"
+                            },
+                            "name": "MyColumn108",
+                            "designerId": "a26681f7-443c-42d8-88ac-b845d893ddc0"
+                        },
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer14",
+                            "designerId": "bc882496-e8c0-47e7-ae8a-a4b512df520c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": null,
+                                "dataIndex": "projectId",
+                                "text": "项目编号"
+                            },
+                            "name": "MyColumn109",
+                            "designerId": "0516e003-4b9b-4d97-8671-dacf6c1394af"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "projectname",
+                                "text": "项目名称",
+                                "width": 300
+                            },
+                            "name": "MyColumn110",
+                            "designerId": "4de9f822-67b3-4ef0-8014-d111ec1213b8"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "rlocation",
+                                "hidden": true,
+                                "text": "行政区位"
+                            },
+                            "name": "MyColumn111",
+                            "designerId": "8ed47099-3c84-457a-a47e-8de1c0d75839"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "starttime",
+                                "format": "Y-m-d",
+                                "text": "施工时间"
+                            },
+                            "name": "MyDateColumn14",
+                            "designerId": "0e40513e-8361-49a9-87cf-45d123165e97"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "latelyMonitortime",
+                                "format": "Y-m-d",
+                                "text": "最新监测时间"
+                            },
+                            "name": "MyDateColumn15",
+                            "designerId": "d06af1a2-96cf-4927-8b0a-976e1e3a8426"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentPz",
+                                "format": "00",
+                                "text": "平整工程进度(%)"
+                            },
+                            "name": "MyNumberColumn27",
+                            "designerId": "394d2e1f-5250-4608-afa1-c41a62b5dcda"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentDl",
+                                "format": "00",
+                                "text": "道路工程进度(%)"
+                            },
+                            "name": "MyNumberColumn28",
+                            "designerId": "c50956cd-0e67-4e7d-bba5-4a29801fe5e1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentSl",
+                                "format": "00",
+                                "text": "水利工程进度(%)"
+                            },
+                            "name": "MyNumberColumn29",
+                            "designerId": "4dbe006b-1bcd-4e98-89e5-9cb81f75aab4"
+                        },
+                        {
+                            "type": "Ext.grid.column.Boolean",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "isNormal",
+                                "falseText": "否",
+                                "text": "是否正常",
+                                "trueText": "是"
+                            },
+                            "name": "MyBooleanColumn3",
+                            "designerId": "5837bc8a-15b4-4cc2-a5c4-25897c61802d"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView18",
+                            "designerId": "44e7f99c-787a-461c-b44c-5e82b261eeae"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel11",
+                            "designerId": "aed4f5be-e52f-4b61-8029-aa96fdfe9438"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "autoShow": true,
+                                "displayInfo": true,
+                                "displayMsg": "显示 {0} - {1} 条，共 计{2}条",
+                                "dock": "bottom",
+                                "emptyMsg": "没有数据",
+                                "fixed": true,
+                                "store": "syrSchemeShow3",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar12",
+                            "designerId": "29483958-76fd-4bda-bc0a-1dcbcd2e4ee1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['是','是'],\r",
+            "  ['否','否']\r",
+            "]"
+        ],
+        "designer|userAlias": "ShouyiCombox",
+        "designer|userClassName": "ShouyiCombox",
+        "model": "ShouyiCombox",
+        "storeId": "ShouyiCombox"
+    },
+    "designerId": "ef60d4a4-a52a-4062-ae47-c78ca9c0fdaa"
+}

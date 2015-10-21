@@ -1,0 +1,294 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoRender": true,
+        "autoScroll": true,
+        "autoShow": true,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "ShouyiAlarm_Canshu",
+        "designer|userClassName": "ShouyiAlarm_Canshu",
+        "height": 303,
+        "id": "ShouyiAlarm_Canshu",
+        "jsonSubmit": true,
+        "layout": "absolute",
+        "title": "收益分配异常监测阈值设置",
+        "url": "getBenefitList19",
+        "width": 542
+    },
+    "designerId": "d486fdd5-8123-40ba-8693-bd2d2474b6c6",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "交易结束后农户资金到账最长天数",
+                "labelWidth": 150,
+                "layout|x": 20,
+                "layout|y": 20,
+                "name": "dzzcts",
+                "width": 240
+            },
+            "name": "MyTextField61",
+            "designerId": "55b26f3c-ad3c-4aac-ab4d-2e14ad1fd13d"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "单位面积建设成本最高价格",
+                "labelWidth": 150,
+                "layout|x": 280,
+                "layout|y": 20,
+                "name": "cbzgjg",
+                "width": 240
+            },
+            "name": "MyTextField62",
+            "designerId": "1bb9e4e7-50b8-4175-b1fa-bdd99189a9ec"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "建设单位最高收益比例",
+                "labelWidth": 150,
+                "layout|x": 20,
+                "layout|y": 80,
+                "name": "jsbl",
+                "width": 240
+            },
+            "name": "MyTextField63",
+            "designerId": "bb2b4deb-f1d3-4c86-99a0-e75e537b8625"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "政府最高收益比例",
+                "labelWidth": 150,
+                "layout|x": 280,
+                "layout|y": 80,
+                "name": "zfbl",
+                "width": 240
+            },
+            "name": "MyTextField64",
+            "designerId": "0ddd42e4-6676-4413-8967-53f6b9e0f4ec"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "农户最高收益比例",
+                "labelWidth": 150,
+                "layout|x": 20,
+                "layout|y": 130,
+                "name": "nhbl",
+                "width": 240
+            },
+            "name": "MyTextField65",
+            "designerId": "79adc01e-4797-4e00-a5cf-5134b9c62f19"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "交易中心最高收益比例",
+                "labelWidth": 150,
+                "layout|x": 280,
+                "layout|y": 130,
+                "name": "zxbl",
+                "width": 240
+            },
+            "name": "MyTextField66",
+            "designerId": "638eca3f-c6e2-43eb-9e28-3d8aa158add7"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "资金流动手续可允许最大缺失项数",
+                "labelWidth": 150,
+                "layout|x": 20,
+                "layout|y": 180,
+                "name": "zdqsx",
+                "width": 240
+            },
+            "name": "MyTextField67",
+            "designerId": "05b9a164-025d-4c86-b0c4-4142d338dbe1"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "请填写",
+                "fieldLabel": "举报次数",
+                "labelWidth": 150,
+                "layout|x": 280,
+                "layout|y": 180,
+                "name": "jb",
+                "width": 240
+            },
+            "name": "MyTextField68",
+            "designerId": "5233f4c3-21e7-474d-883b-0beeea3c0c45"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "序号",
+                "hidden": true,
+                "labelWidth": 150,
+                "layout|x": 280,
+                "layout|y": 180,
+                "name": "xh",
+                "width": 240
+            },
+            "name": "MyTextField69",
+            "designerId": "58f9cd23-6c11-458d-ae5b-1744dce51a60"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 90,
+                "layout|y": 230,
+                "text": "更新",
+                "width": 90
+            },
+            "name": "MyButton37",
+            "designerId": "198db430-d01c-43d9-b6a3-ef45bfd6da49",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var form = Ext.getCmp('ShouyiAlarm_Canshu').getForm(); // get the basic form\r",
+                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "    form.submit({\r",
+                            "        url:'getBenefitList19',\r",
+                            "        success: function(form, action) {\r",
+                            "            Ext.Msg.alert('提示', '收益分配异常参数更新成功！');\r",
+                            "            var mystore = Ext.StoreMgr.get('ShouyiAlarm_Canshu'); //获得store对象                                                   \r",
+                            "            mystore.load();\r",
+                            "        },\r",
+                            "        failure: function(form, action) {\r",
+                            "            Ext.Msg.alert('提示', '收益分配异常参数更新失败！');\r",
+                            "        }\r",
+                            "    });\r",
+                            "} else { // display error alert if the data is invalid\r",
+                            "    Ext.Msg.alert('提示', '数据无效，请修改出现的错误！');\r",
+                            "}\r",
+                            ""
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "9fb57794-cf9e-408f-a2ae-125d3f6be19e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 340,
+                "layout|y": 230,
+                "text": "返回",
+                "width": 90
+            },
+            "name": "MyButton38",
+            "designerId": "2fd635fb-8760-4c2c-94db-d55925371c67",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var tabs = this.up('tabpanel');\r",
+                            "tabs.removeAll(true);\r",
+                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                            "var newtab = tabs.add(Ext.widget('ShouyiAlarm'));\r",
+                            "\r",
+                            ""
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "a586d93c-4a80-4234-86a3-263416b1d2aa"
+                }
+            ]
+        }
+    ]
+}

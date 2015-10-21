@@ -1,0 +1,102 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "syrProgress"
+    },
+    "designerId": "3dbf8318-2c9f-48f6-a3cf-4b69231f51b2",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "Y-m-d",
+                "dateWriteFormat": "Y-m-d",
+                "mapping": null,
+                "name": "time",
+                "type": "date"
+            },
+            "name": "MyField437",
+            "designerId": "3299cd0e-e9fd-41d0-ad28-cb13189cbff8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "projectName",
+                "name": "projectName",
+                "type": "string"
+            },
+            "name": "MyField438",
+            "designerId": "2b5b3121-35a4-46ae-9f4a-f04632ead0cd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ppercentPz",
+                "type": "float"
+            },
+            "name": "MyField439",
+            "designerId": "ea67e7ef-7da9-4ddc-859a-36870e8465c5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ppercentSl",
+                "type": "float"
+            },
+            "name": "MyField440",
+            "designerId": "33a58d3b-d7ca-4286-9ddd-765f51d72e3d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ppercentDl",
+                "type": "float"
+            },
+            "name": "MyField441",
+            "designerId": "3512c976-f6de-4ebe-a589-89bc93d20732"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "report",
+                "type": "string"
+            },
+            "name": "MyField442",
+            "designerId": "418c7643-2745-48b4-97c3-5d5bd5183f98"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmWholeSupervisionStore",
+        "model": "abnmWholeSupervisionModel",
+        "pageSize": null,
+        "storeId": "abnmWholeSupervisionStore"
+    },
+    "designerId": "7a05766f-8926-492e-95b1-52d798634dd4",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeyword:'',\r",
+                    " searchDate:''}"
+                ],
+                "url": "get_abwsList"
+            },
+            "name": "MyAjaxProxy69",
+            "designerId": "4f193386-677e-4d40-be31-297fa7432401",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader69",
+                    "designerId": "b3282028-43cd-49f9-b096-92a68c53678b"
+                }
+            ]
+        }
+    ]
+}

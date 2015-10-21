@@ -1,0 +1,322 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "collapsed": false,
+        "designer|userAlias": "Mapserver",
+        "designer|userClassName": "Mapserver",
+        "height": 596,
+        "layout": "border",
+        "title": "项目地图显示",
+        "width": 875
+    },
+    "designerId": "42760f26-9fba-4987-b40a-50f949a7b11f",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": [
+                    "<div id=\"mapdiv_MapServer\" class=\"MapClass\"> </div>"
+                ],
+                "layout": "fit",
+                "layout|region": "center",
+                "layout|split": true,
+                "title": null
+            },
+            "name": "MyPanel20",
+            "designerId": "64501a85-846a-4b0f-b8a4-ecee79bf99e0",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoScroll": true,
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar21",
+                    "designerId": "7ea35ad6-f3c2-4272-a868-eccfae75e68e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.RadioGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "radioGroup_mapserver",
+                                "fieldLabel": "查看地图",
+                                "id": "radioGroup_mapserver",
+                                "labelWidth": 60,
+                                "layout|flex": null,
+                                "width": 300
+                            },
+                            "name": "MyRadioGroup2",
+                            "designerId": "fd0fd147-fbce-4393-a875-d5c27738f854",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "规划图",
+                                        "designer|displayName": "规划图",
+                                        "fieldLabel": null,
+                                        "inputValue": "规划图",
+                                        "name": "mapserver"
+                                    },
+                                    "name": "MyRadio6",
+                                    "designerId": "445b83f7-4f85-4adf-908d-c0dc854d9300"
+                                },
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "现状图",
+                                        "designer|displayName": "现状图",
+                                        "fieldLabel": null,
+                                        "inputValue": "现状图",
+                                        "name": "mapserver"
+                                    },
+                                    "name": "MyRadio7",
+                                    "designerId": "1d745dc9-9732-42aa-a6a6-86fe6f45a42a"
+                                },
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "竣工图",
+                                        "designer|displayName": "竣工图",
+                                        "fieldLabel": null,
+                                        "inputValue": "竣工图",
+                                        "name": "mapserver"
+                                    },
+                                    "name": "MyRadio8",
+                                    "designerId": "d025246e-928f-46cb-9bd4-3bcef9c30e40"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton91",
+                            "designerId": "748ff56e-e63e-46ec-b1c0-e4142a19522b",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs=this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "var newtab= tabs.add(Ext.widget('manageProject'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "61b96a55-ddaa-466d-9e8f-146d625de6ba"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsed": false,
+                "collapsible": true,
+                "id": "mapserver_searchResult",
+                "layout": "fit",
+                "layout|region": "east",
+                "layout|split": true,
+                "title": "查询结果",
+                "width": 200
+            },
+            "name": "MyPanel21",
+            "designerId": "da27205f-0a0b-4acc-9cf8-857dc450b064",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar22",
+                    "designerId": "ea6de01d-d019-49a2-b3ff-0edc64490f5c",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "项目编号",
+                                "id": "mapserver_projectId",
+                                "labelWidth": 60,
+                                "layout|flex": null
+                            },
+                            "name": "MyTextField117",
+                            "designerId": "5e041608-a078-4c19-a352-dc5fa4f45c5f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel22",
+                    "designerId": "f3de9da1-4c94-4943-adc2-fbcbd6091d36",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "mapserver_graphicGrid",
+                                "title": null
+                            },
+                            "name": "MyGridPanel17",
+                            "designerId": "ff87d4be-5249-49a0-8c2c-8a0275f07e47",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.RowNumberer",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyRowNumberer13",
+                                    "designerId": "3b746cd7-2a58-4507-8ae5-7a775f35b7b4"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "landparcelid",
+                                        "text": "地块编号",
+                                        "width": 120
+                                    },
+                                    "name": "MyColumn107",
+                                    "designerId": "1f948e47-73b1-4e51-b69a-4c728c79cdc8"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "area",
+                                        "text": "面积(平方米)",
+                                        "width": 80
+                                    },
+                                    "name": "MyNumberColumn26",
+                                    "designerId": "4d63f543-5cb5-4d85-987c-7303a5b2f80f"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView17",
+                                    "designerId": "c7294fec-02d1-4f99-a25d-30ff963b26c6"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMap_ShowFindResultGridCellClick1",
+                                        "implHandler": [
+                                            "var graphic = record.get('graphic');\r",
+                                            "locateByGraphic(graphic);"
+                                        ],
+                                        "name": "cellclick",
+                                        "scope": "me"
+                                    },
+                                    "name": "onMap_ShowFindResultGridCellClick1",
+                                    "designerId": "1909b5d9-adf5-479b-af62-db17845512d7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

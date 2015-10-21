@@ -1,0 +1,63 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['凤城街道','1'],\r",
+            "  ['晏家街道','2'],\r",
+            "  ['江南街道','3'],\r",
+            "  ['渡舟街道','4'],\r",
+            "  ['双龙镇','5'],\r",
+            "  ['龙河镇','6'],\r",
+            "  ['长寿湖镇','7'],\r",
+            "  ['云台镇','8'],\r",
+            "  ['葛兰镇','9'],\r",
+            "  ['但渡镇','10'],\r",
+            "  ['邻封镇','11'],\r",
+            "  ['云集镇','12'],\r",
+            "  ['海棠镇','13'],\r",
+            "  ['石堰镇','14'],\r",
+            "  ['新市镇','15'],\r",
+            "  ['八颗镇','16'],\r",
+            "  ['洪湖镇','17'],\r",
+            "  ['万顺镇','18']\r",
+            "]"
+        ],
+        "designer|userAlias": "ShouyiAlarmCombox",
+        "designer|userClassName": "ShouyiAlarmCombox",
+        "model": "ShouyiCombox",
+        "storeId": "ShouyiAlarmCombox"
+    },
+    "designerId": "e6f340ec-b8ed-45a8-beb8-dd8f8e335297",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy7",
+            "designerId": "2eabf809-524b-4079-adf6-6cc7cb9cf662",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader7",
+                    "designerId": "1cf6d1a3-8f17-49c0-9ffa-9c65f4b91106"
+                }
+            ]
+        }
+    ]
+}

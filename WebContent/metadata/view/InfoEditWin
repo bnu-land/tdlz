@@ -1,0 +1,239 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "InfoEditWin",
+        "designer|userClassName": "InfoEditWin",
+        "height": 560,
+        "title": "信息发布",
+        "width": 800
+    },
+    "designerId": "5a8b202f-7da1-4e71-92db-b427bb1c80e4",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "fixed": true,
+                "height": 527,
+                "layout": "absolute",
+                "title": ""
+            },
+            "name": "MyForm",
+            "designerId": "39c5cf43-28df-4c31-a47d-94eef708325d",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "标题",
+                        "labelWidth": 40,
+                        "layout|x": 20,
+                        "layout|y": 10,
+                        "name": "title",
+                        "width": 400
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "3263865c-bbce-40e8-be0e-3b0c61d573ff"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来源",
+                        "labelWidth": 40,
+                        "layout|x": 20,
+                        "layout|y": 40,
+                        "name": "source",
+                        "width": 400
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "f9429c4c-4dde-46b6-a38a-22f3b8087131"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "作者",
+                        "labelWidth": 40,
+                        "layout|x": 20,
+                        "layout|y": 70,
+                        "name": "author",
+                        "width": 400
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "1dd2a726-ca61-49e9-89d7-aa813e2035be"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "栏目",
+                        "labelWidth": 40,
+                        "layout|x": 20,
+                        "layout|y": 100,
+                        "name": "chanel",
+                        "width": 400
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "4e108b4c-0f90-4ceb-840b-66512a301482",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onComboboxSelect",
+                                "implHandler": [
+                                    " var projectname=records[0].get('projectname');\r",
+                                    "        Ext.Ajax.request({\r",
+                                    "            url:'get_projectIDList',\r",
+                                    "            params:{projectName:projectname},\r",
+                                    "            success:function(response){\r",
+                                    "                var u =Ext.JSON.decode(response.responseText);           \r",
+                                    "                Ext.getCmp(\"prjid\").setValue(u.projectId);\r",
+                                    "            }\r",
+                                    "        });  "
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onComboboxSelect",
+                            "designerId": "143c7b97-832e-46f1-bbff-ce82933ba44f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.HtmlEditor",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "内容",
+                        "fixed": true,
+                        "height": 350,
+                        "labelWidth": 40,
+                        "layout|x": 20,
+                        "layout|y": 130,
+                        "name": "content",
+                        "width": 740
+                    },
+                    "name": "MyHtmlEditor",
+                    "designerId": "5d57b789-6411-4e21-964b-6603c19b9a15"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 510,
+                        "layout|y": 10,
+                        "text": "上传图片",
+                        "width": 80
+                    },
+                    "name": "MyButton3",
+                    "designerId": "f62e8323-87bf-40d1-bb64-bceebe95eceb"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 70,
+                        "layout|y": 490,
+                        "text": "保存",
+                        "width": 80
+                    },
+                    "name": "MyButton4",
+                    "designerId": "838cd24a-34ef-4379-b852-5d0fb9fe8fa5"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 190,
+                        "layout|y": 490,
+                        "text": "取消",
+                        "width": 80
+                    },
+                    "name": "MyButton5",
+                    "designerId": "021e7d85-99ec-461c-86bc-7568e6955ed6"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 120,
+                        "layout|x": 600,
+                        "layout|y": 10,
+                        "width": 160
+                    },
+                    "name": "MyImg",
+                    "designerId": "c9069e5d-6c2e-471d-9d54-ab8cbf3dd4ad"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 20,
+                        "layout|x": 480,
+                        "layout|y": 100,
+                        "text": "* 拖拽图片至内容中"
+                    },
+                    "name": "MyLabel",
+                    "designerId": "6a3251ab-844d-4e6e-88c4-0665fab16e61"
+                }
+            ]
+        }
+    ]
+}

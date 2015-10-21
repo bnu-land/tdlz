@@ -1,0 +1,391 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoLetterDetailTab",
+        "designer|userClassName": "infoLetterDetailTab",
+        "id": "infoLetterDetailTab",
+        "layout": "fit",
+        "title": "群众来信-可删除"
+    },
+    "designerId": "b48eb626-e5b1-4618-ac84-bbce7d280cd3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 600,
+                "layout": "absolute",
+                "title": null
+            },
+            "name": "MyForm42",
+            "designerId": "a84ccf73-5861-4172-bbd5-83e4d17a8dd3",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信主题",
+                        "hidden": true,
+                        "id": "letterId",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "width": 780
+                    },
+                    "name": "MyDisplayField30",
+                    "designerId": "d8386298-144a-4b5f-8e88-c084576ee2d0"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信主题",
+                        "hidden": true,
+                        "id": "letterIsreply",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "width": 780
+                    },
+                    "name": "MyDisplayField31",
+                    "designerId": "a029f799-4265-448c-9709-107d4d5d8847"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信主题",
+                        "hidden": true,
+                        "id": "letterReplytime",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "width": 780
+                    },
+                    "name": "MyDisplayField32",
+                    "designerId": "ee5d345d-2e27-4f62-9022-b163146fe8e8"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信主题",
+                        "id": "letterTitle",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "width": 780
+                    },
+                    "name": "MyDisplayField33",
+                    "designerId": "f4c942c0-d262-4509-9e51-3b36c9185dae"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信人姓名",
+                        "id": "letterAuthor",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 40,
+                        "width": 230
+                    },
+                    "name": "MyDisplayField34",
+                    "designerId": "c029579f-107f-4dc9-b02b-a54db43e6f3d"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "l联系电话",
+                        "id": "letterTel",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 260,
+                        "layout|y": 70,
+                        "width": 230
+                    },
+                    "name": "MyDisplayField35",
+                    "designerId": "a8494364-3518-47d3-9341-c0ee04ce6726"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "通讯地址",
+                        "id": "letterAddress",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 510,
+                        "layout|y": 70,
+                        "width": 280
+                    },
+                    "name": "MyDisplayField36",
+                    "designerId": "c8378419-0a23-4d7e-8703-345b258b3095"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "身份证号",
+                        "id": "letterAuthorcardid",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "width": 230
+                    },
+                    "name": "MyDisplayField37",
+                    "designerId": "89219ec1-422f-4276-9ce3-c0fafbb12ab0"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "电子邮件",
+                        "id": "letterEmail",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 260,
+                        "layout|y": 40,
+                        "width": 230
+                    },
+                    "name": "MyDisplayField38",
+                    "designerId": "ff2589f4-389c-457f-9186-bf9441bcb09d"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信时间",
+                        "id": "letterWritetime",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 510,
+                        "layout|y": 40,
+                        "width": 230
+                    },
+                    "name": "MyDisplayField39",
+                    "designerId": "030e0d35-4b42-487e-807f-c97e90e485d8"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "来信内容",
+                        "height": 180,
+                        "id": "letterContent",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 100,
+                        "width": 780
+                    },
+                    "name": "MyDisplayField40",
+                    "designerId": "8f6c7cb5-2d3e-41b0-a255-5ccc43181e98"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "回复内容",
+                        "height": 180,
+                        "id": "letterReplycontent",
+                        "labelWidth": 80,
+                        "layout|anchor": null,
+                        "layout|x": 10,
+                        "layout|y": 280,
+                        "width": 780
+                    },
+                    "name": "MyTextArea16",
+                    "designerId": "0b43bd14-007e-4fae-8e1d-dd658de902a7"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "是否公示：",
+                        "id": "letterIsshow",
+                        "labelWidth": 80,
+                        "layout|x": 10,
+                        "layout|y": 470,
+                        "value": null
+                    },
+                    "name": "MyRadioGroup6",
+                    "designerId": "49e3a8d5-b9b4-4767-9ffd-4b4b8b05bc0f",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "是",
+                                "fieldLabel": null,
+                                "inputValue": "是",
+                                "name": "show",
+                                "value": null
+                            },
+                            "name": "MyRadio16",
+                            "designerId": "493eeecd-165e-4414-b1af-83f76a929b67"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "否",
+                                "fieldLabel": null,
+                                "inputValue": "否",
+                                "name": "show",
+                                "value": null
+                            },
+                            "name": "MyRadio17",
+                            "designerId": "38e3a8f6-434c-4df3-8d70-3e78f7e88086"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 510,
+                        "text": "回复并发送邮件"
+                    },
+                    "name": "MyButton219",
+                    "designerId": "3d07ba5c-9ed2-4564-817a-2593105f9c8b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "e1d9dcca-fe74-44cc-b6e4-90d455048abe"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 160,
+                        "layout|y": 510,
+                        "text": "取消",
+                        "width": 90
+                    },
+                    "name": "MyButton220",
+                    "designerId": "d84846b3-74fc-4c17-bd23-283cc8a38a82",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "win.close();"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "2c4bca27-bc1a-494f-836c-e6a0e20e593c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

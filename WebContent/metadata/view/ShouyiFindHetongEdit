@@ -1,0 +1,327 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoRender": true,
+        "autoScroll": true,
+        "autoShow": true,
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "ShouyiFindHetongEdit",
+        "designer|userClassName": "ShouyiFindHetongEdit",
+        "height": 350,
+        "id": "ShouyiFindHetongEdit",
+        "jsonSubmit": true,
+        "layout": "absolute",
+        "title": "合同信息修改",
+        "url": "getBenefitList28",
+        "width": 570
+    },
+    "designerId": "e63f6212-48b6-45f0-9a06-45e1510a10c5",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "合同编号",
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 20,
+                "name": "htbh"
+            },
+            "name": "MyTextField329",
+            "designerId": "48f633d7-1507-49da-b043-17ed6f90e7de"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "合同编号",
+                "hidden": true,
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 240,
+                "name": "xh"
+            },
+            "name": "MyTextField330",
+            "designerId": "6d5c3481-8782-482f-8751-772e6b1ae80f"
+        },
+        {
+            "type": "Ext.form.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "交易时间",
+                "format": "Y-m-d",
+                "id": null,
+                "layout|x": 300,
+                "layout|y": 20,
+                "name": "jysj"
+            },
+            "name": "MyDateField91",
+            "designerId": "acf6fd4b-d5f8-41d2-9bfc-efd07dd8b4e1"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "交易量（公顷）",
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 60,
+                "name": "jyl"
+            },
+            "name": "MyTextField331",
+            "designerId": "394a8424-5905-4548-87d2-abf4f25783cf"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "交易区域",
+                "id": null,
+                "layout|x": 300,
+                "layout|y": 60,
+                "name": "jyqy"
+            },
+            "name": "MyTextField332",
+            "designerId": "50253a65-f9ed-4edc-ab01-77fd74700466"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "购买单位名称",
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 100,
+                "name": "gmqymc"
+            },
+            "name": "MyTextField333",
+            "designerId": "8aa8882e-00c5-4473-b23e-d63765fd5922"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "单位性质",
+                "id": null,
+                "layout|x": 300,
+                "layout|y": 100,
+                "name": "qyxz"
+            },
+            "name": "MyTextField334",
+            "designerId": "01af7a25-cc9f-4235-b50c-fb8f5163dda7"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "建设单位收益（万元）",
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 140,
+                "name": "qysy"
+            },
+            "name": "MyTextField335",
+            "designerId": "998fd3d2-747c-4ae3-83c2-69f2159ce13e"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "农户收益（万元）",
+                "id": null,
+                "layout|x": 300,
+                "layout|y": 140,
+                "name": "nhsy"
+            },
+            "name": "MyTextField336",
+            "designerId": "5b8079b4-744d-4e0f-96f6-a3a0bcab0528"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "政府收益（万元）",
+                "id": null,
+                "layout|x": 20,
+                "layout|y": 180,
+                "name": "zfsy"
+            },
+            "name": "MyTextField337",
+            "designerId": "7f89dca9-eb7d-4e33-869c-9d491c1df2e3"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "土地交易中心收益（万元）",
+                "id": null,
+                "layout|x": 300,
+                "layout|y": 180,
+                "name": "zxsy"
+            },
+            "name": "MyTextField338",
+            "designerId": "76219281-8326-4f3e-9615-c9c268c0520d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 130,
+                "layout|y": 270,
+                "text": "更新",
+                "width": 90
+            },
+            "name": "MyButton363",
+            "designerId": "ea6c6058-dd26-4957-b3e5-cdc2dac6b36a",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "\r",
+                            "var form = Ext.getCmp('TaishiFormPanelEdit').getForm(); // get the basic form\r",
+                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "    form.submit({\r",
+                            "        url:'getBenefitList28',\r",
+                            "        success: function(form, action) {\r",
+                            "            Ext.Msg.alert('提示', '更新成功！');\r",
+                            "            var mystore = Ext.StoreMgr.get('TaishiFormPanelEdit'); //获得store对象                                                   \r",
+                            "            mystore.load();\r",
+                            "        },\r",
+                            "        failure: function(form, action) {\r",
+                            "            Ext.Msg.alert('提示', '更新失败！');\r",
+                            "        }\r",
+                            "    });\r",
+                            "} else { // display error alert if the data is invalid\r",
+                            "    Ext.Msg.alert('Invalid Data', 'Please correct form errors.');\r",
+                            "}\r",
+                            "\r",
+                            "/*\r",
+                            "var form = this.up('form').getForm(); // get the basic form\r",
+                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "form.submit({\r",
+                            "success: function(form, action) {\r",
+                            "Ext.Msg.alert('更新成功', '');\r",
+                            "},\r",
+                            "failure: function(form, action) {\r",
+                            "Ext.Msg.alert('更新失败', '');\r",
+                            "}\r",
+                            "});\r",
+                            "} else { // display error alert if the data is invalid\r",
+                            "Ext.Msg.alert('Invalid Data', 'Please correct form errors.');\r",
+                            "}\r",
+                            "*/"
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "4fec3862-b6f0-40fb-b00e-03d8d0adcd43"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 320,
+                "layout|y": 270,
+                "text": "取消",
+                "width": 90
+            },
+            "name": "MyButton364",
+            "designerId": "32b1da8e-8dcf-469f-86bf-52eca858e927",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "var tabs = this.up('tabpanel');\r",
+                            "tabs.removeAll(true);\r",
+                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                            "var newtab = tabs.add(Ext.widget('TaishiFind'));\r",
+                            ""
+                        ]
+                    },
+                    "name": "handler",
+                    "designerId": "47d744c2-fb47-455f-91d5-fb9c14984f4e"
+                }
+            ]
+        }
+    ]
+}

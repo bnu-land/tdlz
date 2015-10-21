@@ -1,0 +1,775 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "manageProject",
+        "designer|userClassName": "manageProject",
+        "layout": "fit",
+        "title": "复垦项目登记与管理"
+    },
+    "designerId": "31120aa2-e526-483f-a3a7-bd1bb53f505d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "columnLines": true,
+                "frame": true,
+                "height": 150,
+                "id": "projectGrid",
+                "store": "publicProjectStore",
+                "subGridXType": "",
+                "title": ""
+            },
+            "name": "MyGridPanel29",
+            "designerId": "a4da40d1-ea79-4b72-89fd-47867cb68fc7",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer23",
+                    "designerId": "98a6e409-68db-4651-a009-f149171aa0a1"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "recordId",
+                        "hidden": true,
+                        "text": "记录号"
+                    },
+                    "name": "MyColumn163",
+                    "designerId": "8107c8cd-eade-4e00-8149-69630fdcbf48"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号",
+                        "width": 130
+                    },
+                    "name": "MyColumn164",
+                    "designerId": "dc7b45f0-ee25-426a-9988-85f9611108f9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectname",
+                        "text": "项目名称"
+                    },
+                    "name": "MyColumn165",
+                    "designerId": "e3393240-f845-4732-a577-db1f96e6a298"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rlocation",
+                        "text": "行政区位"
+                    },
+                    "name": "MyColumn166",
+                    "designerId": "495f9825-0624-47bc-be3a-3ce29acd9470"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rarea",
+                        "text": "项目规模(公顷)"
+                    },
+                    "name": "MyColumn167",
+                    "designerId": "6db40648-b560-42a5-ae9b-cf64b2051fa8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rmapnumber",
+                        "text": "图幅编号"
+                    },
+                    "name": "MyColumn168",
+                    "designerId": "0ed6202f-8396-418b-a7a8-3045f7175791"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rmoney",
+                        "text": "资金花费（万元）"
+                    },
+                    "name": "MyColumn169",
+                    "designerId": "57e6801d-2b14-474f-924e-bd569ca71495"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "conUnit",
+                        "text": "施工单位"
+                    },
+                    "name": "MyColumn170",
+                    "designerId": "8c6dfed1-7a4f-4366-b30d-4f360affaea3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "areaCode",
+                        "text": "所属区域行政代码"
+                    },
+                    "name": "MyColumn171",
+                    "designerId": "699d1330-668c-4d59-adc9-b12a18de0fbc"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "showYesno",
+                        "text": "是否公示"
+                    },
+                    "name": "MyColumn172",
+                    "designerId": "39f556cd-2595-4e88-be57-7ca174832404"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "starttime",
+                        "format": "Y-m-d",
+                        "text": "施工时间"
+                    },
+                    "name": "MyDateColumn24",
+                    "designerId": "fece525d-cad9-4b1e-a104-faa0bfad6901"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "completiontime",
+                        "format": "Y-m-d",
+                        "text": "竣工时间"
+                    },
+                    "name": "MyDateColumn25",
+                    "designerId": "6b2d8454-d368-4299-b70a-d81a055b12cd"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "isfinished",
+                        "text": "是否完成"
+                    },
+                    "name": "MyBooleanColumn8",
+                    "designerId": "acab21cb-ac23-4407-a2c2-466fd3be844a"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView29",
+                    "designerId": "d0302621-4577-4e23-9c3d-1bb104c2b77a"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar39",
+                    "designerId": "3d12e222-754c-42ca-96bd-d46f4a60a7ab",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_add.png",
+                                "layout|flex": null,
+                                "text": "添加项目"
+                            },
+                            "name": "MyButton155",
+                            "designerId": "8f3b5009-0d8f-4db2-9223-c869dd649992",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('addproject'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "afefdb21-f472-4dec-9f95-ba6ce77f8512"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_edit.png",
+                                "iconCls": "imgs/table/table_edit.png",
+                                "layout|flex": null,
+                                "text": "编辑项目"
+                            },
+                            "name": "MyButton156",
+                            "designerId": "a7e7ea1e-a564-4808-a1c6-47d10b8918d6",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"recordId\");\r",
+                                            "if (record.length == 0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要操作的行！');\r",
+                                            "    return;\r",
+                                            "\r",
+                                            "} else if (record.length > 1) {\r",
+                                            "    Ext.Msg.alert('提示', '只能选择一行数据');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    Ext.Msg.alert('提示', projectSelectedId);\r",
+                                            "    var tabs = this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    //用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "    var newtab = tabs.add(Ext.widget('addproject'));\r",
+                                            "\r",
+                                            "\r",
+                                            "    //先通过id获得文章发表的form表单，然后加载数据，传过去的参数为articleSelectedId，url为get_infoArticleDetail\r",
+                                            "    var ProjectForm = newtab.getComponent('ProjectForm'); \r",
+                                            "    Ext.Msg.alert('提示', ProjectForm.id);\r",
+                                            "    ProjectForm.load({\r",
+                                            "        params: {\r",
+                                            "            projectSelectedId: projectSelectedId\r",
+                                            "        },\r",
+                                            "        url:'get_projectDetail',\r",
+                                            "        method:'GET',\r",
+                                            "        success:function(form,action){\r",
+                                            "            Ext.Msg.alert('提示','数据加载成功'); \r",
+                                            "        },\r",
+                                            "        failure:function(form,action){\r",
+                                            "            Ext.Msg.alert('提示','数据加载失败');   \r",
+                                            "        }\r",
+                                            "    });     \r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "da415cdd-ece1-4e43-b8bc-230ab4758d2e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "iconCls": "imgs/table/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除项目"
+                            },
+                            "name": "MyButton157",
+                            "designerId": "adedb5b5-5d65-47c2-9d2b-85fd6f979899",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  projectIds =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        projectIds[i] = record[i].get(\"recordId\");\r",
+                                            "\r",
+                                            "    }\r",
+                                            "    //Ext.Msg.alert('提示',projectIds);\r",
+                                            "\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'del_projectByIds',\r",
+                                            "        params:{projectIds:projectIds},\r",
+                                            "\r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('success','项目已删除');\r",
+                                            "            var mystore = Ext.StoreMgr.get('publicProjectStore');\r",
+                                            "            mystore.load();\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "3f4cdea9-6050-4576-9603-ccfaa49fedb5"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "iconCls": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "查看项目地块信息"
+                            },
+                            "name": "MyButton158",
+                            "designerId": "e858735c-5dc7-4a6f-bd07-61d07626e25a",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "if (record.length == 0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要操作的行！');\r",
+                                            "    return;\r",
+                                            "\r",
+                                            "} else if (record.length > 1) {\r",
+                                            "    Ext.Msg.alert('提示', '只能选择一行数据');\r",
+                                            "    return;\r",
+                                            "} else {\r",
+                                            "    var tabs=this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab= tabs.add(Ext.widget('manageProjectDikuai'));\r",
+                                            "\r",
+                                            "    var mystore=Ext.StoreMgr.get('FkProjectDikuaiStore');\r",
+                                            "\r",
+                                            "    mystore.load(\r",
+                                            "    {params:{\r",
+                                            "        start:\"0\",\r",
+                                            "        limit:\"25\",\r",
+                                            "        searchKeywordName:projectSelectedId\r",
+                                            "    } \r",
+                                            "}\r",
+                                            ");\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "0d2e6e59-48cf-4445-9f00-677bc5cf8407"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "iconCls": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "查看地图"
+                            },
+                            "name": "MyButton159",
+                            "designerId": "d24be69c-ca06-4ebb-8760-19d808badd52",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('projectGrid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "var projectSelectedId = record[0].get(\"projectId\");\r",
+                                            "if (record.length === 0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要操作的项目！'+projectSelectedId);\r",
+                                            "    return;\r",
+                                            "\r",
+                                            "} else if (record.length > 1) {\r",
+                                            "    Ext.Msg.alert('提示', '只能选择一个项目');\r",
+                                            "    return;\r",
+                                            "}else {\r",
+                                            "\r",
+                                            "    var tabs=this.up('tabpanel');\r",
+                                            "    tabs.removeAll(true);\r",
+                                            "    var newtab= tabs.add(Ext.widget('Mapserver'));\r",
+                                            "\r",
+                                            "    //查询所在行项目编号的所有要素\r",
+                                            "    var findTextCmp = Ext.getCmp('mapserver_projectId');    \r",
+                                            "    findTextCmp.setValue(projectSelectedId);\r",
+                                            "\r",
+                                            "    //加入地图的js文件\r",
+                                            "    var head = document.getElementsByTagName('head')[0];\r",
+                                            "    var script= document.createElement(\"script\"); \r",
+                                            "    script.type = \"text/javascript\"; \r",
+                                            "    //script.src=\"map/managerProject_map.js\"; \r",
+                                            "    script.src=\"map/mapServer_map.js\"; \r",
+                                            "    head.appendChild(script);    \r",
+                                            "\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "dcb8a6c7-0068-4812-bfdc-9b7019f6fdb2"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入查询关键字",
+                                "fieldLabel": "项目名称",
+                                "id": "searchKeyword1",
+                                "inputId": "",
+                                "layout|flex": null,
+                                "name": "searchKeyword1"
+                            },
+                            "name": "MyTextField154",
+                            "designerId": "8f98600d-8992-4c4f-8e29-de1c3e8a4272"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "查询",
+                                "id": "searchProject",
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton160",
+                            "designerId": "2863fe08-9802-467b-97d4-d2b51c127dff",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var mystore=Ext.StoreMgr.get('publicProjectStore');//获得store对象\r",
+                                            "\r",
+                                            "//在load事件中添加参数\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"15\",\r",
+                                            "    searchKeywordName:Ext.getCmp('searchKeyword1').getValue()\r",
+                                            "} \r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "bfda4426-0726-4ccc-bcf8-224e43e8e4bc"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "高级查询",
+                                "id": "searchProject4",
+                                "layout|flex": null,
+                                "text": "高级查询"
+                            },
+                            "name": "MyButton161",
+                            "designerId": "6ceddb7b-7cdc-429a-b224-c1828c3161fb",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var win=new Ext.Window({\r",
+                                            "    height: 322,\r",
+                                            "    width: 334,    \r",
+                                            "    layout: {\r",
+                                            "        type: 'absolute'\r",
+                                            "    },\r",
+                                            "    title: '高级查询',    \r",
+                                            "\r",
+                                            "    modal: true,\r",
+                                            "    items: [\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 70,\r",
+                                            "        id: 'projectSearchName',\r",
+                                            "        fieldLabel: '项目名称'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 110,\r",
+                                            "        id: 'projectSearchID',\r",
+                                            "        fieldLabel: '项目编号'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'textfield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 190,\r",
+                                            "        id: 'projectSearchSite',\r",
+                                            "        fieldLabel: '项目区域'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'label',\r",
+                                            "        x: 30,\r",
+                                            "        y: 30,\r",
+                                            "        shrinkWrap: 3,\r",
+                                            "        text: '请设置项目高级查询参数：'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'datefield',\r",
+                                            "        x: 30,\r",
+                                            "        y: 150,\r",
+                                            "        id: 'projectSearchStarttime',\r",
+                                            "        fieldLabel: '查询起始时间'\r",
+                                            "    },\r",
+                                            "    {\r",
+                                            "        xtype: 'button',\r",
+                                            "        handler: function(button, event) {            \r",
+                                            "\r",
+                                            "            var mystore=Ext.StoreMgr.get('publicProjectStore');//获得store对象\r",
+                                            "\r",
+                                            "            mystore.load(\r",
+                                            "            {params:{\r",
+                                            "                start:\"0\",\r",
+                                            "                limit:\"25\",\r",
+                                            "                searchKeywordName:Ext.getCmp('projectSearchName').getValue(),\r",
+                                            "                searchKeywordID:Ext.getCmp('projectSearchID').getValue(),\r",
+                                            "                searchKeywordSite:Ext.getCmp('projectSearchSite').getValue(),\r",
+                                            "                searchKeywordStarttime:Ext.getCmp('projectSearchStarttime').getValue()\r",
+                                            "            } \r",
+                                            "        }\r",
+                                            "        );\r",
+                                            "    },\r",
+                                            "    x: 120,\r",
+                                            "    y: 250,\r",
+                                            "    text: '查询'\r",
+                                            "}\r",
+                                            "]\r",
+                                            "});\r",
+                                            "\r",
+                                            "win.show();\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7df2cd24-4f3f-47f2-9130-d43ddbf2d66c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "publicProjectStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar17",
+                    "designerId": "1b136964-6bf8-4065-97f9-15c1e894703c"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel21",
+                    "designerId": "1d86ff25-c696-425a-810a-7ec50757e19e"
+                }
+            ]
+        }
+    ]
+}

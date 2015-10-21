@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>1QueryTask with geometry, results as an InfoWindow</title>
+
+ <link rel="stylesheet" href="/appLib/arcjs/3.9/js/dojo/dijit/themes/claro/claro.css" />
+<link rel="stylesheet" href="/appLib/arcjs/3.9/js/esri/css/esri.css" />
+<link rel="stylesheet" type="text/css" href="css/popdiv.css" />
+<script src="/appLib/arcjs/3.9/"></script> 
+<!--<link rel="stylesheet"	href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css" />
+<link rel="stylesheet"	href="http://js.arcgis.com/3.9/js/esri/css/esri.css" />
+<script src="http://js.arcgis.com/3.9/"></script>-->
+<script>var dojoConfig = { parseOnLoad:true, isDebug:true };</script>
+<link rel="stylesheet" type="text/css" href="css/popdiv.css" />
+<script type="text/javascript" src="js/querykxc.js"></script>
+   <style type="text/css">
+	html, body{ margin:0; padding:0; width:100%; height:100%; background:#d4e1f2; font-size:12px;}
+	.box:after{content:".";display:block; height:0px; clear:both; visibility:hidden;}
+	.mapright-title{ width:100%; height:25px; background:url(images/rightbg01.gif) repeat-x left top;}
+	.mapright-title span{ display:inline-block; margin-left:5px; width:124px; height:25px; line-height:23px; background:url(images/rightbg02.gif) no-repeat center bottom; text-align:center; font-weight:bold; color:#4e6d99;}
+	.mapright-searchbg{ margin:5px; height:30px; line-height:25px; background:#fff; border:solid 1px #a1bad9;}
+	.mapright-searchbgleft{ float:left; padding-left:25px; background:url(images/icon-021.png) no-repeat 5px center;}
+	.mapright-searchbgright{ float:left; padding-left:35px; background:url(images/icon-022.png) no-repeat 15px center;}
+	.mapright-mapbg{ position:relative; margin:5px; padding-right:132px; border:solid 1px #a1bad9;}
+	.mapright-mapleft{width:100%; min-height:450px;}
+	.mapright-mapright{ position:absolute; right:0; top:0px; bottom:0; width:130px; border-left:solid 1px #a1bad9; background:url(images/rightbg01.gif) repeat-x left top #fff;}
+	.tclb{ display:inline-block; margin-left:5px; height:25px; line-height:23px; background:url(images/rightbg02.gif) no-repeat center bottom; text-align:center; font-weight:bold; color:#4e6d99;}
+   </style>
+  </head>
+
+ <body class="tundra">
+   
+    <div class="mapright-searchbg box">
+    	<div class="mapright-searchbgleft"><input id="searchtext" value="" type="text" />
+    	   <input id="Button1" type="button"  value="模糊查询" onclick="findbyattr(dojo.byId('searchtext').value);" />
+				 <input id="Button3" type="button"  value="条件查询" onclick="condquery();" />
+    	   <input id="Button2" type="button"  value="清空所选" onclick="clearSel();" />
+    	 </div>
+    	<div class="mapright-searchbgright" id="resultdiv"></div>
+    </div>
+    <div class="mapright-mapbg box">
+    	<div class="mapright-mapleft">
+        	<div id="map" style="width:100%; height:420px; border:1px solid #fff;"></div>
+    	</div>
+    	<div class="mapright-mapright" id="toc"></div>
+    </div>
+    
+       <div id="kxcquerydiv" class="white_content"><div class="content-main">
+		<div class="mapright-title"><span>请输入查询条件：</span></div>
+    <table class="content-table">
+    	<tbody>
+    	   <tr><th width="70px">质量等级：</th>
+    	  	   <td>
+    	              <select name="kxczldj" id="kxczldj">
+							<option value="中等地">中等地</option>
+							<option value="低等地">低等地</option>
+							<option value="高等地">高等地</option>
+						</select>
+	      	   </td>
+	      </tr>
+	      <tr><th>权属性质：</th>
+    	  	   <td>
+    	              <input name="kxcqsxz" id="kxcqsxz" type="text" value=""/>
+	      	   </td>
+	      </tr>
+	      <tr><th>所属村：</th>
+    	  	   <td>
+    	              <input name="kxcqsdwmc" id="kxcqsdwmc" type="text" value=""/>
+	      	   </td>
+	      </tr>
+	      <tr><th>面积></th>
+    	  	   <td>
+    	              <input name="kxcmj" id="kxcmj" type="text" value="50"/>
+	      	   </td>
+	      </tr>
+	       <tr><td></td>
+    	  	   <td>
+    	             <input id="Button1" type="button"  value="查找空心村" 
+    	             onclick="querykxcByAttr(dojo.byId('kxczldj').value,dojo.byId('kxcqsxz').value,dojo.byId('kxcqsdwmc').value,dojo.byId('kxcmj').value);document.getElementById('kxcquerydiv').style.display='none';document.getElementById('fade').style.display='none'" />
+	      	   </td>
+	      </tr>
+          </tbody>
+	</table>
+	<a href="javascript:void(0)" onclick="document.getElementById('kxcquerydiv').style.display='none';document.getElementById('fade').style.display='none'" class="content-close"> 
+    关闭</a></div>
+    </div> 
+	<div id="fade" class="black_overlay"> 
+    </div>
+    
+
+  </body>
+
+</html>

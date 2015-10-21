@@ -1,0 +1,103 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "treeReclProc",
+        "storeId": "treeReclProc"
+    },
+    "designerId": "a3d3427a-1cf6-4f63-a4a6-58baefc6b19d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "[\r",
+                    "    {\r",
+                    "        id:501,\r",
+                    "        text:'录入拆迁面积',\r",
+                    "        view:'MyApp.view.FillReclApplicationPanel',\r",
+                    "        leaf:true,\r",
+                    "    },\r",
+                    "    {\r",
+                    "        id:502,\r",
+                    "        text:'农户拆迁信息确认',\r",
+                    "        view:'MyApp.view.UploadRightDoctPanel',\r",
+                    "        leaf:true,\r",
+                    "    },\r",
+                    "    {\r",
+                    "        id:503,\r",
+                    "        text:'农户补偿信息确认',\r",
+                    "        view:'MyApp.view.ViewApplicationInfoPanel',\r",
+                    "        leaf:true,\r",
+                    "    },\r",
+                    "    {\r",
+                    "        id:504,\r",
+                    "        text:'查看拆迁日志',\r",
+                    "        view:'MyApp.view.ViewApplicationInfoPanel',\r",
+                    "        leaf:true,\r",
+                    "    }\r",
+                    "    ,\r",
+                    "    {\r",
+                    "        id:505,\r",
+                    "        text:'查看农户拆确认汇总表',\r",
+                    "        view:'MyApp.view.ViewApplicationInfoPanel',\r",
+                    "        leaf:true,\r",
+                    "    }\r",
+                    "\r",
+                    "]"
+                ],
+                "designer|displayName": "memoryproxyApplyRecl"
+            },
+            "name": "MyMemoryProxy",
+            "designerId": "151a28ef-82aa-4daf-96e4-3e99ef52cf9e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField430",
+            "designerId": "4a9b754f-0ae7-4e9e-95f5-cacceadac60a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField431",
+            "designerId": "065bebac-8001-48b4-8b71-45926b580b7a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "view"
+            },
+            "name": "MyField432",
+            "designerId": "8b96eb94-01dc-4451-a94d-681401377390"
+        }
+    ]
+}

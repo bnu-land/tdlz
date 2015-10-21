@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "dbBackupRecoveryStore",
+        "designer|userClassName": "dbBackupRecoveryStore",
+        "model": "dbBackupRecoveryModel",
+        "pageSize": null,
+        "storeId": "MyJsonStore2"
+    },
+    "designerId": "dcb0bb5f-91eb-4190-a647-6caf578d0477",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_BackupRecoveryList"
+            },
+            "name": "MyAjaxProxy25",
+            "designerId": "681a8b2c-a4d0-45f2-b7c5-3e1186191926",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader25",
+                    "designerId": "77b6bb06-40fb-47ad-8ccd-03a77d456bb3"
+                }
+            ]
+        }
+    ]
+}

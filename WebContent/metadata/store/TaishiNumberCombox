@@ -1,0 +1,27 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['重庆市长寿区','1'],\r",
+            "  ['重庆市江津区','2'],\r",
+            "  ['重庆市潼南县','3'],\r",
+            "  ['重庆市丰都县','4'],\r",
+            "  ['重庆市石柱县','5'],\r",
+            "  ['重庆市北碚区','6']\r",
+            "]"
+        ],
+        "designer|userAlias": "TaishiNumberCombox",
+        "designer|userClassName": "TaishiNumberCombox",
+        "model": "TaishiNumberTextField",
+        "storeId": "TaishiNumberCombox"
+    },
+    "designerId": "9a1d9c3c-263d-43da-a11e-c06ddfe05278"
+}

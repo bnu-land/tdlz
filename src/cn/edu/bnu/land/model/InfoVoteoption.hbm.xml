@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-12 16:33:01 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoVoteoption" table="info_voteoption" catalog="tdlz">
+        <id name="voptionId" type="java.lang.Integer">
+            <column name="voption_id" />
+            <generator class="identity" />
+        </id>
+        <property name="voteId" type="java.lang.Integer">
+            <column name="vote_id" />
+        </property>
+        <property name="voptionContent" type="string">
+            <column name="voption_content" length="20" />
+        </property>
+        <property name="voptionNumber" type="string">
+            <column name="voption_number" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,1218 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "yqprojectmonitorInfo",
+        "designer|userClassName": "yqprojectmonitorInfo",
+        "frame": true,
+        "id": null,
+        "layout": "border",
+        "title": "监测任务计划"
+    },
+    "designerId": "f607cb41-246f-4480-ad20-a7f6b7248506",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 100,
+                "id": "yqprojectmonitorInfo",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "layout|region": "north",
+                "method": "POST",
+                "standardSubmit": false,
+                "title": "",
+                "url": "add_yqprojectmonitorInfo "
+            },
+            "name": "MyForm15",
+            "designerId": "ede2c880-562e-44c0-bd0e-08765492298b",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "projectname",
+                        "fieldLabel": "项目名称",
+                        "id": "projectnames",
+                        "labelAlign": "right",
+                        "labelWidth": 70,
+                        "layout|x": -5,
+                        "layout|y": 10,
+                        "name": "projectName",
+                        "store": "syrSchemeShow3",
+                        "valueField": "projectname",
+                        "width": 260
+                    },
+                    "name": "MyComboBox10",
+                    "designerId": "e9694522-5fd1-459e-a113-2fe5aa6795ca",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onProjectnamesSelect",
+                                "implHandler": [
+                                    "var projectName=records[0].get('projectname');\r",
+                                    "Ext.Ajax.request({\r",
+                                    "    url:'get_projectIDList',\r",
+                                    "    params:{projectName:projectName},\r",
+                                    "    success:function(response){\r",
+                                    "        var u =Ext.JSON.decode(response.responseText);           \r",
+                                    "        Ext.getCmp(\"prjid\").setValue(u.projectId);\r",
+                                    "    }\r",
+                                    "});   \r",
+                                    ""
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onProjectnamesSelect",
+                            "designerId": "6bab37dc-3a19-4d1e-9b0b-2a6074cfd5cd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "项目编号",
+                        "id": "prjid",
+                        "labelAlign": "right",
+                        "labelWidth": 60,
+                        "layout|x": 270,
+                        "layout|y": 10,
+                        "name": "projectId",
+                        "readOnly": true,
+                        "width": 180
+                    },
+                    "name": "MyTextField71",
+                    "designerId": "4d342c0c-2d06-45ed-93cd-e61cdb2b6bc1"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "altFormats": "Y-m-d",
+                        "fieldLabel": "监测时间",
+                        "format": "Y-m-d",
+                        "id": "monitort1",
+                        "labelAlign": "right",
+                        "labelWidth": 60,
+                        "layout|x": 470,
+                        "layout|y": 10,
+                        "name": "monitorTime",
+                        "width": 180
+                    },
+                    "name": "MyDateField23",
+                    "designerId": "9e4d3c2d-0a70-40c5-83b7-69bf8a164f2c"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "任务完成期限（天）",
+                        "id": "finishlimit",
+                        "labelAlign": "right",
+                        "labelWidth": 120,
+                        "layout|x": 680,
+                        "layout|y": 10,
+                        "maxValue": null,
+                        "minValue": 0,
+                        "name": "finishdateLimit",
+                        "value": null,
+                        "width": 210
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "e75bc0d4-73df-45d8-9c2a-87b34708a47a"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "土地平整进度(%)",
+                        "id": "pz1",
+                        "labelAlign": "right",
+                        "layout|x": 80,
+                        "layout|y": 60,
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "name": "ypercentPz",
+                        "value": null,
+                        "width": 170
+                    },
+                    "name": "MyNumberField2",
+                    "designerId": "bdd61f16-e542-433f-a7f0-e708f0962473"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "田间道路进度(%)",
+                        "id": "dl1",
+                        "labelAlign": "right",
+                        "layout|x": 480,
+                        "layout|y": 60,
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "name": "ypercentDl",
+                        "value": null,
+                        "width": 170
+                    },
+                    "name": "MyNumberField3",
+                    "designerId": "7b4c1964-1200-4291-9e0e-635c3fe41a7d"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "农田水利进度(%)",
+                        "id": "sl1",
+                        "labelAlign": "right",
+                        "layout|x": 280,
+                        "layout|y": 60,
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "name": "ypercentSl",
+                        "value": null,
+                        "width": 170
+                    },
+                    "name": "MyNumberField4",
+                    "designerId": "e7d43ce3-4fca-4dd8-81f1-e9385051b978"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 30,
+                        "id": "addbutton",
+                        "layout|x": 800,
+                        "layout|y": 50,
+                        "text": "添加一条记录",
+                        "width": 90
+                    },
+                    "name": "MyButton54",
+                    "designerId": "0fb1f3f8-4c00-419f-89b4-b9aac7237d35",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var myform = this.up('form').getForm(); // get the basic form\r",
+                                    "if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    myform.submit({\r",
+                                    "        success: function(form, action) {\r",
+                                    "            var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                    "            mystore.load(\r",
+                                    "            {\r",
+                                    "                params: {\r",
+                                    "                    start: \"0\",\r",
+                                    "                    limit: \"15\",\r",
+                                    "                    projectId: Ext.getCmp('prjid').getValue()\r",
+                                    "                }\r",
+                                    "            }\r",
+                                    "            );\r",
+                                    "            Ext.Msg.alert('success', '添加数据成功');\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.Msg.alert('failure', '添加失败');                           \r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else {\r",
+                                    "    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    "return;"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "9be3493f-d7b8-44c0-b5dd-6322aac07625"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayInfo": true,
+                "displayMsg": "显示{0} - {1}条，共计 {2}条",
+                "dock": "bottom",
+                "emptyMsg": "没有数据",
+                "store": "yqprjmonitorInfoStore",
+                "width": 360
+            },
+            "name": "MyPagingToolbar7",
+            "designerId": "73cd3b9c-097c-4040-80e5-0b097ac5a20d"
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "designer|displayName": "项目名称：",
+                "dock": null,
+                "fixed": true,
+                "forceFit": true,
+                "id": "yqgrid",
+                "layout|region": "center",
+                "store": "yqprjmonitorInfoStore",
+                "title": ""
+            },
+            "name": "MyGridPanel12",
+            "designerId": "85ad49fc-a01e-40de-9e00-46a64bb67c8a",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 100
+                    },
+                    "name": "MyGridView12",
+                    "designerId": "8bc728d8-8945-41c1-81af-7210739cd78d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号",
+                        "width": 150
+                    },
+                    "name": "MyColumn52",
+                    "designerId": "a7d82706-39ca-4fa4-b1d1-ddf93f3e0e89"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectName",
+                        "text": "项目名称",
+                        "width": 500
+                    },
+                    "name": "MyColumn53",
+                    "designerId": "c0b5d627-efaa-4428-b9c1-70feec061e24"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "recordId",
+                        "hidden": true,
+                        "text": "记录号"
+                    },
+                    "name": "MyColumn54",
+                    "designerId": "344db1d2-0a49-44df-847f-27b3966d210b"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "monitorTime",
+                        "format": "Y-m-d",
+                        "text": "监测时间",
+                        "width": 150
+                    },
+                    "name": "MyDateColumn11",
+                    "designerId": "166cf16c-6430-469b-ae9a-62a17d5bffa0"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "recordId",
+                        "hidden": true,
+                        "text": "record_id"
+                    },
+                    "name": "MyNumberColumn19",
+                    "designerId": "dc77cdd5-16df-44b2-aace-20d92f01faa0"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel6",
+                    "designerId": "94d62367-d743-48ad-a757-d182422ba96f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "工程预期进度（%）",
+                        "width": null
+                    },
+                    "name": "MyColumn55",
+                    "designerId": "215badc3-5a36-46bc-94f0-23fdcf349919",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ypercentPz",
+                                "format": "00",
+                                "text": "土地平整",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn20",
+                            "designerId": "6c0172e3-857d-419c-ab6c-94f0bac96688"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ypercentDl",
+                                "format": "00",
+                                "text": "田间道路",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn21",
+                            "designerId": "de5878f8-5e09-4606-99d6-ee25a8b9ef27"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ypercentSl",
+                                "format": "00",
+                                "height": null,
+                                "text": "农田水利",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn22",
+                            "designerId": "27ecad87-4f4d-47ec-b362-5b946c0e0a35"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "isSended",
+                        "falseText": "否",
+                        "text": "已下达",
+                        "trueText": "是",
+                        "width": 80
+                    },
+                    "name": "MyBooleanColumn1",
+                    "designerId": "a0a988ce-ab1b-47c1-a0b1-541ac1af52cf"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "isFinished",
+                        "falseText": "否",
+                        "text": "已完成",
+                        "trueText": "是",
+                        "width": 80
+                    },
+                    "name": "MyBooleanColumn2",
+                    "designerId": "8fd15ea5-f7e5-4d50-8fde-993c11fceb36"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "finishTime",
+                        "hidden": true,
+                        "text": "完成时间"
+                    },
+                    "name": "MyDateColumn12",
+                    "designerId": "8601ea24-f8cd-4e39-982d-cdd98c126572"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "工程实际进度（%）",
+                        "width": null
+                    },
+                    "name": "MyColumn56",
+                    "designerId": "575e452a-5ce9-4c11-95c7-5f121ef901de",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentPz",
+                                "format": "00",
+                                "text": "土地平整",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn23",
+                            "designerId": "17088c64-0b2c-4132-a2c7-2290222650b3"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentDl",
+                                "format": "00",
+                                "text": "田间道路",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn24",
+                            "designerId": "68a5973f-9df2-4145-9d18-66d66c6ed502"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "dataIndex": "ppercentSl",
+                                "format": "00",
+                                "text": "农田水利",
+                                "width": 60
+                            },
+                            "name": "MyNumberColumn25",
+                            "designerId": "96f30822-e229-4f05-9fbd-b9ec4f0a560b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "width": 950
+                    },
+                    "name": "MyToolbar13",
+                    "designerId": "22eb05ef-543f-442c-b412-c4b09866595c",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 22,
+                                "icon": "images/return.png",
+                                "layout|flex": null,
+                                "text": "返回项目列表",
+                                "width": 94
+                            },
+                            "name": "MyButton55",
+                            "designerId": "5c1e1fa8-065e-4bad-aaec-6da5125bdb5b",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "click",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = Ext.getCmp('myTabPanel');\r",
+                                            "tabs.removeAll(true);             \r",
+                                            "var newtab = tabs.add(Ext.widget('syrDataManagement'));\r",
+                                            "\r",
+                                            "var mystore = Ext.StoreMgr.get('syrSchemeShow3'); //获得store对象 \r",
+                                            "mystore.load(\r",
+                                            "{\r",
+                                            "    params: {\r",
+                                            "        start: '0',\r",
+                                            "        limit: '15',\r",
+                                            "        projectName: '',\r",
+                                            "        province: '',\r",
+                                            "        city: '',\r",
+                                            "        county: '',\r",
+                                            "        town: '',\r",
+                                            "        contructstarttime: '',\r",
+                                            "        contructendtime: ''\r",
+                                            "    }\r",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "62ed124b-e731-4f78-b374-6c54de923fb4"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "项目编号",
+                                "id": "projectids",
+                                "labelWidth": 50,
+                                "layout|flex": null,
+                                "width": 281
+                            },
+                            "name": "MyTextField72",
+                            "designerId": "4bed08df-6647-4575-a1c4-611606e4e956"
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "预期监测时间",
+                                "id": "monitorstart8",
+                                "labelAlign": "right",
+                                "labelWidth": 80,
+                                "layout|flex": null,
+                                "width": 186
+                            },
+                            "name": "MyDateField24",
+                            "designerId": "800a05e4-3e03-4e9a-a584-18bec32cb6da"
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "——",
+                                "id": "monitorend8",
+                                "labelAlign": "right",
+                                "labelSeparator": "—",
+                                "labelWidth": 20,
+                                "layout|flex": null,
+                                "width": 103
+                            },
+                            "name": "MyDateField25",
+                            "designerId": "cb8688d9-4640-42c8-949f-07a6978306bd"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "hidden": true,
+                                "id": "projectname9",
+                                "layout|flex": null
+                            },
+                            "name": "MyTextField73",
+                            "designerId": "888f0404-a0e2-4832-94eb-e0286132378e"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "icon": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "搜索",
+                                "width": 55
+                            },
+                            "name": "MyButton56",
+                            "designerId": "1a535e3a-87ab-42b0-9811-668572858036",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "click",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var  mystore=Ext.StoreMgr.get('yqprjmonitorInfoStore');//获取store对象\r",
+                                            "\r",
+                                            "/*在load时间中添加参数\r",
+                                            "mystore.load(\r",
+                                            "{ params:{\r",
+                                            "start:\"0\",\r",
+                                            "limit:\"15\",\r",
+                                            "projectId:Ext.getCmp('projectids').getValue(),   \r",
+                                            "monitorstarttime:Ext.util.Format.date(Ext.getCmp('monitorstart8').getValue(),'Y-m-d'),\r",
+                                            "monitorendtime:Ext.util.Format.date(Ext.getCmp('monitorend8').getValue(),'Y-m-d'),\r",
+                                            "accuracy:\"0\"}\r",
+                                            "}\r",
+                                            ");\r",
+                                            "*/\r",
+                                            "\r",
+                                            "mystore.on('beforeload', function (store, options) {\r",
+                                            "    var new_params = {projectId:Ext.getCmp('projectids').getValue(),   \r",
+                                            "                      monitorstarttime:Ext.util.Format.date(Ext.getCmp('monitorstart8').getValue(),'Y-m-d'),\r",
+                                            "                      monitorendtime:Ext.util.Format.date(Ext.getCmp('monitorend8').getValue(),'Y-m-d'),\r",
+                                            "                      accuracy:\"0\"};\r",
+                                            "    Ext.apply(store.proxy.extraParams, new_params);\r",
+                                            "});\r",
+                                            "mystore.load({ params: { start: 0, limit: 15} });"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "156d0203-4304-459b-bf84-692daae61142"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_edit.png",
+                                "layout|flex": null,
+                                "text": "编辑"
+                            },
+                            "name": "MyButton57",
+                            "designerId": "472e631a-74b4-495c-a8f5-f85b286e635a",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('yqgrid');\r",
+                                            "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                            "if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一行数据\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "else if (record.length===0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要编辑的数据!');\r",
+                                            "    return;\r",
+                                            "} else { \r",
+                                            "    var win = new Ext.Window({\r",
+                                            "        title: '编辑监测任务计划',\r",
+                                            "        height: 306,\r",
+                                            "        width: 523,\r",
+                                            "        items: [\r",
+                                            "        {\r",
+                                            "            xtype: 'form',\r",
+                                            "            height: 278,\r",
+                                            "            id: 'yqprojectmonitorInfo12',\r",
+                                            "            autoScroll: true,\r",
+                                            "            autoDestroy: false,\r",
+                                            "            layout: {\r",
+                                            "                type: 'absolute'\r",
+                                            "            },\r",
+                                            "            bodyPadding: 10,\r",
+                                            "            jsonSubmit: true,\r",
+                                            "            items: [\r",
+                                            "            {\r",
+                                            "                xtype: 'combobox',\r",
+                                            "                x: 0,\r",
+                                            "                y: 10,\r",
+                                            "                id: 'projectnames12',\r",
+                                            "                width: 260,\r",
+                                            "                fieldLabel: '项目名称',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                labelWidth: 70,\r",
+                                            "                name: 'projectName',\r",
+                                            "                readOnly: true\r",
+                                            "\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'combobox',\r",
+                                            "                x: 200,\r",
+                                            "                y: 10,\r",
+                                            "                id: 'recordId12',\r",
+                                            "                width: 260,\r",
+                                            "                fieldLabel: '记录号',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                labelWidth: 70,\r",
+                                            "                name: 'recordId',\r",
+                                            "                readOnly: true,\r",
+                                            "                hidden: true\r",
+                                            "\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                x: 270,\r",
+                                            "                y: 10,\r",
+                                            "                id: 'prjid12',\r",
+                                            "                width: 210,\r",
+                                            "                fieldLabel: '项目编号',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                labelWidth: 60,\r",
+                                            "                name: 'projectId',\r",
+                                            "                readOnly: true\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'datefield',\r",
+                                            "                x: 10,\r",
+                                            "                y: 60,\r",
+                                            "                id: 'monitort12',\r",
+                                            "                width: 240,\r",
+                                            "                fieldLabel: '监测时间',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                labelWidth: 60,\r",
+                                            "                name: 'monitorTime',\r",
+                                            "                allowBlank: false,\r",
+                                            "                altFormats: 'Y-m-d',\r",
+                                            "                format: 'Y-m-d'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'numberfield',\r",
+                                            "                x: 270,\r",
+                                            "                y: 60,\r",
+                                            "                id: 'finishlimit12',\r",
+                                            "                width: 210,\r",
+                                            "                fieldLabel: '任务完成期限（天）',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                labelWidth: 120,\r",
+                                            "                name: 'finishdateLimit',\r",
+                                            "                allowBlank: false,\r",
+                                            "                minValue: 0\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'numberfield',\r",
+                                            "                x: 20,\r",
+                                            "                y: 120,\r",
+                                            "                id: 'pz12',\r",
+                                            "                width: 230,\r",
+                                            "                fieldLabel: '土地平整进度(%)',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                name: 'ypercentPz',\r",
+                                            "                allowBlank: false,\r",
+                                            "                maxValue: 100,\r",
+                                            "                minValue: 0\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'numberfield',\r",
+                                            "                x: 280,\r",
+                                            "                y: 120,\r",
+                                            "                id: 'dl12',\r",
+                                            "                width: 200,\r",
+                                            "                fieldLabel: '田间道路进度(%)',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                name: 'ypercentDl',\r",
+                                            "                allowBlank: false,\r",
+                                            "                maxValue: 100,\r",
+                                            "                minValue: 0\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'numberfield',\r",
+                                            "                x: 20,\r",
+                                            "                y: 170,\r",
+                                            "                id: 'sl12',\r",
+                                            "                width: 230,\r",
+                                            "                fieldLabel: '农田水利进度(%)',\r",
+                                            "                labelAlign: 'right',\r",
+                                            "                name: 'ypercentSl',\r",
+                                            "                allowBlank: false,\r",
+                                            "                maxValue: 100,\r",
+                                            "                minValue: 0\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'button',\r",
+                                            "                handler: function(button, event) {\r",
+                                            "                    var myform = Ext.getCmp('yqprojectmonitorInfo12').getForm();\r",
+                                            "                    if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                            "                        myform.submit({\r",
+                                            "                            url:'update_yqtable',\r",
+                                            "                            success: function(form, action){\r",
+                                            "                                Ext.Msg.alert('success', '修改内容成功');\r",
+                                            "                                var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                            "                                mystore.load(\r",
+                                            "                                { \r",
+                                            "                                    params: {\r",
+                                            "                                        start: \"0\",\r",
+                                            "                                        limit: \"25\",\r",
+                                            "                                        projectId: Ext.getCmp('prjid12').getValue()\r",
+                                            "                                    }\r",
+                                            "                                }\r",
+                                            "                                );\r",
+                                            "                                win.close();\r",
+                                            "                            },\r",
+                                            "                            failure: function(form, action) {\r",
+                                            "                                Ext.Msg.alert('failure', '修改失败');   \r",
+                                            "                                win.close();\r",
+                                            "\r",
+                                            "                            }\r",
+                                            "                        });\r",
+                                            "                    }   else { Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                            "                    } \r",
+                                            "                    return;\r",
+                                            "                },\r",
+                                            "                x: 130,\r",
+                                            "                y: 230,\r",
+                                            "                height: 30,\r",
+                                            "                id: 'update12',\r",
+                                            "                width: 90,\r",
+                                            "                text: '保存修改'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'button',\r",
+                                            "                handler: function(button, event) {\r",
+                                            "                    win.close();\r",
+                                            "                },\r",
+                                            "                x: 280,\r",
+                                            "                y: 230,\r",
+                                            "                height: 30,\r",
+                                            "                id: 'return12',\r",
+                                            "                width: 90,\r",
+                                            "                text: '取消修改'\r",
+                                            "            }\r",
+                                            "            ]\r",
+                                            "        } ]\r",
+                                            "    });\r",
+                                            "\r",
+                                            "    Ext.getCmp('projectnames12').setValue(record[0].get(\"projectName\"));\r",
+                                            "    Ext.getCmp('recordId12').setValue(record[0].get(\"recordId\"));\r",
+                                            "    Ext.getCmp('prjid12').setValue(record[0].get(\"projectId\"));\r",
+                                            "    Ext.getCmp('monitort12').setValue(record[0].get(\"monitorTime\"));\r",
+                                            "    Ext.getCmp('finishlimit12').setValue(record[0].get(\"finishdateLimit\"));\r",
+                                            "    Ext.getCmp('pz12').setValue(record[0].get(\"ypercentPz\"));\r",
+                                            "    Ext.getCmp('dl12').setValue(record[0].get(\"ypercentDl\"));\r",
+                                            "    Ext.getCmp('sl12').setValue(record[0].get(\"ypercentSl\"));     \r",
+                                            "    win.show();\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "0eb5b7ee-0412-49de-b36f-13590d86cad3"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_delete.png",
+                                "layout|flex": null,
+                                "text": "删除"
+                            },
+                            "name": "MyButton58",
+                            "designerId": "be1ecd5b-b7da-4f6d-a30f-0fdecc3e9abd",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('yqgrid');\r",
+                                            "var record =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                            "    \r",
+                                            " if(record.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一行数据\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "else if (record.length===0) {\r",
+                                            "    Ext.Msg.alert('提示', '请先选择您要删除的数据!');\r",
+                                            "    return;\r",
+                                            "} else {    \r",
+                                            "\r",
+                                            "    var  recordIds =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        recordIds[i] = record[i].get(\"recordId\");\r",
+                                            "\r",
+                                            "    }\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'del_yqmonitorInfodataByIds',\r",
+                                            "        params:{recordIds:recordIds},\r",
+                                            "        success:function(response){\r",
+                                            "            var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                            "            mystore.load(\r",
+                                            "            {\r",
+                                            "                params: {\r",
+                                            "                    start: \"0\",\r",
+                                            "                    limit: \"15\",\r",
+                                            "                    projectId: record[0].get(\"projectId\")\r",
+                                            "                }\r",
+                                            "            });\r",
+                                            "\r",
+                                            "\r",
+                                            "            Ext.Msg.alert('success','删除数据成功!');\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "}   "
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "5e7b340f-0659-472f-8899-e380e69290bf"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "显示全部"
+                            },
+                            "name": "MyButton59",
+                            "designerId": "329c9642-4e00-4dcf-953e-c9c7d1b9ab64",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "Ext.getCmp('projectids').setValue('');\r",
+                                            "\r",
+                                            "var mystore = Ext.StoreMgr.get('yqprjmonitorInfoStore'); //获得store对象 \r",
+                                            "mystore.load(\r",
+                                            "{\r",
+                                            "    params: {\r",
+                                            "        start: \"0\",\r",
+                                            "        limit: \"15\",\r",
+                                            "        projectId: '',\r",
+                                            "        monitorstarttime:'',\r",
+                                            "        monitorendtime:'',\r",
+                                            "        accuracy:'0'\r",
+                                            "    }\r",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "866fef73-6ee5-41c8-8357-b5cb7153786a"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

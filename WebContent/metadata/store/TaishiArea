@@ -1,0 +1,22 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {name:'ee',visits:1,value:250},\r",
+            "    {name:'gg',visits:2,value:280},  \r",
+            "    {name:'ss',visits:3,value:300}\r",
+            "]"
+        ],
+        "designer|userAlias": "TaishiArea",
+        "designer|userClassName": "TaishiArea",
+        "model": "TaishiArea",
+        "storeId": "TaishiArea"
+    },
+    "designerId": "75c6a34a-358c-4913-8f94-3e1634334c9c"
+}

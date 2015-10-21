@@ -1,0 +1,623 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "abnmWholeSupervisionTab",
+        "designer|userClassName": "abnmWholeSupervisionTab",
+        "height": 750,
+        "id": "abnmWholeSupervisionTab",
+        "layout": "fit",
+        "title": "监管>>全过程异常监管信息表"
+    },
+    "designerId": "4d49e9a4-5781-4cab-bc9a-5816dce03433",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsible": false,
+                "forceFit": true,
+                "id": "abnmWholeSupervisionGrid",
+                "store": "abnmWholeSupervisionStore",
+                "title": ""
+            },
+            "name": "MyGridPanel64",
+            "designerId": "bf22f7e2-9122-4643-bf5f-161b6a499204",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "记录号",
+                        "width": 47
+                    },
+                    "name": "MyRowNumberer56",
+                    "designerId": "06b99df8-ec6b-4810-b71f-2fbf5ca60254"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectId",
+                        "text": "项目编号",
+                        "tooltip": ""
+                    },
+                    "name": "MyColumn267",
+                    "designerId": "b42c7032-d7a7-41ee-a9b3-45e877d15d4e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectName",
+                        "text": "项目名称",
+                        "tooltip": ""
+                    },
+                    "name": "MyColumn268",
+                    "designerId": "fb2fb352-1cc1-4e3f-8c84-ca3a20b09e97"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsTitle",
+                        "text": "标题",
+                        "tooltip": ""
+                    },
+                    "name": "MyColumn269",
+                    "designerId": "10b84b3c-1558-4351-9b25-de3bca442560"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsClass",
+                        "text": "异常来源"
+                    },
+                    "name": "MyColumn270",
+                    "designerId": "7258eb21-0da2-4598-836c-032b2a29c6e8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsContent",
+                        "text": "异常情况描述"
+                    },
+                    "name": "MyColumn271",
+                    "designerId": "7916ea19-c90d-468a-b722-03b8fc70d056"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsDate",
+                        "format": "Y-m-d",
+                        "text": "发布时间"
+                    },
+                    "name": "MyDateColumn53",
+                    "designerId": "33fc91ca-87ab-4f3d-96af-d84bb3a19b8b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsIsTaskAssigned",
+                        "text": "任务下达"
+                    },
+                    "name": "MyColumn272",
+                    "designerId": "e4798b08-33e7-43e2-9e1f-f50c7348968c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "rwId",
+                        "text": "任务编号"
+                    },
+                    "name": "MyColumn273",
+                    "designerId": "9d11cdec-282a-40ff-8d77-adb72d63db33"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsXunchacontent",
+                        "text": "巡查情况描述"
+                    },
+                    "name": "MyColumn274",
+                    "designerId": "56914179-6f96-4d9c-9784-d03275cf5923"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsOpinion",
+                        "text": "处理意见"
+                    },
+                    "name": "MyColumn275",
+                    "designerId": "894dbbb8-442f-4c82-8a55-7b3c972c772f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsCollector",
+                        "text": "意见填写人"
+                    },
+                    "name": "MyColumn276",
+                    "designerId": "ca48d906-c201-4af9-989f-2f5c09283c67"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "abwsCollecttime",
+                        "format": "Y-m-d",
+                        "text": "意见填写时间"
+                    },
+                    "name": "MyDateColumn54",
+                    "designerId": "d332521d-5f03-46d0-b495-a09905987d33"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView64",
+                    "designerId": "2609ab9c-fb1d-4b61-9ab6-0ae129fcd77c"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel56",
+                    "designerId": "4ab1490e-3f9f-46ce-9e63-b3624f78ea2f"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "enableOverflow": true,
+                        "frame": false,
+                        "height": null
+                    },
+                    "name": "MyToolbar78",
+                    "designerId": "6c3ffe29-ce69-4f2e-8788-474b9dc94aa5",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "起始时间",
+                                "format": "Y-m-d",
+                                "id": "searchDateabws",
+                                "labelWidth": 70,
+                                "layout|flex": null,
+                                "width": 204
+                            },
+                            "name": "MyDateField69",
+                            "designerId": "95e7f7ce-8bfb-4539-8c42-b8511dee49b2"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "emptyText": "请输入搜索关键字",
+                                "fieldLabel": "",
+                                "id": "searchKeywordabws",
+                                "labelWidth": 50,
+                                "layout|flex": null,
+                                "width": 211
+                            },
+                            "name": "MyTextField233",
+                            "designerId": "5cb3097e-afac-4a74-834e-39bbfe6bb68b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "搜索"
+                            },
+                            "name": "MyButton288",
+                            "designerId": "b2fb369f-10c8-4f41-9f0e-dde6d627ebcf",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var getDate = Ext.util.Format.date(Ext.getCmp('searchDateabws').getValue(),'Y-m-d');\r",
+                                            "var getKeyword = Ext.getCmp('searchKeywordabws').getValue();\r",
+                                            "var mystore=Ext.StoreMgr.get('abnmWholeSupervisionStore'); //获得store对象\r",
+                                            "//在load事件中添加参数\r",
+                                            "//mystore.load(\r",
+                                            "//{params:{\r",
+                                            "//    start:\"0\",\r",
+                                            "//    limit:\"25\",\r",
+                                            "//    searchKeyword:getKeyword,\r",
+                                            "//    searchDate:getDate   \r",
+                                            "//} \r",
+                                            "//}\r",
+                                            "//);\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "mystore.on('beforeload',function(store,options){\r",
+                                            "    \r",
+                                            "    var new_params = { \r",
+                                            "        searchKeyword:getKeyword,\r",
+                                            "        searchDate:getDate\r",
+                                            "    };\r",
+                                            "    \r",
+                                            "    Ext.apply(store.proxy.extraParams,new_params);\r",
+                                            "});\r",
+                                            "\r",
+                                            "mystore.load(\r",
+                                            "    {\r",
+                                            "        params:{\r",
+                                            "        start:\"0\",\r",
+                                            "        limit:\"25\"\r",
+                                            "        }\r",
+                                            "    }\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "05467fbd-d5aa-4e3f-a86a-5b02bca686e4"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": null,
+                                "layout|flex": null,
+                                "text": "删除"
+                            },
+                            "name": "MyButton289",
+                            "designerId": "760736a8-9280-4189-8161-142435ef0bca",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('abnmWholeSupervisionGrid');\r",
+                                            "//var gird = this.down('grid');\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "\r",
+                                            "if(record.length === 0){\r",
+                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "    var  ids =new Array(record.length);\r",
+                                            "    for(var i = 0;i<record.length;i++){\r",
+                                            "        ids[i] = record[i].get(\"abwsId\");\r",
+                                            "\r",
+                                            "    }\r",
+                                            "    //Ext.Msg.alert('提示',ids);\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:'delete_abwsByIds',\r",
+                                            "        params:{ids:ids},        \r",
+                                            "        success:function(response){\r",
+                                            "            Ext.Msg.alert('成功','删除成功');\r",
+                                            "            var mystore = Ext.StoreMgr.get('abnmWholeSupervisionStore');\r",
+                                            "            mystore.load();         \r",
+                                            "        },\r",
+                                            "        failure:function(response){\r",
+                                            "            Ext.Msg.alert('失败','删除失败');      \r",
+                                            "        }\r",
+                                            "\r",
+                                            "    });\r",
+                                            "\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "c70fb976-8854-4a2f-b04a-4b689b860eef"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": null,
+                                "layout|flex": null,
+                                "text": "任务下达"
+                            },
+                            "name": "MyButton290",
+                            "designerId": "9ebd3d07-3983-4da5-b8a7-2ee79bbde3c2",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "\r",
+                                            "\r",
+                                            "var grid = Ext.getCmp('abnmWholeSupervisionGrid');\r",
+                                            "\r",
+                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                            "\r",
+                                            "if(record.length != 1 || record[0].get(\"abwsIsTaskAssigned\")!= '否'){\r",
+                                            "    Ext.Msg.alert('提示','请先选择一条未下达任务的信息！');    \r",
+                                            "    return;\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "\r",
+                                            "    var win = Ext.widget('abnmWSRWAddTab');\r",
+                                            "    win.show();\r",
+                                            "\r",
+                                            "    Ext.getCmp('rwClassAddrw').setValue('异常监管');\r",
+                                            "    Ext.getCmp('projectIdAddrw').setValue(record[0].get(\"projectId\"));\r",
+                                            "    Ext.getCmp('projectNameAddrw').setValue(record[0].get(\"projectName\"));   \r",
+                                            "    Ext.getCmp('abwsIdGet').setValue(record[0].get(\"abwsId\"));\r",
+                                            "    Ext.getCmp('addRwContent').setValue(record[0].get(\"abwsContent\"));\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "    Date.prototype.format = function(format){ \r",
+                                            "        var o = { \r",
+                                            "            \"M+\" : this.getMonth()+1, //month \r",
+                                            "            \"d+\" : this.getDate(), //day \r",
+                                            "            \"h+\" : this.getHours(), //hour \r",
+                                            "            \"m+\" : this.getMinutes(), //minute \r",
+                                            "            \"s+\" : this.getSeconds(), //second \r",
+                                            "            \"q+\" : Math.floor((this.getMonth()+3)/3), //quarter \r",
+                                            "            \"S\" : this.getMilliseconds() //millisecond \r",
+                                            "        }; \r",
+                                            "        if(/(y+)/.test(format)) { \r",
+                                            "            format = format.replace(RegExp.$1, (this.getFullYear()+\"\").substr(4 - RegExp.$1.length)); \r",
+                                            "        } \r",
+                                            "        for(var k in o) { \r",
+                                            "            if(new RegExp(\"(\"+ k +\")\").test(format)) { \r",
+                                            "                format = format.replace(RegExp.$1, RegExp.$1.length==1 ? o[k] : (\"00\"+ o[k]).substr((\"\"+ o[k]).length)); \r",
+                                            "            } \r",
+                                            "        } \r",
+                                            "        return format; \r",
+                                            "    }; \r",
+                                            "\r",
+                                            "\r",
+                                            "    var newDate = new Date();//日历实例化\r",
+                                            "\r",
+                                            "    var newRwId = \"YCJG\"+newDate.format(\"yyyyMMddhhmmss\");//当前日期格式化\t\r",
+                                            "    Ext.getCmp('getRwId').setValue(newRwId);\r",
+                                            "\r",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "83d8760b-0911-47b7-80f5-76751b1118c1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": null,
+                                "layout|flex": null,
+                                "text": "任务管理"
+                            },
+                            "name": "MyButton291",
+                            "designerId": "4762ae14-2dae-48f5-81b6-d986f179562e",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "tabs.add(Ext.widget('abnmWholeSupRWTab'));\r",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "97cc150a-83ee-4637-8c98-1666a5e8808c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "height": 36,
+                        "store": "abnmWholeSupervisionStore",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar48",
+                    "designerId": "48b7a531-2c48-4025-a1f1-8b86de3e5cf6"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAbnmWholeSupervisionGridCellClick",
+                        "implHandler": [
+                            "//if(cellIndex == 14)\r",
+                            "//{\r",
+                            "\r",
+                            "//    var abnmWSRWwin = Ext.widget('abnmWSRWAddTab');\r",
+                            "//abnmWSRWwin.show();\r",
+                            "//}\r",
+                            "//else{ \r",
+                            "if(cellIndex >1 && cellIndex <13){\r",
+                            "    var win = Ext.widget('abnmWSUpdateTab');\r",
+                            "    win.show();\r",
+                            "    var getForm = Ext.getCmp('abnmWSUpdateForm').getForm();\t//获取form\r",
+                            "    getForm.loadRecord(record);\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onAbnmWholeSupervisionGridCellClick",
+                    "designerId": "95a2823f-72e0-4cd2-80d3-52361b0a80e0"
+                }
+            ]
+        }
+    ]
+}

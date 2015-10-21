@@ -1,0 +1,93 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiNumber_Pie",
+        "designer|userClassName": "TaishiNumber_Pie"
+    },
+    "designerId": "8ec44f23-b8e2-4e6f-a53a-46ab4585bd53",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jyl"
+            },
+            "name": "MyField81",
+            "designerId": "dedab9cb-65da-4236-9b9a-839aafa34d0b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jysj"
+            },
+            "name": "MyField82",
+            "designerId": "b6a0c893-7e89-4698-a435-30cbd886d84e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jycs"
+            },
+            "name": "MyField83",
+            "designerId": "51c2503d-ab34-4690-89a1-b64944dbc6f1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "taiarea"
+            },
+            "name": "MyField84",
+            "designerId": "1100017c-9b5f-4d83-8a80-0a0a464449dc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "taicount"
+            },
+            "name": "MyField85",
+            "designerId": "02ffb38a-70e0-4968-bf13-31acf4d0db67"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jyqy"
+            },
+            "name": "MyField86",
+            "designerId": "4103fc2d-fb82-497d-ab62-40a5b26a8f40"
+        }
+    ]
+}

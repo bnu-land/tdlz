@@ -1,0 +1,338 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiArea",
+        "designer|userClassName": "TaishiArea",
+        "height": 631,
+        "layout": "border",
+        "title": "按交易区域分析",
+        "width": 1043
+    },
+    "designerId": "1530222b-d106-4e84-aa06-3403ab3a0906",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": [
+                    "<div id = \"mapDiv_taishiArea\" style = \"width=100%;height:100%;\">\r",
+                    "        <!--<div id=\"bottomPanel\">-->\r",
+                    "            <!--<div id=\"timeInfo\">-->\r",
+                    "                <!--<div>统计从 <span id=\"taishi_daterange\">2009 到 2011</span> 间的数据</div>-->\r",
+                    "                <!--<div id=\"taishi_timeSliderDiv\"></div>-->\r",
+                    "            <!--</div>-->\r",
+                    "        <!--</div>-->\r",
+                    "        <!--<div id=\"info\">-->\r",
+                    "            <!--<div id=\"legend_taishi\"></div>-->\r",
+                    "        <!--</div>-->\r",
+                    "</div>\r",
+                    "\r",
+                    ""
+                ],
+                "layout|region": "center",
+                "title": "按交易区域分析图"
+            },
+            "name": "MyPanel19",
+            "designerId": "fe23a9b9-e5ea-4c15-b6b0-ea0484d5ede5",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPanelAfterRender",
+                        "implHandler": [
+                            "//加入地图的js文件\r",
+                            "var head = document.getElementsByTagName('head')[0];\r",
+                            "var script= document.createElement(\"script\"); \r",
+                            "script.type = \"text/javascript\"; \r",
+                            "script.src=\"map/taishiArea_map.js\"; \r",
+                            "head.appendChild(script);"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onPanelAfterRender",
+                    "designerId": "56097801-d73c-4157-b2a6-2ab78db1d9e3"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar11",
+            "designerId": "8c80ac40-5de0-41d4-9853-006ab0e41de0",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "交易区域",
+                        "id": "taishiArea_renderArea",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "value": [
+                            "\"长寿区\""
+                        ],
+                        "width": 160
+                    },
+                    "name": "MyComboBox8",
+                    "designerId": "45aafcbf-ab9c-4403-8d42-32481d9bb13e"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "从",
+                        "format": "Y-m-d",
+                        "id": "taishi_minDate",
+                        "labelWidth": 25,
+                        "layout|flex": null,
+                        "value": 1388505600000,
+                        "width": 120
+                    },
+                    "name": "MyDateField19",
+                    "designerId": "34c7793d-bf8b-48ed-89ae-9c87d3ceacc3"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "到",
+                        "format": "Y-m-d",
+                        "id": "taishi_maxDate",
+                        "labelWidth": 25,
+                        "layout|flex": null,
+                        "value": 1404057600000,
+                        "width": 120
+                    },
+                    "name": "MyDateField20",
+                    "designerId": "92aeb446-26c2-4a8d-9111-5c6836efb8e2"
+                },
+                {
+                    "type": "Ext.toolbar.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MySeparator",
+                    "designerId": "d95fa618-4c14-4f29-a474-2a0c594d8ec9"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "查看专题图",
+                        "id": "radioGroup_taishiArea",
+                        "labelWidth": 70,
+                        "layout|flex": null,
+                        "shrinkWrap": null,
+                        "width": 300
+                    },
+                    "name": "MyRadioGroup",
+                    "designerId": "16d4ad40-1e68-4ab5-a016-01a8e998ce2c",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "交易量",
+                                "designer|displayName": "交易量",
+                                "fieldLabel": null,
+                                "id": "radio_TradeVolume",
+                                "inputValue": "volume",
+                                "name": "taishiArea"
+                            },
+                            "name": "MyRadio",
+                            "designerId": "500fe48c-d206-429b-9e3f-0b4cbe2aab4f"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "交易次数",
+                                "designer|displayName": "交易次数",
+                                "fieldLabel": null,
+                                "id": "radio_TradeNumber",
+                                "inputValue": "number",
+                                "name": "taishiArea"
+                            },
+                            "name": "MyRadio1",
+                            "designerId": "471eb5e6-0dd8-427e-8601-8f7feb77f530"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "交易价格",
+                                "designer|displayName": "交易价格",
+                                "fieldLabel": null,
+                                "id": "radio_TradePrice",
+                                "inputValue": "price",
+                                "name": "taishiArea"
+                            },
+                            "name": "MyRadio2",
+                            "designerId": "aae75e7b-b046-44c3-b980-d72d899c1b35"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRadioGroup_taishiAreaChange",
+                                "implHandler": [
+                                    "//var renderType = newValue.taishiArea;\t//获取选中的统计量\r",
+                                    "//SetRenderType(renderType);\t\t\t\t//设置渲染方式\r",
+                                    "//InitStatisticAndRenderMap();\t\t//渲染地图"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onRadioGroup_taishiAreaChange",
+                            "designerId": "c55122d6-c3d3-4a1c-87da-ac3f7c1d39c6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MySeparator1",
+                    "designerId": "734506c1-80c6-4cd7-adea-4daaaf4cf7dd"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "专题图样式",
+                        "id": "radioGroup_taishiRender",
+                        "labelWidth": 70,
+                        "layout|flex": null,
+                        "width": 300
+                    },
+                    "name": "MyRadioGroup1",
+                    "designerId": "1cd9a70c-9dc6-4c66-9e90-fa08fa772a54",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "分级符号",
+                                "checked": true,
+                                "designer|displayName": "分级符号",
+                                "fieldLabel": null,
+                                "inputValue": "symbol",
+                                "name": "renderType"
+                            },
+                            "name": "MyRadio3",
+                            "designerId": "af86484a-ac73-4051-af28-5172a97131b1"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "分级彩色",
+                                "designer|displayName": "分级色彩",
+                                "fieldLabel": null,
+                                "inputValue": "color",
+                                "name": "renderType"
+                            },
+                            "name": "MyRadio4",
+                            "designerId": "c64274e0-5c87-4c38-9acd-b8216a948bc9"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "点密度",
+                                "designer|displayName": "点密度",
+                                "fieldLabel": null,
+                                "hidden": true,
+                                "inputValue": "dot",
+                                "name": "renderType"
+                            },
+                            "name": "MyRadio5",
+                            "designerId": "3c19285b-6e98-466e-a3f0-864dbbaf5e01"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

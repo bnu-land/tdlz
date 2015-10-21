@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-20 20:34:21 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkGongcheng" table="fk_gongcheng" catalog="tdlz">
+        <id name="projectId" type="string">
+            <column name="projectId" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectName" type="string">
+            <column name="projectName" length="50" />
+        </property>
+        <property name="area" type="string">
+            <column name="Area" length="30" />
+        </property>
+        <property name="tdpz" type="string">
+            <column name="Tdpz" length="200" />
+        </property>
+        <property name="ntsl" type="string">
+            <column name="Ntsl" length="200" />
+        </property>
+        <property name="tjdl" type="string">
+            <column name="Tjdl" length="200" />
+        </property>
+        <property name="fkPicture" type="string">
+            <column name="Fk_picture" length="50" />
+        </property>
+        <property name="recorder" type="string">
+            <column name="Recorder" length="50" />
+        </property>
+        <property name="chgc" type="string">
+            <column name="chgc" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

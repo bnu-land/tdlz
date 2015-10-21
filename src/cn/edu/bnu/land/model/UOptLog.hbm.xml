@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.UOptLog" table="u_opt_log" catalog="tdlz">
+        <id name="id" type="string">
+            <column name="id" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="int">
+            <column name="user_id" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;id</comment>
+            </column>
+        </property>
+        <property name="executTime" type="timestamp">
+            <column name="execut_time" length="19">
+                <comment>&#178;&#217;&#215;&#247;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="taskId" type="java.lang.Integer">
+            <column name="task_id">
+                <comment>&#200;&#206;&#206;&#241;id&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="ipAddr" type="string">
+            <column name="ip_addr" length="15">
+                <comment>ip&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

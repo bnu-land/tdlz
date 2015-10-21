@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-1-17 21:23:58 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Fkapply" table="fkapply" catalog="tdlz">
+        <id name="applyId" type="string">
+            <column name="ApplyId" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="projectname" type="string">
+            <column name="Projectname" length="145" />
+        </property>
+        <property name="conUnit" type="string">
+            <column name="conUnit" length="145" />
+        </property>
+        <property name="projectId" type="string">
+            <column name="ProjectId" length="45" />
+        </property>
+        <property name="applyDate" type="date">
+            <column name="ApplyDate" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="Note" length="545" />
+        </property>
+         <property name="fileCheck" type="string">
+            <column name="fileCheck" length="45" />
+        </property>
+        <property name="checkResult" type="string">
+            <column name="checkResult" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

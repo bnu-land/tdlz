@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[['1', '土壤质量达标'], ['2', '土壤质量不达标']]"
+        ],
+        "designer|userAlias": "auditResultsStore",
+        "designer|userClassName": "auditResultsStore",
+        "storeId": "auditResultsStore"
+    },
+    "designerId": "b698581a-3ec9-42fc-b970-3a8514390bf6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy35",
+            "designerId": "d84ed4d8-10fe-464e-b4c1-b9a7d8a8283d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader35",
+                    "designerId": "3cbe8d49-4ad6-4162-aa3c-038d0b976cf9"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField244",
+            "designerId": "5fac1a79-47c5-403c-b78b-03dde2e3a3bc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "name": "MyField245",
+            "designerId": "87a3fb72-e213-44c1-8651-3f06bcd6c102"
+        }
+    ]
+}

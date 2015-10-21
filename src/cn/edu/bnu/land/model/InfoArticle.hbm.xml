@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-11 20:56:03 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoArticle" table="info_article" catalog="tdlz">
+        <id name="articleId" type="java.lang.Integer">
+            <column name="article_id" />
+            <generator class="identity" />
+        </id>
+        <property name="articleName" type="string">
+            <column name="article_name" length="200">
+                <comment>&#206;&#196;&#213;&#194;&#177;&#234;&#204;&#226;</comment>
+            </column>
+        </property>
+        <property name="articleContent" type="string">
+            <column name="article_content" length="65535">
+                <comment>&#206;&#196;&#213;&#194;&#196;&#218;&#200;&#221;</comment>
+            </column>
+        </property>
+        <property name="channelId" type="java.lang.Integer">
+            <column name="channel_id">
+                <comment>&#198;&#181;&#181;&#192;&#192;&#184;&#196;&#191;</comment>
+            </column>
+        </property>
+        <property name="articleIsrecycle" type="string">
+            <column name="article_isrecycle" length="10">
+                <comment>&#202;&#199;&#183;&#241;&#212;&#218;&#187;&#216;&#202;&#213;&#213;&#190;</comment>
+            </column>
+        </property>
+        <property name="articlePublishtime" type="date">
+            <column name="article_publishtime" length="10">
+                <comment>&#206;&#196;&#213;&#194;&#183;&#162;&#178;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="articleSource" type="string">
+            <column name="article_source" length="20">
+                <comment>&#206;&#196;&#213;&#194;&#192;&#180;&#212;&#180;</comment>
+            </column>
+        </property>
+        <property name="articleAuthor" type="string">
+            <column name="article_author" length="20">
+                <comment>&#206;&#196;&#213;&#194;&#215;&#247;&#213;&#223;</comment>
+            </column>
+        </property>
+        <property name="articleIsdraft" type="string">
+            <column name="article_isdraft" length="10">
+                <comment>
+                &#177;&#163;&#180;&#230;&#206;&#170;&#178;&#221;&#184;&#229;&#163;&#172;&#196;&#172;&#200;&#207;&#177;&#163;&#180;&#230;&#206;&#170;&#178;&#221;&#184;&#229;</comment>
+            </column>
+        </property>
+        <property name="commentNum" type="java.lang.Integer">
+            <column name="comment_num" />
+        </property>
+        <property name="areaCode" type="string">
+            <column name="area_code" length="30">
+                <comment>&#215;&#170;&#200;&#235;&#215;&#170;&#179;&#246;&#197;&#169;&#181;&#216;&#181;&#196;&#208;&#208;&#213;&#254;&#199;&#248;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="isMailpush" type="string">
+            <column name="is_mailpush" length="10">
+                <comment>
+                &#215;&#170;&#200;&#235;&#215;&#170;&#179;&#246;&#208;&#197;&#207;&#162;&#202;&#199;&#183;&#241;&#210;&#209;&#211;&#202;&#188;&#254;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="isSmspush" type="string">
+            <column name="is_smspush" length="10">
+                <comment>
+                &#215;&#170;&#200;&#235;&#215;&#170;&#179;&#246;&#208;&#197;&#207;&#162;&#202;&#199;&#183;&#241;&#210;&#209;&#182;&#204;&#208;&#197;&#205;&#198;&#203;&#205;</comment>
+            </column>
+        </property>
+        <property name="coordinate" type="string">
+            <column name="coordinate" length="200">
+                <comment>&#215;&#170;&#200;&#235;&#215;&#170;&#179;&#246;&#181;&#216;&#191;&#233;&#215;&#248;&#177;&#234;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

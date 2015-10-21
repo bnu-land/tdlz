@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-26 15:08:03 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitAnalyze" table="benefit_analyze" catalog="tdlz">
+        <composite-id name="id" class="cn.edu.bnu.land.model.BenefitAnalyzeId">
+            <key-property name="nhxm" type="string">
+                <column name="nhxm" length="16" />
+            </key-property>
+            <key-property name="dwmc" type="string">
+                <column name="dwmc" length="64" />
+            </key-property>
+        </composite-id>
+        <property name="xh" type="int">
+            <column name="xh" not-null="true" />
+        </property>
+        <property name="yydkbh" type="string">
+            <column name="yydkbh" length="16" />
+        </property>
+        <property name="lzl" type="java.lang.Integer">
+            <column name="lzl" />
+        </property>
+        <property name="nhsy" type="java.lang.Integer">
+            <column name="nhsy" />
+        </property>
+        <property name="sjdkbh" type="string">
+            <column name="sjdkbh" length="16" />
+        </property>
+        <property name="cyrw" type="string">
+            <column name="cyrw" length="128" />
+        </property>
+        <property name="cysj" type="date">
+            <column name="cysj" length="10" />
+        </property>
+        <property name="jssy" type="java.lang.Integer">
+            <column name="jssy" />
+        </property>
+    </class>
+</hibernate-mapping>

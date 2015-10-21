@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-13 17:06:55 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.AbnmWholesupervision" table="abnm_wholesupervision" catalog="tdlz">
+        <id name="abwsId" type="java.lang.Integer">
+            <column name="abws_id" />
+            <generator class="identity" />
+        </id>
+        <property name="abwsTitle" type="string">
+            <column name="abws_title" length="50" not-null="true">
+                <comment>&#177;&#234;&#204;&#226;</comment>
+            </column>
+        </property>
+        <property name="abwsClass" type="string">
+            <column name="abws_class" length="30">
+                <comment>
+                &#210;&#236;&#179;&#163;&#199;&#233;&#191;&#246;&#192;&#224;&#177;&#240;&#163;&#172;&#192;&#180;&#212;&#180;&#211;&#218;1&#189;&#187;&#210;&#215;&#212;&#164;&#190;&#175;2&#200;&#186;&#214;&#218;&#190;&#217;&#177;&#168;3&#179;&#233;&#209;&#249;&#181;&#247;&#178;&#233;4&#185;&#230;&#187;&#174;&#178;&#240;&#199;&#168;5&#207;&#214;&#215;&#180;&#181;&#247;&#178;&#233;6&#184;&#180;&#191;&#209;&#209;&#233;&#202;&#213;</comment>
+            </column>
+        </property>
+        <property name="abwsDate" type="date">
+            <column name="abws_date" length="10">
+                <comment>&#177;&#234;&#188;&#199;&#206;&#170;&#210;&#236;&#179;&#163;&#181;&#196;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="abwsContent" type="string">
+            <column name="abws_content" length="65535">
+                <comment>&#210;&#236;&#179;&#163;&#196;&#218;&#200;&#221;&#195;&#232;&#202;&#246;</comment>
+            </column>
+        </property>
+        <property name="abwsIsSolved" type="string">
+            <column name="abws_isSolved" length="30">
+                <comment>
+                &#202;&#199;&#183;&#241;&#180;&#166;&#192;&#237;&#163;&#172;&#208;&#232;&#210;&#170;&#178;&#201;&#188;&#175;&#200;&#203;&#205;&#234;&#179;&#201;&#208;&#197;&#207;&#162;&#194;&#188;&#200;&#235;&#202;&#177;&#189;&#171;&#198;&#228;&#184;&#196;&#206;&#170;&#161;&#176;&#202;&#199;&#161;&#177;&#163;&#168;PDA&#182;&#203;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="abwsOpinion" type="string">
+            <column name="abws_opinion" length="65535">
+                <comment>
+                &#180;&#166;&#192;&#237;&#210;&#226;&#188;&#251;&#163;&#172;&#208;&#232;&#210;&#170;&#178;&#201;&#188;&#175;&#200;&#203;&#181;&#247;&#178;&#233;&#186;&#243;&#204;&#238;&#208;&#180;&#163;&#168;PDA&#182;&#203;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="abwsPhotopath" type="string">
+            <column name="abws_photopath" length="500">
+                <comment>
+                &#203;&#249;&#178;&#201;&#188;&#175;&#213;&#213;&#198;&#172;&#194;&#183;&#190;&#182;&#163;&#172;&#208;&#232;&#210;&#170;&#178;&#201;&#188;&#175;&#200;&#203;&#204;&#238;&#208;&#180;&#178;&#201;&#188;&#175;&#213;&#213;&#198;&#172;&#194;&#183;&#190;&#182;&#163;&#168;PDA&#182;&#203;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="abwsCollector" type="string">
+            <column name="abws_collector" length="20">
+                <comment>
+                &#208;&#232;&#210;&#170;&#178;&#201;&#188;&#175;&#200;&#203;&#204;&#238;&#208;&#180;&#178;&#201;&#188;&#175;&#200;&#203;&#208;&#213;&#195;&#251;&#163;&#168;PDA&#182;&#203;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="abwsCollecttime" type="date">
+            <column name="abws_collecttime" length="10">
+                <comment>
+                &#208;&#232;&#210;&#170;&#178;&#201;&#188;&#175;&#200;&#203;&#204;&#238;&#208;&#180;&#208;&#197;&#207;&#162;&#178;&#201;&#188;&#175;&#202;&#177;&#188;&#228;&#163;&#168;PDA&#182;&#203;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="abwsIsTaskAssigned" type="string">
+            <column name="abws_isTaskAssigned" length="20">
+                <comment>&#200;&#206;&#206;&#241;&#202;&#199;&#183;&#241;&#207;&#194;&#180;&#239;</comment>
+            </column>
+        </property>
+        <property name="rwId" type="string">
+            <column name="rw_id" length="20">
+                <comment>&#200;&#206;&#206;&#241;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="projectName" type="string">
+            <column name="project_name" length="200">
+                <comment>&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="projectId" type="string">
+            <column name="project_id" length="20">
+                <comment>&#207;&#238;&#196;&#191;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="sourceRecordid" type="string">
+            <column name="source_recordid" length="20">
+                <comment>&#210;&#236;&#179;&#163;&#208;&#197;&#207;&#162;&#192;&#180;&#212;&#180;&#181;&#196;&#188;&#199;&#194;&#188;id</comment>
+            </column>
+        </property>
+        <property name="abwsXunchacontent" type="string">
+            <column name="abws_xunchacontent" length="65535">
+                <comment>&#209;&#178;&#178;&#233;&#199;&#233;&#191;&#246;&#195;&#232;&#202;&#246;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

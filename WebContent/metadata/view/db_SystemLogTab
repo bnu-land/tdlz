@@ -1,0 +1,205 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_SystemLogTab",
+        "designer|userClassName": "db_SystemLogTab",
+        "id": "db_SystemLogTab",
+        "layout": "fit",
+        "title": "系统运行日志"
+    },
+    "designerId": "8c3f887e-9724-4f15-9700-e44e1cb4bbfe",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "height": 214,
+                "layout": "fit",
+                "title": null
+            },
+            "name": "MyPanel27",
+            "designerId": "53680a2b-7e6e-49fe-938e-b9bd32418eb1",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar28",
+                    "designerId": "55946df6-9b56-45d4-857a-f1ccbe9d1222",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": null,
+                                "layout|flex": null
+                            },
+                            "name": "MyTextField125",
+                            "designerId": "7ac516fe-bd20-4ffd-b442-a66f8fdb988d"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "查询"
+                            },
+                            "name": "MyButton110",
+                            "designerId": "c05c9ee2-4947-4517-9951-638ebd4b1594"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "删除"
+                            },
+                            "name": "MyButton111",
+                            "designerId": "a6a910f7-1275-4dcd-aa4f-e9878aa83263"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "store": "dbBackupRecoveryStore",
+                        "title": null
+                    },
+                    "name": "MyGridPanel22",
+                    "designerId": "53ae2fc9-d581-41fa-bc9a-bb9478750f6d",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "序号",
+                                "text": "序号",
+                                "width": 40
+                            },
+                            "name": "MyRowNumberer16",
+                            "designerId": "5a6c5615-bc2e-4f0e-a9d6-e8e3dbcb851b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "version",
+                                "text": "用户名"
+                            },
+                            "name": "MyNumberColumn32",
+                            "designerId": "04c62972-c463-4366-86cf-bfd053b65d74"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "date",
+                                "text": "执行时间"
+                            },
+                            "name": "MyDateColumn19",
+                            "designerId": "ec66e22c-642f-411b-ad80-4baf721cb142"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "size",
+                                "text": "登录ip"
+                            },
+                            "name": "MyNumberColumn33",
+                            "designerId": "37e461b2-2f80-4bdc-87a7-02dfd3e12b4b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "comment",
+                                "defaultWidth": 200,
+                                "text": "进行的操作",
+                                "width": 200
+                            },
+                            "name": "MyColumn127",
+                            "designerId": "6594c05e-ad62-40c2-8097-c33b10ec89a5"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView22",
+                            "designerId": "e3891752-4c39-4d93-9287-648d4fa2b686"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "userConfig": {
+                                "designer|displayName": null
+                            },
+                            "name": "MyCheckboxSelectionModel15",
+                            "designerId": "6ed3d2b2-e5b2-4f2f-a409-7b13b5c333bb"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

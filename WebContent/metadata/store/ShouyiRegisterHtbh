@@ -1,0 +1,27 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['1','2013040101'],\r",
+            "  ['2','2014040101'],\r",
+            "  ['3','2014042008'],\r",
+            "  ['4','2014042106'],\r",
+            "  ['5','2014030801'],\r",
+            "  ['6','2014022413'],\r",
+            "]"
+        ],
+        "designer|userAlias": "ShouyiRegisterHtbh",
+        "designer|userClassName": "ShouyiRegisterHtbh",
+        "model": "ShouyiCombox",
+        "storeId": "ShouyiRegisterHtbh"
+    },
+    "designerId": "7bf91a52-9445-4362-9cea-219be813c44d"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-9-10 9:12:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.DbBlacklist" table="db_blacklist" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="30">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="companyname" type="string">
+            <column name="companyname" length="50">
+                <comment>&#202;&#220;&#200;&#195;&#183;&#189;&#198;&#243;&#210;&#181;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="time" type="date">
+            <column name="time" length="10">
+                <comment>&#206;&#165;&#212;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="reason" type="string">
+            <column name="reason" length="200">
+                <comment>&#206;&#165;&#212;&#188;&#212;&#173;&#210;&#242;</comment>
+            </column>
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="300">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,391 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ShouyiAlarm_Chart",
+        "designer|userClassName": "ShouyiAlarm_Chart",
+        "height": 500,
+        "layout": "border",
+        "title": "收益分配异常分析",
+        "width": 694
+    },
+    "designerId": "a354ca40-1983-476d-b8c3-bf01c7703031",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar100",
+            "designerId": "abc7a693-c1e1-4c0e-917a-1097ca6df172",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择日期",
+                        "enforceMaxLength": false,
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "ShouyiAlarmDateStart1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "maxLength": null,
+                        "useStrict": false,
+                        "width": 165
+                    },
+                    "name": "MyDateField95",
+                    "designerId": "a9314ce1-5276-4dd8-b7b9-055b040866db"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "ShouyiAlarmDateEnd1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "width": 165
+                    },
+                    "name": "MyDateField96",
+                    "designerId": "e980c40d-1535-4b09-9195-4d1eb6d6ef92"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "ShouyiAlarmTextField",
+                        "displayField": "name",
+                        "emptyText": "请选择区域",
+                        "fieldLabel": "交易区域",
+                        "id": "ShouyiAlarmTextField1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "name": "ShouyiAlarmTextField",
+                        "queryMode": "local",
+                        "store": "ShouyiAlarmCombox",
+                        "valueField": "value",
+                        "width": 165
+                    },
+                    "name": "MyComboBox31",
+                    "designerId": "56270651-efb5-44fb-a219-0e40e38ab266"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "统计分析",
+                        "width": 60
+                    },
+                    "name": "MyButton369",
+                    "designerId": "099d29ce-3893-4f67-b3a5-48b7856c7bf3",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiAlarmDateStart1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiAlarmDateEnd1').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('ShouyiAlarmTextField1').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiAlarm_Pie'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword:getKeyword};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "55ada26d-99fe-42b9-9b10-605be1e7a7cc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "返回"
+                    },
+                    "name": "MyButton370",
+                    "designerId": "fe6fed0f-e98d-4a3d-8fd4-eafb744e5790",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('ShouyiAlarm'));\r",
+                                    "\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "2ca74343-bffc-4f14-bce7-12bf671d617f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animate": [
+                    "true"
+                ],
+                "autoRender": true,
+                "dock": null,
+                "frame": false,
+                "id": "ShouyiAlarm_ChartPie",
+                "insetPadding": 20,
+                "layout|region": "west",
+                "layout|split": false,
+                "store": "ShouyiAlarm_Pie",
+                "width": 345
+            },
+            "name": "PieChart2",
+            "designerId": "08c1089e-979d-4186-9cb5-516f4774e116",
+            "isBuiltIn": true,
+            "iconCls": "icon-pie-chart",
+            "autoName": "PieChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Pie",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "angleField": "yccount",
+                        "donut": 30,
+                        "highlight": [
+                            "{segment: {\r",
+                            "    margin: 20\r",
+                            "}}"
+                        ],
+                        "label": [
+                            "{'field':'yctype','display':'none','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "lengthField": null,
+                        "showInLegend": true,
+                        "tips": [
+                            "{\r",
+                            "    trackMouse: true,\r",
+                            "    width:165,\r",
+                            "    hight:25,\r",
+                            "    renderer: function(storeItem, item) {\r",
+                            "        //calculate percentage.\r",
+                            "        var total = 0;\r",
+                            "        var mystore=Ext.StoreMgr.get('ShouyiAlarm_Pie'); //获得store对象\r",
+                            "        mystore.each(function(rec) {\r",
+                            "            total += rec.get('yccount');\r",
+                            "        });\r",
+                            "        this.setTitle(storeItem.get('yctype') + ': ' + Math.round(storeItem.get('yccount') / total * 100) + '%');\r",
+                            "    }\r",
+                            "}"
+                        ]
+                    },
+                    "name": "MyPieSeries2",
+                    "designerId": "964bddc0-691b-476c-bb20-574625b637e3"
+                },
+                {
+                    "type": "Ext.chart.Legend",
+                    "reference": {
+                        "name": "legend",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "position": "right"
+                    },
+                    "name": "MyLegend3",
+                    "designerId": "d2aaf0e2-9e18-405c-bcc5-8b5614d72eb3"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animate": [
+                    "{\r",
+                    "    easing: 'ease-in-out',\r",
+                    "    duration: 750\r",
+                    "}"
+                ],
+                "dock": null,
+                "id": "ShouyiAlarm_ChartColumn",
+                "insetPadding": 20,
+                "layout|region": "west",
+                "store": "ShouyiAlarm_Pie",
+                "width": 349
+            },
+            "name": "ColumnChart4",
+            "designerId": "8c6655b6-6542-4110-b20e-c9845107cb90",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dashSize": null,
+                        "fields": [
+                            "yctype"
+                        ],
+                        "label": [
+                            "{\r",
+                            "    rotation: {\r",
+                            "        degrees: 45\r",
+                            "    }\r",
+                            "}"
+                        ],
+                        "title": "收益分配异常类型"
+                    },
+                    "name": "MyCategoryAxis6",
+                    "designerId": "ce4ba788-807c-4d1a-8fa7-1fc95a06c43d"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "decimals": 0,
+                        "fields": [
+                            "yccount"
+                        ],
+                        "majorTickSteps": 1,
+                        "minorTickSteps": 0,
+                        "title": "收益分配异常量"
+                    },
+                    "name": "MyNumericAxis7",
+                    "designerId": "29ee270f-93b0-491f-8fd3-1bd6c7567da7"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "highlight": [
+                            "true"
+                        ],
+                        "label": [
+                            "{\r",
+                            "display : 'outside',  \r",
+                            "field :['yccount'],  \r",
+                            "renderer : Ext.util.Format.numberRenderer('0')\r",
+                            "}"
+                        ],
+                        "tips": [
+                            "{\r",
+                            "    trackMouse: true,\r",
+                            "    width: 200,\r",
+                            "    height: 20,\r",
+                            "    renderer: function(storeItem, item) {\r",
+                            "        this.setTitle(storeItem.get('yctype') + '出现: ' + storeItem.get('yccount') + ' 次');\r",
+                            "    }\r",
+                            "}"
+                        ],
+                        "xField": "yctype",
+                        "yField": [
+                            "yccount"
+                        ]
+                    },
+                    "name": "MyColumnSeries4",
+                    "designerId": "6d74d236-ceb7-4d49-8ae6-2e8f810f0aac"
+                }
+            ]
+        }
+    ]
+}

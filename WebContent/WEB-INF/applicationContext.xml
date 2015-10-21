@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!--配置数据源 -->
+	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://202.112.95.178:7712/tdlz?useUnicode=true&amp;characterEncoding=utf8"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="noroot"></property>
+		<property name="maxActive" value="20"></property>
+		<property name="maxIdle" value="5"></property>
+		<property name="initialSize" value="5"></property>
+		<property name="minIdle" value="3"></property>
+	</bean>
+
+	<!--加载安全配置文件 -->
+	<import resource="applicationSecurity.xml" />
+
+
+</beans>

@@ -1,0 +1,427 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "use_MonitorResult",
+        "designer|userClassName": "use_MonitorResult",
+        "id": "use_MonitorResult",
+        "layout": "fit",
+        "title": "监测抽样结果"
+    },
+    "designerId": "b3cad98d-a708-4672-85dc-150dea53e71e",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "title": null
+            },
+            "name": "MyPanel",
+            "designerId": "d70a6852-a294-4cf9-ae38-2411667b1bda",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "border",
+                        "layout|region": "east",
+                        "layout|split": true,
+                        "title": null,
+                        "width": 180
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "39b849af-f9e2-4807-bbca-db1b029bd538",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|region": "center",
+                                "title": "抽样结果"
+                            },
+                            "name": "MyPanel2",
+                            "designerId": "a8227a1a-deff-459d-a9f8-cff672c59266",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "样本点总数",
+                                        "margin": 5,
+                                        "readOnly": true,
+                                        "value": [
+                                            "231"
+                                        ]
+                                    },
+                                    "name": "MyTextField4",
+                                    "designerId": "dd7d2038-3873-4ad4-ac03-4b942bfb5690"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "抽样精度",
+                                        "margin": 5,
+                                        "readOnly": true,
+                                        "value": [
+                                            "\"83.3%\""
+                                        ]
+                                    },
+                                    "name": "MyTextField5",
+                                    "designerId": "2ad5d0e6-faf9-40e2-ae2b-2b061e2ca721"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "实际总费用(元)",
+                                        "margin": 5,
+                                        "readOnly": true,
+                                        "value": [
+                                            "11240"
+                                        ]
+                                    },
+                                    "name": "MyTextField6",
+                                    "designerId": "805f221c-47db-4ad3-b0f2-e77a6cb39ac9"
+                                },
+                                {
+                                    "type": "Ext.grid.property.Grid",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "nameColumnWidth": 100,
+                                        "nameField": null,
+                                        "source": [
+                                            "{\r",
+                                            "    \" 极度敏感区\":2,\r",
+                                            "    \" 高度敏感区\":158,\r",
+                                            "    \" 中度敏感区\":41,\r",
+                                            "    \" 低度敏感区\":23,\r",
+                                            "    \" 不敏感区\":7    \r",
+                                            "}"
+                                        ],
+                                        "title": "知识层统计结果"
+                                    },
+                                    "name": "MyPropertyGrid",
+                                    "designerId": "751d7e22-0261-4284-b5e1-375d757ed84a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onPropertygridAfterRender",
+                                                "implHandler": [
+                                                    "component.getView().getHeaderCt().getHeaderAtIndex(0).setText('知识层');\r",
+                                                    "component.getView().getHeaderCt().getHeaderAtIndex(1).setText('样本点个数');"
+                                                ],
+                                                "name": "afterrender",
+                                                "scope": "me"
+                                            },
+                                            "name": "onPropertygridAfterRender",
+                                            "designerId": "c4cb7e1d-1f7c-4b7c-a7ea-e3a1c52e8da6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.property.Grid",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "nameColumnWidth": 100,
+                                        "source": [
+                                            "{\r",
+                                            "    \" 双龙镇长寿寨\":5,\r",
+                                            "    \" 双龙镇飞石村\":16,\r",
+                                            "    \" 双龙镇谷黄村\":23,\r",
+                                            "    \" 双龙镇红岩村\":20,\r",
+                                            "    \" 双龙镇尖山村\":28,\r",
+                                            "    \" 双龙镇建制镇\":11,\r",
+                                            "    \" 双龙镇龙滩村\":16,\r",
+                                            "    \" 双龙镇罗围村\":38,\r",
+                                            "    \" 双龙镇群力村\":25,\r",
+                                            "    \" 双龙镇天堂村\":3,\r",
+                                            "    \" 双龙镇连丰村\":15,\r",
+                                            "    \" 双龙镇联合村\":31\r",
+                                            "}"
+                                        ],
+                                        "title": "报告层统计结果"
+                                    },
+                                    "name": "MyPropertyGrid1",
+                                    "designerId": "0b7d1e37-1c43-4e93-8e7a-a78d0af52137",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onPropertygridAfterRender1",
+                                                "implHandler": [
+                                                    "component.getView().getHeaderCt().getHeaderAtIndex(0).setText('报告层');\r",
+                                                    "component.getView().getHeaderCt().getHeaderAtIndex(1).setText('样本点个数');"
+                                                ],
+                                                "name": "afterrender",
+                                                "scope": "me"
+                                            },
+                                            "name": "onPropertygridAfterRender1",
+                                            "designerId": "9af4ecec-2b18-4d4c-9350-0663ac908597"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "border",
+                        "layout|region": "center",
+                        "layout|split": true,
+                        "title": null
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "6f39c604-fa63-40e5-8282-a0309815f499",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 200,
+                                "layout": "fit",
+                                "layout|region": "south",
+                                "layout|split": true,
+                                "title": "抽样点属性表"
+                            },
+                            "name": "MyPanel4",
+                            "designerId": "d1f08e60-c985-4a2e-a29c-8593004b35c4",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "grid_useMonitorResult_SamplesAttr",
+                                        "title": null
+                                    },
+                                    "name": "MyGridPanel1",
+                                    "designerId": "9a8dc75a-4bb7-49e6-bd80-55aea3251bba",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyRowNumberer1",
+                                            "designerId": "f515f601-3a79-4c67-9f16-86724cac3b83"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "qsdwmc",
+                                                "text": "权属单位名称",
+                                                "width": 150
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "da7a21cc-386d-4aad-99b6-fd10fae046f4"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "tbbh",
+                                                "format": "0",
+                                                "text": "图斑编号"
+                                            },
+                                            "name": "MyNumberColumn",
+                                            "designerId": "aab1f8fb-4194-4418-b3b5-e1445335b758"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "dlmc",
+                                                "text": "地类名称"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "e7533311-ab06-4e72-af63-ea0d8152d992"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "dlbm",
+                                                "format": "0",
+                                                "text": "地类编码"
+                                            },
+                                            "name": "MyNumberColumn1",
+                                            "designerId": "a60389f3-4c74-41fc-991a-6db1b7a1a611"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "bsm",
+                                                "format": "0",
+                                                "text": "标识码",
+                                                "width": 80
+                                            },
+                                            "name": "MyNumberColumn2",
+                                            "designerId": "d053d2cb-64fc-462b-b7c9-66043935406f"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Number",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "ysdm",
+                                                "format": "0",
+                                                "text": "要素代码",
+                                                "width": 120
+                                            },
+                                            "name": "MyNumberColumn3",
+                                            "designerId": "2bd6fc55-9eb5-4763-a2c1-076ac70a5e0d"
+                                        },
+                                        {
+                                            "type": "Ext.grid.View",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridView1",
+                                            "designerId": "3a3c81e9-b5af-4609-844a-855cf9c6f4b4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": [
+                                    "<div id = \"mapdiv_MonitorResult\" style = \"width=100%;height:100%;\">\r",
+                                    "</div>"
+                                ],
+                                "layout": "fit",
+                                "layout|region": "center",
+                                "title": "抽样点空间分布"
+                            },
+                            "name": "MyPanel5",
+                            "designerId": "090483de-a84f-44b9-a31c-0f1c860c8ab7",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onPanelAfterRender",
+                                        "implHandler": [
+                                            "//加入地图的js文件\r",
+                                            "var head = document.getElementsByTagName('head')[0];\r",
+                                            "var script= document.createElement(\"script\"); \r",
+                                            "script.type = \"text/javascript\"; \r",
+                                            "script.src=\"map/use_MonitorResult_map.js\"; \r",
+                                            "head.appendChild(script);"
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "name": "onPanelAfterRender",
+                                    "designerId": "a68e4554-779b-4f12-b011-5e69bf9dccf7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-26 8:54:54 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ProjectProgrestatic2" table="project_progrestatic2" catalog="tdlz">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity" />
+        </id>
+        <property name="time" type="date">
+            <column name="time" length="10">
+                <comment>&#188;&#224;&#178;&#226;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="projectName" type="string">
+            <column name="project_name" length="100">
+                <comment>&#207;&#238;&#196;&#191;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="ppercentPz" type="java.lang.Float">
+            <column name="ppercent_pz" precision="12" scale="0">
+                <comment>&#205;&#193;&#181;&#216;&#198;&#189;&#213;&#251;&#202;&#181;&#188;&#202;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="ppercentSl" type="java.lang.Float">
+            <column name="ppercent_sl" precision="12" scale="0">
+                <comment>&#197;&#169;&#204;&#239;&#203;&#174;&#192;&#251;&#202;&#181;&#188;&#202;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="ppercentDl" type="java.lang.Float">
+            <column name="ppercent_dl" precision="12" scale="0">
+                <comment>&#204;&#239;&#188;&#228;&#181;&#192;&#194;&#183;&#202;&#181;&#188;&#202;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="ypercentPz" type="java.lang.Float">
+            <column name="ypercent_pz" precision="12" scale="0">
+                <comment>&#205;&#193;&#181;&#216;&#198;&#189;&#213;&#251;&#212;&#164;&#198;&#218;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="ypercentSl" type="java.lang.Float">
+            <column name="ypercent_sl" precision="12" scale="0">
+                <comment>&#197;&#169;&#204;&#239;&#203;&#174;&#192;&#251;&#212;&#164;&#198;&#218;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="ypercentDl" type="java.lang.Float">
+            <column name="ypercent_dl" precision="12" scale="0">
+                <comment>&#204;&#239;&#188;&#228;&#181;&#192;&#194;&#183;&#212;&#164;&#198;&#218;&#205;&#234;&#179;&#201;&#189;&#248;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="report" type="string">
+            <column name="report" length="65535">
+                <comment>&#189;&#248;&#182;&#200;&#210;&#236;&#179;&#163;&#177;&#168;&#184;&#230;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

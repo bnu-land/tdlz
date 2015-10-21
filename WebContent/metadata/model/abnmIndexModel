@@ -1,0 +1,92 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "abnmIndexModel"
+    },
+    "designerId": "ea348b99-e7c1-4061-8a25-cb41764c02c2",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abiId"
+            },
+            "name": "MyField357",
+            "designerId": "d0fab54d-6bc2-4a16-9641-9f0be5b9b788"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abiName"
+            },
+            "name": "MyField358",
+            "designerId": "c19e98c8-f20a-4a54-b1b7-96696e28285f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abiValue"
+            },
+            "name": "MyField359",
+            "designerId": "cb85941f-b01a-4a84-bc95-8b476fa7b05b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abiWeight"
+            },
+            "name": "MyField360",
+            "designerId": "42075986-a8bd-4736-bae7-7d6a2b20c3f0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "abiClass"
+            },
+            "name": "MyField361",
+            "designerId": "e17f1148-9c6a-4651-8f7e-604320bada40"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "dkId"
+            },
+            "name": "MyField362",
+            "designerId": "6140646b-bb5b-4530-b2e4-b86a050db4db"
+        }
+    ]
+}

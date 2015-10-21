@@ -1,0 +1,53 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoLetterStore",
+        "model": "InfoLetterModel",
+        "pageSize": null,
+        "storeId": "InfoLetterStore"
+    },
+    "designerId": "0629216f-18de-4979-ba86-0ca13e3e8637",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: '', \r",
+                    "    searchDate:''\r",
+                    "}"
+                ],
+                "url": "get_infoLetterList"
+            },
+            "name": "MyAjaxProxy45",
+            "designerId": "70824864-71a1-4d15-88cc-1cf7938f7187",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader45",
+                    "designerId": "42589274-9928-47f5-a3a1-7558fd311367"
+                }
+            ]
+        }
+    ]
+}

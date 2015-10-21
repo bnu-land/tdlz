@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmIndexStore",
+        "model": "abnmIndexModel",
+        "pageSize": null,
+        "storeId": "abnmIndexStore"
+    },
+    "designerId": "a0242b71-0e79-4a19-8a02-3521d5cec201",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{dkId:0}"
+                ],
+                "url": "get_abiList"
+            },
+            "name": "MyAjaxProxy78",
+            "designerId": "206b2e97-6cd4-49fc-a131-d96ed3511b82",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader78",
+                    "designerId": "13b8ccad-50aa-4c94-ad52-f07d8ebf2ba1"
+                }
+            ]
+        }
+    ]
+}

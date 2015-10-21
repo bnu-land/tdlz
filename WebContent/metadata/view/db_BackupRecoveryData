@@ -1,0 +1,487 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_BackupRecoveryData",
+        "designer|userClassName": "db_BackupRecoveryData",
+        "id": "db_BackupRecoveryData",
+        "layout": "border",
+        "title": "备份与恢复"
+    },
+    "designerId": "2de7eb6a-f6ad-4cb0-a730-9026930c8afa",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 150,
+                "title": "备份数据库",
+                "width": 1177
+            },
+            "name": "MyPanel23",
+            "designerId": "6a7d2e50-1b03-4f37-86af-9ba649dc1d05",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": null,
+                        "container|align": "stretchmax",
+                        "dock": null,
+                        "layout": "hbox",
+                        "margin": 0,
+                        "title": null
+                    },
+                    "name": "MyForm",
+                    "designerId": "16265b25-a2a5-4a57-becc-c04aaceca2c1",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "fit",
+                                "title": "",
+                                "width": 126
+                            },
+                            "name": "MyPanel24",
+                            "designerId": "fe036934-a3f7-4288-803b-02ebe821ace4",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "db_btn_StartBackup",
+                                        "text": "开始备份"
+                                    },
+                                    "name": "MyButton106",
+                                    "designerId": "45e96118-e17b-461d-93d9-13b2c6e7ea04",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var description = Ext.getCmp(\"txt_backup_description\").getValue( );",
+                                                    "",
+                                                    "Ext.Ajax.request(",
+                                                    "    {",
+                                                    "        url : 'add_databseBackup',",
+                                                    "        params :",
+                                                    "        {",
+                                                    "            bkCommnet : description",
+                                                    "        },",
+                                                    "        success : function (response){",
+                                                    "            Ext.Msg.alert('成功提示', '数据库备份成功。');",
+                                                    "            //successResult();",
+                                                    "            var mystore = Ext.StoreMgr.get('dbBackupRecoveryStore');",
+                                                    "            mystore.load();",
+                                                    "        },",
+                                                    "        failure : function (response){",
+                                                    "            //failedResult();",
+                                                    "            Ext.Msg.alert('失败提示', '数据库备份失败，请重试。');",
+                                                    "        }",
+                                                    "    });",
+                                                    "",
+                                                    "",
+                                                    "//Ext.MessageBox.show({",
+                                                    "//\t\t    title : 'Please wait',",
+                                                    "//\t\t    msg : 'Loading items...',",
+                                                    "//\t\t    progressText : 'Initializing...',",
+                                                    "//\t\t    width : 300,",
+                                                    "//\t\t    progress : true,",
+                                                    "//\t\t    closable : false,",
+                                                    "//\t\t    animateTarget : 'mb6'",
+                                                    "//\t\t});",
+                                                    "//",
+                                                    "//\t\t// this hideous block creates the bogus progress",
+                                                    "//\t\tvar f = function (v)",
+                                                    "//\t\t{",
+                                                    "//\t\t    return function ()",
+                                                    "//\t\t    {",
+                                                    "//\t\t        if (v == 12)",
+                                                    "//\t\t        {",
+                                                    "//\t\t            Ext.MessageBox.hide();",
+                                                    "//\t\t            Ext.example.msg('Done', 'Your fake items were loaded!');",
+                                                    "//\t\t        }",
+                                                    "//\t\t        else",
+                                                    "//\t\t        {",
+                                                    "//\t\t            var i = v / 11;",
+                                                    "//\t\t            Ext.MessageBox.updateProgress(i, Math.round(100 * i) + '% completed');",
+                                                    "//\t\t        }",
+                                                    "//\t\t    };",
+                                                    "//\t\t};",
+                                                    "//\t\tfor (var i = 1; i < 13; i++)",
+                                                    "//\t\t{",
+                                                    "//\t\t    setTimeout(f(i), i * 500);",
+                                                    "//\t\t}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "c4e3fd33-d319-43e5-8fba-73fccfaafee6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 10,
+                                "height": 120,
+                                "layout": "absolute",
+                                "layout|flex": 1,
+                                "title": "备份设置"
+                            },
+                            "name": "MyPanel25",
+                            "designerId": "d4d0ba3b-6399-47e5-99e4-7fa2a079de42",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "emptyText": "7",
+                                        "fieldLabel": "备份频率",
+                                        "labelClsExtra": null,
+                                        "layout|x": 30,
+                                        "layout|y": 5
+                                    },
+                                    "name": "MyTextField124",
+                                    "designerId": "cdd1e446-5417-4874-a78a-daa72ab12196"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|x": 270,
+                                        "layout|y": 10,
+                                        "text": "天"
+                                    },
+                                    "name": "MyLabel2",
+                                    "designerId": "c0ca0e8b-ee3b-4cd5-aa96-914acef2b362"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "",
+                                        "checked": true,
+                                        "fieldLabel": "自动备份",
+                                        "layout|x": 310,
+                                        "layout|y": 5
+                                    },
+                                    "name": "MyCheckbox13",
+                                    "designerId": "1f0a90ac-30f6-4c36-be0d-a608abd12156"
+                                },
+                                {
+                                    "type": "Ext.form.field.File",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "buttonText": "浏览",
+                                        "emptyText": "202.112.95.210/DatabaseBackup/",
+                                        "fieldLabel": "备份设置",
+                                        "layout|x": 30,
+                                        "layout|y": 30,
+                                        "width": 400
+                                    },
+                                    "name": "MyFileUpload8",
+                                    "designerId": "ab7e25ae-3748-4828-9f99-0c6df0a64df0"
+                                },
+                                {
+                                    "type": "Ext.form.field.TextArea",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "备注信息",
+                                        "height": 40,
+                                        "id": "txt_backup_description",
+                                        "layout|x": 30,
+                                        "layout|y": 55,
+                                        "width": 400
+                                    },
+                                    "name": "MyTextArea8",
+                                    "designerId": "f82805ff-e5d2-4564-8abb-dc4aa7488ed0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "layout": "fit",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "title": "恢复数据库"
+            },
+            "name": "MyPanel26",
+            "designerId": "57e949d6-88af-4c77-91dd-681b64a08af1",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar27",
+                    "designerId": "d5667c8a-05df-49b1-9c3d-ea741ca910cb",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "恢复到此版本"
+                            },
+                            "name": "MyButton107",
+                            "designerId": "2d4e903c-cb1b-4ba0-8195-11c10d9c50ad",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "var grid = Ext.getCmp('grid_db_backup');\r",
+                                            "var records =grid.getSelectionModel().getSelection();//获取到表上的那一列\r",
+                                            "if(records.length > 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"只能选择一行数据\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}else if(records.length < 1){\r",
+                                            "    Ext.MessageBox.show({\r",
+                                            "        title:\"提示\",\r",
+                                            "        msg:\"请选择一个版本进行恢复。\",\r",
+                                            "        icon: Ext.MessageBox.INFO,\r",
+                                            "        buttons: Ext.Msg.OK\r",
+                                            "    });\r",
+                                            "    return;\r",
+                                            "}\r",
+                                            "\r",
+                                            "Ext.Msg.alert('成功提示', '数据库恢复成功。');"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "8cfd7665-e653-4a11-80be-cdee55f0baae"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "刷新"
+                            },
+                            "name": "MyButton108",
+                            "designerId": "b2ff50c3-773e-4664-b756-a9b6aa87a79f"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "删除"
+                            },
+                            "name": "MyButton109",
+                            "designerId": "d9caca37-f958-461a-82f2-d6833e7ef6c5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "grid_db_backup",
+                        "store": "dbBackupRecoveryStore",
+                        "title": null
+                    },
+                    "name": "MyGridPanel21",
+                    "designerId": "a031a405-581c-4f83-89c8-93bdf372ca38",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyRowNumberer15",
+                            "designerId": "34979238-3a1d-4a36-83ab-9fda959a7a1f"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "version",
+                                "format": "0.0",
+                                "text": "版本"
+                            },
+                            "name": "MyNumberColumn30",
+                            "designerId": "18a2131c-2e66-4564-8222-3a2a02cb72e1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "bkdate",
+                                "text": "备份日期"
+                            },
+                            "name": "MyDateColumn18",
+                            "designerId": "074626aa-7899-4d08-a866-3c6f9061eb44"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "size",
+                                "text": "大小(kb)"
+                            },
+                            "name": "MyNumberColumn31",
+                            "designerId": "e9bb16a0-8c20-42d6-a641-7fc90318119b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "description",
+                                "defaultWidth": 200,
+                                "text": "备注说明",
+                                "width": 200
+                            },
+                            "name": "MyColumn126",
+                            "designerId": "b504fdc7-cc92-403c-a080-d196d4696ff3"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView21",
+                            "designerId": "339f5502-353a-4bbe-9ab7-fcc4c83f3d63"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel14",
+                            "designerId": "bf9c7e14-89c6-407f-b139-c7ba691e064a"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

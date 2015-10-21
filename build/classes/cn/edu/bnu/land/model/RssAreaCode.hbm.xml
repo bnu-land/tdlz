@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-5 10:07:58 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.RssAreaCode" table="rss_area_code" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="areaName" type="string">
+            <column name="area_name" length="50">
+                <comment>&#199;&#248;&#211;&#242;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="areaCode" type="string">
+            <column name="area_code" length="50">
+                <comment>&#199;&#248;&#211;&#242;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

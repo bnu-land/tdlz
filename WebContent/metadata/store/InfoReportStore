@@ -1,0 +1,53 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoReportStore",
+        "model": "InfoReportModel",
+        "pageSize": null,
+        "storeId": "InfoReportStore"
+    },
+    "designerId": "e610c531-0ba2-4922-a473-503fae5d27a0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword: '',\r",
+                    "    searchDate: ''\r",
+                    "}"
+                ],
+                "url": "get_infoReportList"
+            },
+            "name": "MyAjaxProxy44",
+            "designerId": "32ccc460-d331-4549-98a9-8027403aadd1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader44",
+                    "designerId": "bafb6d28-e21d-4b8e-b8dd-e899e17a3118"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "abnmDkTransSupervisionStore",
+        "model": "abnmDkTransSupervisionModel",
+        "pageSize": null,
+        "storeId": "abnmDkTransSupervisionStore"
+    },
+    "designerId": "f28d0350-3bb6-4ec9-b8e2-411d44f8db8a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeyword:'',\r",
+                    " searchDate:'',\r",
+                    " province:'',\r",
+                    " city:'',\r",
+                    " county:''}"
+                ],
+                "url": "get_abdktsList"
+            },
+            "name": "MyAjaxProxy72",
+            "designerId": "7a69f934-6517-4add-92cd-1b5016834c37",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader72",
+                    "designerId": "c194f60c-647e-449c-bf7b-ad9628231f88"
+                }
+            ]
+        }
+    ]
+}

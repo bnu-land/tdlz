@@ -1,0 +1,469 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "Addtask",
+        "designer|userClassName": "Addtask",
+        "frame": true,
+        "id": "addproject1",
+        "layout": "fit",
+        "title": "下达数据采集任务"
+    },
+    "designerId": "a2416017-74aa-4a09-a6af-080644145edc",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 110,
+                "id": "AddtaskForm",
+                "jsonSubmit": true,
+                "layout": "absolute",
+                "method": null,
+                "standardSubmit": false,
+                "title": "",
+                "url": "add_task"
+            },
+            "name": "MyForm32",
+            "designerId": "5d3df072-b415-4f8a-83d3-477007fb17dc",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务编号",
+                        "id": "rwId",
+                        "layout|x": 40,
+                        "layout|y": 90,
+                        "name": "rwId",
+                        "readOnly": true,
+                        "width": 340
+                    },
+                    "name": "MyTextField192",
+                    "designerId": "74ee8687-cb54-4170-b347-f3c9d31d050b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦项目编号",
+                        "id": "projecttaskId",
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "name": "projectId",
+                        "readOnly": true,
+                        "width": 340
+                    },
+                    "name": "MyTextField193",
+                    "designerId": "4cf8c55b-dfed-4394-9d6a-d6558aabf68d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "复垦项目名称",
+                        "id": "projecttaskName",
+                        "layout|x": 510,
+                        "layout|y": 40,
+                        "name": "projectName",
+                        "readOnly": true,
+                        "width": 360
+                    },
+                    "name": "MyTextField194",
+                    "designerId": "f71b5c9c-92ca-4002-8047-1c477fc6992c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "长寿区国土资源局",
+                        "fieldLabel": "下达任务人",
+                        "layout|x": 510,
+                        "layout|y": 190,
+                        "name": "rwResponsiblePerson",
+                        "width": 360
+                    },
+                    "name": "MyTextField195",
+                    "designerId": "eff11a0b-4748-43c1-9d29-a422c9f1d7f5"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务是否完成",
+                        "hidden": true,
+                        "layout|x": 40,
+                        "layout|y": 290,
+                        "name": "rwIsfinished",
+                        "value": [
+                            "false"
+                        ]
+                    },
+                    "name": "MyTextField196",
+                    "designerId": "dfde8036-41aa-4e0a-a8b4-18d0445cfd4b"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务提交时间",
+                        "format": "Y-m-d",
+                        "hidden": true,
+                        "layout|x": 90,
+                        "layout|y": 420,
+                        "name": "rwSubmittime",
+                        "width": 360
+                    },
+                    "name": "MyDateField36",
+                    "designerId": "6535cede-9bf7-4289-8a99-8d5de52df4fb"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务生成时间",
+                        "format": "Y-m-d",
+                        "id": "rwGeneratetime",
+                        "layout|x": 40,
+                        "layout|y": 140,
+                        "name": "rwGeneratetime",
+                        "width": 340
+                    },
+                    "name": "MyDateField37",
+                    "designerId": "50ce68a7-c600-4d57-9512-0a8f15ba1a1f"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务开始时间",
+                        "format": "Y-m-d",
+                        "layout|x": 510,
+                        "layout|y": 140,
+                        "name": "rwStarttime",
+                        "width": 360
+                    },
+                    "name": "MyDateField38",
+                    "designerId": "6456f572-da2e-4400-849b-08fa04c6d090"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "任务截止时间",
+                        "format": "Y-m-d",
+                        "layout|x": 40,
+                        "layout|y": 190,
+                        "name": "rwEndtime",
+                        "width": 340
+                    },
+                    "name": "MyDateField39",
+                    "designerId": "660904c0-c8c8-4e7d-bff3-7bb743180438"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "为了对编号20140118，项目名称为长寿区海棠等（2个）镇古林等（11个）村农村建设用地复垦项目的项目进行验收。需要进行土壤样品采集分析录入。具体采样点点数与空间分布请采样者具体根据实际情况而定。",
+                        "fieldLabel": "任务内容",
+                        "height": 162,
+                        "layout|x": 40,
+                        "layout|y": 230,
+                        "name": "rwContent",
+                        "width": 830
+                    },
+                    "name": "MyTextArea14",
+                    "designerId": "49839bf7-202c-4076-901d-0917246ddefb"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择任务类别",
+                        "fieldLabel": "任务类别",
+                        "layout|x": 510,
+                        "layout|y": 90,
+                        "name": "rwClass",
+                        "queryMode": "local",
+                        "store": "rwClassStore",
+                        "width": 360
+                    },
+                    "name": "MyComboBox19",
+                    "designerId": "4c5b5f7e-2d26-4b65-8076-d8272266bce4"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "layout|x": 38,
+                        "layout|y": 9
+                    },
+                    "name": "MyToolbar43",
+                    "designerId": "fdb36e59-6cc1-429d-a8d9-fb0107d58b41",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_save.png",
+                                "iconCls": "imgs/table/table_save.png",
+                                "layout|flex": null,
+                                "text": "保存任务"
+                            },
+                            "name": "MyButton176",
+                            "designerId": "ffb5198b-b603-44fc-a498-dbb0255937fc",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var f=Ext.getCmp('AddtaskForm');\r",
+                                            "f.getForm().submit(\r",
+                                            "    {\r",
+                                            "        url:'add_task',\r",
+                                            "        method:'post',\r",
+                                            "        success:function(form, action){                   \r",
+                                            "            Ext.MessageBox.alert('信息',action.result.msg);\r",
+                                            "        },\r",
+                                            "        failure:function(){\r",
+                                            "            \r",
+                                            "            Ext.MessageBox.alert('错误','操作失败！');\r",
+                                            "        }\r",
+                                            "    }\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "22cd2f28-dcd5-43a2-96c8-702dea1c6135"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "iconCls": "imgs/form/return.png",
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton177",
+                            "designerId": "f4c4df64-9e52-4660-bd71-9efd27fcc645",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "96f4733a-97ec-46d4-8cce-8690449e12f8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "iconCls": "imgs/form/return.png",
+                                "layout|flex": null,
+                                "text": "任务管理表"
+                            },
+                            "name": "MyButton178",
+                            "designerId": "2be5b2f7-270c-4dc8-965c-75af340435e7",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('taskTable'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "982c2f48-a1a7-448f-a748-f93f187c975c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 390,
+                        "layout|y": 90,
+                        "text": "生成任务编号"
+                    },
+                    "name": "MyButton179",
+                    "designerId": "d15eeff6-4663-4066-a7fd-cc8ed9cdb7dc",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "Date.prototype.format = function(format){ \r",
+                                    "    var o = { \r",
+                                    "        \"M+\" : this.getMonth()+1, //month \r",
+                                    "        \"d+\" : this.getDate(), //day \r",
+                                    "        \"h+\" : this.getHours(), //hour \r",
+                                    "        \"m+\" : this.getMinutes(), //minute \r",
+                                    "        \"s+\" : this.getSeconds(), //cond \r",
+                                    "        \"q+\" : Math.floor((this.getMonth()+3)/3), //quarter \r",
+                                    "        \"S\" : this.getMilliseconds() //millisecond \r",
+                                    "    }; \r",
+                                    "    if(/(y+)/.test(format)) { \r",
+                                    "        format = format.replace(RegExp.$1, (this.getFullYear()+\"\").substr(4 - RegExp.$1.length)); \r",
+                                    "    } \r",
+                                    "    for(var k in o) { \r",
+                                    "        if(new RegExp(\"(\"+ k +\")\").test(format)) { \r",
+                                    "            format = format.replace(RegExp.$1, RegExp.$1.length==1 ? o[k] : (\"00\"+ o[k]).substr((\"\"+ o[k]).length)); \r",
+                                    "        } \r",
+                                    "    } \r",
+                                    "    return format; \r",
+                                    "}; \r",
+                                    "\r",
+                                    "\r",
+                                    "var newDate = new Date();//日历实例化\r",
+                                    "\r",
+                                    "var newRwId = \"FKYS\"+newDate.format(\"yyyyMMddhhmmss\");//当前日期格式化\t\r",
+                                    "Ext.getCmp('rwId').setValue(newRwId);\r",
+                                    "\r",
+                                    "var tm=new Date();\r",
+                                    "var stateDate = new Date(tm.getFullYear(),tm.getMonth(),tm.getDate());\r",
+                                    "Ext.getCmp('rwGeneratetime').setValue(stateDate);\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "691b673a-5301-4702-b66f-1b6aa30afd9f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "infoAreaModel"
+    },
+    "designerId": "2d2efb22-e4fd-429c-ad6e-f655cc0463c0",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "areaName",
+                "type": "string"
+            },
+            "name": "MyField198",
+            "designerId": "3f8f24bb-6e90-4f5d-b442-73c76ea6536e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "areaCode",
+                "type": "string"
+            },
+            "name": "MyField199",
+            "designerId": "dc88e6d7-1a24-4720-a499-dbce80d791bb"
+        }
+    ]
+}

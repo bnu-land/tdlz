@@ -1,0 +1,55 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "TaishiFind",
+        "designer|userClassName": "TaishiFind",
+        "model": "TaishiFind",
+        "sortRoot": "root",
+        "storeId": "TaishiFind"
+    },
+    "designerId": "52222c25-dc78-47d6-8687-dad5fe0ce8c9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "   searchKeyword1: '',\r",
+                    "   searchDate1: '',\r",
+                    "   searchDate2: ''\r",
+                    "}"
+                ],
+                "url": "getBenefitList20"
+            },
+            "name": "MyAjaxProxy12",
+            "designerId": "e6bb0615-ce01-43bc-b4f0-eeff21ca4721",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader12",
+                    "designerId": "19afdb57-c6b5-4b4b-8a01-f251ccb5994a"
+                }
+            ]
+        }
+    ]
+}

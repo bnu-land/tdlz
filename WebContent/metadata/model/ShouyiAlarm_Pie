@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ShouyiAlarm_Pie",
+        "designer|userClassName": "ShouyiAlarm_Pie"
+    },
+    "designerId": "221a4575-1d73-4d96-bbe4-cb9f38b9aac6",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "yctype"
+            },
+            "name": "MyField393",
+            "designerId": "4bd3e0f2-e3ea-41d6-92f1-e0428e959c9a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "yccount"
+            },
+            "name": "MyField394",
+            "designerId": "671153e0-15dd-4210-84b4-282d4c5dff32"
+        }
+    ]
+}

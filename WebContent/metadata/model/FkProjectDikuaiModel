@@ -1,0 +1,239 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "FkProjectDikuaiModel",
+        "designer|userClassName": "FkProjectDikuaiModel"
+    },
+    "designerId": "38c9f747-15ca-421e-9e7a-3698ffae52f3",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "recordId",
+                "type": "int"
+            },
+            "name": "MyField145",
+            "designerId": "c38e8a6a-53ac-4058-bf34-c383b7f69273"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "landId",
+                "type": "string"
+            },
+            "name": "MyField146",
+            "designerId": "bcbec547-e8cd-4fa7-bf74-d4adc439a199"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectId",
+                "type": "string"
+            },
+            "name": "MyField147",
+            "designerId": "fbed68e9-6f9f-4452-bc5a-859ab30c84e8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "projectname",
+                "type": "string"
+            },
+            "name": "MyField148",
+            "designerId": "c7a73e72-f476-4d92-9a52-0e8f01ca529e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ownershipUnits",
+                "type": "string"
+            },
+            "name": "MyField149",
+            "designerId": "9cb932e0-5bca-4090-b8ad-cb311a2c957c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "personRights",
+                "type": "string"
+            },
+            "name": "MyField150",
+            "designerId": "4ac374ff-57c9-4d1e-beff-9cfcab6f55a3"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "landLocation",
+                "type": "string"
+            },
+            "name": "MyField151",
+            "designerId": "7af9fc5e-d8ae-45a3-a08e-35a315031afc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "propertyNumber",
+                "type": "string"
+            },
+            "name": "MyField152",
+            "designerId": "a657f846-6d6b-4945-bb6f-c2e45c7ce1af"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fuKenhouPropertyNumber",
+                "type": "string"
+            },
+            "name": "MyField153",
+            "designerId": "187f7f13-66ac-48cb-a5aa-07e9fb55a6e0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "polygonNumber",
+                "type": "string"
+            },
+            "name": "MyField154",
+            "designerId": "1e4956ac-e236-4ea8-98df-826d9fd11d34"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "mapSheetNumber",
+                "type": "string"
+            },
+            "name": "MyField155",
+            "designerId": "3c334ae2-368c-4dd9-a9db-2969c1d07e47"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fukenqianLandUse",
+                "type": "string"
+            },
+            "name": "MyField156",
+            "designerId": "49b3341b-0cd2-4e17-b3e6-8433cc4a2499"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fukenArea",
+                "type": "string"
+            },
+            "name": "MyField157",
+            "designerId": "31618d9d-db37-4281-a009-dbe86c4aa05c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "newHousingArea",
+                "type": "string"
+            },
+            "name": "MyField158",
+            "designerId": "98f81869-4b09-4b78-871e-95ad8eef663f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "whereAbouts",
+                "type": "string"
+            },
+            "name": "MyField159",
+            "designerId": "5e11a758-950b-4982-8f78-edfc1c68eb3c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "chanQuanzhengTupian",
+                "type": "string"
+            },
+            "name": "MyField160",
+            "designerId": "1fd0820e-cbec-4356-85ae-dbff461ab5a6"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-2 20:41:11 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoLetter" table="info_letter" catalog="tdlz">
+        <id name="letterId" type="java.lang.Integer">
+            <column name="letter_id" />
+            <generator class="identity" />
+        </id>
+        <property name="letterTitle" type="string">
+            <column name="letter_title" length="30" />
+        </property>
+        <property name="letterContent" type="string">
+            <column name="letter_content" length="65535" />
+        </property>
+        <property name="letterAuthor" type="string">
+            <column name="letter_author" length="10" />
+        </property>
+        <property name="letterIsreply" type="string">
+            <column name="letter_isreply" length="10" />
+        </property>
+        <property name="letterIsshow" type="string">
+            <column name="letter_isshow" length="10" />
+        </property>
+        <property name="letterReplycontent" type="string">
+            <column name="letter_replycontent" length="65535" />
+        </property>
+        <property name="letterTel" type="string">
+            <column name="letter_tel" length="20" />
+        </property>
+        <property name="letterEmail" type="string">
+            <column name="letter_email" length="20" />
+        </property>
+        <property name="letterAddress" type="string">
+            <column name="letter_address" length="30" />
+        </property>
+        <property name="letterWritetime" type="date">
+            <column name="letter_writetime" length="10" />
+        </property>
+        <property name="letterReplytime" type="date">
+            <column name="letter_replytime" length="10" />
+        </property>
+        <property name="letterAuthorcardid" type="string">
+            <column name="letter_authorcardid" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

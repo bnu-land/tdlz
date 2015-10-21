@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-12 16:33:01 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.InfoVote" table="info_vote" catalog="tdlz">
+        <id name="voteId" type="java.lang.Integer">
+            <column name="vote_id" />
+            <generator class="identity" />
+        </id>
+        <property name="voteTitle" type="string">
+            <column name="vote_title" length="20" />
+        </property>
+        <property name="voteVoter" type="string">
+            <column name="vote_voter" length="20" />
+        </property>
+        <property name="voteIntroduction" type="string">
+            <column name="vote_introduction" length="65535" />
+        </property>
+        <property name="voteStarttime" type="date">
+            <column name="vote_starttime" length="10" />
+        </property>
+        <property name="voteEndtime" type="date">
+            <column name="vote_endtime" length="10" />
+        </property>
+        <property name="voteClass" type="string">
+            <column name="vote_class" length="20">
+                <comment>&#181;&#165;&#209;&#161;&#187;&#185;&#202;&#199;&#182;&#224;&#209;&#161;</comment>
+            </column>
+        </property>
+        <property name="voteState" type="string">
+            <column name="vote_state" length="20">
+                <comment>&#205;&#182;&#198;&#177;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

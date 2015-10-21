@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ShouyiStat_Nonghu",
+        "model": "ShouyiStat_Nonghu",
+        "storeId": "ShouyiStat_Nonghu"
+    },
+    "designerId": "f2043d05-11ab-4fe2-81c9-03640df434b3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": "getBenefitList17"
+            },
+            "name": "MyAjaxProxy2",
+            "designerId": "de91d66b-5323-4a33-b3d4-2594bf8c914d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader2",
+                    "designerId": "63409cc1-f720-4280-ba74-c59e41325abb"
+                }
+            ]
+        }
+    ]
+}

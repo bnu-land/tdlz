@@ -1,0 +1,337 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiNumber",
+        "designer|userClassName": "TaishiNumber",
+        "height": 499,
+        "layout": "border",
+        "title": "按交易次数分析",
+        "width": 786
+    },
+    "designerId": "2425496a-0db1-4f36-967c-b53e64c7afc1",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "height": 88,
+                "layout": "absolute",
+                "layout|region": "north",
+                "title": "查询条件"
+            },
+            "name": "MyForm12",
+            "designerId": "1bd6a4a3-5dd4-46a0-8438-d110469eb1cf",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiNumberDateField1",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiNumberDateField1",
+                        "labelWidth": 60,
+                        "layout|x": 10,
+                        "layout|y": 20,
+                        "name": "",
+                        "width": 180
+                    },
+                    "name": "MyDateField13",
+                    "designerId": "ea8e490a-5475-4d60-80e9-62a77df557ba"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiNumberDateField2",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiNumberDateField2",
+                        "labelWidth": 60,
+                        "layout|x": 210,
+                        "layout|y": 20,
+                        "name": "",
+                        "width": 180
+                    },
+                    "name": "MyDateField14",
+                    "designerId": "22cf3db7-3fde-4530-b8c8-12d70c6f949a"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "",
+                        "designer|displayName": "TaishiNumberTextField",
+                        "displayField": "name",
+                        "emptyText": "请选择区域",
+                        "fieldLabel": "交易区域",
+                        "id": "TaishiNumberTextField",
+                        "labelWidth": 60,
+                        "layout|x": 410,
+                        "layout|y": 20,
+                        "name": "TaishiNumberTextField",
+                        "queryMode": "local",
+                        "store": "TaishiNumberCombox",
+                        "valueField": "value",
+                        "width": 180
+                    },
+                    "name": "MyComboBox6",
+                    "designerId": "a2559ddc-0230-432a-8eb8-95d0ac9713a6"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 610,
+                        "layout|y": 20,
+                        "text": "查询",
+                        "width": 60
+                    },
+                    "name": "MyButton45",
+                    "designerId": "5d657300-5502-4dbf-9bf2-4edcfd8c6c68",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiNumberDateField1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiNumberDateField2').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiNumberTextField').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiNumber_Pie'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword:getKeyword};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "ce7c6c75-3ded-4951-8a00-774c91f62657"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "layout|region": "center",
+                "title": "各方交易次数分析图"
+            },
+            "name": "MyPanel17",
+            "designerId": "7fa1f1ee-1a69-4f05-b5e6-03cea8552d0a",
+            "cn": [
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": [
+                            "true"
+                        ],
+                        "autoRender": true,
+                        "dock": null,
+                        "height": 430,
+                        "hidden": true,
+                        "insetPadding": 20,
+                        "layout|x": 0,
+                        "layout|y": 0,
+                        "store": "TaishiNumber_Pie",
+                        "width": 360
+                    },
+                    "name": "PieChart",
+                    "designerId": "b3ba7211-60aa-4140-b0b5-35bf1e128be3",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-pie-chart",
+                    "autoName": "PieChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.series.Pie",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "angleField": "taicount",
+                                "label": [
+                                    "{'field':'taiarea','display':'none','contrast':true,'font':'12px Arial'}"
+                                ],
+                                "lengthField": null,
+                                "showInLegend": true
+                            },
+                            "name": "MyPieSeries",
+                            "designerId": "a30bb722-f8d5-46ac-8d86-d13db6a154d9"
+                        },
+                        {
+                            "type": "Ext.chart.Legend",
+                            "reference": {
+                                "name": "legend",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "position": "right"
+                            },
+                            "name": "MyLegend1",
+                            "designerId": "8a5773a9-3758-47e2-94aa-ac70df0a9497"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": [
+                            "true"
+                        ],
+                        "dock": "left",
+                        "height": 360,
+                        "insetPadding": 20,
+                        "layout|x": 360,
+                        "layout|y": 0,
+                        "store": "TaishiNumber_Pie",
+                        "width": 700
+                    },
+                    "name": "ColumnChart",
+                    "designerId": "c5284764-6bb7-40c5-bbe9-113f0a8d25ff",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-column-chart",
+                    "autoName": "ColumnChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "taiarea"
+                                ],
+                                "position": "left",
+                                "title": "交易区域"
+                            },
+                            "name": "MyCategoryAxis1",
+                            "designerId": "dea0b79f-8c94-485d-8c77-789eddb1cf5a"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "decimals": 0,
+                                "fields": [
+                                    "taicount"
+                                ],
+                                "majorTickSteps": 1,
+                                "minorTickSteps": 1,
+                                "position": "bottom",
+                                "title": "交易次数"
+                            },
+                            "name": "MyNumericAxis2",
+                            "designerId": "b7ce76f7-5b0b-4cb9-aec6-a90b66a17a08"
+                        },
+                        {
+                            "type": "Ext.chart.series.Column",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": [
+                                    "{\r",
+                                    "display : 'outside',  \r",
+                                    "field :['taicount'],  \r",
+                                    "renderer : Ext.util.Format.numberRenderer('0')\r",
+                                    "}"
+                                ],
+                                "type": "bar",
+                                "xField": "taiarea",
+                                "yField": [
+                                    "taicount"
+                                ]
+                            },
+                            "name": "MyColumnSeries",
+                            "designerId": "e0f47aff-6ad2-4f74-bfc6-cadd941b9756"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

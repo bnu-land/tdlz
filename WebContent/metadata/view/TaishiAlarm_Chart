@@ -1,0 +1,388 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiAlarm_Chart",
+        "designer|userClassName": "TaishiAlarm_Chart",
+        "height": 500,
+        "layout": "border",
+        "title": "交易态势异常分析",
+        "width": 692
+    },
+    "designerId": "3863b411-3de4-4d75-8dd1-ea2d03876c70",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar99",
+            "designerId": "b3718c6f-22d4-443e-a3c0-09977fae03f0",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiAlarmDateStart",
+                        "emptyText": "请选择日期",
+                        "enforceMaxLength": false,
+                        "fieldLabel": "起始时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiAlarmDateStart1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "maxLength": null,
+                        "useStrict": false,
+                        "width": 165
+                    },
+                    "name": "MyDateField92",
+                    "designerId": "296520ae-a2e6-4a05-82c3-649f4cd91cc7"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiAlarmDateEnd",
+                        "emptyText": "请选择日期",
+                        "fieldLabel": "结束时间",
+                        "format": "Y-m-d",
+                        "id": "TaishiAlarmDateEnd1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "width": 165
+                    },
+                    "name": "MyDateField93",
+                    "designerId": "7d5220ff-a349-42bf-8f74-ea856ffb471a"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TaishiAlarmTextField",
+                        "displayField": "name",
+                        "emptyText": "请选择区域",
+                        "fieldLabel": "交易区域",
+                        "id": "TaishiAlarmTextField1",
+                        "labelWidth": 60,
+                        "layout|flex": null,
+                        "name": "TaishiAlarmTextField",
+                        "queryMode": "local",
+                        "store": "TaishiAlarmCombox",
+                        "valueField": "value",
+                        "width": 165
+                    },
+                    "name": "MyComboBox30",
+                    "designerId": "87a0250a-8969-41de-9e52-6c1e209a9960"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "统计分析",
+                        "width": 60
+                    },
+                    "name": "MyButton365",
+                    "designerId": "195c47fd-e558-4b35-b6c8-2a0b3b9b0ebd",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiAlarmDateStart1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiAlarmDateEnd1').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiAlarmTextField1').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiAlarm_Pie'); //获得store对象\r",
+                                    "/*/在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");\r",
+                                    "/*/\r",
+                                    "mystore.on('beforeload', function (store, options) {\r",
+                                    "    var new_params1 = {searchDate1:getDate1};\r",
+                                    "    var new_params2 = {searchDate2:getDate2};\r",
+                                    "    var new_params3 = {searchKeyword:getKeyword};\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params1);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params2);\r",
+                                    "    Ext.apply(store.proxy.extraParams, new_params3);\r",
+                                    "});\r",
+                                    "mystore.load({ params: { start: 0, limit: 20} });\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "5e85a4f7-9435-4466-a665-551958ab454e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "返回"
+                    },
+                    "name": "MyButton366",
+                    "designerId": "4932453f-6397-4c16-b693-fc16b281c7ae",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('TaishiAlarm'));\r",
+                                    ""
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "5d656af9-3bfb-40a8-bd88-137914c47756"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animate": [
+                    "{duration: 250}"
+                ],
+                "autoRender": true,
+                "insetPadding": 20,
+                "layout|region": "west",
+                "store": "TaishiAlarm_Pie",
+                "width": 338
+            },
+            "name": "PieChart1",
+            "designerId": "242a268b-6bbd-4cdb-b7e5-7a007c1e9e5e",
+            "isBuiltIn": true,
+            "iconCls": "icon-pie-chart",
+            "autoName": "PieChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Pie",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "angleField": "yccount",
+                        "donut": 30,
+                        "highlight": [
+                            "{segment: {\r",
+                            "    margin: 20\r",
+                            "}}"
+                        ],
+                        "label": [
+                            "{'field':'yctype','display':'none','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "lengthField": null,
+                        "showInLegend": true,
+                        "tips": [
+                            "{\r",
+                            "    trackMouse: true,\r",
+                            "    width:165,\r",
+                            "    hight:25,\r",
+                            "    renderer: function(storeItem, item) {\r",
+                            "        //calculate percentage.\r",
+                            "        var total = 0;\r",
+                            "        var mystore=Ext.StoreMgr.get('TaishiAlarm_Pie'); //获得store对象\r",
+                            "        mystore.each(function(rec) {\r",
+                            "            total += rec.get('yccount');\r",
+                            "        });\r",
+                            "        this.setTitle(storeItem.get('yctype') + ': ' + Math.round(storeItem.get('yccount') / total * 100) + '%');\r",
+                            "    }\r",
+                            "}"
+                        ],
+                        "title": null
+                    },
+                    "name": "MyPieSeries1",
+                    "designerId": "40c6aa50-4c6b-4e07-9bed-c60c3b877238"
+                },
+                {
+                    "type": "Ext.chart.Legend",
+                    "reference": {
+                        "name": "legend",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": null,
+                        "position": "right"
+                    },
+                    "name": "MyLegend2",
+                    "designerId": "bf65f58e-5899-4d68-b863-f15355342001"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animate": [
+                    "{\r",
+                    "    easing: 'ease-in-out',\r",
+                    "    duration: 750\r",
+                    "}"
+                ],
+                "dock": null,
+                "insetPadding": 20,
+                "layout|region": "west",
+                "store": "TaishiAlarm_Pie",
+                "width": 352
+            },
+            "name": "ColumnChart3",
+            "designerId": "c9a3f1f4-bb44-4316-97a5-2744882e76bf",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dashSize": null,
+                        "fields": [
+                            "yctype"
+                        ],
+                        "label": [
+                            "{\r",
+                            "    rotation: {\r",
+                            "        degrees: 45\r",
+                            "    }\r",
+                            "}"
+                        ],
+                        "title": "交易态势异常类型"
+                    },
+                    "name": "MyCategoryAxis5",
+                    "designerId": "accb53e9-45d8-4688-b5b4-b05a8c7858ed"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "decimals": 0,
+                        "fields": [
+                            "yccount"
+                        ],
+                        "majorTickSteps": 1,
+                        "minorTickSteps": 0,
+                        "title": "交易态势异常量"
+                    },
+                    "name": "MyNumericAxis6",
+                    "designerId": "51fc8343-be35-4b10-b883-aae143924df8"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "highlight": [
+                            "true"
+                        ],
+                        "label": [
+                            "{\r",
+                            "display : 'outside',  \r",
+                            "field :['yccount'],  \r",
+                            "renderer : Ext.util.Format.numberRenderer('0')\r",
+                            "}"
+                        ],
+                        "tips": [
+                            "{\r",
+                            "    trackMouse: true,\r",
+                            "    width: 200,\r",
+                            "    height: 20,\r",
+                            "    renderer: function(storeItem, item) {\r",
+                            "        this.setTitle(storeItem.get('yctype') + '出现: ' + storeItem.get('yccount') + ' 次');\r",
+                            "    }\r",
+                            "}"
+                        ],
+                        "xField": "yctype",
+                        "yField": [
+                            "yccount"
+                        ]
+                    },
+                    "name": "MyColumnSeries3",
+                    "designerId": "b4ac61ae-1359-453d-9ab4-78915335204f"
+                }
+            ]
+        }
+    ]
+}

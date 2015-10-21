@@ -1,0 +1,559 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoScroll": true,
+        "designer|userAlias": "checkApply",
+        "designer|userClassName": "checkApply",
+        "height": 596,
+        "layout": "border",
+        "title": "审核申请",
+        "width": 875
+    },
+    "designerId": "5b9acf38-b38f-4ab4-8c4a-a0e0b9ffb0dc",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": [
+                    "10"
+                ],
+                "collapsed": false,
+                "collapsible": true,
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "layout|region": "west",
+                "title": "",
+                "width": 200
+            },
+            "name": "MyPanel41",
+            "designerId": "fd108e78-1db4-499e-a41b-05b9e1f46aaf",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "checkApplyId",
+                        "layout|x": 20,
+                        "layout|y": 40,
+                        "readOnly": true,
+                        "width": 150
+                    },
+                    "name": "MyTextField151",
+                    "designerId": "903c4d1f-6145-4945-8474-0beeb6269d8e"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 20,
+                        "style": [
+                            "13"
+                        ],
+                        "text": "验收申请编号："
+                    },
+                    "name": "MyLabel6",
+                    "designerId": "57215812-b710-47e9-990f-231a709db702"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forId": null,
+                        "layout|x": 20,
+                        "layout|y": 80,
+                        "style": [
+                            "13"
+                        ],
+                        "text": "项目编号："
+                    },
+                    "name": "MyLabel7",
+                    "designerId": "af989a5c-ba3b-49a8-a66c-07da9ef1836f"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forId": null,
+                        "layout|x": 20,
+                        "layout|y": 140,
+                        "style": [
+                            "13"
+                        ],
+                        "text": "项目名称："
+                    },
+                    "name": "MyLabel8",
+                    "designerId": "5d815f93-1688-44fd-ba5e-626085023cf4"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forId": null,
+                        "layout|x": 20,
+                        "layout|y": 200,
+                        "style": [
+                            "13"
+                        ],
+                        "text": "审核意见："
+                    },
+                    "name": "MyLabel9",
+                    "designerId": "e788e79e-c590-469b-8ee7-cb49371c1690"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "applyprojectId",
+                        "layout|x": 20,
+                        "layout|y": 100,
+                        "readOnly": true,
+                        "width": 150
+                    },
+                    "name": "MyTextField152",
+                    "designerId": "7794064b-2256-4d28-b192-4480cb572f7e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "",
+                        "id": "applyProjectname",
+                        "layout|x": 20,
+                        "layout|y": 160,
+                        "readOnly": true,
+                        "width": 150
+                    },
+                    "name": "MyTextField153",
+                    "designerId": "b55a9ff2-53ad-4a93-bbeb-84506fe99ab0"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "请选择",
+                        "fieldLabel": "",
+                        "forceSelection": true,
+                        "id": "ComboboBoxApply",
+                        "layout|x": 20,
+                        "layout|y": 220,
+                        "queryMode": "local",
+                        "repeatTriggerClick": true,
+                        "store": "comboStore",
+                        "width": 150
+                    },
+                    "name": "MyComboBox15",
+                    "designerId": "0b745b8a-b749-4af1-9e0d-f924b450dce3"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "",
+                        "layout|x": 20,
+                        "layout|y": 310,
+                        "text": "提交"
+                    },
+                    "name": "MyButton150",
+                    "designerId": "26f7fff3-0b2e-4559-9c80-2338e979beb7",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "//var checkApplyId=Ext.getCmp('checkApplyId').getValue();\r",
+                                    "//var applyResult=Ext.getCmp('shenheyijian').getValue();\r",
+                                    "Ext.Ajax.request({ \r",
+                                    "    url : \"applyCheckResult\", \r",
+                                    "    method: 'POST',\r",
+                                    "    params:{\r",
+                                    "        checkApplyId:Ext.getCmp('checkApplyId').getValue(),\r",
+                                    "        applyResult:Ext.getCmp('ComboboBoxApply').getValue()\r",
+                                    "    },\r",
+                                    "    success:function(options, eOpts){\r",
+                                    "    Ext.Msg.alert('提示', '保存成功！'); },     \r",
+                                    "    failure:function(options, eOpts){\r",
+                                    "    Ext.Msg.alert('提示', '保存失败！');  } \r",
+                                    "}) ;"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "d499fb97-85af-4c02-8c54-673f01420979"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/return.png",
+                        "layout|x": 100,
+                        "layout|y": 310,
+                        "text": "返回"
+                    },
+                    "name": "MyButton151",
+                    "designerId": "3ca34105-03f6-4432-b2b3-881bfeeb748b",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "var newtab = tabs.add(Ext.widget('ManagAcceptApply'));"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "35749702-806f-4418-ace5-9f73a0d7b663"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapsible": false,
+                "html": [
+                    "<div id=\"mapdiv_checkApply\" class=\"MapClass\"> </div>"
+                ],
+                "layout": "fit",
+                "layout|region": "center",
+                "title": "核查项目资料"
+            },
+            "name": "MyPanel42",
+            "designerId": "3c0a9047-3fd5-4478-b859-e6f24fe8df8d",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoScroll": true,
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar38",
+                    "designerId": "f1b97473-cccf-4d88-8cf0-41e2d624c2a7",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "申请表"
+                            },
+                            "name": "MyButton152",
+                            "designerId": "2723eb0a-ff83-4bc3-a496-348ebaa33324",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "//window.open('/MyTDJG/jsp/OpenWord.jsp');\r",
+                                            "Ext.Ajax.request({ \r",
+                                            "    url : \"seeApplyword\", \r",
+                                            "    scope : this, \r",
+                                            "    success:function(options, eOpts){\r",
+                                            "    },     \r",
+                                            "    failure:function(options, eOpts){\r",
+                                            "    Ext.Msg.alert('提示', '查看申请表失败！');  } \r",
+                                            "}) ;\r",
+                                            "window.open('/tdjg/jsp/EvaluateReport/04.htm');"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "594d7577-c69a-4adf-8513-98b37b762f6e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.RadioGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "查看地图",
+                                "id": "radioGroup_checkApply",
+                                "labelWidth": 70,
+                                "layout|flex": null,
+                                "width": 270
+                            },
+                            "name": "MyRadioGroup3",
+                            "designerId": "cc902458-8fc5-4eb7-a2f9-c649312848d1",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "规划图",
+                                        "designer|displayName": "规划图",
+                                        "fieldLabel": null,
+                                        "inputValue": "规划图",
+                                        "labelWidth": null,
+                                        "name": "checkApply"
+                                    },
+                                    "name": "MyRadio9",
+                                    "designerId": "5737b2fc-1868-408c-89a5-b5a8565b9c2c"
+                                },
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "现状图",
+                                        "designer|displayName": "现状图",
+                                        "fieldLabel": null,
+                                        "inputValue": "现状图",
+                                        "labelWidth": null,
+                                        "name": "checkApply",
+                                        "width": null
+                                    },
+                                    "name": "MyRadio10",
+                                    "designerId": "14b2c042-97e3-45b5-908a-1ea663b23615"
+                                },
+                                {
+                                    "type": "Ext.form.field.Radio",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "竣工图",
+                                        "designer|displayName": "竣工图",
+                                        "fieldLabel": null,
+                                        "inputValue": "竣工图",
+                                        "labelWidth": null,
+                                        "name": "checkApply",
+                                        "width": null
+                                    },
+                                    "name": "MyRadio11",
+                                    "designerId": "d597ac56-e3b1-41ce-bcb7-86d2e069a572"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "施工前后对比图"
+                            },
+                            "name": "MyButton153",
+                            "designerId": "66051638-20b9-4824-a1c8-acb8b68b867b",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "//window.open('/MyTDJG/jsp/Picture.jsp');\r",
+                                            "Ext.Ajax.request({ \r",
+                                            "    url : \"seePictureword\", \r",
+                                            "    scope : this, \r",
+                                            "    success:function(options, eOpts){\r",
+                                            "        //Ext.Msg.alert('提示', '查看申请表成功！'); \r",
+                                            "    },     \r",
+                                            "    failure:function(options, eOpts){\r",
+                                            "    Ext.Msg.alert('提示', '查看失败！');  } \r",
+                                            "}) ;\r",
+                                            "window.open('/tdjg/jsp/Picture/2011009.htm');"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "c261e6d3-e681-4948-b708-fcc9fe5aea23"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/file_view0.png",
+                                "layout|flex": null,
+                                "text": "财务资料"
+                            },
+                            "name": "MyButton154",
+                            "designerId": "5c4db0de-8012-43ab-9438-8b6b84ddb9c9",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "Ext.Ajax.request({ \r",
+                                            "    url : \"seeBiddingword\", \r",
+                                            "    scope : this, \r",
+                                            "    success:function(options, eOpts){\r",
+                                            "        //Ext.Msg.alert('提示', '查看申请表成功！'); \r",
+                                            "    },     \r",
+                                            "    failure:function(options, eOpts){\r",
+                                            "    Ext.Msg.alert('提示', '查看失败！');  } \r",
+                                            "}) ;\r",
+                                            "window.open('/tdjg/Upload/fkapplyBidding/fkapplyBidding20140305152609491.htm');"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "7a6dbe40-9271-4ae8-9342-f98093057bd3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPanelAfterRender",
+                        "implHandler": [
+                            "var head = document.getElementsByTagName('head')[0]; \r",
+                            "var script= document.createElement(\"script\"); \r",
+                            "script.type = \"text/javascript\"; \r",
+                            "script.src=\"map/checkApply_map.js\"; \r",
+                            "head.appendChild(script);"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onPanelAfterRender",
+                    "designerId": "73a8b670-fe2e-4635-ad3f-3cd5d92ff502"
+                }
+            ]
+        }
+    ]
+}

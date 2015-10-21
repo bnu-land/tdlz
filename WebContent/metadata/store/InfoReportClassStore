@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "data": [
+            "[{reportclass:'拆迁安置'},{reportclass:'土地复垦'},{reportclass:'土地交易'}]"
+        ],
+        "designer|userClassName": "InfoReportClassStore",
+        "storeId": "InfoReportClassStore"
+    },
+    "designerId": "41d5f408-a3f6-4680-856d-e1dd9a1690b6",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "reportclass"
+            },
+            "name": "MyField436",
+            "designerId": "eb723f58-43aa-41c1-a261-f2bc2aa82b88"
+        }
+    ]
+}

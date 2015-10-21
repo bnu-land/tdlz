@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-17 21:50:16 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitCanshushou" table="benefit_canshushou" catalog="tdlz">
+        <id name="xh" type="int">
+            <column name="xh" />
+            <generator class="assigned" />
+        </id>
+        <property name="dzzcts" type="java.lang.Integer">
+            <column name="dzzcts">
+                <comment>
+                &#189;&#187;&#210;&#215;&#189;&#225;&#202;&#248;&#186;&#243;&#197;&#169;&#187;&#167;&#215;&#202;&#189;&#240;&#181;&#189;&#213;&#203;&#215;&#238;&#179;&#164;&#204;&#236;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="cbzgjg" type="java.lang.Integer">
+            <column name="cbzgjg">
+                <comment>&#195;&#191;&#196;&#182;&#189;&#168;&#201;&#232;&#179;&#201;&#177;&#190;&#215;&#238;&#184;&#223;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="jsbl" type="java.lang.Integer">
+            <column name="jsbl">
+                <comment>&#189;&#168;&#201;&#232;&#181;&#165;&#206;&#187;&#215;&#238;&#184;&#223;&#202;&#213;&#210;&#230;&#177;&#200;&#192;&#253;</comment>
+            </column>
+        </property>
+        <property name="zfbl" type="java.lang.Integer">
+            <column name="zfbl">
+                <comment>&#213;&#254;&#184;&#174;&#215;&#238;&#184;&#223;&#202;&#213;&#210;&#230;&#177;&#200;&#192;&#253;</comment>
+            </column>
+        </property>
+        <property name="nhbl" type="java.lang.Integer">
+            <column name="nhbl">
+                <comment>&#197;&#169;&#187;&#167;&#215;&#238;&#184;&#223;&#202;&#213;&#210;&#230;&#177;&#200;&#192;&#253;</comment>
+            </column>
+        </property>
+        <property name="zxbl" type="java.lang.Integer">
+            <column name="zxbl">
+                <comment>&#205;&#193;&#181;&#216;&#189;&#187;&#210;&#215;&#214;&#208;&#208;&#196;&#202;&#213;&#210;&#230;&#177;&#200;&#192;&#253;</comment>
+            </column>
+        </property>
+        <property name="zdqsx" type="java.lang.Integer">
+            <column name="zdqsx">
+                <comment>
+                &#215;&#202;&#189;&#240;&#193;&#247;&#182;&#175;&#202;&#214;&#208;&#248;&#191;&#201;&#212;&#202;&#208;&#237;&#215;&#238;&#180;&#243;&#200;&#177;&#202;&#167;&#207;&#238;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="jb" type="java.lang.Integer">
+            <column name="jb">
+                <comment>&#190;&#217;&#177;&#168;&#180;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

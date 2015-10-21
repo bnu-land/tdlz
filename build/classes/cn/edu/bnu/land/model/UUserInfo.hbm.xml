@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.UUserInfo" table="u_user_info" catalog="tdlz">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="user_name" length="30" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="userPwd" type="string">
+            <column name="user_pwd" length="50" not-null="true">
+                <comment>&#213;&#202;&#187;&#167;&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="trueName" type="string">
+            <column name="true_name" length="50">
+                <comment>&#211;&#195;&#187;&#167;&#213;&#230;&#202;&#181;&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50">
+                <comment>&#211;&#202;&#207;&#228;&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="mobileNum" type="string">
+            <column name="mobile_num" length="15">
+                <comment>&#202;&#214;&#187;&#250;&#186;&#197;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="phoneNum" type="string">
+            <column name="phone_num" length="20">
+                <comment>&#185;&#204;&#182;&#168;&#181;&#231;&#187;&#176;&#186;&#197;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="deptId" type="string">
+            <column name="dept_id" length="10">
+                <comment>&#203;&#249;&#202;&#244;&#178;&#191;&#195;&#197;</comment>
+            </column>
+        </property>
+        <property name="enabled" type="java.lang.Boolean">
+            <column name="enabled">
+                <comment>&#202;&#199;&#183;&#241;&#191;&#201;&#211;&#195;</comment>
+            </column>
+        </property>
+        <property name="registerdate" type="date">
+            <column name="registerdate" length="10">
+                <comment>&#215;&#162;&#178;&#225;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535">
+                <comment>&#211;&#195;&#187;&#167;&#208;&#197;&#207;&#162;&#189;&#233;&#201;&#220;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

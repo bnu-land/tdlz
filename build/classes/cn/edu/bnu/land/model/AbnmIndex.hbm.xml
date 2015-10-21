@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-6 12:57:38 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.AbnmIndex" table="abnm_index" catalog="tdlz">
+        <id name="abiId" type="java.lang.Integer">
+            <column name="abi_id" />
+            <generator class="identity" />
+        </id>
+        <property name="abiName" type="string">
+            <column name="abi_name" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="abiValue" type="string">
+            <column name="abi_value" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#214;&#181;</comment>
+            </column>
+        </property>
+        <property name="abiWeight" type="string">
+            <column name="abi_weight" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#200;&#168;&#214;&#216;</comment>
+            </column>
+        </property>
+        <property name="abiClass" type="string">
+            <column name="abi_class" length="20">
+                <comment>&#214;&#184;&#177;&#234;&#192;&#224;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="dkId" type="string">
+            <column name="dk_id" length="20">
+                <comment>&#181;&#216;&#191;&#233;ID,&#205;&#226;&#188;&#252;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

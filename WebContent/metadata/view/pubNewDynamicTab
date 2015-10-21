@@ -1,0 +1,724 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pubNewDynamicTab",
+        "designer|userClassName": "pubNewDynamicTab",
+        "height": 538,
+        "id": "pubNewDynamicTab",
+        "layout": "fit",
+        "title": "最新动态",
+        "width": 768
+    },
+    "designerId": "0f0fd7c1-917f-4561-823b-02ab685c5408",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 348,
+                "id": "pubNewDynamicForm",
+                "layout": "fit",
+                "title": "",
+                "url": null
+            },
+            "name": "MyForm33",
+            "designerId": "e373402b-ed52-4c92-bbfa-a09d93080f4d",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoShow": true,
+                        "forceFit": true,
+                        "height": 240,
+                        "id": "pubNewDynamicTable",
+                        "store": "pubNewDynamicStore",
+                        "title": "",
+                        "width": 700
+                    },
+                    "name": "MyGridPanel35",
+                    "designerId": "399f85e8-606f-41fe-bf2f-845a68093fd3",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articleId",
+                                "hidden": true,
+                                "itemId": null,
+                                "text": "id"
+                            },
+                            "name": "MyColumn191",
+                            "designerId": "4c8ba4ef-a265-4987-9e48-b9ba2da6001f"
+                        },
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "记录号",
+                                "width": 48
+                            },
+                            "name": "MyRowNumberer28",
+                            "designerId": "6eaa6485-e452-4083-b3cf-63d2f1c64854"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articleName",
+                                "text": "标题",
+                                "width": 82
+                            },
+                            "name": "MyColumn192",
+                            "designerId": "6689c94f-10bc-4c09-b374-d792555fd68c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articleContent",
+                                "text": "内容"
+                            },
+                            "name": "MyColumn193",
+                            "designerId": "8596b727-f727-485f-b054-cf9141810b6b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articlePublishtime",
+                                "text": "发布日期",
+                                "width": 85
+                            },
+                            "name": "MyColumn194",
+                            "designerId": "4c7dd0c8-6bf3-464c-99a0-f1674909ec6e"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articleUrl",
+                                "hidden": true,
+                                "text": "详细页面路径"
+                            },
+                            "name": "MyColumn195",
+                            "designerId": "3120d2f4-6a55-4a0e-9ee7-de3b1d3f45e4"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView35",
+                            "designerId": "61008c0e-9ab3-4015-bda1-271ee1d9623e"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "displayMsg": "显示{0} - {1} 条，共计{2}条",
+                                "dock": "bottom",
+                                "emptyMsg": "没有数据",
+                                "store": "pubNewDynamicStore",
+                                "width": 360
+                            },
+                            "name": "MyPagingToolbar23",
+                            "designerId": "8efdbbf4-180c-4a94-8627-861f5fb5a3d6"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar49",
+                            "designerId": "3b0763af-ecf3-4503-b04b-e1e05c539352",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "发布日期："
+                                    },
+                                    "name": "MyLabel13",
+                                    "designerId": "b3032387-4875-4773-bc8b-ee03c8cfa230"
+                                },
+                                {
+                                    "type": "Ext.form.field.Date",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "",
+                                        "format": "Y-m-d",
+                                        "id": "searchDate_pubNewDynamic",
+                                        "layout|flex": null
+                                    },
+                                    "name": "MyDateField43",
+                                    "designerId": "d9593418-1d8b-40c3-ba84-d4fff50da859"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "",
+                                        "id": "searchField_pubNewDynamic",
+                                        "layout|flex": null,
+                                        "value": null,
+                                        "width": 157
+                                    },
+                                    "name": "MyTextField200",
+                                    "designerId": "3aeb3057-4e16-4aa9-89e3-b333456dbce0"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": "",
+                                        "layout|flex": null,
+                                        "text": "搜索"
+                                    },
+                                    "name": "MyButton196",
+                                    "designerId": "ba5fe4a3-b6cc-4f79-9626-c4ac6daf9c07",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var searchDate=Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(),'Y-m-d');\r",
+                                                    "var mystore=Ext.StoreMgr.get('pubNewDynamicStore'); //获得store对象\r",
+                                                    "//在load事件中添加参数\r",
+                                                    "mystore.load(\r",
+                                                    "{params:{\r",
+                                                    "    start:\"0\",\r",
+                                                    "    limit:\"10\",\r",
+                                                    "    searchField:Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                                    "    searchDate:searchDate  \r",
+                                                    "} \r",
+                                                    "}\r",
+                                                    ");\r",
+                                                    "\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "3a0b8d98-309a-4ca9-9d0d-a87c8ee4db97"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "href": "",
+                                        "layout|flex": null,
+                                        "text": "添加+"
+                                    },
+                                    "name": "MyButton197",
+                                    "designerId": "8323bb33-8ddf-4e7a-8644-132ea885bd54",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var win=new Ext.Window({\r",
+                                                    "    height: 462,\r",
+                                                    "    id: 'gx_pubNewDynamic_Window',\r",
+                                                    "    width: 577,\r",
+                                                    "    layout: {\r",
+                                                    "        type: 'absolute'\r",
+                                                    "    },\r",
+                                                    "    title: '新建内容',\r",
+                                                    "    modal: true,\r",
+                                                    "    items: [\r",
+                                                    "    {\r",
+                                                    "        xtype: 'form',\r",
+                                                    "        x: 0,\r",
+                                                    "        y: 0,\r",
+                                                    "        height: 440,\r",
+                                                    "        jsonSubmit: true,\r",
+                                                    "        id: 'gx_pubNewDynamic_form_add',\r",
+                                                    "        layout: {\r",
+                                                    "            type: 'absolute'\r",
+                                                    "        },\r",
+                                                    "        bodyPadding: 10,\r",
+                                                    "        title: '',\r",
+                                                    "        url: 'add_PubNewDynamic',\r",
+                                                    "        items: [\r",
+                                                    "        {\r",
+                                                    "            xtype: 'label',\r",
+                                                    "            x: 30,\r",
+                                                    "            y: 30,\r",
+                                                    "            height: 20,\r",
+                                                    "            width: 40,\r",
+                                                    "            text: '标题：'\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'label',\r",
+                                                    "            x: 30,\r",
+                                                    "            y: 80,\r",
+                                                    "            height: 20,\r",
+                                                    "            width: 40,\r",
+                                                    "            text: '内容：'\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'button',\r",
+                                                    "            x: 330,\r",
+                                                    "            y: 360,\r",
+                                                    "            width: 70,\r",
+                                                    "            text: '保存',\r",
+                                                    "            handler:function()\r",
+                                                    "            {\r",
+                                                    "\r",
+                                                    "                var myform=Ext.getCmp('gx_pubNewDynamic_form_add').getForm();    \r",
+                                                    "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                    "                    myform.submit({\r",
+                                                    "                        success: function(form, action) {\r",
+                                                    "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                                    "                            var searchDate=Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(),'Y-m-d');\r",
+                                                    "                            var mystore=Ext.StoreMgr.get('pubNewDynamicStore'); //获得store对象\r",
+                                                    "                            //在load事件中添加参数\r",
+                                                    "                            mystore.load(\r",
+                                                    "                            {params:{\r",
+                                                    "                                start:\"0\",\r",
+                                                    "                                limit:\"10\",\r",
+                                                    "                                searchField:Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                                    "                                searchDate:searchDate  \r",
+                                                    "                            }} );\r",
+                                                    "                            win.close();\r",
+                                                    "                        },\r",
+                                                    "                        failure: function(form, action) {\r",
+                                                    "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                                    "                            win.close();\r",
+                                                    "                        }\r",
+                                                    "                    });\r",
+                                                    "                } else { \r",
+                                                    "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                    "                }\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "                return;\r",
+                                                    "\r",
+                                                    "            }\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'button',\r",
+                                                    "            x: 160,\r",
+                                                    "            y: 360,\r",
+                                                    "            width: 70,\r",
+                                                    "            text: '取消',\r",
+                                                    "            handler:function(){\r",
+                                                    "                win.close();\r",
+                                                    "            }\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'textareafield',\r",
+                                                    "            x: 80,\r",
+                                                    "            y: 30,\r",
+                                                    "            height: 22,\r",
+                                                    "            width: 410,\r",
+                                                    "            fieldLabel: '',\r",
+                                                    "            allowBlank:false,\r",
+                                                    "            name: 'articleName'\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'textareafield',\r",
+                                                    "            x: 80,\r",
+                                                    "            y: 80,\r",
+                                                    "            height: 242,\r",
+                                                    "            width: 410,\r",
+                                                    "            overflowY: 'auto',\r",
+                                                    "            fieldLabel: '',\r",
+                                                    "            allowBlank:false,\r",
+                                                    "            name: 'articleContent'\r",
+                                                    "        }\r",
+                                                    "        ]\r",
+                                                    "    }\r",
+                                                    "    ]\r",
+                                                    "});    \r",
+                                                    "win.show();\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "a84f6bc9-c870-43ce-a285-cc69c176d505"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "href": "",
+                                        "layout|flex": null,
+                                        "text": "删除-"
+                                    },
+                                    "name": "MyButton198",
+                                    "designerId": "02aeda96-ca4b-4140-ae5c-d702e8d419de",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var grid=this.up('grid');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length===0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "else\r",
+                                                    "{\r",
+                                                    "    var ids='';\r",
+                                                    "    for(var i=0;i<record.length;i++)\r",
+                                                    "    {\r",
+                                                    "        ids+=record[i].get(\"articleId\");\r",
+                                                    "        if(i<record.length-1)ids=ids+\",\";\r",
+                                                    "    }\r",
+                                                    "\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        waitMsg:'正在发送，请等待...',\r",
+                                                    "        url:'del_PubTicketIn',\r",
+                                                    "        params:{ids:ids},                          \r",
+                                                    "        success: function(form, action) {\r",
+                                                    "            Ext.Msg.alert('success','删除成功！');  \r",
+                                                    "            var searchDate=Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(),'Y-m-d');\r",
+                                                    "            var mystore=Ext.StoreMgr.get('pubNewDynamicStore'); //获得store对象\r",
+                                                    "            //在load事件中添加参数\r",
+                                                    "            mystore.load(\r",
+                                                    "            {params:{\r",
+                                                    "                start:\"0\",\r",
+                                                    "                limit:\"10\",\r",
+                                                    "                searchField:Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                                    "                searchDate:searchDate  \r",
+                                                    "            }} );\r",
+                                                    "            win.close();\r",
+                                                    "        },\r",
+                                                    "        failure:function(){\r",
+                                                    "            Ext.Msg.alert('failed','删除失败！');\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "}\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "797f380c-e1de-422d-a923-a5d260d9f12b"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel27",
+                            "designerId": "e8f05829-d07d-48d2-b87c-f8b1fcfe2a6e"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDealInfoPublishTableCellClick",
+                                "implHandler": [
+                                    "\r",
+                                    "if(cellIndex===undefined || cellIndex<2) return;\r",
+                                    "\r",
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 426,\r",
+                                    "    id: 'gxpubNewDynamicWindow_update',\r",
+                                    "    width: 490,\r",
+                                    "    layout: {\r",
+                                    "        type: 'absolute'\r",
+                                    "    },\r",
+                                    "    title: '改变内容',\r",
+                                    "    modal: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        x: 0,\r",
+                                    "        y: 0,\r",
+                                    "        height: 440,\r",
+                                    "        id: 'pubNewDynamic_update_Form',\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        title: '',\r",
+                                    "        jsonSubmit: true,\r",
+                                    "        url: 'update_PubNewDynamic',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'label',\r",
+                                    "            x: 30,\r",
+                                    "            y: 30,\r",
+                                    "            height: 20,\r",
+                                    "            width: 40,\r",
+                                    "            text: '标题：'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'label',\r",
+                                    "            x: 30,\r",
+                                    "            y: 80,\r",
+                                    "            height: 20,\r",
+                                    "            width: 40,\r",
+                                    "            text: '内容：'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'label',\r",
+                                    "            x: 20,\r",
+                                    "            y: 300,\r",
+                                    "            height: 20,\r",
+                                    "            width: 60,\r",
+                                    "            text: '发布日期：'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            x: 320,\r",
+                                    "            y: 340,\r",
+                                    "            width: 70,\r",
+                                    "            text: '保存',\r",
+                                    "            handler:function(){                     \r",
+                                    "                var myform=Ext.getCmp('pubNewDynamic_update_Form').getForm();    \r",
+                                    "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "                    myform.submit({\r",
+                                    "                        success: function(form, action) {\r",
+                                    "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                    "                            var searchDate=Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(),'Y-m-d');\r",
+                                    "                            var mystore=Ext.StoreMgr.get('pubNewDynamicStore'); //获得store对象\r",
+                                    "                            //在load事件中添加参数\r",
+                                    "                            mystore.load(\r",
+                                    "                            {params:{\r",
+                                    "                                start:\"0\",\r",
+                                    "                                limit:\"10\",\r",
+                                    "                                searchField:Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                    "                                searchDate:searchDate  \r",
+                                    "                            }} );\r",
+                                    "                            win.close();\r",
+                                    "                        },\r",
+                                    "                        failure: function(form, action) {\r",
+                                    "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                    "                            win.close();\r",
+                                    "                        }\r",
+                                    "                    });\r",
+                                    "                } else { \r",
+                                    "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "                }\r",
+                                    "\r",
+                                    "\r",
+                                    "                return;\r",
+                                    "\r",
+                                    "            }\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            x: 120,\r",
+                                    "            y: 340,\r",
+                                    "            width: 70,\r",
+                                    "            text: '取消',\r",
+                                    "            handler:function(){\r",
+                                    "                win.close();\r",
+                                    "            }\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textareafield',\r",
+                                    "            id:'title_pubNewDynamic',\r",
+                                    "            x: 80,\r",
+                                    "            y: 30,\r",
+                                    "            height: 22,\r",
+                                    "            width: 350,\r",
+                                    "            fieldLabel: '',\r",
+                                    "            name: 'articleName',\r",
+                                    "            allowBlank: false\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textareafield',\r",
+                                    "            id:'content_pubNewDynamic',\r",
+                                    "            x: 80,\r",
+                                    "            y: 80,\r",
+                                    "            height: 202,\r",
+                                    "            width: 350,\r",
+                                    "            overflowY: 'auto',\r",
+                                    "            fieldLabel: '',\r",
+                                    "            name: 'articleContent',\r",
+                                    "            allowBlank: false\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textareafield',\r",
+                                    "            id:'id_pubNewDynamic',\r",
+                                    "            x: 20,\r",
+                                    "            y: 0,\r",
+                                    "            height: 22,\r",
+                                    "            hidden: true,\r",
+                                    "            width: 80,\r",
+                                    "            fieldLabel: '',\r",
+                                    "            name: 'articleId',\r",
+                                    "            allowBlank: false\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'datefield',\r",
+                                    "            id:'date_pubNewDynamic',\r",
+                                    "            x: 80,\r",
+                                    "            y: 300,\r",
+                                    "            width: 190,\r",
+                                    "            fieldLabel: '',\r",
+                                    "            name: 'articlePublishtime',\r",
+                                    "            allowBlank: false\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "\r",
+                                    "Ext.getCmp('id_pubNewDynamic').setValue(record.data.articleId);\r",
+                                    "Ext.getCmp('title_pubNewDynamic').setValue(record.data.articleName);\r",
+                                    "Ext.getCmp('content_pubNewDynamic').setValue(record.data.articleContent);\r",
+                                    "Ext.getCmp('date_pubNewDynamic').setValue(record.data.articlePublishtime);\r",
+                                    "\r",
+                                    "win.show();\r",
+                                    ""
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "name": "onDealInfoPublishTableCellClick",
+                            "designerId": "c24212b3-a3f8-4979-833d-66262974c37a"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPubNewDynamicFormBeforeShow",
+                        "implHandler": [
+                            "Ext.Msg.alert('tipd','test  before form 显示');\r",
+                            "Ext.getCmp('pubNewDynamicStore').load();"
+                        ],
+                        "name": "beforeshow",
+                        "scope": "me"
+                    },
+                    "name": "onPubNewDynamicFormBeforeShow",
+                    "designerId": "651f3bd7-af01-4183-ad33-4bf59c4512eb"
+                }
+            ]
+        }
+    ]
+}

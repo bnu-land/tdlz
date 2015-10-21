@@ -1,0 +1,287 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoChannelTab",
+        "designer|userClassName": "infoChannelTab",
+        "id": "infoChannelTab",
+        "layout": "fit",
+        "title": "频道栏目-可删除"
+    },
+    "designerId": "94dfdd87-2d46-4220-8182-157f29c720ed",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "jsonSubmit": true,
+                "layout": "border",
+                "title": null
+            },
+            "name": "MyForm43",
+            "designerId": "173368a9-6a2a-431d-9f56-98304ad2c0f8",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "MyGridPanel1",
+                        "layout|region": "center",
+                        "store": "InfoChannelStore",
+                        "title": "频道栏目"
+                    },
+                    "name": "MyGridPanel41",
+                    "designerId": "2f899ad3-72ec-4eea-8f85-632c4537a37c",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelId",
+                                "text": "频道栏目ID"
+                            },
+                            "name": "MyColumn211",
+                            "designerId": "f1df0a3f-d220-4cfc-ace3-32c08497e361"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelName",
+                                "text": "名称"
+                            },
+                            "name": "MyColumn212",
+                            "designerId": "fd108f5e-6b01-4f05-b24e-54dd26acc898"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "articleNum",
+                                "text": "文章数"
+                            },
+                            "name": "MyColumn213",
+                            "designerId": "3b8a65d6-e379-4f05-a667-0774efdfa619"
+                        },
+                        {
+                            "type": "Ext.grid.column.CheckColumn",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelIscomment",
+                                "designer|displayName": "是否允许评论",
+                                "text": "是否允许评论"
+                            },
+                            "name": "MyCheckColumn",
+                            "designerId": "9933ece2-7a93-469d-b729-411e55d2aa07"
+                        },
+                        {
+                            "type": "Ext.grid.column.CheckColumn",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelIsarticle",
+                                "designer|displayName": "是否允许发表文章",
+                                "text": "是否允许发表文章"
+                            },
+                            "name": "MyCheckColumn1",
+                            "designerId": "f810ff3e-b030-4775-91cd-b23da0be8122"
+                        },
+                        {
+                            "type": "Ext.grid.column.CheckColumn",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelIshomepage",
+                                "designer|displayName": "是否设为首页",
+                                "text": "是否设为首页"
+                            },
+                            "name": "MyCheckColumn2",
+                            "designerId": "e902dd75-e8e5-4900-af7d-196648214df3"
+                        },
+                        {
+                            "type": "Ext.grid.column.CheckColumn",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "channelIsshow",
+                                "designer|displayName": "是否在门户显示",
+                                "text": "是否在门户显示"
+                            },
+                            "name": "MyCheckColumn3",
+                            "designerId": "588d2762-6c5e-4e0a-adb4-7d0b40fca218"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView41",
+                            "designerId": "37e4f6d2-c275-4d73-ac86-50dc293fc804"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel33",
+                            "designerId": "5ada2c99-dc91-4f9e-9baa-fea58a5b65a9"
+                        },
+                        {
+                            "type": "Ext.grid.plugin.CellEditing",
+                            "reference": {
+                                "name": "plugins",
+                                "type": "array"
+                            },
+                            "codeClass": "Ext.grid.plugin.CellEditing",
+                            "userConfig": {
+                                "clicksToEdit": 1
+                            },
+                            "name": "MyCellEditingPlugin1",
+                            "designerId": "4bf2652b-900b-4d8d-8cd2-6d8f853ffd99"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "name": "MyToolbar55",
+                            "designerId": "0e10cbfa-0b90-4876-af53-f12ba20d39f4",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "增加频道栏目"
+                                    },
+                                    "name": "MyButton221",
+                                    "designerId": "0c068510-59ce-427e-acab-67ac772d54f0",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "Ext.MessageBox.alert('提示','you clicked it');\r",
+                                                    "\r",
+                                                    "//var channelnew = new MyApp.model.ChannelModel({id:0,channelname:'new',channellevel:1});\r",
+                                                    "\r",
+                                                    "//ChannelStore.insert(0,channelnew);\r",
+                                                    "//MyGridPanel1.cellEditing.startEditByPosition({row:0,column:0});\r",
+                                                    "\r",
+                                                    "//var storenew = new MyApp.store.ChannelStore();\r",
+                                                    "//Ext.MessageBox.alert(storenew);\r",
+                                                    "//storenew.insert(0, channelnew);\r",
+                                                    "//storenew.add({id:2,channelname:'newnew',channellevel:1});\r",
+                                                    "//Ext.MessageBox.alert(storenew);\r",
+                                                    "\r",
+                                                    "//var girdpanelnew = new MyApp.view.MyViewport.MyGridPanel1();\r",
+                                                    "//girdpanelnew.cellEditing.startEditByPosition({\r",
+                                                    "//            row: 0, \r",
+                                                    "//            column: 0\r",
+                                                    "//        });\r",
+                                                    "\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "03e7ab64-a719-4f4b-98d8-a1818d34b107"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "删除频道栏目"
+                                    },
+                                    "name": "MyButton222",
+                                    "designerId": "994a7f1d-d784-4a5e-a0a6-110a895f6865"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查看文章列表"
+                                    },
+                                    "name": "MyButton223",
+                                    "designerId": "100e3363-b1a6-40e1-8eef-c40d38d7f1c5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

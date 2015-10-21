@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.UTaskCode" table="u_task_code" catalog="tdlz">
+        <id name="taskId" type="string">
+            <column name="task_id" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="taskName" type="string">
+            <column name="task_name" length="30" not-null="true">
+                <comment>&#200;&#206;&#206;&#241;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="taskLevel" type="java.lang.Byte">
+            <column name="task_level">
+                <comment>
+                &#200;&#206;&#206;&#241;&#188;&#182;&#177;&#240;&#163;&#172;&#191;&#201;&#183;&#214;3&#188;&#182;&#187;&#242;&#213;&#223;5&#188;&#182;&#161;&#163;</comment>
+            </column>
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535">
+                <comment>&#200;&#206;&#206;&#241;&#203;&#181;&#195;&#247;&#161;&#163;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

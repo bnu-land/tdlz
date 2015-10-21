@@ -1,0 +1,222 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "db_MapServerTab",
+        "designer|userClassName": "db_MapServerTab",
+        "id": "db_MapServerTab",
+        "layout": "fit",
+        "title": "结果图"
+    },
+    "designerId": "fbcc81e3-2064-4726-a71c-05126b78bd4f",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<div id=\"mapdiv_mapServer\" style=\"width:100%;height:100%;\">",
+                "title": null,
+                "width": 150
+            },
+            "name": "MyPanel35",
+            "configAlternates": {
+                "html": "string"
+            },
+            "designerId": "fd04a6e4-262e-459a-a872-8d4611425cb0",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPanelAfterRender",
+                        "implHandler": [
+                            "var head = document.getElementsByTagName('head')[0]; \r",
+                            "var script= document.createElement(\"script\"); \r",
+                            "script.type = \"text/javascript\"; \r",
+                            "script.src=\"map/mapServer_map.js\"; \r",
+                            "head.appendChild(script);"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onPanelAfterRender",
+                    "designerId": "ddca610a-4ce6-4eab-9dff-c3f56975f079"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar34",
+                    "designerId": "92aeb52b-cc24-4dd9-b4fb-f1dcdf26e0d6",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "对比："
+                            },
+                            "name": "MyLabel3",
+                            "designerId": "019d17a0-8fdd-4c34-be8a-48ff413397e3"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_Swipe_image",
+                                "layout|flex": null,
+                                "text": "影像对比"
+                            },
+                            "name": "MyButton127",
+                            "designerId": "5d91ecb9-ce91-4373-aaf3-6882835a3647"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_Swipe_Map2",
+                                "layout|flex": null,
+                                "text": "历史数据"
+                            },
+                            "name": "MyButton128",
+                            "designerId": "66bb0881-fad1-4d63-8555-cf2e10748ee9"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_Swipe_Destroy",
+                                "layout|flex": null,
+                                "text": "清除对比"
+                            },
+                            "name": "MyButton129",
+                            "designerId": "3e25333e-7b46-4821-afdf-87c13a1830ff"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "定位："
+                            },
+                            "name": "MyLabel4",
+                            "designerId": "26f484cb-6dc7-414c-895b-5e9cc2aa6942"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_Locate1",
+                                "layout|flex": null,
+                                "text": "项目1"
+                            },
+                            "name": "MyButton130",
+                            "designerId": "8fbc4073-0282-4e76-b016-2f6347367759"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_Locate2",
+                                "layout|flex": null,
+                                "text": "项目2"
+                            },
+                            "name": "MyButton131",
+                            "designerId": "c1463485-a730-4c94-9786-c9e98530dd4e"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "查询："
+                            },
+                            "name": "MyLabel5",
+                            "designerId": "c270f415-2eb0-4e40-acc9-d5a2db6b35b9"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_InfoQuery",
+                                "layout|flex": null,
+                                "text": "开始查询"
+                            },
+                            "name": "MyButton132",
+                            "designerId": "20071f23-250a-452f-9943-d973e1efcfa0"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_MapServer_InfoQueryDestroy",
+                                "layout|flex": null,
+                                "text": "结束查询"
+                            },
+                            "name": "MyButton133",
+                            "designerId": "8cae8aee-12e4-4ae4-bb42-3aa8836ea7a6"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

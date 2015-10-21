@@ -1,0 +1,72 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": null,
+        "designer|userClassName": "pubNewDynamicStore",
+        "model": "InfoArticleModel",
+        "pageSize": 10,
+        "storeId": "pubNewDynamicStore"
+    },
+    "designerId": "857bf13c-b125-4e0f-8e08-70024969d180",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "search_PubNewDynamic"
+            },
+            "name": "MyAjaxProxy40",
+            "designerId": "657826e9-1fc8-4c39-bb4b-28399e551786",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader40",
+                    "designerId": "621416ff-812a-47e9-9d33-59d0f3953383"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreBeforeLoad",
+                "implHandler": [
+                    "//Ext.Msg.alert('pubNewDynamicStore','testtest'+searchField_pubNewDynamic+' and  '+searchDate_pubNewDynamic);\r",
+                    "var extra_params={\r",
+                    "    searchField:Ext.getCmp('searchField_pubNewDynamic').getValue(),  \r",
+                    "    searchDate:Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(),'Y-m-d')  \r",
+                    "\r",
+                    "};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);\r",
+                    "\r",
+                    ""
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "name": "onStoreBeforeLoad",
+            "designerId": "340c23ca-c406-40d7-8dbb-a137ec75012f"
+        }
+    ]
+}

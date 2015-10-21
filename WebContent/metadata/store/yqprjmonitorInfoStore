@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "yqprjmonitorInfoStore",
+        "model": "yqprjmonitorInfoModel",
+        "pageSize": 15,
+        "storeId": "yqprjmonitorInfoStore"
+    },
+    "designerId": "98d53626-e3ed-4866-9bdb-525259630d9a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{projectId: '',\r",
+                    " monitorstarttime:'',\r",
+                    " monitorendtime:'',\r",
+                    " accuracy:'0'}"
+                ],
+                "url": "yqprojectmonitorInfo"
+            },
+            "name": "MyAjaxProxy14",
+            "designerId": "9cf21f21-20fd-4686-aa7e-0803095f5edf",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader14",
+                    "designerId": "3eb3098b-aab7-4e7c-ac21-4eb4cf81bdb9"
+                }
+            ]
+        }
+    ]
+}

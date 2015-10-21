@@ -1,0 +1,982 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title>Hibernate Mappings - Table Info</title>
+		<link rel="stylesheet" type="text/css" href="../../assets/doc-style.css" title="Style"/>
+	</head>
+	<body>
+
+	<div id="header">
+
+		<div id="logo">
+			<a href="http://www.hibernate.org/" target="_blank">
+				<img src="../../assets/hibernate_logo.gif" alt="Hibernate"/>
+			</a>
+		</div>
+
+		<ul><li><a href="../index.html" target="_top">Tables</a></li><li><a href="../../entities/index.html" target="_top">Entities</a></li></ul>
+
+		<hr/>
+
+	</div>
+
+		<h4>Schema tdlz.default</h4>
+		<h2>Table abnm_wholesupervision</h2>
+
+			<p></p>
+
+		<table id="column_summary">
+			<thead>
+				<tr>
+					<th class="MainTableHeading" colspan="7">
+						Column Summary
+					</th>
+				</tr>
+				<tr>
+					<th style="width: 14%">
+						Name
+					</th>
+					<th style="width: 14%">
+						SqlType
+					</th>
+					<th style="width: 14%">
+						Length
+					</th>
+					<th style="width: 14%">
+						Precision
+					</th>
+					<th style="width: 14%">
+						Scale
+					</th>
+					<th style="width: 14%">
+						Nullable
+					</th>
+					<th style="width: 14%">
+						Unique
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_id">
+								abws_id
+							</a>
+						</td>
+						<td>
+							integer
+						</td>
+						<td>
+							255
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							false
+						</td>
+						<td>
+							true
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_title">
+								abws_title
+							</a>
+						</td>
+						<td>
+							varchar(50)
+						</td>
+						<td>
+							50
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							false
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_class">
+								abws_class
+							</a>
+						</td>
+						<td>
+							varchar(30)
+						</td>
+						<td>
+							30
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_date">
+								abws_date
+							</a>
+						</td>
+						<td>
+							date
+						</td>
+						<td>
+							10
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_content">
+								abws_content
+							</a>
+						</td>
+						<td>
+							longtext
+						</td>
+						<td>
+							65,535
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_isSolved">
+								abws_isSolved
+							</a>
+						</td>
+						<td>
+							varchar(30)
+						</td>
+						<td>
+							30
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_opinion">
+								abws_opinion
+							</a>
+						</td>
+						<td>
+							longtext
+						</td>
+						<td>
+							65,535
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_photopath">
+								abws_photopath
+							</a>
+						</td>
+						<td>
+							longtext
+						</td>
+						<td>
+							500
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_collector">
+								abws_collector
+							</a>
+						</td>
+						<td>
+							varchar(20)
+						</td>
+						<td>
+							20
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_collecttime">
+								abws_collecttime
+							</a>
+						</td>
+						<td>
+							date
+						</td>
+						<td>
+							10
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_isTaskAssigned">
+								abws_isTaskAssigned
+							</a>
+						</td>
+						<td>
+							varchar(20)
+						</td>
+						<td>
+							20
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_rw_id">
+								rw_id
+							</a>
+						</td>
+						<td>
+							varchar(20)
+						</td>
+						<td>
+							20
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_project_name">
+								project_name
+							</a>
+						</td>
+						<td>
+							varchar(200)
+						</td>
+						<td>
+							200
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_project_id">
+								project_id
+							</a>
+						</td>
+						<td>
+							varchar(20)
+						</td>
+						<td>
+							20
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_source_recordid">
+								source_recordid
+							</a>
+						</td>
+						<td>
+							varchar(20)
+						</td>
+						<td>
+							20
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_abws_xunchacontent">
+								abws_xunchacontent
+							</a>
+						</td>
+						<td>
+							longtext
+						</td>
+						<td>
+							65,535
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							false
+						</td>
+					</tr>
+			</tbody>
+		</table>
+
+		<table id="primary_key">
+			<thead>
+				<tr>
+					<th class="MainTableHeading" colspan="2">
+						Primary Key
+					</th>
+				</tr>
+				<tr>
+					<th style="width: 50%">
+						Name
+					</th>
+					<th style="width: 50%">
+						Columns
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td>
+								PRIMARY
+						</td>
+						<td>
+								<a href="#column_detail_abws_id">
+									abws_id
+								</a>
+						</td>
+					</tr>
+			</tbody>
+		</table>
+
+			
+			<table id="unique_keys">
+				<thead>
+					<tr>
+						<th class="MainTableHeading" colspan="2">
+							Unique Keys
+						</th>
+					</tr>
+					<tr>
+						<th style="width: 50%">
+							Name
+						</th>
+						<th style="width: 50%">
+							Columns
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td>
+								PRIMARY
+							</td>
+							<td>
+									<a href="#column_detail_abws_id">
+										abws_id
+									</a>
+							</td>
+						</tr>
+				</tbody>
+			</table>
+		
+		
+			<p id="column_detail" class="MainTableHeading">
+				Column Detail
+			</p>
+				
+				<h3 id="column_detail_abws_id">abws_id</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> integer
+					</li>
+					<li>
+						<strong>Length:</strong> 255
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> false
+					</li>
+					<li>
+						<strong>Unique:</strong> true
+					</li>
+					<li>
+						<strong>Comment:</strong> ID
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_title">abws_title</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(50)
+					</li>
+					<li>
+						<strong>Length:</strong> 50
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> false
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 标题
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_class">abws_class</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(30)
+					</li>
+					<li>
+						<strong>Length:</strong> 30
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 异常情况类别，来源于1交易预警2群众举报3抽样调查4规划拆迁5现状调查6复垦验收
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_date">abws_date</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> date
+					</li>
+					<li>
+						<strong>Length:</strong> 10
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 标记为异常的时间
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_content">abws_content</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> longtext
+					</li>
+					<li>
+						<strong>Length:</strong> 65,535
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 异常内容描述
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_isSolved">abws_isSolved</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(30)
+					</li>
+					<li>
+						<strong>Length:</strong> 30
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 是否处理，需要采集人完成信息录入时将其改为“是”（PDA端）
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_opinion">abws_opinion</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> longtext
+					</li>
+					<li>
+						<strong>Length:</strong> 65,535
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 处理意见，需要采集人调查后填写（PDA端）
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_photopath">abws_photopath</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> longtext
+					</li>
+					<li>
+						<strong>Length:</strong> 500
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 所采集照片路径，需要采集人填写采集照片路径（PDA端）
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_collector">abws_collector</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(20)
+					</li>
+					<li>
+						<strong>Length:</strong> 20
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 需要采集人填写采集人姓名（PDA端）
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_collecttime">abws_collecttime</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> date
+					</li>
+					<li>
+						<strong>Length:</strong> 10
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 需要采集人填写信息采集时间（PDA端）
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_isTaskAssigned">abws_isTaskAssigned</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(20)
+					</li>
+					<li>
+						<strong>Length:</strong> 20
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 任务是否下达
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_rw_id">rw_id</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(20)
+					</li>
+					<li>
+						<strong>Length:</strong> 20
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 任务编号
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_project_name">project_name</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(200)
+					</li>
+					<li>
+						<strong>Length:</strong> 200
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 项目名称
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_project_id">project_id</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(20)
+					</li>
+					<li>
+						<strong>Length:</strong> 20
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 项目编号
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_source_recordid">source_recordid</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> varchar(20)
+					</li>
+					<li>
+						<strong>Length:</strong> 20
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 异常信息来源的记录id
+					</li>
+				</ul>
+
+
+				<hr/>
+				<h3 id="column_detail_abws_xunchacontent">abws_xunchacontent</h3>
+				
+				<ul>
+					<li>
+						<strong>Type:</strong> longtext
+					</li>
+					<li>
+						<strong>Length:</strong> 65,535
+					</li>
+					<li>
+						<strong>Precision:</strong> 19
+					</li>
+					<li>
+						<strong>Scale:</strong> 2
+					</li>
+					<li>
+						<strong>Nullable:</strong> true
+					</li>
+					<li>
+						<strong>Unique:</strong> false
+					</li>
+					<li>
+						<strong>Comment:</strong> 巡查情况描述
+					</li>
+				</ul>
+
+
+				<hr/>
+				
+
+	</body>
+</html>

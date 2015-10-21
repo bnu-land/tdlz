@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "ShouyiStat_Jianshe",
+        "model": "ShouyiStat_Jianshe",
+        "storeId": "ShouyiStat_Jianshe"
+    },
+    "designerId": "dbcc8085-272c-4482-a93b-d094ca6e00fb",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": "getBenefitList16"
+            },
+            "name": "MyAjaxProxy3",
+            "designerId": "fd794ba6-b6c8-4cb0-aee3-7b4cc4138052",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader3",
+                    "designerId": "799e41ba-8ed7-4ca3-a202-7a943fa140f0"
+                }
+            ]
+        }
+    ]
+}

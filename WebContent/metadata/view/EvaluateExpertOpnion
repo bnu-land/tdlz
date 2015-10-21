@@ -1,0 +1,392 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "EvaluateExpertOpnion",
+        "designer|userClassName": "EvaluateExpertOpnion",
+        "height": 386,
+        "layout": "fit",
+        "title": "专家意见"
+    },
+    "designerId": "32abbd74-ddb5-4f1d-907d-4977de311fd8",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "bodyPadding": 10,
+                "designer|snapToGrid": 10,
+                "id": "EvaluateExpertOpnionForm",
+                "layout": "absolute",
+                "title": ""
+            },
+            "name": "MyForm31",
+            "designerId": "a83436b4-a644-45ab-82ab-f0062313ee39",
+            "cn": [
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "海拔278米，地面坡度5°～10°，岗顶平齐，岗体多呈馒头状，和缓起伏，微向平原倾斜",
+                        "fieldLabel": "微地貌描述",
+                        "height": 72,
+                        "id": "microreliefDescription",
+                        "layout|x": 100,
+                        "layout|y": 100,
+                        "name": "microreliefDescription",
+                        "width": 390
+                    },
+                    "name": "MyTextArea11",
+                    "designerId": "ea37d946-5fa5-4254-99f3-b2903c995a15"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "田地比重过大",
+                        "fieldLabel": "项目区田土比重",
+                        "id": "landProportion",
+                        "layout|x": 560,
+                        "layout|y": 100,
+                        "name": "landProportion",
+                        "width": 430
+                    },
+                    "name": "MyTextField184",
+                    "designerId": "4a0be0eb-5f39-4264-83f0-daca28dd2fc2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目名称",
+                        "id": "projectnameE",
+                        "layout|x": 560,
+                        "layout|y": 50,
+                        "name": "landProportion",
+                        "readOnly": true,
+                        "width": 430
+                    },
+                    "name": "MyTextField185",
+                    "designerId": "c7418350-f4f2-4aed-974b-0ae239b5bba5"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "水利工程总蓄水能力达11万立方米",
+                        "fieldLabel": "项目区蓄水能力",
+                        "id": "waterStorageCapacity",
+                        "layout|x": 560,
+                        "layout|y": 150,
+                        "name": "waterStorageCapacity",
+                        "width": 430
+                    },
+                    "name": "MyTextField186",
+                    "designerId": "09b47381-675a-4bc1-957c-1e2149827874"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "距通往主干道20分钟车程",
+                        "fieldLabel": "交通条件",
+                        "id": "trafficConditions",
+                        "layout|x": 100,
+                        "layout|y": 190,
+                        "name": "trafficConditions",
+                        "width": 390
+                    },
+                    "name": "MyTextField187",
+                    "designerId": "ba9c9db1-7c6e-411c-85c1-7929c5ed1dd3"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "项目编号",
+                        "id": "projectidE",
+                        "layout|x": 100,
+                        "layout|y": 50,
+                        "name": "trafficConditions",
+                        "readOnly": true,
+                        "width": 390
+                    },
+                    "name": "MyTextField188",
+                    "designerId": "26f81dfa-790e-4f8a-b89e-364844715375"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "肥力质量中等",
+                        "fieldLabel": "肥力评价",
+                        "id": "fertilityEvaluation",
+                        "layout|x": 560,
+                        "layout|y": 190,
+                        "name": "fertilityEvaluation",
+                        "width": 430
+                    },
+                    "name": "MyTextField189",
+                    "designerId": "da05c6a9-cf90-478f-8f66-1edeff107689"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "沟粪函坎设计与质量达标",
+                        "fieldLabel": "沟粪函坎质量评价",
+                        "id": "goukanQuality",
+                        "layout|x": 100,
+                        "layout|y": 240,
+                        "name": "goukanQuality",
+                        "width": 390
+                    },
+                    "name": "MyTextField190",
+                    "designerId": "dc476266-10b0-4068-a9a9-736a5b8dac69"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "地块台面宽高3-5",
+                        "fieldLabel": "主体田土块成型度（打圈）",
+                        "id": "formingClodsDegree",
+                        "layout|x": 560,
+                        "layout|y": 240,
+                        "name": "formingClodsDegree",
+                        "width": 430
+                    },
+                    "name": "MyTextField191",
+                    "designerId": "0cb1d521-8893-4a1e-9602-961131ad1f82"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "新增耕地土质肥沃满足新增耕地质量要求，工程数量质量都达到了实施方案设计标准。",
+                        "fieldLabel": "综合评价结果",
+                        "height": 122,
+                        "id": "evaluationResults",
+                        "layout|x": 100,
+                        "layout|y": 300,
+                        "name": "evaluationResults",
+                        "width": 890
+                    },
+                    "name": "MyTextArea12",
+                    "designerId": "fc3d26d5-a421-4e44-8aa3-974258a3f439"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "emptyText": "白天云 研究员 重庆农业局",
+                        "fieldLabel": "评价单位/评价人/职称",
+                        "height": 82,
+                        "id": "evaluationExpert",
+                        "layout|x": 100,
+                        "layout|y": 440,
+                        "name": "evaluationExpert",
+                        "width": 890
+                    },
+                    "name": "MyTextArea13",
+                    "designerId": "7b7f56f2-cedf-4c32-8b01-a43182aa4348"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "layout|x": 70,
+                        "layout|y": 10
+                    },
+                    "name": "MyToolbar42",
+                    "designerId": "1ca4c9f9-c68b-4cd9-8743-a4c06dfee7e1",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/table_go.png",
+                                "layout|flex": null,
+                                "text": "保存"
+                            },
+                            "name": "MyButton174",
+                            "designerId": "03b74bc8-7c37-4751-89e0-8d05e8bcaebd",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var projectidE=Ext.getCmp('projectidE').getValue();\r",
+                                            "var projectnameE=Ext.getCmp('projectnameE').getValue();\r",
+                                            "var microreliefDescription=Ext.getCmp('microreliefDescription').getValue();\r",
+                                            "var landProportion=Ext.getCmp('landProportion').getValue();\r",
+                                            "var waterStorageCapacity=Ext.getCmp('waterStorageCapacity').getValue();\r",
+                                            "var trafficConditions=Ext.getCmp('trafficConditions').getValue();\r",
+                                            "var fertilityEvaluation=Ext.getCmp('fertilityEvaluation').getValue();\r",
+                                            "var goukanQuality=Ext.getCmp('goukanQuality').getValue();\r",
+                                            "var formingClodsDegree=Ext.getCmp('formingClodsDegree').getValue();\r",
+                                            "var evaluationResults=Ext.getCmp('evaluationResults').getValue();\r",
+                                            "var evaluationExpert=Ext.getCmp('evaluationExpert').getValue();\r",
+                                            "\r",
+                                            "Ext.Ajax.request({\r",
+                                            "    url:'ExpertOpinionResult',\r",
+                                            "    method: 'POST',\r",
+                                            "    params:{PROJECTID:projectidE,\r",
+                                            "        projectnameE:projectnameE,\r",
+                                            "        microreliefDescription:microreliefDescription,\r",
+                                            "        landProportion:landProportion,\r",
+                                            "        waterStorageCapacity:waterStorageCapacity,    \r",
+                                            "        trafficConditions:trafficConditions,\r",
+                                            "        goukanQuality:goukanQuality,\r",
+                                            "        formingClodsDegree:formingClodsDegree,    \r",
+                                            "        evaluationResults:evaluationResults,\r",
+                                            "        evaluationExpert:evaluationExpert,\r",
+                                            "        fertilityEvaluation:fertilityEvaluation\r",
+                                            "    },\r",
+                                            "\r",
+                                            "    success:function(options, eOpts){\r",
+                                            "    Ext.Msg.alert('提示', '专家意见提交到数据库成功！'); },     \r",
+                                            "    failure:function(options, eOpts){\r",
+                                            "    Ext.Msg.alert('提示', '专家意见提交到数据库失败！'); } \r",
+                                            "\r",
+                                            "});"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "51b7b34f-d4cf-4cb3-9f46-eb397d008362"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "images/return.png",
+                                "layout|flex": null,
+                                "text": "返回"
+                            },
+                            "name": "MyButton175",
+                            "designerId": "c2e13bad-205d-4b37-ba0f-65808406a81c",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var tabs = this.up('tabpanel');\r",
+                                            "tabs.removeAll(true);\r",
+                                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                            "var newtab = tabs.add(Ext.widget('EvaluateSelectProject'));"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "9866faac-a041-4858-81b8-0609f453ee0e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 440,
+                        "layout|y": 10,
+                        "text": "复垦项目专家意见"
+                    },
+                    "name": "MyLabel11",
+                    "designerId": "b78a2834-7723-4eaf-99ea-fad095973e10"
+                }
+            ]
+        }
+    ]
+}

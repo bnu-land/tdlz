@@ -1,0 +1,46 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "InfoVoteoptionUpdateStore",
+        "model": "InfoVoteoptionModel",
+        "storeId": "InfoVoteoptionUpdateStore"
+    },
+    "designerId": "0ecc7b99-c858-4069-9236-b3333e06e5b9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{voteId:''}"
+                ],
+                "url": "get_voteResult"
+            },
+            "name": "MyAjaxProxy97",
+            "designerId": "62483c34-b95c-4786-b9ff-b18ce4037e80",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader97",
+                    "designerId": "d53fe388-7c82-429f-a58a-bbdeca002e21"
+                }
+            ]
+        }
+    ]
+}

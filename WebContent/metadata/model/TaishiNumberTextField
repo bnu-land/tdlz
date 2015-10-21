@@ -1,0 +1,43 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "TaishiNumberTextField",
+        "designer|userClassName": "TaishiNumberTextField"
+    },
+    "designerId": "cb46e59a-9d26-4a86-a1c0-dc8700774144",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string"
+            },
+            "name": "MyField79",
+            "designerId": "96b6ac15-f4ba-4aac-b186-bd10d546da33"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value",
+                "type": "string"
+            },
+            "name": "MyField80",
+            "designerId": "019278ae-4fa6-4245-b259-f42d84b9b22c"
+        }
+    ]
+}

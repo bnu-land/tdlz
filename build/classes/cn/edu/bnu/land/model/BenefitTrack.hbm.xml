@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-13 21:59:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitTrack" table="benefit_track" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="pjh" type="string">
+            <column name="pjh" length="15">
+                <comment>&#198;&#177;&#190;&#221;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="htbh" type="string">
+            <column name="htbh" length="15">
+                <comment>&#186;&#207;&#205;&#172;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="jysj" type="date">
+            <column name="jysj" length="10">
+                <comment>&#189;&#187;&#210;&#215;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="je" type="java.lang.Integer">
+            <column name="je">
+                <comment>&#189;&#240;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="zjlrf" type="string">
+            <column name="zjlrf" length="128">
+                <comment>&#215;&#202;&#189;&#240;&#193;&#247;&#200;&#235;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="zjlcf" type="string">
+            <column name="zjlcf" length="128">
+                <comment>&#215;&#202;&#189;&#240;&#193;&#247;&#179;&#246;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="yt" type="string">
+            <column name="yt" length="128">
+                <comment>&#211;&#195;&#205;&#190;</comment>
+            </column>
+        </property>
+        <property name="jbr" type="string">
+            <column name="jbr" length="32">
+                <comment>&#190;&#173;&#176;&#236;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="dzqr" type="string">
+            <column name="dzqr" length="8">
+                <comment>&#181;&#189;&#213;&#203;&#200;&#183;&#200;&#207;</comment>
+            </column>
+        </property>
+        <property name="scsmj" type="string">
+            <column name="scsmj" length="128">
+                <comment>&#201;&#207;&#180;&#171;&#201;&#168;&#195;&#232;&#188;&#254;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

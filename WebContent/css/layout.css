@@ -1,0 +1,7 @@
+/* <![CDATA[ */
+* {margin:0; padding:0;}
+body, html {width:100%;}
+#wrapper {position:relative; padding-right:200px; overflow:hidden; +display:inline-block;}
+.left {width:200px; background:#ccc; float:left;}
+.map {width:100%; border:1px solid #000; float:left; margin-right:-200px;}
+/* ]]> */

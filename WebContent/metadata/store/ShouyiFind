@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ShouyiFind",
+        "model": "Shouyi_Find",
+        "pageSize": null,
+        "storeId": "ShouyiFind"
+    },
+    "designerId": "d4700075-4e34-46bc-97a4-49d7dd4c56cf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": "getBenefitList10"
+            },
+            "name": "MyAjaxProxy5",
+            "designerId": "84d7610c-e037-427d-8e78-96c018d2089e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader5",
+                    "designerId": "d1e4fa10-6658-447e-8788-8bd3385ae3ac"
+                }
+            ]
+        }
+    ]
+}

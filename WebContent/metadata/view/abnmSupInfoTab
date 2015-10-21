@@ -1,0 +1,2075 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "abnmSupInfoTab",
+        "designer|userClassName": "abnmSupInfoTab",
+        "id": "abnmSupInfoTab",
+        "layout": "fit",
+        "title": "监管>>监察信息查询统计"
+    },
+    "designerId": "164d258b-41e1-404a-9aae-c887bc9a5916",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": null,
+                "height": 421,
+                "id": null,
+                "title": null
+            },
+            "name": "MyTabPanel10",
+            "designerId": "7e5739a4-a0fe-4a91-8b5c-3eb9d1b3bef7",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "已发布"
+                    },
+                    "name": "MyPanel73",
+                    "designerId": "f32ec3d2-2344-4a98-b2b7-5cdadf64c6dd",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig29",
+                            "designerId": "947213e3-b751-4b7e-82e6-88e391fa1d44"
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "collapsible": false,
+                                "forceFit": true,
+                                "id": "abnmSupInfoPubGrid",
+                                "store": "ArticlePubWFJCStore",
+                                "title": ""
+                            },
+                            "name": "MyGridPanel69",
+                            "designerId": "0ae13927-d661-4d89-92a9-9b05e72496cc",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.RowNumberer",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "记录号",
+                                        "width": 47
+                                    },
+                                    "name": "MyRowNumberer61",
+                                    "designerId": "555f6a4d-68e2-484d-85bc-fd34fbda09ea"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleName",
+                                        "text": "信息标题",
+                                        "tooltip": "点击查看详细信息"
+                                    },
+                                    "name": "MyColumn302",
+                                    "designerId": "64d23f15-e601-49b4-9178-6e562aad6445"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleAuthor",
+                                        "text": "作者"
+                                    },
+                                    "name": "MyColumn303",
+                                    "designerId": "240d3f0e-ad2f-406b-9946-fcf10fbfe255"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Date",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articlePublishtime",
+                                        "format": "Y-m-d",
+                                        "text": "发布时间"
+                                    },
+                                    "name": "MyDateColumn65",
+                                    "designerId": "2839ca6c-7b3a-418d-a494-596af7c97245"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "commentNum",
+                                        "designer|displayName": "评论数",
+                                        "id": null,
+                                        "text": "评论数"
+                                    },
+                                    "name": "MyColumn304",
+                                    "designerId": "bd3d800f-39be-47bb-a1cc-d970c979268d"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView69",
+                                    "designerId": "37a5a087-9805-4fd2-86f3-b5ba1793068f"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "name": "MyCheckboxSelectionModel61",
+                                    "designerId": "aeb1935c-cb39-4108-98b9-a5cb518a52bc"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top",
+                                        "enableOverflow": true,
+                                        "frame": false,
+                                        "height": null
+                                    },
+                                    "name": "MyToolbar86",
+                                    "designerId": "35131f81-275e-4654-b10a-0043619951b0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "起始时间",
+                                                "format": "Y-m-d",
+                                                "id": "searchDateAbnmSup",
+                                                "labelWidth": 70,
+                                                "layout|flex": null,
+                                                "width": 204
+                                            },
+                                            "name": "MyDateField77",
+                                            "designerId": "a12b9f92-fb63-4a30-9c1a-02265722896d"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "请输入搜索关键字",
+                                                "fieldLabel": "",
+                                                "id": "searchKeywordAbnmSup",
+                                                "labelWidth": 50,
+                                                "layout|flex": null,
+                                                "width": 211
+                                            },
+                                            "name": "MyTextField281",
+                                            "designerId": "6f02747b-5fba-45a3-b3a9-19c8c7109e34"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/file_view0.png",
+                                                "layout|flex": null,
+                                                "text": "搜索"
+                                            },
+                                            "name": "MyButton325",
+                                            "designerId": "2efbc0a1-4e9d-4743-aa39-3be11ac0966b",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var getDate = Ext.util.Format.date(Ext.getCmp('searchDateAbnmSup').getValue(),'Y-m-d');\r",
+                                                            "var getKeyword = Ext.getCmp('searchKeywordAbnmSup').getValue();\r",
+                                                            "var mystore=Ext.StoreMgr.get('ArticlePubWFJCStore'); //获得store对象\r",
+                                                            "//在load事件中添加参数\r",
+                                                            "//mystore.load(\r",
+                                                            "//{params:{\r",
+                                                            "//    start:\"0\",\r",
+                                                            "//    limit:\"25\",\r",
+                                                            "//    searchKeyword:getKeyword,\r",
+                                                            "//    searchDate:getDate   \r",
+                                                            "//} \r",
+                                                            "//}\r",
+                                                            "//);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "mystore.on('beforeload',function(store,options){\r",
+                                                            "\r",
+                                                            "    var new_params = { \r",
+                                                            "        searchKeyword:getKeyword,\r",
+                                                            "        searchDate:getDate\r",
+                                                            "    };\r",
+                                                            "\r",
+                                                            "    Ext.apply(store.proxy.extraParams,new_params);\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "mystore.load(\r",
+                                                            "{\r",
+                                                            "    params:{\r",
+                                                            "        start:\"0\",\r",
+                                                            "        limit:\"25\"\r",
+                                                            "    }\r",
+                                                            "}\r",
+                                                            ");"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "bdb82950-82c0-4a92-966c-3f642de52ff7"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|createAlias": null,
+                                                "designer|displayName": null,
+                                                "icon": "images/table_add.png",
+                                                "layout|flex": null,
+                                                "text": "添加新信息"
+                                            },
+                                            "name": "MyButton326",
+                                            "designerId": "12031ca8-a9d0-4b1e-9189-9ed903919787",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "\r",
+                                                            "var channelStore = Ext.StoreMgr.get('InfoChannelStore');\r",
+                                                            "var win = new Ext.Window({\r",
+                                                            "\r",
+                                                            "    title: '信息编辑',\r",
+                                                            "    closable: true,\r",
+                                                            "    layout: 'fit',\r",
+                                                            "    jsonSubmit: true,\r",
+                                                            "    items: [\r",
+                                                            "    {\r",
+                                                            "        xtype: 'form',\r",
+                                                            "        height: 588,\r",
+                                                            "        id: 'articleAddForm',\r",
+                                                            "        layout: {\r",
+                                                            "            type: 'absolute'\r",
+                                                            "        },\r",
+                                                            "        anchorSize: 100,\r",
+                                                            "        bodyPadding: 10,\r",
+                                                            "        jsonSubmit: true,\r",
+                                                            "        items: [\r",
+                                                            "        {\r",
+                                                            "            xtype: 'htmleditor',\r",
+                                                            "            x: 10,\r",
+                                                            "            y: 130,\r",
+                                                            "            weight: 1,\r",
+                                                            "            height: 410,\r",
+                                                            "            id: 'articleContent',\r",
+                                                            "            width: 760,\r",
+                                                            "            fieldLabel: '信息内容',\r",
+                                                            "            name: 'articleContent'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            id: 'articleName',\r",
+                                                            "            width: 760,\r",
+                                                            "            fieldLabel: '信息名称',\r",
+                                                            "            name: 'articleName'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            x: 10,\r",
+                                                            "            y: 50,\r",
+                                                            "            id: 'articleAuthor',\r",
+                                                            "            width: 330,\r",
+                                                            "            fieldLabel: '信息作者',\r",
+                                                            "            name: 'articleAuthor'\r",
+                                                            "        },\r",
+                                                            "\r",
+                                                            "        {\r",
+                                                            "            xtype: 'combobox',\r",
+                                                            "            x: 450,\r",
+                                                            "            y: 50,\r",
+                                                            "            id: 'channelId',\r",
+                                                            "            width: 320,\r",
+                                                            "            fieldLabel: '频道栏目',\r",
+                                                            "            name: 'channelId',\r",
+                                                            "            displayField: 'channelName',\r",
+                                                            "            store: channelStore,\r",
+                                                            "            valueField: 'channelId',\r",
+                                                            "            value:12\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            x: 450,\r",
+                                                            "            y: 90,\r",
+                                                            "            id: 'articlePublishtime',\r",
+                                                            "            width: 320,\r",
+                                                            "            fieldLabel: '发布时间',\r",
+                                                            "            hidden:true,\r",
+                                                            "            name: 'articlePublishtime',\r",
+                                                            "            inputType: 'date'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'textfield',\r",
+                                                            "            x: 10,\r",
+                                                            "            y: 90,\r",
+                                                            "            id: 'articleSource',\r",
+                                                            "            width: 330,\r",
+                                                            "            fieldLabel: '信息来源',\r",
+                                                            "            name: 'articleSource'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            handler: function(button, event) {\r",
+                                                            "                var myform = Ext.getCmp('articleAddForm').getForm();\r",
+                                                            "\r",
+                                                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                            "                    myform.submit({\r",
+                                                            "                        url:'add_draftArticle',\r",
+                                                            "                        success: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('成功', '修改内容成功');\r",
+                                                            "\r",
+                                                            "                            //var mystore = Ext.StoreMgr.get('ArticlePubJYXCStore'); //获得store对象                                                   \r",
+                                                            "                            //mystore.load();\r",
+                                                            "                            //{\r",
+                                                            "                            //params: {\r",
+                                                            "                            // start: \"0\",\r",
+                                                            "                            // limit: \"25\"\r",
+                                                            "                            //searchField: Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                                            "                            //searchDate: Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(), 'Y-m-d'); \r",
+                                                            "                            //}\r",
+                                                            "                            //}\r",
+                                                            "                            // );\r",
+                                                            "                            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore'); //获得store对象                                                   \r",
+                                                            "                            mystore.load();\r",
+                                                            "                            win.close();\r",
+                                                            "\r",
+                                                            "                        },\r",
+                                                            "                        failure: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('失败', '修改内容失败');                           \r",
+                                                            "                            win.close();\r",
+                                                            "                        }\r",
+                                                            "                    });\r",
+                                                            "                } else {\r",
+                                                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                            "                }\r",
+                                                            "\r",
+                                                            "                return;\r",
+                                                            "            },\r",
+                                                            "            x: 330,\r",
+                                                            "            y: 560,\r",
+                                                            "            width: 90,\r",
+                                                            "            text: '保存为草稿'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            handler: function(button, event) {\r",
+                                                            "                var myform = Ext.getCmp('articleAddForm').getForm();\r",
+                                                            "\r",
+                                                            "                // Ext.getCmp('').setValues('');\r",
+                                                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                            "                    myform.submit({\r",
+                                                            "                        url:'add_pubArticle',\r",
+                                                            "\r",
+                                                            "                        success: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('成功', '修改内容成功');\r",
+                                                            "\r",
+                                                            "                            var mystore = Ext.StoreMgr.get('ArticlePubWFJCStore'); //获得store对象                                                   \r",
+                                                            "                            mystore.load();\r",
+                                                            "\r",
+                                                            "                            win.close();\r",
+                                                            "\r",
+                                                            "                        },\r",
+                                                            "                        failure: function(form, action) {\r",
+                                                            "                            Ext.Msg.alert('失败', '修改内容失败');                           \r",
+                                                            "                            win.close();\r",
+                                                            "                        }\r",
+                                                            "                    });\r",
+                                                            "                } else {\r",
+                                                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                            "                }\r",
+                                                            "\r",
+                                                            "                return;\r",
+                                                            "            },\r",
+                                                            "            x: 150,\r",
+                                                            "            y: 560,\r",
+                                                            "            width: 90,\r",
+                                                            "            text: '信息发布'\r",
+                                                            "        },\r",
+                                                            "        {\r",
+                                                            "            xtype: 'button',\r",
+                                                            "            handler: function(button, event) {\r",
+                                                            "                win.close();\r",
+                                                            "            },\r",
+                                                            "            x: 510,\r",
+                                                            "            y: 560,\r",
+                                                            "            width: 90,\r",
+                                                            "            text: '取消'\r",
+                                                            "        }\r",
+                                                            "        ]\r",
+                                                            "    }\r",
+                                                            "    ]\r",
+                                                            "\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "win.show();"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "43e3463a-26ab-4177-8984-d6d9fd1b57eb"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/table_delete.png",
+                                                "layout|flex": null,
+                                                "text": "移入回收站",
+                                                "width": null
+                                            },
+                                            "name": "MyButton327",
+                                            "designerId": "cd19edc1-4983-422b-86f4-743ff33d7e50",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('abnmSupInfoPubGrid');",
+                                                            "//var gird = this.down('grid');",
+                                                            "var record = grid.getSelectionModel().getSelection();",
+                                                            "",
+                                                            "if(record.length === 0){",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
+                                                            "    return;",
+                                                            "",
+                                                            "}else{",
+                                                            "",
+                                                            "",
+                                                            "    //var articleIds='';",
+                                                            "    //for(var i=0;i<record.length;i++)",
+                                                            "    //{",
+                                                            "    //    articleIds+=record[i].get(\"articleId\");",
+                                                            "    //    if(i<record.length-1)articleIds=articleIds+\",\";",
+                                                            "    //}",
+                                                            "    //Ext.Msg.alert('提示',articleIds);",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "    var  articleIds =new Array(record.length);",
+                                                            "    for(var i = 0;i<record.length;i++){",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");",
+                                                            "",
+                                                            "    }",
+                                                            "    //Ext.Msg.alert('提示',articleIds);",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "    Ext.Ajax.request({",
+                                                            "        url:'update_articleToRecycle',",
+                                                            "        params:{articleIds:articleIds},",
+                                                            "",
+                                                            "        success:function(response){",
+                                                            "            Ext.Msg.alert('成功','文章放入到回收站');",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
+                                                            "            mystore.load();",
+                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');",
+                                                            "            mystore2.load();",
+                                                            "",
+                                                            "        }",
+                                                            "",
+                                                            "    });",
+                                                            "",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "a551c0b4-efb7-482d-acb9-3f9a6d7c3982"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "displayInfo": true,
+                                        "dock": "bottom",
+                                        "height": 36,
+                                        "store": "ArticlePubWFJCStore",
+                                        "width": 360
+                                    },
+                                    "name": "MyPagingToolbar52",
+                                    "designerId": "143d2cea-6ef9-4da8-bf59-74bfe8cbcc49"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onArticlegridCellClick",
+                                        "implHandler": [
+                                            "if(cellIndex === undefined || cellIndex < 2) return;\r",
+                                            "\r",
+                                            "\r",
+                                            "//var newArticleTab = Ext.widget('infoArtilceScanTab');\r",
+                                            "else if(cellIndex == 5){\r",
+                                            "\r",
+                                            "    //Ext.Msg.alert('tips', '你点击了cellIndex=5');\r",
+                                            "\r",
+                                            "    //var newCommentTab = Ext.widget('infoCommentTab');\r",
+                                            "\r",
+                                            "    var articleId = record.data.articleId;\r",
+                                            "\r",
+                                            "    var getStore=Ext.StoreMgr.get('InfoCommentStore'); //获得store对象\r",
+                                            "    //在load事件中添加参数\r",
+                                            "    getStore.load(\r",
+                                            "    {params:{\r",
+                                            "        start:\"0\",\r",
+                                            "        limit:\"25\",\r",
+                                            "        articleId:articleId\r",
+                                            "    } \r",
+                                            "}\r",
+                                            ");\r",
+                                            "\r",
+                                            "\r",
+                                            "var commentwin = new Ext.Window({\r",
+                                            "\r",
+                                            "    title:'查看评论',\r",
+                                            "    closable:true,\r",
+                                            "    layout:'fit',\r",
+                                            "    items:[\r",
+                                            "    {\r",
+                                            "        xtype: 'form',\r",
+                                            "        height: 400,\r",
+                                            "        width: 800,\r",
+                                            "        layout: {\r",
+                                            "            type: 'fit'\r",
+                                            "        },\r",
+                                            "        bodyPadding: 10,\r",
+                                            "        items: [\r",
+                                            "        {\r",
+                                            "            xtype: 'gridpanel',\r",
+                                            "            id: 'commentGrid',\r",
+                                            "            title: '',\r",
+                                            "            forceFit: false,\r",
+                                            "            store: getStore,\r",
+                                            "            columns: [\r",
+                                            "            {\r",
+                                            "                xtype: 'rownumberer',\r",
+                                            "                width: 38\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'gridcolumn',\r",
+                                            "                width: 103,\r",
+                                            "                dataIndex: 'commentAuthor',\r",
+                                            "                text: '评论人'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'datecolumn',\r",
+                                            "                width: 100,\r",
+                                            "                dataIndex: 'commentTime',\r",
+                                            "                text: '评论时间'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'gridcolumn',\r",
+                                            "                width: 724,\r",
+                                            "                dataIndex: 'commentContent',\r",
+                                            "                text: '评论内容'\r",
+                                            "            }\r",
+                                            "            ],\r",
+                                            "            dockedItems: [\r",
+                                            "            {\r",
+                                            "                xtype: 'toolbar',\r",
+                                            "                dock: 'top',\r",
+                                            "                enableOverflow: true,\r",
+                                            "                items: [\r",
+                                            "                {\r",
+                                            "                    xtype: 'button',\r",
+                                            "                    handler: function(button, event) {\r",
+                                            "                        var grid = Ext.getCmp('commentGrid');\r",
+                                            "\r",
+                                            "                        var record = grid.getSelectionModel().getSelection();\r",
+                                            "\r",
+                                            "                        if(record.length === 0){\r",
+                                            "                            Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                            "                            return;\r",
+                                            "\r",
+                                            "                        }else{\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "                            var  commentIds =new Array(record.length);\r",
+                                            "                            for(var i = 0;i<record.length;i++){\r",
+                                            "                                commentIds[i] = record[i].get(\"commentId\");\r",
+                                            "\r",
+                                            "                            }\r",
+                                            "\r",
+                                            "\r",
+                                            "                            Ext.Ajax.request({\r",
+                                            "                                url:'update_comment',\r",
+                                            "                                params:{commentIds:commentIds},\r",
+                                            "\r",
+                                            "                                success:function(response){\r",
+                                            "                                    Ext.Msg.alert('成功','删除评论');\r",
+                                            "                                    getStore.reload();\r",
+                                            "                                    var articleWFJCStore = Ext.StoreMgr.get('ArticlePubWFJCStore'); \r",
+                                            "\r",
+                                            "\r",
+                                            "                                    articleWFJCStore.load();\r",
+                                            "                                }\r",
+                                            "\r",
+                                            "                            });\r",
+                                            "\r",
+                                            "                        }\r",
+                                            "                    },\r",
+                                            "                    icon: 'images/table_delete.png',\r",
+                                            "                    text: '删除'\r",
+                                            "                }\r",
+                                            "                ]\r",
+                                            "            }\r",
+                                            "            ],\r",
+                                            "            selModel: Ext.create('Ext.selection.CheckboxModel', {\r",
+                                            "\r",
+                                            "            })\r",
+                                            "        }\r",
+                                            "        ]\r",
+                                            "    }\r",
+                                            "\r",
+                                            "    ]\r",
+                                            "});\r",
+                                            "\r",
+                                            "commentwin.show();\r",
+                                            "\r",
+                                            "\r",
+                                            "}else{\r",
+                                            "\r",
+                                            "\r",
+                                            "var win = new Ext.Window({\r",
+                                            "\r",
+                                            "    title:'查看文章详细信息',\r",
+                                            "    closable:true,\r",
+                                            "    layout:'fit',\r",
+                                            "    items:[\r",
+                                            "    {\r",
+                                            "        xtype: 'form',\r",
+                                            "        height: 516,\r",
+                                            "        id: 'articleScanForm12',\r",
+                                            "        layout: {\r",
+                                            "            type: 'absolute'\r",
+                                            "        },\r",
+                                            "        anchorSize: 100,\r",
+                                            "        bodyPadding: 10,\r",
+                                            "        jsonSubmit: true,\r",
+                                            "        items: [\r",
+                                            "        {\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 210,\r",
+                                            "            weight: 1,\r",
+                                            "            height: 360,\r",
+                                            "            width: 900,\r",
+                                            "            fieldLabel: '文章内容',\r",
+                                            "            id: 'articleContent',\r",
+                                            "            name: 'articleContent'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            width: 620,\r",
+                                            "            fieldLabel: '文章名称',\r",
+                                            "            id: 'articleName', \r",
+                                            "            name: 'articleName'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 90,\r",
+                                            "            width: 290,\r",
+                                            "            fieldLabel: '文章作者',\r",
+                                            "            id: 'articleAuthor',\r",
+                                            "            name: 'articleAuthor'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 170,\r",
+                                            "            width: 280,\r",
+                                            "            fieldLabel: '发布时间',\r",
+                                            "            id: 'articlePublishtime',\r",
+                                            "            name: 'articlePublishtime'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 130,\r",
+                                            "            width: 290,\r",
+                                            "            fieldLabel: '文章来源',\r",
+                                            "            id: 'articleSource',\r",
+                                            "            name: 'articleSource'\r",
+                                            "        },{\r",
+                                            "            xtype: 'displayfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 50,\r",
+                                            "            id: 'channelId',\r",
+                                            "            width: 320,\r",
+                                            "            fieldLabel: '频道栏目',\r",
+                                            "            name: 'channelId'\r",
+                                            "\r",
+                                            "\r",
+                                            "        }\r",
+                                            "\r",
+                                            "        ]\r",
+                                            "    }\r",
+                                            "    ]\r",
+                                            "\r",
+                                            "\r",
+                                            "});\r",
+                                            "Ext.getCmp('articleContent').setValue(record.data.articleContent);\r",
+                                            "Ext.getCmp('channelId').setValue('违法监察');\r",
+                                            "Ext.getCmp('articleName').setValue(record.data.articleName);\r",
+                                            "Ext.getCmp('articleAuthor').setValue(record.data.articleAuthor);\r",
+                                            "Ext.getCmp('articlePublishtime').setValue(record.data.articlePublishtime);\r",
+                                            "Ext.getCmp('articleSource').setValue(record.data.articleSource);\r",
+                                            "\r",
+                                            "\r",
+                                            "win.show();\r",
+                                            "}\r",
+                                            ""
+                                        ],
+                                        "name": "cellclick",
+                                        "scope": "me"
+                                    },
+                                    "name": "onArticlegridCellClick",
+                                    "designerId": "74a97f24-6495-4f0e-bfcd-aa5aebeca6d6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "草稿箱"
+                    },
+                    "name": "MyPanel74",
+                    "designerId": "89f35c99-8da7-45fa-9b43-8ce422765d09",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig30",
+                            "designerId": "8e331e64-3507-4a78-a0bf-7913936d3600"
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "collapsible": false,
+                                "forceFit": true,
+                                "id": "abnmSupInfoDraftGrid",
+                                "store": "ArticleDraftWFJCStore",
+                                "title": ""
+                            },
+                            "name": "MyGridPanel70",
+                            "designerId": "4162dc57-73eb-441d-8ed9-186c2f9d5a5a",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.RowNumberer",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "记录号",
+                                        "width": 47
+                                    },
+                                    "name": "MyRowNumberer62",
+                                    "designerId": "d476239a-3892-4693-ba8a-cebdde81718b"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleName",
+                                        "text": "标题"
+                                    },
+                                    "name": "MyColumn305",
+                                    "designerId": "8b5a1fc3-014e-49c0-9af2-feab5946af4b"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleAuthor",
+                                        "text": "作者"
+                                    },
+                                    "name": "MyColumn306",
+                                    "designerId": "ff172a2a-97a7-4440-8505-14e865089a54"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleContent",
+                                        "text": "内容",
+                                        "width": 420
+                                    },
+                                    "name": "MyColumn307",
+                                    "designerId": "09364c21-e48f-41ed-b47b-98ba2cfe82a6"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView70",
+                                    "designerId": "a9d25b7e-60c2-4d4d-ac67-beddb814e280"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "name": "MyCheckboxSelectionModel62",
+                                    "designerId": "0902b8c4-120b-4e8d-99a9-7f5e26f44b6a"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top",
+                                        "enableOverflow": true,
+                                        "frame": false,
+                                        "height": null
+                                    },
+                                    "name": "MyToolbar87",
+                                    "designerId": "cf609dcf-fc0c-420d-987f-0e15bcfd2ffc",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "起始时间",
+                                                "format": "Y-m-d",
+                                                "hidden": true,
+                                                "id": "searchDateDraft13",
+                                                "labelWidth": 70,
+                                                "layout|flex": null,
+                                                "width": 204
+                                            },
+                                            "name": "MyDateField78",
+                                            "designerId": "46e95c0b-a5ab-4716-999e-981f5638d241"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "请输入搜索关键字",
+                                                "fieldLabel": "",
+                                                "id": "searchKeywordDraft13",
+                                                "labelWidth": 50,
+                                                "layout|flex": null,
+                                                "width": 211
+                                            },
+                                            "name": "MyTextField282",
+                                            "designerId": "e23353c3-c642-424f-b198-45935670dae7"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/file_view0.png",
+                                                "layout|flex": null,
+                                                "text": "搜索"
+                                            },
+                                            "name": "MyButton328",
+                                            "designerId": "0a68a905-a893-42ac-9e5b-c8ae68cbf05a",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var getDate = Ext.util.Format.date(Ext.getCmp('searchDateDraft12').getValue(),'Y-m-d');\r",
+                                                            "var getKeyword = Ext.getCmp('searchKeywordDraft12').getValue();\r",
+                                                            "var mystore=Ext.StoreMgr.get('ArticleDraftWFJCStore'); //获得store对象\r",
+                                                            "//在load事件中添加参数\r",
+                                                            "//mystore.load(\r",
+                                                            "//{params:{\r",
+                                                            "//    start:\"0\",\r",
+                                                            "//    limit:\"25\",\r",
+                                                            "//    searchKeyword:getKeyword,\r",
+                                                            "//    searchDate:getDate   \r",
+                                                            "//} \r",
+                                                            "//}\r",
+                                                            "//);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "mystore.on('beforeload',function(store,options){\r",
+                                                            "\r",
+                                                            "    var new_params = { \r",
+                                                            "        searchKeyword:getKeyword,\r",
+                                                            "        searchDate:getDate\r",
+                                                            "    };\r",
+                                                            "\r",
+                                                            "    Ext.apply(store.proxy.extraParams,new_params);\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "mystore.load(\r",
+                                                            "{\r",
+                                                            "    params:{\r",
+                                                            "        start:\"0\",\r",
+                                                            "        limit:\"25\"\r",
+                                                            "    }\r",
+                                                            "}\r",
+                                                            ");"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "aef5679d-b39b-4b78-baa0-cbecf00b1857"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/table_add.png",
+                                                "layout|flex": null,
+                                                "text": "信息发布"
+                                            },
+                                            "name": "MyButton329",
+                                            "designerId": "8ea2b2a8-6938-4892-a48e-2233795b44f6",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('articleDraftGrid12');\r",
+                                                            "\r",
+                                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length === 0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "\r",
+                                                            "}else{\r",
+                                                            "\r",
+                                                            "    var  articleIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'update_articleToPubFromDraft',\r",
+                                                            "        params:{articleIds:articleIds},\r",
+                                                            "\r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('成功','文章恢复到已发布');\r",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore');\r",
+                                                            "            mystore.load();\r",
+                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');\r",
+                                                            "            mystore2.load();\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "9f77463a-4791-4155-a3de-4641617a1959"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/table_delete.png",
+                                                "layout|flex": null,
+                                                "text": "彻底删除"
+                                            },
+                                            "name": "MyButton330",
+                                            "designerId": "7bed4f2e-151b-45ab-9510-78f99b1c2268",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('abnmSupInfoDraftGrid');",
+                                                            "",
+                                                            "var record = grid.getSelectionModel().getSelection();",
+                                                            "",
+                                                            "if(record.length === 0){",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
+                                                            "    return;",
+                                                            "",
+                                                            "}else{",
+                                                            "",
+                                                            "    var  articleIds =new Array(record.length);",
+                                                            "    for(var i = 0;i<record.length;i++){",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");",
+                                                            "",
+                                                            "    }",
+                                                            "    //Ext.Msg.alert('提示',articleIds);",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "    Ext.Ajax.request({",
+                                                            "        url:'del_articleByIds',",
+                                                            "        params:{articleIds:articleIds},",
+                                                            "",
+                                                            "        success:function(response){",
+                                                            "            Ext.Msg.alert('失败','文章已删除');",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore');",
+                                                            "            mystore.load();",
+                                                            "",
+                                                            "",
+                                                            "        }",
+                                                            "",
+                                                            "    });",
+                                                            "",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "433fbb1d-817d-4947-955c-384ceb6f46dd"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "displayInfo": true,
+                                        "dock": "bottom",
+                                        "height": 36,
+                                        "store": "ArticleDraftWFJCStore",
+                                        "width": 360
+                                    },
+                                    "name": "MyPagingToolbar53",
+                                    "designerId": "62d3ba22-d4dc-4150-a2e3-c77b65c93d69"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onArticlegrid2CellClick",
+                                        "implHandler": [
+                                            "if (cellIndex === undefined || cellIndex < 2) return;\r",
+                                            "\r",
+                                            "//var newArticleTab = Ext.widget('infoArtilceScanTab');\r",
+                                            "var channelStore = Ext.StoreMgr.get('InfoChannelStore');\r",
+                                            "var win = new Ext.Window({\r",
+                                            "\r",
+                                            "    title: '信息编辑',\r",
+                                            "    closable: true,\r",
+                                            "    layout: 'fit',\r",
+                                            "    jsonSubmit: true,\r",
+                                            "    items: [{\r",
+                                            "        xtype: 'form',\r",
+                                            "        height: 588,\r",
+                                            "        id: 'articleDraftUpdateForm',\r",
+                                            "\r",
+                                            "        jsonSubmit: true,\r",
+                                            "        layout: {\r",
+                                            "            type: 'absolute'\r",
+                                            "        },\r",
+                                            "        anchorSize: 100,\r",
+                                            "        bodyPadding: 10,\r",
+                                            "\r",
+                                            "        items: [{\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            id: 'articleId',            \r",
+                                            "            fieldLabel: '信息ID',\r",
+                                            "            hidden: true,\r",
+                                            "            name: 'articleId'\r",
+                                            "        },        \r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            id:'articleIsrecycle',            \r",
+                                            "            fieldLabel: '是否在回收站',\r",
+                                            "            hidden: true,\r",
+                                            "            name: 'articleIsrecycle'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            id: 'articleIsdraft',            \r",
+                                            "            fieldLabel: '是否在草稿箱',\r",
+                                            "            hidden: true,\r",
+                                            "            name: 'articleIsdraft'\r",
+                                            "        },   \r",
+                                            "        {\r",
+                                            "            xtype: 'htmleditor',\r",
+                                            "            x: 10,\r",
+                                            "            y: 130,\r",
+                                            "            weight: 1,\r",
+                                            "            height: 410,\r",
+                                            "            id: 'articleContent',\r",
+                                            "            width: 760,\r",
+                                            "            fieldLabel: '信息内容',\r",
+                                            "            name: 'articleContent'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            id: 'articleName',\r",
+                                            "            width: 760,\r",
+                                            "            fieldLabel: '信息名称',\r",
+                                            "            name: 'articleName'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 50,\r",
+                                            "            id: 'articleAuthor',\r",
+                                            "            width: 330,\r",
+                                            "            fieldLabel: '信息作者',\r",
+                                            "            name: 'articleAuthor'\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'combobox',\r",
+                                            "            x: 450,\r",
+                                            "            y: 50,\r",
+                                            "            id: 'channelId',\r",
+                                            "            width: 320,\r",
+                                            "            fieldLabel: '频道栏目',\r",
+                                            "            name: 'channelId',\r",
+                                            "            displayField: 'channelName',\r",
+                                            "            store: channelStore,\r",
+                                            "            valueField: 'channelId',\r",
+                                            "            value:12\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            x: 450,\r",
+                                            "            y: 90,\r",
+                                            "            hidden: true,\r",
+                                            "            id: 'articlePublishtime',\r",
+                                            "            width: 320,\r",
+                                            "            fieldLabel: '发布时间',\r",
+                                            "            name: 'articlePublishtime',\r",
+                                            "            inputType: 'date'\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'textfield',\r",
+                                            "            x: 10,\r",
+                                            "            y: 90,\r",
+                                            "            id: 'articleSource',\r",
+                                            "            width: 330,\r",
+                                            "            fieldLabel: '信息来源',\r",
+                                            "            name: 'articleSource'\r",
+                                            "        },{\r",
+                                            "            xtype: 'button',\r",
+                                            "            x: 118,\r",
+                                            "            y: 561,\r",
+                                            "            width: 90,\r",
+                                            "            text: '保存',\r",
+                                            "            handler: function() {\r",
+                                            "                var myform = Ext.getCmp('articleDraftUpdateForm').getForm();\r",
+                                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                            "                    myform.submit({\r",
+                                            "                        url:'update_draftArticle',\r",
+                                            "                        success: function(form, action) {\r",
+                                            "                            Ext.Msg.alert('成功', '修改内容成功');\r",
+                                            "\r",
+                                            "                            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore'); //获得store对象                                                   \r",
+                                            "                            mystore.load();\r",
+                                            "                            //{\r",
+                                            "                            //params: {\r",
+                                            "                            // start: \"0\",\r",
+                                            "                            // limit: \"25\"\r",
+                                            "                            //searchField: Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                            "                            //searchDate: Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(), 'Y-m-d'); \r",
+                                            "                            //}\r",
+                                            "                            //}\r",
+                                            "                            // );\r",
+                                            "\r",
+                                            "                            win.close();\r",
+                                            "\r",
+                                            "                        },\r",
+                                            "                        failure: function(form, action) {\r",
+                                            "                            Ext.Msg.alert('失败', '修改内容失败');                           \r",
+                                            "                            win.close();\r",
+                                            "                        }\r",
+                                            "                    });\r",
+                                            "                } else {\r",
+                                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                            "                }\r",
+                                            "\r",
+                                            "                return;\r",
+                                            "\r",
+                                            "            }\r",
+                                            "        },\r",
+                                            "        {\r",
+                                            "            xtype: 'button',\r",
+                                            "            x: 250,\r",
+                                            "            y: 560,\r",
+                                            "            width: 90,\r",
+                                            "            text: '取消',\r",
+                                            "            handler:function(){\r",
+                                            "                win.close();\r",
+                                            "            }\r",
+                                            "        }\r",
+                                            "\r",
+                                            "\r",
+                                            "        ]\r",
+                                            "\r",
+                                            "    }]\r",
+                                            "\r",
+                                            "});\r",
+                                            "Ext.getCmp('articleId').setValue(record.data.articleId);\r",
+                                            "//Ext.getCmp('channelId').setValue('违法监察');\r",
+                                            "Ext.getCmp('articleIsrecycle').setValue(record.data.articleIsrecycle);\r",
+                                            "Ext.getCmp('articleIsdraft').setValue(record.data.articleIsdraft);\r",
+                                            "Ext.getCmp('articleContent').setValue(record.data.articleContent);\r",
+                                            "Ext.getCmp('articleName').setValue(record.data.articleName);\r",
+                                            "Ext.getCmp('articleAuthor').setValue(record.data.articleAuthor);\r",
+                                            "Ext.getCmp('articleSource').setValue(record.data.articleSource);\r",
+                                            "Ext.getCmp('articlePublishtime').setValue(record.data.articlePublishtime);\r",
+                                            "\r",
+                                            "\r",
+                                            "win.show();"
+                                        ],
+                                        "name": "cellclick",
+                                        "scope": "me"
+                                    },
+                                    "name": "onArticlegrid2CellClick",
+                                    "designerId": "850e9db2-5c3e-4ab9-81b4-aac2ec45303a"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "回收站"
+                    },
+                    "name": "MyPanel75",
+                    "designerId": "ad0395e3-644c-4713-a438-0133c3e8b6a4",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig31",
+                            "designerId": "3b4d2eca-1623-4f03-8482-ddb3c39ce2f6"
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "collapsible": false,
+                                "forceFit": true,
+                                "id": "abnmSupInfoRecGrid",
+                                "store": "ArticleRecWFJCStore",
+                                "title": ""
+                            },
+                            "name": "MyGridPanel71",
+                            "designerId": "b4c1b9e6-388f-43be-930b-d3ba573e8a11",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.RowNumberer",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "记录号",
+                                        "width": 47
+                                    },
+                                    "name": "MyRowNumberer63",
+                                    "designerId": "263eb057-5dec-480f-9dd7-dc1002dc913e"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleName",
+                                        "text": "标题"
+                                    },
+                                    "name": "MyColumn308",
+                                    "designerId": "3977b51b-74b0-4781-9776-5ea9fc0f97ec"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articleAuthor",
+                                        "text": "作者"
+                                    },
+                                    "name": "MyColumn309",
+                                    "designerId": "2b3c9c02-ca24-49cb-b15b-a28438928e5d"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Date",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "articlePublishtime",
+                                        "format": "Y-m-d",
+                                        "text": "发布时间"
+                                    },
+                                    "name": "MyDateColumn66",
+                                    "designerId": "8ce470ca-c1d5-43eb-b619-c7f7c65c62b1"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "commentNum",
+                                        "designer|displayName": "评论数",
+                                        "id": null,
+                                        "text": "评论数"
+                                    },
+                                    "name": "MyColumn310",
+                                    "designerId": "64799372-f066-426d-a6a9-90206ee9b8d6"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView71",
+                                    "designerId": "c7edefec-9978-430f-90a5-6fed06530ad9"
+                                },
+                                {
+                                    "type": "Ext.selection.CheckboxModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.CheckboxModel",
+                                    "name": "MyCheckboxSelectionModel63",
+                                    "designerId": "eeb25776-f73c-4fa0-ba10-d4022cd22e8d"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Toolbar",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "top",
+                                        "enableOverflow": true,
+                                        "frame": false,
+                                        "height": null
+                                    },
+                                    "name": "MyToolbar88",
+                                    "designerId": "26392604-12da-4470-8982-4851a9624fa6",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Date",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "起始时间",
+                                                "format": "Y-m-d",
+                                                "id": "searchDateRec13",
+                                                "labelWidth": 70,
+                                                "layout|flex": null,
+                                                "width": 204
+                                            },
+                                            "name": "MyDateField79",
+                                            "designerId": "e380b38f-ec3c-46ee-9dbd-1fd1f74a3942"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "emptyText": "请输入搜索关键字",
+                                                "fieldLabel": "",
+                                                "id": "searchKeywordRec13",
+                                                "labelWidth": 50,
+                                                "layout|flex": null,
+                                                "width": 211
+                                            },
+                                            "name": "MyTextField283",
+                                            "designerId": "cfcf31be-9832-48ed-a01b-48c40ecc6873"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/file_view0.png",
+                                                "layout|flex": null,
+                                                "text": "搜索"
+                                            },
+                                            "name": "MyButton331",
+                                            "designerId": "86691237-a3a8-4893-91d4-cde007e4607a",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var getDate = Ext.util.Format.date(Ext.getCmp('searchDateRec12').getValue(),'Y-m-d');\r",
+                                                            "var getKeyword = Ext.getCmp('searchKeywordRec12').getValue();\r",
+                                                            "var mystore=Ext.StoreMgr.get('ArticleRecWFJCStore'); //获得store对象\r",
+                                                            "//在load事件中添加参数\r",
+                                                            "//mystore.load(\r",
+                                                            "//{params:{\r",
+                                                            "//    start:\"0\",\r",
+                                                            "//    limit:\"25\",\r",
+                                                            "//    searchKeyword:getKeyword,\r",
+                                                            "//    searchDate:getDate   \r",
+                                                            "//} \r",
+                                                            "//}\r",
+                                                            "//);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "mystore.on('beforeload',function(store,options){\r",
+                                                            "    \r",
+                                                            "    var new_params = { \r",
+                                                            "        searchKeyword:getKeyword,\r",
+                                                            "        searchDate:getDate\r",
+                                                            "    };\r",
+                                                            "    \r",
+                                                            "    Ext.apply(store.proxy.extraParams,new_params);\r",
+                                                            "});\r",
+                                                            "\r",
+                                                            "mystore.load(\r",
+                                                            "    {\r",
+                                                            "        params:{\r",
+                                                            "        start:\"0\",\r",
+                                                            "        limit:\"25\"\r",
+                                                            "        }\r",
+                                                            "    }\r",
+                                                            ");"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "e7e497a9-16a6-4125-88fa-13c6c298b6fd"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/table_add.png",
+                                                "layout|flex": null,
+                                                "text": "恢复"
+                                            },
+                                            "name": "MyButton332",
+                                            "designerId": "42ec698f-03a9-484b-afa4-b8840ff613f4",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('abnmSupInfoRecGrid');",
+                                                            "",
+                                                            "var record = grid.getSelectionModel().getSelection();",
+                                                            "",
+                                                            "if(record.length === 0){",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
+                                                            "    return;",
+                                                            "",
+                                                            "}else{",
+                                                            "",
+                                                            "    var  articleIds =new Array(record.length);",
+                                                            "    for(var i = 0;i<record.length;i++){",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");",
+                                                            "",
+                                                            "    }",
+                                                            "    //Ext.Msg.alert('提示',articleIds);",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "    Ext.Ajax.request({",
+                                                            "        url:'update_articleToPubFromRec',",
+                                                            "        params:{articleIds:articleIds},",
+                                                            "",
+                                                            "        success:function(response){",
+                                                            "            Ext.Msg.alert('成功','文章恢复到已发布');",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
+                                                            "            mystore.load();",
+                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');",
+                                                            "            mystore2.load();",
+                                                            "",
+                                                            "        }",
+                                                            "",
+                                                            "    });",
+                                                            "",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "5dc45292-925c-4123-9fe8-2fddff914d22"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "images/table_delete.png",
+                                                "layout|flex": null,
+                                                "text": "彻底删除"
+                                            },
+                                            "name": "MyButton333",
+                                            "designerId": "30f49845-3a75-40bd-98b2-7ada8168a3e1",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var grid = Ext.getCmp('abnmSupInfoRecGrid');",
+                                                            "",
+                                                            "var record = grid.getSelectionModel().getSelection();",
+                                                            "",
+                                                            "if(record.length === 0){",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
+                                                            "    return;",
+                                                            "",
+                                                            "}else{",
+                                                            "",
+                                                            "    var  articleIds =new Array(record.length);",
+                                                            "    for(var i = 0;i<record.length;i++){",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");",
+                                                            "",
+                                                            "    }",
+                                                            "    //Ext.Msg.alert('提示',articleIds);",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "    Ext.Ajax.request({",
+                                                            "        url:'del_articleByIds',",
+                                                            "        params:{articleIds:articleIds},",
+                                                            "",
+                                                            "        success:function(response){",
+                                                            "            Ext.Msg.alert('成功','文章已删除');",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
+                                                            "            mystore.load();",
+                                                            "",
+                                                            "",
+                                                            "        }",
+                                                            "",
+                                                            "    });",
+                                                            "",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "f3371a64-be93-4b5e-93ef-7a54a3cbb86d"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "displayInfo": true,
+                                        "dock": "bottom",
+                                        "height": 36,
+                                        "store": "ArticleRecWFJCStore",
+                                        "width": 360
+                                    },
+                                    "name": "MyPagingToolbar54",
+                                    "designerId": "8b7291ea-1a44-4d81-b8b6-0e75b9fd61e3"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onArticlegrid3CellClick",
+                                        "implHandler": [
+                                            "if (cellIndex === undefined || cellIndex < 2) return;\r",
+                                            "\r",
+                                            "\r",
+                                            "else if(cellIndex == 5){\r",
+                                            "\r",
+                                            "    Ext.Msg.alert('tips', '你点击了cellIndex=5');\r",
+                                            "\r",
+                                            "\r",
+                                            "}\r",
+                                            "else{\r",
+                                            "    //var newArticleTab = Ext.widget('infoArtilceScanTab');\r",
+                                            "    var channelStore = Ext.StoreMgr.get('InfoChannelStore');\r",
+                                            "    var win = new Ext.Window({\r",
+                                            "\r",
+                                            "        title: '信息编辑',\r",
+                                            "        closable: true,\r",
+                                            "        layout: 'fit',\r",
+                                            "        jsonSubmit: true,\r",
+                                            "        items: [{\r",
+                                            "            xtype: 'form',\r",
+                                            "            height: 588,\r",
+                                            "            id: 'articleRecUpdateForm',\r",
+                                            "\r",
+                                            "            jsonSubmit: true,\r",
+                                            "            layout: {\r",
+                                            "                type: 'absolute'\r",
+                                            "            },\r",
+                                            "            anchorSize: 100,\r",
+                                            "            bodyPadding: 10,\r",
+                                            "\r",
+                                            "            items: [{\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                id: 'articleId',\r",
+                                            "                width: 760,\r",
+                                            "                fieldLabel: '信息ID',\r",
+                                            "                hidden: true,\r",
+                                            "                name: 'articleId'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'combobox',\r",
+                                            "                x: 350,\r",
+                                            "                y: 50,\r",
+                                            "                id: 'channelId',\r",
+                                            "                width: 290,\r",
+                                            "                fieldLabel: '频道栏目',\r",
+                                            "                name: 'channelId',\r",
+                                            "                displayField: 'channelName',\r",
+                                            "                store: channelStore,\r",
+                                            "                valueField: 'channelId',\r",
+                                            "                value:12\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                id: 'articleIsrecycle',\r",
+                                            "                width: 760,\r",
+                                            "                fieldLabel: '是否在回收站',\r",
+                                            "                hidden: true,\r",
+                                            "                name: 'articleIsrecycle'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                id: 'articleIsdraft',\r",
+                                            "                width: 760,\r",
+                                            "                fieldLabel: '是否在草稿箱',\r",
+                                            "                hidden: true,\r",
+                                            "                name: 'articleIsdraft'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'htmleditor',\r",
+                                            "                x: 10,\r",
+                                            "                y: 150,\r",
+                                            "                weight: 1,\r",
+                                            "                height: 360,\r",
+                                            "                id: 'articleContent',\r",
+                                            "                width: 760,\r",
+                                            "                fieldLabel: '信息内容',\r",
+                                            "                name: 'articleContent'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                id: 'articleName',\r",
+                                            "                width: 620,\r",
+                                            "                fieldLabel: '信息名称',\r",
+                                            "                name: 'articleName'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                x: 10,\r",
+                                            "                y: 50,\r",
+                                            "                id: 'articleAuthor',\r",
+                                            "                width: 290,\r",
+                                            "                fieldLabel: '信息作者',\r",
+                                            "                name: 'articleAuthor'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                x: 350,\r",
+                                            "                y: 100,\r",
+                                            "                id: 'articlePublishtime',\r",
+                                            "                width: 290,\r",
+                                            "                fieldLabel: '发布时间',\r",
+                                            "                name: 'articlePublishtime',\r",
+                                            "                inputType: 'date'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'textfield',\r",
+                                            "                x: 10,\r",
+                                            "                y: 100,\r",
+                                            "                id: 'articleSource',\r",
+                                            "                width: 290,\r",
+                                            "                fieldLabel: '信息来源',\r",
+                                            "                name: 'articleSource'\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'button',\r",
+                                            "                x: 118,\r",
+                                            "                y: 561,\r",
+                                            "                width: 90,\r",
+                                            "                text: '保存',\r",
+                                            "                handler: function() {\r",
+                                            "                    var myform = Ext.getCmp('articleRecUpdateForm').getForm();\r",
+                                            "                    if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                            "                        myform.submit({\r",
+                                            "                            url:'update_recArticle',\r",
+                                            "                            success: function(form, action) {\r",
+                                            "                                Ext.Msg.alert('成功', '修改内容成功');\r",
+                                            "\r",
+                                            "                                var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore'); //获得store对象                                                   \r",
+                                            "                                mystore.load();\r",
+                                            "                                //{\r",
+                                            "                                //params: {\r",
+                                            "                                // start: \"0\",\r",
+                                            "                                // limit: \"25\"\r",
+                                            "                                //searchField: Ext.getCmp('searchField_pubNewDynamic').getValue(),\r",
+                                            "                                //searchDate: Ext.util.Format.date(Ext.getCmp('searchDate_pubNewDynamic').getValue(), 'Y-m-d'); \r",
+                                            "                                //}\r",
+                                            "                                //}\r",
+                                            "                                // );\r",
+                                            "\r",
+                                            "                                win.close();\r",
+                                            "\r",
+                                            "                            },\r",
+                                            "                            failure: function(form, action) {\r",
+                                            "                                Ext.Msg.alert('失败', '修改内容失败');                           \r",
+                                            "                                win.close();\r",
+                                            "                            }\r",
+                                            "                        });\r",
+                                            "                    } else {\r",
+                                            "                        Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                            "                    }\r",
+                                            "\r",
+                                            "                    return;\r",
+                                            "\r",
+                                            "                }\r",
+                                            "            },\r",
+                                            "            {\r",
+                                            "                xtype: 'button',\r",
+                                            "                x: 250,\r",
+                                            "                y: 560,\r",
+                                            "                width: 90,\r",
+                                            "                text: '取消',\r",
+                                            "                handler:function(){\r",
+                                            "                    win.close();\r",
+                                            "                }\r",
+                                            "            }]\r",
+                                            "        }]\r",
+                                            "\r",
+                                            "    });\r",
+                                            "    Ext.getCmp('articleId').setValue(record.data.articleId);\r",
+                                            "    //Ext.getCmp('channelId').setValue(record.data.channelId);\r",
+                                            "    Ext.getCmp('articleIsrecycle').setValue(record.data.articleIsrecycle);\r",
+                                            "    Ext.getCmp('articleIsdraft').setValue(record.data.articleIsdraft);\r",
+                                            "    Ext.getCmp('articleContent').setValue(record.data.articleContent);\r",
+                                            "    Ext.getCmp('articleName').setValue(record.data.articleName);\r",
+                                            "    Ext.getCmp('articleAuthor').setValue(record.data.articleAuthor);\r",
+                                            "    Ext.getCmp('articleSource').setValue(record.data.articleSource);\r",
+                                            "    Ext.getCmp('articlePublishtime').setValue(record.data.articlePublishtime);\r",
+                                            "\r",
+                                            "\r",
+                                            "    win.show();\r",
+                                            "}\r",
+                                            "\r",
+                                            ""
+                                        ],
+                                        "name": "cellclick",
+                                        "scope": "me"
+                                    },
+                                    "name": "onArticlegrid3CellClick",
+                                    "designerId": "311e3082-3d62-4e7c-85dd-cc9b93c0ea31"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

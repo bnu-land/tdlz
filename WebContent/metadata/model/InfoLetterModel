@@ -1,0 +1,183 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "InfoLetterModel"
+    },
+    "designerId": "27c61e71-227f-49da-be68-9526d7507e91",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterId"
+            },
+            "name": "MyField291",
+            "designerId": "1bbce2ef-59f2-44d4-a621-9efb2961a997"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterTitle"
+            },
+            "name": "MyField292",
+            "designerId": "a2dc1ef0-4bf3-4a65-aac0-ccb021b0cbe6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterContent"
+            },
+            "name": "MyField293",
+            "designerId": "4f4ed1e8-9c49-453e-88c7-db7cf03541c7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterAuthor"
+            },
+            "name": "MyField294",
+            "designerId": "2366546c-f99f-41b8-8065-e824c05ed514"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterIsreply"
+            },
+            "name": "MyField295",
+            "designerId": "2b54996e-8a9b-4fc4-8444-bc64ba4caa71"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterIsshow"
+            },
+            "name": "MyField296",
+            "designerId": "1e7d7b57-0833-4d33-8a06-f3906e0e9365"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterReplycontent"
+            },
+            "name": "MyField297",
+            "designerId": "42b15333-4335-49f6-a6c0-317e16abb596"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterTel"
+            },
+            "name": "MyField298",
+            "designerId": "0a092d3e-7505-4897-a13c-c7bc21b0208e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterEmail"
+            },
+            "name": "MyField299",
+            "designerId": "df80dfb7-ce4a-4253-97b0-673cf091fa31"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterAddress"
+            },
+            "name": "MyField300",
+            "designerId": "2680a339-f140-4fd1-93ae-d16d1ceab6c6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterWritetime"
+            },
+            "name": "MyField301",
+            "designerId": "425270bb-0b96-4e44-b0c4-a6a1b8d305ea"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterReplytime"
+            },
+            "name": "MyField302",
+            "designerId": "1edbed22-1893-4d83-bbe5-b1c9f33e4289"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "letterAuthorcardid"
+            },
+            "name": "MyField303",
+            "designerId": "fec61b8e-6537-4da4-90a3-3b9ecb488de1"
+        }
+    ]
+}

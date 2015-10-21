@@ -1,0 +1,51 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "EvaluateReportStore",
+        "designer|userClassName": "EvaluateReportStore",
+        "model": "EvaluateReportModel",
+        "storeId": "EvaluateReportStore"
+    },
+    "designerId": "16bba5ec-c648-4555-a688-0a895a3a4c6c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{searchKeyword:''\r",
+                    "}"
+                ],
+                "url": "selectEvaluateReport"
+            },
+            "name": "MyAjaxProxy18",
+            "designerId": "4afc5894-af08-487e-b451-7f2e25ac5cea",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader18",
+                    "designerId": "a808b94e-5d56-43ca-bed5-c5d380dcc331"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "TaishiFormPanelEdit",
+        "model": "TaishiFormPanelEdit",
+        "storeId": "TaishiFormPanelEdit"
+    },
+    "designerId": "cd405333-9439-4e13-a7ae-b2dba0cd93ea",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "  searchKeyword1: '',\r",
+                    "  searchKeyword2: '',\r",
+                    "  searchDate1: '',\r",
+                    "  searchDate2: ''  \r",
+                    "}"
+                ],
+                "url": null
+            },
+            "name": "MyAjaxProxy100",
+            "designerId": "1ca7f8e6-c326-44ee-bd43-e75f63c6bec7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader100",
+                    "designerId": "065aff9d-78ce-47ad-b83f-8a44255a075f"
+                }
+            ]
+        }
+    ]
+}

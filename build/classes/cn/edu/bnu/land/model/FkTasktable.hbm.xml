@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-8 16:59:34 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.FkTasktable" table="fk_tasktable" catalog="tdlz">
+        <id name="taskId" type="java.lang.Integer">
+            <column name="taskId" />
+            <generator class="identity" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="projectId" length="45" />
+        </property>
+        <property name="projectname" type="string">
+            <column name="projectname" length="45" />
+        </property>
+        <property name="pianKuaiId" type="string">
+            <column name="pianKuaiId" length="45" />
+        </property>
+        <property name="collectionItems" type="string">
+            <column name="collectionItems" length="145" />
+        </property>
+        <property name="dataFormat" type="string">
+            <column name="dataFormat" length="45" />
+        </property>
+        <property name="submission" type="string">
+            <column name="Submission" length="45" />
+        </property>
+        <property name="dataRequirements" type="string">
+            <column name="dataRequirements" length="245" />
+        </property>
+        <property name="gatherers" type="string">
+            <column name="Gatherers" length="45" />
+        </property>
+        <property name="acquisitiontime" type="date">
+            <column name="acquisitiontime" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

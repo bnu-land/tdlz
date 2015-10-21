@@ -1,0 +1,220 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "infoCommentTab",
+        "designer|userClassName": "infoCommentTab",
+        "id": "infoCommentTab",
+        "layout": "fit",
+        "title": "文章评论-详细"
+    },
+    "designerId": "103990bd-028e-4a79-b4bf-b3f8546b4ff3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 400,
+                "layout": "fit",
+                "title": null,
+                "width": 800
+            },
+            "name": "MyForm44",
+            "designerId": "233c846d-bb85-4659-b13a-f47f869013b3",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoScroll": true,
+                        "forceFit": true,
+                        "id": "commentGrid",
+                        "store": "InfoCommentStore",
+                        "title": ""
+                    },
+                    "name": "MyGridPanel42",
+                    "designerId": "3461b30b-5d7a-42e2-9d18-c653e8641c77",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.RowNumberer",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 38
+                            },
+                            "name": "MyRowNumberer34",
+                            "designerId": "ea48453f-49f6-4af6-baaa-2f76a8cc9459"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "commentAuthor",
+                                "text": "评论人",
+                                "width": 103
+                            },
+                            "name": "MyColumn214",
+                            "designerId": "fc3a3bb0-cac4-46b6-9410-9fbc2a37f4dc"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "commentTime",
+                                "text": "评论时间",
+                                "width": 100
+                            },
+                            "name": "MyDateColumn38",
+                            "designerId": "d3c21326-7662-49e5-bc64-f57dcb57219b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "commentContent",
+                                "text": "评论内容",
+                                "width": 556
+                            },
+                            "name": "MyColumn215",
+                            "designerId": "0db9e4cf-3ea7-408c-aaca-9bb97d31b4cf"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView42",
+                            "designerId": "41ac05cf-0a4d-4d6c-a5e1-13154bba5e3b"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "enableOverflow": true
+                            },
+                            "name": "MyToolbar56",
+                            "designerId": "b5be926f-2472-4922-936a-9c636bf6a10d",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_delete.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton224",
+                                    "designerId": "785d8d10-5d6b-40fe-8471-f2dd7d1be047",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('commentGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                    "    return;\r",
+                                                    "\r",
+                                                    "}else{\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "    var  commentIds =new Array(record.length);\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        commentIds[i] = record[i].get(\"commentId\");\r",
+                                                    "\r",
+                                                    "    }\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        url:'update_comment',\r",
+                                                    "        params:{commentIds:commentIds},\r",
+                                                    "\r",
+                                                    "        success:function(response){\r",
+                                                    "            Ext.Msg.alert('成功','删除评论');\r",
+                                                    "            var mystore = Ext.StoreMgr.get('InfoCommentStore');\r",
+                                                    "            mystore.load();\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "\r",
+                                                    "    });\r",
+                                                    "\r",
+                                                    "}"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "154805bc-95c5-4e05-aebc-1de5c6d73e32"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "name": "MyCheckboxSelectionModel34",
+                            "designerId": "57b06958-87b5-413f-af7c-ca99840b1488"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
